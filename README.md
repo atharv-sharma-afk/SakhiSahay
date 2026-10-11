@@ -1,4 +1,4 @@
-# 🌸 SakhiSahay — AI-Powered Women's Healthcare Platform
+# 🌸 SakhiSahay — Women's Healthcare Platform
 
 **Your health. Your journey. Your companion.**
 
