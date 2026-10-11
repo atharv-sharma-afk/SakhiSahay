@@ -1,0 +1,12 @@
+{
+  "source_id": "who-maternal-mortality",
+  "url": "https://www.who.int/news-room/fact-sheets/detail/maternal-mortality",
+  "accessed_date": "2026-10-11",
+  "content_type": "html",
+  "extraction_method": "trafilatura-markdown",
+  "page_title": "Maternal mortality",
+  "date_hint": "2025-04-07",
+  "char_count": 10527,
+  "warnings": [],
+  "chunk_count": 14
+}

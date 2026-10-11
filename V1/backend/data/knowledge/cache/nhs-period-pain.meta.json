@@ -1,0 +1,12 @@
+{
+  "source_id": "nhs-period-pain",
+  "url": "https://www.nhs.uk/symptoms/period-pain/",
+  "accessed_date": "2026-10-11",
+  "content_type": "html",
+  "extraction_method": "trafilatura-markdown",
+  "page_title": "Period pain",
+  "date_hint": "2017-10-19",
+  "char_count": 3003,
+  "warnings": [],
+  "chunk_count": 5
+}

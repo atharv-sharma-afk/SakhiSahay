@@ -1,0 +1,12 @@
+{
+  "source_id": "cdc-stis-and-pregnancy",
+  "url": "https://www.cdc.gov/sti/about/about-stis-and-pregnancy.html",
+  "accessed_date": "2026-10-11",
+  "content_type": "html",
+  "extraction_method": "trafilatura-markdown",
+  "page_title": "About STIs and Pregnancy",
+  "date_hint": "2026-05-13",
+  "char_count": 1766,
+  "warnings": [],
+  "chunk_count": 5
+}

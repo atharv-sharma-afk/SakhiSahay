@@ -1,0 +1,12 @@
+{
+  "source_id": "nhs-pms",
+  "url": "https://www.nhs.uk/conditions/pre-menstrual-syndrome/",
+  "accessed_date": "2026-10-11",
+  "content_type": "html",
+  "extraction_method": "trafilatura-markdown",
+  "page_title": "PMS (premenstrual syndrome)",
+  "date_hint": "2018-04-23",
+  "char_count": 3409,
+  "warnings": [],
+  "chunk_count": 8
+}

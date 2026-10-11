@@ -1,0 +1,15 @@
+{
+  "source_id": "nhm-menstrual-hygiene-policy-2024",
+  "url": "https://nhm.gov.in/New-Update-2025-26/Adolescent-Health/Menstrual-Hygiene-Policy/Menstrual-Hygiene-Policy-for-School-Going-Girls.pdf",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "text-snapshot (PDF text captured via an external fetch on 2026-10-11; direct download from nhm.gov.in timed out from the build machine, so the PyMuPDF path was not exercised for this file. Re-run `python -m app.knowledge.ingest --refresh --only nhm-menstrual-hygiene-policy-2024` from a machine that can reach nhm.gov.in to replace this snapshot.)",
+  "page_title": "Menstrual Hygiene Policy for School-Going Girls",
+  "date_hint": "2024-11",
+  "char_count": 23870,
+  "warnings": [
+    "table-of-contents lines removed",
+    "hard line wraps re-joined heuristically"
+  ],
+  "chunk_count": 34
+}
