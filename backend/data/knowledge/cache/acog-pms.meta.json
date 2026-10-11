@@ -1,0 +1,12 @@
+{
+  "source_id": "acog-pms",
+  "url": "https://www.acog.org/womens-health/faqs/premenstrual-syndrome",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 9317,
+  "chunk_count": 11,
+  "warnings": [
+    "removed 1 repeated header/footer lines"
+  ]
+}

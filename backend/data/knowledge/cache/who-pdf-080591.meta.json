@@ -1,0 +1,14 @@
+{
+  "source_id": "who-pdf-080591",
+  "url": "https://www.who.int",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 638014,
+  "chunk_count": 705,
+  "warnings": [
+    "page 2 had no extractable text (scanned image?)",
+    "page 207 had no extractable text (scanned image?)",
+    "removed 36 repeated header/footer lines"
+  ]
+}

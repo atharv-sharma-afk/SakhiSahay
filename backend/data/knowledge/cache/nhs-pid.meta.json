@@ -1,0 +1,12 @@
+{
+  "source_id": "nhs-pid",
+  "url": "https://www.nhs.uk/conditions/pelvic-inflammatory-disease-pid/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 6170,
+  "chunk_count": 7,
+  "warnings": [
+    "removed 2 repeated header/footer lines"
+  ]
+}

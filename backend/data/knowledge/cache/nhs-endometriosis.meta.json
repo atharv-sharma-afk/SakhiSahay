@@ -1,0 +1,12 @@
+{
+  "source_id": "nhs-endometriosis",
+  "url": "https://www.nhs.uk/conditions/endometriosis/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 7305,
+  "chunk_count": 9,
+  "warnings": [
+    "removed 3 repeated header/footer lines"
+  ]
+}

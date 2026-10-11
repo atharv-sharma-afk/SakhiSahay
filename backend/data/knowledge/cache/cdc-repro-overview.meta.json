@@ -1,0 +1,10 @@
+{
+  "source_id": "cdc-repro-overview",
+  "url": "https://www.cdc.gov/reproductivehealth/womensrh/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 3588,
+  "chunk_count": 4,
+  "warnings": []
+}

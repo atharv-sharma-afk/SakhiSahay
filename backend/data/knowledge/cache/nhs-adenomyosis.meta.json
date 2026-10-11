@@ -1,0 +1,12 @@
+{
+  "source_id": "nhs-adenomyosis",
+  "url": "https://www.nhs.uk/conditions/adenomyosis/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 4071,
+  "chunk_count": 5,
+  "warnings": [
+    "removed 3 repeated header/footer lines"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "source_id": "nhs-menopause",
+  "url": "https://www.nhs.uk/conditions/menopause/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 914,
+  "chunk_count": 1,
+  "warnings": []
+}

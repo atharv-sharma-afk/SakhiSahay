@@ -1,0 +1,12 @@
+{
+  "source_id": "acog-painful-periods",
+  "url": "https://www.acog.org/womens-health/faqs/dysmenorrhea-painful-periods",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 6238,
+  "chunk_count": 8,
+  "warnings": [
+    "removed 1 repeated header/footer lines"
+  ]
+}

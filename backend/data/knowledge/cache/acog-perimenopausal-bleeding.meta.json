@@ -1,0 +1,12 @@
+{
+  "source_id": "acog-perimenopausal-bleeding",
+  "url": "https://www.acog.org/womens-health/faqs/perimenopausal-bleeding",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 12107,
+  "chunk_count": 15,
+  "warnings": [
+    "removed 1 repeated header/footer lines"
+  ]
+}

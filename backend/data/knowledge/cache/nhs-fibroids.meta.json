@@ -1,0 +1,10 @@
+{
+  "source_id": "nhs-fibroids",
+  "url": "https://www.nhs.uk/conditions/fibroids/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 3734,
+  "chunk_count": 4,
+  "warnings": []
+}

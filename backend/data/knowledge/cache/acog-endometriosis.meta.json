@@ -1,0 +1,12 @@
+{
+  "source_id": "acog-endometriosis",
+  "url": "https://www.acog.org/womens-health/faqs/endometriosis",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 18613,
+  "chunk_count": 24,
+  "warnings": [
+    "removed 1 repeated header/footer lines"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "nhs-naproxen",
+  "url": "https://www.nhs.uk/medicines/naproxen/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 9293,
+  "chunk_count": 11,
+  "warnings": [
+    "removed 3 repeated header/footer lines"
+  ]
+}

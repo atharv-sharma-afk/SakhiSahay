@@ -1,0 +1,335 @@
+[
+  {
+    "source_id": "who-pdf-097490",
+    "title": "WHO Global Health Statistics",
+    "publisher": "World Health Organization",
+    "topic": "reproductive_health",
+    "url": "https://www.who.int",
+    "chunk_count": 204,
+    "file": "who-pdf-097490.json"
+  },
+  {
+    "source_id": "who-pdf-115774",
+    "title": "WHO Menstrual Health Policy",
+    "publisher": "World Health Organization",
+    "topic": "menstrual_health",
+    "url": "https://www.who.int",
+    "chunk_count": 765,
+    "file": "who-pdf-115774.json"
+  },
+  {
+    "source_id": "who-pdf-045989",
+    "title": "WHO Women's Health Guidelines",
+    "publisher": "World Health Organization",
+    "topic": "reproductive_health",
+    "url": "https://www.who.int",
+    "chunk_count": 811,
+    "file": "who-pdf-045989.json"
+  },
+  {
+    "source_id": "who-pdf-080591",
+    "title": "WHO Reproductive Health Report",
+    "publisher": "World Health Organization",
+    "topic": "reproductive_health",
+    "url": "https://www.who.int",
+    "chunk_count": 705,
+    "file": "who-pdf-080591.json"
+  },
+  {
+    "source_id": "who-pdf-115583",
+    "title": "WHO Sexual and Reproductive Health",
+    "publisher": "World Health Organization",
+    "topic": "reproductive_health",
+    "url": "https://www.who.int",
+    "chunk_count": 494,
+    "file": "who-pdf-115583.json"
+  },
+  {
+    "source_id": "nhs-fibroids",
+    "title": "Fibroids – NHS Guide",
+    "publisher": "NHS",
+    "topic": "reproductive_health",
+    "url": "https://www.nhs.uk/conditions/fibroids/",
+    "chunk_count": 4,
+    "file": "nhs-fibroids.json"
+  },
+  {
+    "source_id": "who-pdf-115606",
+    "title": "WHO Contraception Guidelines",
+    "publisher": "World Health Organization",
+    "topic": "contraception",
+    "url": "https://www.who.int",
+    "chunk_count": 303,
+    "file": "who-pdf-115606.json"
+  },
+  {
+    "source_id": "nhs-adenomyosis",
+    "title": "Adenomyosis – NHS Guide",
+    "publisher": "NHS",
+    "topic": "endometriosis",
+    "url": "https://www.nhs.uk/conditions/adenomyosis/",
+    "chunk_count": 5,
+    "file": "nhs-adenomyosis.json"
+  },
+  {
+    "source_id": "acog-endometriosis",
+    "title": "Endometriosis",
+    "publisher": "ACOG",
+    "topic": "endometriosis",
+    "url": "https://www.acog.org/womens-health/faqs/endometriosis",
+    "chunk_count": 24,
+    "file": "acog-endometriosis.json"
+  },
+  {
+    "source_id": "who-pdf-115835",
+    "title": "WHO PCOS Clinical Guidelines",
+    "publisher": "World Health Organization",
+    "topic": "pcos",
+    "url": "https://www.who.int",
+    "chunk_count": 96,
+    "file": "who-pdf-115835.json"
+  },
+  {
+    "source_id": "nhs-menopause-symptoms",
+    "title": "Symptoms of Menopause",
+    "publisher": "NHS",
+    "topic": "menopause",
+    "url": "https://www.nhs.uk/conditions/menopause/symptoms/",
+    "chunk_count": 8,
+    "file": "nhs-menopause-symptoms.json"
+  },
+  {
+    "source_id": "nhs-tens",
+    "title": "TENS – Transcutaneous Electrical Nerve Stimulation",
+    "publisher": "NHS",
+    "topic": "menstrual_health",
+    "url": "https://www.nhs.uk/conditions/tens/",
+    "chunk_count": 4,
+    "file": "nhs-tens.json"
+  },
+  {
+    "source_id": "who-pdf-124578",
+    "title": "WHO Endometriosis Report",
+    "publisher": "World Health Organization",
+    "topic": "endometriosis",
+    "url": "https://www.who.int",
+    "chunk_count": 180,
+    "file": "who-pdf-124578.json"
+  },
+  {
+    "source_id": "acog-pcos",
+    "title": "Polycystic Ovary Syndrome (PCOS)",
+    "publisher": "ACOG",
+    "topic": "pcos",
+    "url": "https://www.acog.org/womens-health/faqs/polycystic-ovary-syndrome",
+    "chunk_count": 9,
+    "file": "acog-pcos.json"
+  },
+  {
+    "source_id": "nhs-pid",
+    "title": "Pelvic Inflammatory Disease",
+    "publisher": "NHS",
+    "topic": "reproductive_health",
+    "url": "https://www.nhs.uk/conditions/pelvic-inflammatory-disease-pid/",
+    "chunk_count": 7,
+    "file": "nhs-pid.json"
+  },
+  {
+    "source_id": "nhs-hirsutism",
+    "title": "Excessive Hair Growth (Hirsutism)",
+    "publisher": "NHS",
+    "topic": "pcos",
+    "url": "https://www.nhs.uk/conditions/hirsutism/",
+    "chunk_count": 4,
+    "file": "nhs-hirsutism.json"
+  },
+  {
+    "source_id": "cdc-repro-overview",
+    "title": "Women's Reproductive Health",
+    "publisher": "CDC",
+    "topic": "reproductive_health",
+    "url": "https://www.cdc.gov/reproductivehealth/womensrh/",
+    "chunk_count": 4,
+    "file": "cdc-repro-overview.json"
+  },
+  {
+    "source_id": "nhs-menopause-treatment",
+    "title": "Treatment for Menopause",
+    "publisher": "NHS",
+    "topic": "menopause",
+    "url": "https://www.nhs.uk/conditions/menopause/treatment/",
+    "chunk_count": 5,
+    "file": "nhs-menopause-treatment.json"
+  },
+  {
+    "source_id": "acog-painful-periods",
+    "title": "Painful Periods",
+    "publisher": "ACOG",
+    "topic": "menstrual_health",
+    "url": "https://www.acog.org/womens-health/faqs/dysmenorrhea-painful-periods",
+    "chunk_count": 8,
+    "file": "acog-painful-periods.json"
+  },
+  {
+    "source_id": "who-pdf-081727",
+    "title": "WHO Maternal Health Brief",
+    "publisher": "World Health Organization",
+    "topic": "maternal_health",
+    "url": "https://www.who.int",
+    "chunk_count": 26,
+    "file": "who-pdf-081727.json"
+  },
+  {
+    "source_id": "nhs-menopause-selfcare",
+    "title": "Self-Care for Menopause Symptoms",
+    "publisher": "NHS",
+    "topic": "menopause",
+    "url": "https://www.nhs.uk/conditions/menopause/things-you-can-do/",
+    "chunk_count": 7,
+    "file": "nhs-menopause-selfcare.json"
+  },
+  {
+    "source_id": "acog-first-period",
+    "title": "Your First Period",
+    "publisher": "ACOG",
+    "topic": "menstrual_health",
+    "url": "https://www.acog.org/womens-health/faqs/your-first-period",
+    "chunk_count": 11,
+    "file": "acog-first-period.json"
+  },
+  {
+    "source_id": "cdc-repro-concerns",
+    "title": "Common Reproductive Health Concerns",
+    "publisher": "CDC",
+    "topic": "reproductive_health",
+    "url": "https://www.cdc.gov/reproductivehealth/womensrh/",
+    "chunk_count": 8,
+    "file": "cdc-repro-concerns.json"
+  },
+  {
+    "source_id": "acog-pms",
+    "title": "Premenstrual Syndrome (PMS)",
+    "publisher": "ACOG",
+    "topic": "menstrual_health",
+    "url": "https://www.acog.org/womens-health/faqs/premenstrual-syndrome",
+    "chunk_count": 11,
+    "file": "acog-pms.json"
+  },
+  {
+    "source_id": "nhs-endometriosis",
+    "title": "Endometriosis – NHS Guide",
+    "publisher": "NHS",
+    "topic": "endometriosis",
+    "url": "https://www.nhs.uk/conditions/endometriosis/",
+    "chunk_count": 9,
+    "file": "nhs-endometriosis.json"
+  },
+  {
+    "source_id": "acog-amenorrhea",
+    "title": "Amenorrhea – Absence of Periods",
+    "publisher": "ACOG",
+    "topic": "menstrual_health",
+    "url": "https://www.acog.org/womens-health/faqs/amenorrhea",
+    "chunk_count": 12,
+    "file": "acog-amenorrhea.json"
+  },
+  {
+    "source_id": "nhs-iud-sideeff",
+    "title": "IUD Side Effects",
+    "publisher": "NHS",
+    "topic": "contraception",
+    "url": "https://www.nhs.uk/conditions/contraception/iud-copper-coil/side-effects/",
+    "chunk_count": 4,
+    "file": "nhs-iud-sideeff.json"
+  },
+  {
+    "source_id": "acog-heavy-periods",
+    "title": "Heavy and Abnormal Periods",
+    "publisher": "ACOG",
+    "topic": "menstrual_health",
+    "url": "https://www.acog.org/womens-health/faqs/heavy-menstrual-bleeding",
+    "chunk_count": 8,
+    "file": "acog-heavy-periods.json"
+  },
+  {
+    "source_id": "acog-perimenopausal-bleeding",
+    "title": "Perimenopausal Bleeding and Bleeding After Menopause",
+    "publisher": "ACOG",
+    "topic": "menstrual_health",
+    "url": "https://www.acog.org/womens-health/faqs/perimenopausal-bleeding",
+    "chunk_count": 15,
+    "file": "acog-perimenopausal-bleeding.json"
+  },
+  {
+    "source_id": "nhs-menopause-overview",
+    "title": "What is Menopause – NHS Overview",
+    "publisher": "NHS",
+    "topic": "menopause",
+    "url": "https://www.nhs.uk/conditions/menopause/what-is-it/",
+    "chunk_count": 2,
+    "file": "nhs-menopause-overview.json"
+  },
+  {
+    "source_id": "nhs-naproxen",
+    "title": "Naproxen – Painkiller for Inflammation",
+    "publisher": "NHS",
+    "topic": "menstrual_health",
+    "url": "https://www.nhs.uk/medicines/naproxen/",
+    "chunk_count": 11,
+    "file": "nhs-naproxen.json"
+  },
+  {
+    "source_id": "nhs-period-pain",
+    "title": "Period Pain",
+    "publisher": "NHS",
+    "topic": "menstrual_health",
+    "url": "https://www.nhs.uk/conditions/period-pain/",
+    "chunk_count": 5,
+    "file": "nhs-period-pain.json"
+  },
+  {
+    "source_id": "nhs-pcos",
+    "title": "PCOS – NHS Overview",
+    "publisher": "NHS",
+    "topic": "pcos",
+    "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/",
+    "chunk_count": 8,
+    "file": "nhs-pcos.json"
+  },
+  {
+    "source_id": "nhs-iud-fitting",
+    "title": "Getting an IUD Fitted or Removed",
+    "publisher": "NHS",
+    "topic": "contraception",
+    "url": "https://www.nhs.uk/conditions/contraception/iud-copper-coil/fitting-and-removal/",
+    "chunk_count": 5,
+    "file": "nhs-iud-fitting.json"
+  },
+  {
+    "source_id": "nhs-iud-what",
+    "title": "What is an IUD / Copper Coil?",
+    "publisher": "NHS",
+    "topic": "contraception",
+    "url": "https://www.nhs.uk/conditions/contraception/iud-copper-coil/",
+    "chunk_count": 3,
+    "file": "nhs-iud-what.json"
+  },
+  {
+    "source_id": "nhs-iud-who",
+    "title": "Who Can Get an IUD?",
+    "publisher": "NHS",
+    "topic": "contraception",
+    "url": "https://www.nhs.uk/conditions/contraception/iud-copper-coil/who-can-use-it/",
+    "chunk_count": 3,
+    "file": "nhs-iud-who.json"
+  },
+  {
+    "source_id": "nhs-menopause",
+    "title": "Menopause and Perimenopause",
+    "publisher": "NHS",
+    "topic": "menopause",
+    "url": "https://www.nhs.uk/conditions/menopause/",
+    "chunk_count": 1,
+    "file": "nhs-menopause.json"
+  }
+]

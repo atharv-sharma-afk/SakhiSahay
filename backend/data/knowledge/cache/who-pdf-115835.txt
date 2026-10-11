@@ -1,0 +1,3591 @@
+Course on prevention, diagnosis and 
+treatment of postpartum haemorrhage
+
+Preliminary pages
+Bleeding after birth: course on prevention, diagnosis and treatment of postpartum 
+haemorrhage.
+ISBN 978-92-4-011583-5 (print version)
+ISBN 978-92-4-011584-2 (electronic version)
+© World Health Organization 2025
+Some rights reserved. This work is available under the Creative Commons Attribution-
+NonCommercial-ShareAlike 3.0 IGO licence (CC BY-NC-SA 3.0 IGO; https://creativecommons.org/
+licenses/by-nc-sa/3.0/igo).
+Under the terms of this licence, you may copy, redistribute and adapt the work for non-commercial 
+purposes, provided the work is appropriately cited, as indicated below. In any use of this work, 
+there should be no suggestion that WHO endorses any specific organization, products or services. 
+The use of the WHO logo is not permitted. If you adapt the work, then you must license your work 
+under the same or equivalent Creative Commons licence. If you create a translation of this work, 
+you should add the following disclaimer along with the suggested citation: “This translation was 
+not created by the World Health Organization (WHO). WHO is not responsible for the content or 
+accuracy of this translation. The original English edition shall be the binding and authentic edition”.
+Any mediation relating to disputes arising under the licence shall be conducted in accordance 
+with the mediation rules of the World Intellectual Property Organization.
+Suggested citation. Bleeding after birth: course on prevention, diagnosis and treatment of 
+postpartum haemorrhage. Geneva: World Health Organization; 2025. Licence: CC BY-NC-SA 3.0 
+IGO.
+Cataloguing-in-Publication (CIP) data. CIP data are available at 
+http://apps.who.int/iris.
+Sales, rights and licensing. To purchase WHO publications, see http://apps.who.int/bookorders. 
+To submit requests for commercial use and queries on rights and licensing, see http://www.who.
+int/about/licensing.
+Third-party materials. If you wish to reuse material from this work that is attributed to a third 
+party, such as tables, figures or images, it is your responsibility to determine whether permission 
+is needed for that reuse and to obtain permission from the copyright holder. The risk of claims 
+resulting from infringement of any third-party-owned component in the work rests solely with the 
+user.
+General disclaimers. The designations employed and the presentation of the material in 
+this publication do not imply the expression of any opinion whatsoever on the part of WHO 
+concerning the legal status of any country, territory, city or area or of its authorities, or concerning 
+the delimitation of its frontiers or boundaries. Dotted and dashed lines on maps represent 
+approximate border lines for which there may not yet be full agreement.
+The mention of specific companies or of certain manufacturers’ products does not imply that they 
+are endorsed or recommended by WHO in preference to others of a similar nature that are not 
+mentioned. Errors and omissions excepted, the names of proprietary products are distinguished 
+by initial capital letters. All reasonable precautions have been taken by WHO to verify the 
+information contained in this publication. However, the published material is being distributed 
+without warranty of any kind, either expressed or implied. The responsibility for the interpretation 
+and use of the material lies with the reader. In no event shall WHO be liable for damages arising 
+from its use.
+Contents
+Acknowledgements
+iv
+Acronyms and abbreviations
+v
+Plan and prepare to facilitate a course
+Using this Flip Chart to facilitate learning
+1b
+1. Saving lives at birth
+2
+Main causes of bleeding after birth
+3
+Provide respectful care and prevent infection
+4
+Prepare for birth, check equipment and medications
+5
+Assess and record
+6
+2. Prevention and early diagnosis of PPH
+7
+Give a uterotonic within 1 min
+8
+Start measuring blood loss
+9
+How accurate is visual estimation of blood loss?
+10
+Be alert. If PPH, start bundle
+11
+Cut the cord and perform controlled cord traction
+12
+Check tone, massage if soft, check bleeding
+13
+Check placenta
+14
+Check for tears and repair
+Continue care for woman and baby
+16
+Scenario practice 1
+17
+Empty bladder and repeat controlled cord traction
+18
+Remove manually 
+19
+3. Treatment with the PPH bundle
+Call for help
+21
+Start PPH bundle
+22
+Examine and address causes
+23
+Scenario practice 2
+24
+Scenario practice 3
+25
+Scenario practice 4
+26
+4. Continued treatment if bleeding persists
+27
+Arrange transfer or surgery
+28
+Rapidly apply NASG
+29
+Skills practice – NASG
+30
+Continue massage, catheterize bladder, remove clots/debris
+31
+Start second IV, give additional uterotonics and TXA second dose, assess and record
+32
+Scenario practice 5
+33
+5. Advanced interventions and post-PPH care
+34
+Bimanual compression
+35
+Insert uterine balloon tamponade
+36
+Repair deep tears
+37
+Provide post‐PPH care
+38
+6. Ongoing practice and quality improvement
+39
+References
+39b
+iii
+
+Acknowledgements
+The World Health Organization (WHO) acknowledges the contributions of individuals and 
+partner organizations to the development of Bleeding after birth: course on prevention, 
+diagnosis and treatment of postpartum haemorrhage. WHO thanks Jhpiego, an international 
+non-profit health organization affiliated with Johns Hopkins University, for its leadership in 
+updating the Bleeding after Birth Complete 3.0 module from the Helping Mothers Survive 
+programme. This updated module, led by Cherrie Lynn Evans, was developed in response 
+to updated WHO recommendations and emerging evidence on the new diagnostic criteria 
+for earlier diagnosis of postpartum haemorrhage. The original module was developed by 
+Jhpiego’s Technical Leadership Office in collaboration with Laerdal Global Health, and built 
+on the educational design of Helping Babies Breathe, created by the American Academy of 
+Pediatrics and Laerdal Global Health.
+The development of the technical content in this update was initiated by Susheela Engelbrecht, 
+Cherrie Lynn Evans and Jennifer Stevens from Jhpiego, in collaboration with Teesta Dey and 
+Ioannis Gallos from WHO Department of Sexual, Reproductive, Maternal, Child, Adolescent 
+Health and Ageing, who ensured alignment with WHO guidelines and current evidence. 
+WHO acknowledges the substantial technical contributions provided by Jolly Beyeza-
+Kashesya, Anne Beatrice Kihara and Alison Wright from the International Federation of 
+Gynecology and Obstetrics (FIGO); Jacqueline Dunkley‐Bent, Zab Frankling, Liselotte Kweekel, 
+Stephanie Marriott and Kate Stringer from the International Confederation of Midwives 
+(ICM); and Muna Abdullah, Manuel Couffignal, Catherine Howard Taylor, Chisato Masuda, 
+Isabelle Moreira, Catrin Schulte-Hillen and Duncan Shikuku from the United Nations Population 
+Fund (UNFPA). WHO also thanks Camila Barrera Daza, Bjørn Mike Boge and the Laerdal Global 
+Health design team for their contributions to the educational design of the module.
+Special thanks are extended to reviewers from each of the six WHO regions: Hadil Ali‐Masri 
+(Ministry of Health, Occupied Palestinian Territory, including east Jerusalem); Ferdousi Begum 
+(Ibrahim Medical College and Birdem Hospital, Bangladesh); Brendan Carvalho (Stanford 
+University School of Medicine, United States of America); Catherine Deneux‐Tharaux 
+(INSERM, Université Paris Cité, France); Caroline Homer (Burnet Institute, Australia); and 
+Angela Nguku (White Ribbon Alliance, Kenya). WHO further acknowledges the contributions 
+of its Regional Advisors for Maternal and Newborn Health, whose insights helped ensure 
+the relevance and applicability of the course across diverse health system contexts: 
+Adeniyi Aderoba (WHO Regional Office for Africa); Suzanne Serruya (Pan American Health 
+Organization/WHO Regional Office for the Americas); Karima Gholbzouri (WHO Regional 
+Office for the Eastern Mediterranean); Oleg Kuzmenko (WHO Regional Office for Europe); 
+Chandani Anoma Jayathilaka (WHO Regional Office for South-East Asia); and Delgermaa Vanya 
+(WHO Regional Office for the Western Pacific). WHO expresses its sincere gratitude to the health 
+workers in Afghanistan, Democratic Republic of the Congo, Guinea, India, Kenya, Malawi, 
+Nigeria, United Republic of Tanzania, and Zambia, whose participation in testing and refining 
+the course materials was instrumental to its development. 
+This work was funded by the University of Birmingham, Jhpiego, Laerdal Foundation and 
+UNDP-UNFPA-UNICEF-WHO-World Bank Special Programme of Research, Development and 
+Research Training in Human Reproduction (HRP), a co-sponsored programme executed by 
+WHO. The views of the funding bodies have not influenced the content of this course.
+Acronyms and abbreviations
+ANC
+antenatal care
+BP
+blood pressure
+CCT
+controlled cord traction
+CS
+caesarean section
+FBC
+full blood count
+FIGO
+International Federation of Gynecology and Obstetrics
+Hb
+Haemoglobin
+HSC
+heat-stable carbetocin
+ICM
+International Confederation of Midwives
+IM
+intramuscular
+intravenous
+IU
+international units
+LDHF
+low-dose, high-frequency
+non-pneumatic anti-shock garment
+NS
+normal saline
+OSCE
+objective structured clinical examination
+PO
+oral administration
+PPH
+postpartum haemorrhage
+PR
+per rectum
+RL
+Ringer’s Lactate
+SBAR
+situation, background, assessment, recommendation
+SI
+shock index
+SL
+sublingual
+tranexamic acid
+UNFPA
+United Nations Population Fund
+UBT
+uterine balloon tamponade
+WHO
+World Health Organization
+v
+iv
+
+Plan and coordinate
+• Coordinate with leadership and local organizers well in advance.
+• Use the supplementary sample documents – like agendas, room 
+layouts, checklists and evaluations. Download and modify these 
+documents to fit your needs. 
+• Review clinical data with facility management to identify strengths 
+and gaps.
+Adapt the course to the needs
+This course is for all health workers who care for women at birth. All 
+women should give birth in facilities with the capacity to treat PPH, 
+including administration of IV medicines. 
+• In facilities with no operating room and which cannot provide 
+advanced care, women not responding to the PPH bundle should be 
+transferred quickly. Adapt the course based on these conditions.
+• Consider excluding from the course, if not available or relevant:
+ 
+—non-pneumatic anti‐shock garment (NASG) – pages 29 and 30 
+ 
+—uterine balloon tamponade (UBT) – page 36
+ 
+—repairing deep vaginal and cervical tears – page 37.
+• Define the agenda based on the content you will be covering.
+Prepare yourself to facilitate
+• Review the agenda.
+• Familiarize yourself with all pages in this flipchart.
+• Rehearse in advance how you will deliver the course and how you will 
+best engage the participants.
+• Practise each of the demonstrations and simulations. 
+Set up the course for active participation
+The number of participants in a course may vary, but ensure you can 
+divide into small groups of 6 participants to 1 facilitator to ensure the 
+quality of practice activities. 
+Prepare the learning materials
+In addition to this Flip Chart, use these resources to support learning and 
+ensure an impactful course delivery. Make sure you know them well, and 
+have them ready for the course. 
+Action plans
+Two large posters showing the steps to take during care, to be used 
+during the course and as a job aid for clinical practice.
+Provider guide
+A booklet for every health worker to use during the course and keep 
+afterwards, for continued practice.
+Assessments
+As part of the learning process, the course includes a pre‐course and 
+post‐course knowledge check, and six objective structured clinical 
+examinations (OSCEs). 
+Videos
+Demonstration videos are available to view online and download. 
+Use them during the course and share with participants for continued 
+Prepare to assess
+• Assessments support learning and help you identify gaps and needs.
+• Ensure participants complete knowledge assessments before and after 
+the course.
+• Check skills after the course using OSCEs. 
+Enable continued practice
+Support the facilities to embrace continued practice after the course.
+• Make the Action Plans available and visible in the facility.
+• Appoint two participants from each facility to become practice 
+coordinators and support their peers.
+• Ensure participants have the equipment, space and time to carry out 
+low‐dose, high‐frequency (LDHF) practice at the facilities –using the 
+activities in the Provider Guide.
+ 
+For the facilitator
+Plan and prepare to facilitate a course
+The Bleeding after birth 
+training course aims to 
+translate standards into care.
+It incorporates the latest 
+WHO recommendations 
+related to PPH1,2 and includes 
+links to key references and 
+resources for training. 
+Find all learning materials 
+and supplementary sample 
+documents at 
+www.who.int/tools/ 
+bleeding-after-birth
+This course is for all health workers who care for women at birth. All women should give 
+birth in facilities with the capacity to treat postpartum haemorhage (PPH), and administer 
+intravenous (IV) medicines. 
+
+Equipment checklist
+For each group of 6 participants and 1 facilitator
+Learning materials
+ 
+ 1 Flip Chart 
+ 
+ 1 set of Action Plans
+ 
+ 6 Provider Guides (1 per participant)
+Simulation equipment 
+ 
+ PPH simulator with placenta and baby
+ 
+ Simulated blood
+Postpartum equipment
+ 
+ Blood loss measurement tool
+ 
+ Postpartum monitoring form
+ 
+ Curved forceps
+ 
+ Ring forceps
+ 
+ Scissors
+ 
+ Ties/haemostats or clamps
+ 
+ Cloths and hat for newborn
+ 
+ Suction bulb
+ 
+ Bag and mask
+ 
+ NASG – if using
+ 
+ UBT – if using
+General equipment
+ 
+ Personal Protective Equipment 
+ 
+ Blood pressure cuff and stethoscope
+ 
+ Syringes and needles
+ 
+ Blood collection tubes
+ 
+ Speculum
+ 
+ Urinary catheter and bag
+Mock medications and IV
+ 
+ Oxytocin or other uterotonics
+ 
+ Tranexamic acid (TXA)
+ 
+ Antibiotic
+ 
+ Pain medication
+ 
+ IV catheter
+ 
+ Crystalloid IV fluids
+ 
+ Tape
+Additional materials
+ 
+ Knowledge assessments and OSCEs sheets
+ 
+ Postpartum monitoring forms
+ 
+ Demonstration videos on a device with good sound
+These sections cover key knowledge the participants will need.
+• Use your own words, be concise and avoid just reading. 
+• To engage participants, prepare how you will deliver explanations 
+in advance.
+Show participants the actions they need to take, and prepare them to 
+• For some steps, videos are available. 
+• Always emphasize and model respectful care and good 
+communication.
+Practise 
+Give participants time to repeat newly learned or refreshed skills for 
+each step. 
+• Spend more time practicing than explaining. 
+• Encourage self‐reflection and debriefing with the team. 
+Encourage participants to share and explore what is done in their 
+facility. Find ways to overcome barriers and put new skills into 
+Ask questions to review and reinforce learning. Create a safe space 
+and ensure all participants participate.
+Scenario practice
+Reinforce skills learned in a simulation practice. 
+• Ensure every group has all the equipment on the checklist. 
+• Encourage self‐reflection and feedback.
+• One or two participants will take the role of health workers, 
+using only the Action Plan and Postpartum Monitoring Form for 
+guidance.
+• Ensure the rest follow the actions on the Action Plan. Rotate 
+participants on the next scenario.
+• You will act as the woman, operate the simulator, give prompts 
+as needed, and provide vitals and other information when 
+participants asses for them.
+• Alternatively, a participant could be the woman with your 
+guidance.
+Assess knowledge
+Assess the participants’ knowledge before and after the course. 
+• Use the knowledge checks available as available as supplementary 
+material. Find them at www.who.int/tools/bleeding-after-birth.
+• Use the results from the pre‐course test to tailor facilitation to the 
+needs.
+Assess skills
+Assess the participants’ skills after the course using OSCEs. 
+• Make sure to plan enough time to assess all participants.
+• There are six OSCE cases available as supplementary material. Find 
+them at www.who.int/tools/bleeding-after-birth.
+For the facilitator
+Using this Flip Chart to facilitate learning
+The Flip Chart is a guide for the facilitator of a course. It includes all you need to facilitate 
+learning in an engaging an participatory way. Place the Flip Chart with the illustration pages 
+facing the participants, and the text facing you. The content is divided into sections with 
+different learning methodologies, explained below.
+1b
+
+MODULE 1
+Saving lives at birth
+2
+
+• There are two people who need our 
+care: the woman and her newborn.
+• Survival of the baby can depend on 
+survival of the woman. 
+• This course helps you master 
+competencies to prevent, diagnose 
+and treat PPH. 
+• All women should give birth in facilities 
+with the capacity to treat PPH and 
+administer IV medicines. 
+Continued learning for health 
+workers
+• This course is for all health workers who 
+care for women at birth. 
+• We will use different learning methods:
+ 
+—discussions 
+ 
+—demonstrations 
+ 
+—hands‐on practice 
+ 
+—feedback
+ 
+—case scenarios for simulation. 
+• After the course, short, frequent drills 
+and other exercises at the facility will 
+strengthen and maintain skills.
+Learning materials
+• Action Plans are for clinical training, 
+drills and as a job aid: 
+ 
+—Action Plan 1 – Prevention and early 
+diagnosis of PPH
+ 
+—Action Plan 2 – Treatment of PPH.
+• Provider Guide, a personal resource for 
+all participants for continued practice 
+after the course. It includes:
+ 
+—LDFH activities for quality 
+inprovement.
+ 
+—tools like medication information and 
+Postpartum Monitoring Form
+ 
+—key knowledge and references.
+Role‐play (optional)
+Suddenly start a role‐play interrupting the 
+course.
+• A woman walks into the room about to 
+give birth, asking for help.
+• She gives birth, but bleeds excessively 
+and you cannot stop it. She dies. 
+• Consider redoing this role-play at the 
+end of the course and have her survive.
+1. Have you ever seen someone die from 
+bleeding after birth? What happened?
+2. Was there anything that could have 
+been done differently or if the woman 
+had been somewhere else?
+MODULE 1
+Saving lives at birth
+2
+Before you start
+• Have all equipment. Refer to page 1b in this flipchart.
+• Prepare a co‐facilitator or volunteer participant to wear the 
+simulator and act as the woman during demonstrations, 
+throughout the course.
+Start the course
+• Begin with the pre‐course knowledge check.
+• At the end of this page you may include a surprise 
+role‐play of a normal birth that progresses to PPH and 
+leads to death.
+2b
+
+Main causes of 
+bleeding after birth
+Tone
+Soft uterus
+Tissue
+or fragments
+Trauma
+Genital tears
+Thrombin
+Coagulopathy
+3
+
+Main causes of bleeding after birth
+• All women are at risk for life‐threatening 
+• Be vigilant for early warning signs.
+• Dangerous bleeding can be a slow, 
+steady stream or a large gush. 
+• Respond quickly if a woman 
+has signs that PPH may be likely.
+The main causes of bleeding are: 
+1. Tone – accounts for about 70% of PPH 
+cases
+• If the uterus does not contract, blood 
+continues to pump into the uterus.
+• Monitor women closely. A uterus that is 
+contracted can later become atonic.
+• A full bladder can prevent the uterus 
+from contracting.
+• Risks: 
+ 
+—large babies >4500 g
+ 
+—previous PPH
+ 
+—long labours
+ 
+—shoulder dystocia
+ 
+—anaemia
+ 
+—multiple pregnancy.
+2. Tissue – accounts for about 20% of 
+PPH cases
+• Tissue left behind can cause atony and 
+infection.
+• Tissue includes:
+ 
+—retained placental tissue
+ 
+—amnion
+ 
+—blood clots
+ 
+—placenta praevia
+ 
+—invasive placenta.
+3. Trauma – accounts for about 10% of 
+PPH cases
+• Includes laceration, hematoma, uterine 
+inversion and rupture.
+• Risks:
+ 
+—large babies
+ 
+—female genital mutilation
+ 
+—episiotomies – should not be done 
+routinely.
+ 
+—augmented or obstructed labour
+ 
+—caesarean birth
+ 
+—vacuum or forceps birth.
+4. Thrombin (coagulopathy) – accounts 
+for about 1% of PPH cases
+• Risks: 
+ 
+—severe pre‐eclampsia or eclampsia
+ 
+—disseminated intravascular 
+coagulopathy
+ 
+—placental abruption
+ 
+—invasive placenta
+ 
+—history of coagulopathy
+ 
+—sepsis.
+1. Who is at risk for postpartum bleeding?
+ 
+—All women.
+2. What is the most common cause of 
+bleeding?
+ 
+—Atony or a uterus that will not 
+contract.
+Main causes of 
+bleeding after birth
+Tone
+Soft uterus
+Tissue
+or fragments
+Trauma
+Genital tears
+Thrombin
+Coagulopathy
+3
+3b
+
+ 
+ 
+ and prevent infection
+4
+
+Provide respectful care and prevent infection
+• 
+• All good relationships begin with 
+respect and trust. 
+• This is important in healthcare – people 
+trust us to help them.
+• During complications, respectful care 
+also involves being a calming presence.
+Key points for respectful care 
+• Women make their own informed 
+choices, even when unexpected things 
+happen.
+• Women feel safe and cared for.
+• Women have privacy, even during an 
+emergency.
+• Women are enabled to have a 
+companion of their choice.
+Respectful communication
+• Introduce yourself by name, and use 
+the woman’s name.
+• Inform the woman and her family 
+of progress, options, and concerns 
+throughout care.
+• Listen without interrupting, and 
+confirm you understand her.
+• Explain early if transfer for advanced 
+care is needed.
+• Always be honest:
+ 
+—admit if you don’t know something
+ 
+—maintaining trust matters more than 
+appearing knowledgeable.
+Prevent Infection
+• Wash hands and wear sterile gloves.
+• Wear apron, mask, and eye shield to 
+protect yourself.
+• To protect the baby:
+ 
+—wear double gloves before birth
+ 
+—remove the soiled pair before 
+clamping and cutting the cord.
+• Properly dispose of or process 
+contaminated supplies and equipment. 
+Follow protocols. 
+1. How does respectful care save lives?
+2. How do you support a woman to make 
+her own choices, especially when 
+something unexpected happens?
+3. What changes, big or small, could 
+improve respectful care in your daily 
+work?
+4. Are there any challenges with infection 
+prevention at your facility?
+ 
+ 
+ and prevent infection
+4
+• Begin this page introducing Action Plan 1. 
+• As you explain respectful care and infection prevention, 
+point out were they are on the Action Plan. 
+4b
+
+Prepare for birth, 
+check equipment and 
+medications
+ 
+ 
+5
+
+Prepare for birth, check equipment and medications
+• Preparing the woman and the bedside 
+helps prevent and treat PPH.
+During antenatal care (ANC) 
+– address anaemia to prevent PPH
+Prevent anaemia 
+• Give all pregnant women:
+ 
+—30–60 mg of elemental iron and
+ 
+—400 μg of folic acid 
+ 
+—see formulations on page 37 of the 
+Provider Guide.
+Assess for anaemia
+• Full blood count (FBC) is recommended.
+• If unavailable, use a haemoglobinometer (preferred over colour scale).
+Address anaemia
+• Increase elemental iron if haemoglobin 
+(Hb) is:
+ 
+—<11 g/dl in the 1st or 3rd trimester, or
+ 
+—<10.5 g/dl in the 2nd trimester
+• Give 120 mg elemental iron a day until 
+Hb reaches ≥11 g/dl.
+• Consider IV iron before labour if:
+ 
+—iron deficiency anaemia is confirmed, 
+and
+ 
+—oral iron is not tolerated, and 
+ 
+—rapid response is needed.
+Prepare your PPH emergency kit
+• Have an emergency trolley or box to 
+manage complications quickly.
+• Check daily if it is stocked and available. 
+See page 13 of the Provider Guide for a 
+list.
+During labour
+• Encourage frequent urination.
+• Based on the woman’s preference –
+reduce perineal trauma using massage, 
+warm compresses, and a hands‐on 
+technique to deliver the head or breech.
+• Avoid episiotomies. If medically 
+indicated: 
+ 
+—use medio‐lateral incision for lower 
+risk of injury to the anal sphincter.
+ 
+—continuous suturing repair is 
+preferred to interrupted sutures.
+1. During ANC, how do you test for 
+anaemia?
+ 
+—Allow participants to describe 
+their experience and reflect on 
+recommendation.
+2. At your facility, do you have all the PPH 
+emergency supplies listed on page 13 of 
+the Provider Guide?
+ 
+—If no or if incomplete, recommend 
+the activity of page 12 of the Provider 
+Guide later at the facility.
+Prepare for birth, 
+check equipment and 
+medications
+ 
+ 
+5
+5b
+
+ 
+ 
+Use the Postpartum Monitoring Form
+6
+
+As you used the Labour Care Guide3 
+during labour, use the Postpartum 
+Monitoring Form to:
+• Assess and record often, as you provide 
+care:
+ 
+—consider all information, history, prior 
+complications and other risk factors
+ 
+—review trends in current care. 
+• Identify possible diagnosis, based on 
+your assessment and records.
+• Communicate and act, based on your 
+diagnosis:
+ 
+—What care does the woman need?
+ 
+—Call a more senior health worker?
+ 
+—Advanced care or transfer?
+Assess and record repeatedly
+• Before birth, fill in any risk factors 
+for PPH.
+• From the birth onwards, check regularly 
+for signs of PPH.
+• Record four times in the first hour 
+after birth to help diagnose PPH quickly.
+• First assessment: 
+ 
+—when placenta is delivered, or 
+ 
+—15 min after birth if placenta is not 
+yet out
+ 
+—this is the most critical, most PPH 
+happens in the first 20 min after birth.
+• Repeat every 15 min for the first hour, or 
+until stable.
+What should you check?
+• Uterine tone.
+• Volume of blood loss and flow using 
+measurement tool (reviewed on next 
+page).
+• Blood pressure (BP) and pulse. 
+Warning vital signs include: 
+• Pulse >100.
+• Systolic BP <100, diastolic BP <60.
+• Shock index (SI) >1.
+What is SI?
+• Quick bedside tool to identify early 
+signs of shock.
+• SI = Pulse ÷ Systolic BP
+• Warning. SI >1 may indicate shock.
+• Example: Pulse 110 / systolic BP 100 = SI 
+1.1 = warning sign
+Quick rule of thumb: 
+if pulse > systolic BP, then SI >1 and cause 
+for warning.
+Refer to the Postpartum Monitoring Form 
+in Provider Guide page 8. 
+• Ask participants to review the form 
+quietly for 1 min
+• Quickly demonstrate how to use each 
+section of the form.
+1. Form groups of 4 to discuss (3 min):
+ 
+—what is familiar?
+ 
+—what might be harder to use?
+2. A person from each group shares group’s 
+observations in 1 min.
+ 
+ 
+Use the Postpartum Monitoring Form
+6
+6b
+
+MODULE 2
+Prevention and 
+early diagnosis of PPH
+ 
+ 
+7
+
+Prevent PPH 
+Actively preventing PPH ensures:
+ 
+—a shorter third stage of labour
+ 
+—less blood loss
+ 
+—fewer cases of PPH.
+Steps to prevent and identify PPH
+1. Give a uterotonic to prevent PPH in 
+both vaginal and caesarean births after 
+the last baby is born.
+2. Place the blood measurement tool 
+and monitor blood loss closely.
+3. Deliver placenta with controlled 
+cord traction (CCT) after clamping and 
+cutting the cord.
+4. Check uterine tone and massage if soft. 
+Once the woman is stable
+• Check the placenta for completeness. 
+• Check for and repair tears.
+• Assess and record tone, bleeding and 
+vital signs.
+• Keep the blood loss monitoring tool in 
+place for the first hour for all women. If 
+a woman continues to bleed, leave the 
+tool in place for another hour.
+Continue care for woman and baby
+The time after birth is critical for both the 
+woman and her baby.
+• Ensure the baby is breathing well and 
+kept warm.
+• Keep them together and skin‐to‐skin for 
+the first hour. 
+• Encourage breastfeeding.
+• If the baby needs resuscitation and you 
+are alone:
+ 
+—care for the baby
+ 
+—give the uterotonic and check tone as 
+soon as possible. 
+If the woman arrives in your care after 
+giving birth elsewhere: provide care 
+based on her signs, symptoms, and any 
+information about previous treatment.
+1. What is the most important step to 
+prevent PPH?
+ 
+—Give a uterotonic immediately after 
+the last baby is born.
+2. Do you check the placenta for 
+completeness immediately after birth?
+ 
+—No. Always check uterine tone and 
+bleeding first. If the uterus is firm and 
+there is no bleeding, then closely 
+examine the placenta.
+MODULE 2
+Prevention and 
+early diagnosis of PPH
+ 
+ 
+7
+• Point to the steps for PPH prevention on Action Plan 1 as you 
+explain them. 
+7b
+
+Immediately after birth, check for second baby
+Give a uterotonic 
+ 
+ 
+Oxytocin 10 IU IM or IV OR
+Carbetocin/HSC 100 μg IM or IV OR
+Misoprostol 400–600 μg PO
+8
+
+Give a uterotonic within 1 min
+• What uterotonics are available in your 
+facility and what is used for prevention?
+• Always prepare a uterotonic before 
+birth.
+• Give uterotonic within 1 min after the 
+last baby is born.
+Never give a uterotonic before last baby 
+is born. Always check for another baby.
+Uterotonics for prevention
+Oxytocin
+• 10 international units (IU) intramuscular 
+(IM) or intravenous (IV). 
+• IV preferred if IV already in place: 10 IU 
+diluted and given slowly over 1–2 min.
+• Use and storage:
+ 
+—can also be used for treatment
+ 
+—WHO’s preferred choice for all 
+women
+ 
+—refrigerate (2–8°C)
+ 
+—if cold storage can’t be guaranteed, 
+use carbetocin/HSC or misoprostol.
+Carbetocin and heat‐stable carbetocin 
+(HSC)
+• 100 μg (1 mL) IM or IV.
+• If IV, administer slowly over 1 min.
+• Use and storage:
+ 
+—only for prevention of PPH 
+ 
+—never for induction or augmentation, 
+can cause uterine rupture
+ 
+—carbetocin – refrigerate (2–8°C) 
+ 
+—HSC – no refrigeration needed, 
+protect from light.
+Misoprostol
+• 400–600 μg orally (PO) sublingually (SL) 
+or per rectum (PR) based on woman’s 
+preference.
+• Use and storage:
+ 
+—no refrigeration needed 
+ 
+—protect from humidity
+ 
+—for prevention and treatment.
+Do not use for prevention of PPH: TXA, 
+injectable prostaglandin, or ergometrine 
+alone or in combination with oxytocin.
+Special considerations for women at 
+high risk of PPH
+• Some women are at high risk of PPH 
+– if they have anaemia, prior PPH, 
+caesarean birth, female genital 
+mutilation, sepsis, multiple pregnancy, 
+placenta praevia, macrosomia with a 
+birthweight of more than 4500 g, or 
+shoulder dystocia.
+• For women at high risk, you may use:
+ 
+—a combination of oxytocin 10 IU IM or 
+IV and misoprostol 400–600 μg PO 
+ 
+—Find details in Provider Guide, page 6.
+Immediately after birth, check for second baby
+Give a uterotonic 
+ 
+ 
+Oxytocin 10 IU IM or IV OR
+Carbetocin/HSC 100 μg IM or IV OR
+Misoprostol 400–600 μg PO
+8
+• Focus on the medications available in the participant’s 
+facility.
+• Refer participants to the medication chart on page 6, in the 
+Provider Guide, for a detailed chart on medications.
+8b
+
+Immediately after giving uterotonic
+ 
+ 
+9
+
+• Measure blood loss objectively to 
+quickly diagnose and treat PPH.
+• A blood loss measurement tool is 
+recommended for all women, both for 
+vaginal and caesarean births.
+Blood loss measurement tools
+• For vaginal birth, use a tool that:
+ 
+—easily shows volume of blood loss 
+ 
+—collects all blood and avoids spillage
+ 
+—ensures the woman’s comfort and 
+choice of birth position.
+• Examples:
+ 
+—drapes with a calibrated funnel
+ 
+—trays with calibrated lines
+ 
+—other innovations.
+Place the tool
+• Immediately after the baby is born and 
+you have given the uterotonic. 
+• For non‐supine position birth:
+ 
+—assist her to a supine position
+ 
+—place baby on her chest
+ 
+—give uterotonic, then place tool.
+Measure blood loss accurately
+• Sweep blood and clots into the tool.
+• If using a drape:
+ 
+—hang the funnel over the edge of the 
+bed, or
+ 
+—lift the funnel so blood collects at the 
+bottom.
+• Check continuously to diagnose PPH 
+quickly:
+ 
+—amount of blood in the tool and 
+ 
+—blood flow.
+• First recording of blood loss volume on 
+the Postpartum Monitoring Form:
+ 
+— after the placenta delivers, or 
+ 
+—15 min after birth if placenta is not 
+out.
+Prevent infection: follow protocols for 
+safe disinfection, sterilisation or disposal 
+of tools.
+1. Place the tool
+• Ask two participants to be the woman 
+and the health worker, and demonstrate 
+placing the tool.
+• Make sure they place it correctly.
+• Open blood tank to a heavy flow.
+• Demonstrate how to sweep blood and 
+clots into the tool.
+2. Monitor blood loss
+• When 300 mL blood in tool, ask a 
+participant to read out the volume of 
+blood lost.
+• Show where to record it on the 
+Postpartum Monitoring Form.
+1. Have you used a blood loss measuring 
+tool?
+2. What was challenging when placing the 
+tool and checking the blood volume?
+3. What can you do to make it easier?
+Immediately after giving uterotonic
+ 
+ 
+9
+• During the course, use the blood loss measurement tool 
+available at the facility.
+• If there is no blood loss measurement tool, clinical judgment 
+is still used to trigger the PPH bundle.
+9b
+
+ 
+ 
+Blood loss assessment activity
+How accurate is visual 
+estimation of blood loss?
+10
+
+How accurate is visual estimation of blood loss?
+Set up four stations with containers 
+holding different amounts of blood, 
+labelled A, B, C, D:
+A. White towel or cloth, with 600 mL.
+B. Gauze bandage, with 100 mL.
+C. Liquid in a basin, with 300 mL.
+D. Blood clot (red fruit jam), with 500 mL.
+2. Read these instructions
+• Go for a short break to walk by stations. 
+• Estimate the blood loss at each station 
+and write it down.
+3. Discuss
+• What were your estimates? 
+• Are they different among the group?
+• What are the consequences of 
+underestimating? 
+• Why is objective measurement of blood 
+loss recommended?
+4. Explain 
+• The purpose of this activity is to 
+create awareness of the importance of 
+measuring blood loss objectively. 
+• Visual estimation of blood loss is 
+unreliable and may delay diagnosis and 
+treatment of PPH. 
+• This is why using a tool to measure 
+blood loss is key to early diagnosis and 
+treatment of PPH.
+• Decision-making is guided by:
+ 
+—blood loss and rate of flow
+ 
+—uterine tone, and 
+ 
+—the woman’s vital signs. 
+• All women are at risk for life‐threatening 
+• Dangerous bleeding can be:
+ 
+—a slow, constant trickle
+ 
+—a heavy flow 
+ 
+—a large gush
+ 
+—large blood clots expelled. 
+Blood loss assessment activity 
+How accurate is visual estimation of blood loss?
+10b
+
+signs
+Be alert. 
+If PPH, start bundle
+ 
+ 
+11
+
+Be alert. If PPH, start bundle
+From the moment the baby is born, 
+continuously assess for any signs for PPH.
+Assess and record to diagnose PPH
+• Start recording when placenta delivers, 
+or 15 min after birth if placenta not 
+delivered: 
+ 
+—uterine tone
+ 
+—flow and amount of blood in the 
+measurement tool
+ 
+—BP, pulse and SI.
+• Repeat at least every 15 min for the first 
+hour or until stable.
+Diagnose PPH and start treatment 
+bundle if
+1) ≥300 mL of blood loss and a warning 
+sign such as: 
+• Atonic uterus, heavy blood flow, large 
+clots, or constant trickle of blood.
+• Change in vital signs: 
+ 
+—pulse >100 bpm
+ 
+—systolic BP < 100 mmHg
+ 
+—diastolic BP < 60 mmHg
+ 
+—SI >1.
+2) ≥500 mL or more of blood loss
+Start the PPH bundle immediately anytime 
+blood loss reaches 500 mL, even if the 
+woman has no other concerning signs.
+3) Your clinical judgment
+Any amount of blood loss but you are 
+concerned because:
+• Rate of blood loss and high risk for PPH:
+ 
+—previous PPH
+ 
+—twins
+ 
+—prolonged labour
+ 
+—pre‐eclampsia
+ 
+—infection
+ 
+—retained placenta
+ 
+—augmented labour
+ 
+—history – e.g. severe anaemia.
+• The woman was transferred to you after 
+PPH.
+Treatment with the PPH bundle
+• The PPH bundle is the first line of 
+treatment for PPH. 
+• It is a set of interventions that, together, 
+improve outcomes from PPH.
+• We will cover the bundle in Action 
+Plan 2.
+1. How will you diagnose PPH if a blood 
+loss measurement tool is not available?
+signs
+Be alert. 
+If PPH, start bundle
+ 
+ 
+11
+As you describe the definition of PPH, point to the Action Plan.
+11b
+
+Cut the cord and 
+perform controlled 
+ 
+ 
+12
+
+Cut the cord and perform controlled cord traction
+Cutting the cord 
+• Waiting 1–3 min to cut the cord helps 
+the baby with:
+ 
+—increased blood volume to support 
+lung expansion
+ 
+—more red blood cells to avoid 
+anaemia.
+• Cut immediately and get help if:
+ 
+—the woman is bleeding heavily
+ 
+—the baby is not breathing well.
+• Use sterile or disinfected instruments. 
+• Change gloves or remove outer pair if 
+double‐gloved, before cutting the cord.
+CCT 
+• Should only be done by skilled health 
+workers.
+• Begin CCT after signs of placental 
+separation – gush of blood or 
+lengthening of the cord.
+• Apply CCT only during contractions.
+• Never pull hard on the cord.
+• Stop if resistance is felt to avoid tearing 
+off the cord and uterine inversion.
+ 
+ Explain your actions respectfully.
+ 
+ Prevent infection.
+ 
+ Clamp and cut cord.
+ 
+ Wait 1–3 min after birth if both woman 
+and baby are stable.
+ 
+ Place clamps. Cut cord between clamps.
+Perform CCT
+ 
+ Clamp the cord close to perineum.
+ 
+ Look for signs of separation.
+ 
+ During a contraction:
+ 
+—gently pull down on the cord 
+ 
+—provide counter traction just above 
+the pubic bone to stabilize the uterus.
+ 
+ Do not pull suddenly or in other 
+directions.
+ 
+ Release traction between contractions.
+ 
+ Stop if you notice resistance.
+Deliver the placenta 
+ 
+ When visible at the opening of the 
+vagina:
+ 
+—hold placenta with both hands and 
+turn in one direction.
+ 
+—continue until placenta and all 
+membranes are delivered.
+ 
+ Place placenta in bowl/basin.
+ 
+ Check uterine tone immediately.
+If heavy bleeding, but placenta is 
+not out. Start PPH treatment bundle 
+immediately, then move to manual 
+removal. We will discuss this more later.
+Cut the cord and 
+perform controlled 
+ 
+ 
+12
+12b
+
+When the placenta is out
+Check tone, massage if soft, 
+check bleeding
+ 
+ 
+13
+
+Check tone, massage if soft, check bleeding
+A soft uterus is the #1 cause of PPH
+• Always check tone immediately after 
+the placenta is delivered.
+• Monitor and massage the uterus when 
+soft to help prevent PPH.
+• Uterine tone can change quickly. 
+• Check the uterus at least every 15 min 
+for the first hour after birth.
+Assessing tone
+• A hard uterus feels like your forehead 
+and does not need massage.
+• A soft uterus feels like the tip of your 
+nose and needs massage.
+• The uterus should be firm at midline, 
+and approximately level or below the 
+umbilicus.
+Soft uterus
+• If the fundus rises, is off to the side or 
+becomes soft again:
+ 
+—it may be full of clots
+ 
+—the bladder may be full.
+• Massaging helps contract and expels 
+blood clots.
+• Encourage frequent urination. A full 
+bladder may slow uterine contraction. 
+ 
+ Place hand on abdomen around the 
+umbilicus to find the uterus.
+ 
+ Check – it should feel like your forehead.
+If soft
+ 
+ Firmly rub the top of the uterus, 
+wrapping towards the back.
+ 
+ Guard the uterus with your other hand 
+while you massage.
+ 
+ Massage to cause a contraction and 
+express clots.
+ 
+ Sweep blood and clots into the 
+measurement tool. 
+ 
+ Encourage urination.
+ 
+ Catheterize if bladder is full and she is 
+unable to urinate.
+ 
+ Recheck uterine tone, massage if soft.
+ 
+ Assess and record on the Postpartum 
+Monitoring Form.
+1. True or false: once the uterus contracts 
+or gets hard, it will always stay hard.
+ 
+—False – A uterus can lose tone and 
+begin to bleed.
+2. Why might a uterus not contract?
+ 
+—There may be retained tissue, a 
+ruptured uterus, or the woman’s 
+bladder may be full.
+When the placenta is out
+Check tone, massage if soft, 
+check bleeding
+ 
+ 
+13
+13b
+
+ 
+ 
+14
+
+After delivering the placenta
+• First, ensure good uterine tone and 
+no PPH.
+• Then check the placenta and 
+membranes for completeness – identify 
+missing lobes or fragments.
+• Any retained tissue can cause 
+haemorrhage and infection – even a 
+piece of membrane.
+• If the placenta is not complete, missing 
+lobes must be removed manually. We 
+will review this later.
+Show video Examining the placenta 
+(4 min) or demonstrate using the 
+simulator.
+ 
+ Cup the placenta in your hands, 
+maternal side facing up.
+ 
+ Check if the lobes fit together and if any 
+are missing.
+ 
+ Hold the placenta upside down by the 
+cord. 
+ 
+ With opposite hand, spread out the 
+membranes to recreate the sac.
+ 
+ Check the membranes for missing 
+pieces.
+1. If a piece of the placenta or membrane 
+stays in the uterus, why does the woman 
+bleed more? 
+ 
+—The uterus cannot contract to 
+squeeze the blood vessels and stop 
+the bleeding.
+ 
+ 
+14
+14b
+
+ 
+ 
+
+Check for tears and repair
+• 
+• Trauma results in tears – another cause 
+of PPH.
+• If there is bleeding but the uterus is firm 
+and the placenta is complete, tears are 
+likely the cause.
+• Assess gently and thoroughly – tears can 
+be difficult to see.
+• The risk of bleeding from tears increases 
+in case of:
+ 
+—female genital mutilation or cutting
+ 
+—episiotomy
+ 
+—large baby
+ 
+—augmented or obstructed labour
+ 
+—assisted vaginal birth.
+Act within your scope of practice. Refer 
+to more experienced health workers when 
+tears are beyond your scope.
+Demonstrate using the simulator and a 
+volunteer as the woman.
+ 
+ Obtain consent and ensure privacy.
+ 
+ Explain your actions and be gentle.
+Assess for tears
+ 
+ Ensure good lighting.
+ 
+ Gently wipe away blood and clots from 
+the vagina and cervix.
+ 
+ Assess the extent of the tears and 
+related bleeding.
+ 
+ Respond based on your scope of 
+Manage tears
+ 
+ Follow local protocols.
+ 
+ Apply firm pressure with a sterile gauze.
+ 
+ Continue pressure until bleeding stops, 
+or suturing starts.
+ 
+ Do not place soaked gauze in the tool.
+1. How do you manage serious lacerations 
+in your facility?
+2. Is someone available at all times to 
+repair tears if you cannot?
+ 
+ 
+15b
+
+If bleeding is normal and uterus is hard
+ Continue care for 
+woman and baby
+ 
+ 
+16
+
+Continue care for woman and baby
+Continue monitoring both woman and 
+baby for quality care. 
+Assess the baby 
+• Check colour, temperature, breathing, 
+and cord. 
+• Record on the newborn chart.
+• Start skin‐to‐skin and encourage 
+breastfeeding. 
+Assess the woman
+• Check uterine tone, blood loss, flow, 
+pulse and BP.
+• Record on the Postpartum Monitoring 
+Form.
+Repeat assessments and record
+• Every 15 min for the first hour. 
+• Then every 30 min for the next 2 h. 
+Engage woman to prevent PPH
+• Teach the woman how to check and 
+massage her uterus.
+• Encourage frequent urination. 
+• Ask her to speak up if she notices 
+After one hour 
+• If stable and no bleeding:
+ 
+—remove the blood loss measurement 
+tool 
+ 
+—move her to the postpartum ward. 
+• Women and babies should stay 
+together, in the facility, for 24 h after a 
+normal birth. 
+1. Why should you keep woman and baby 
+under your care for at least an hour?
+1. Why should you assess and record 
+repeatedly, as you give care?
+ 
+—Her status can change quickly – check 
+often to respond fast.
+ 
+—To see trends and diagnose PPH early.
+ 
+—To refer to the record when 
+communicating with team.
+ 
+—So team members can quickly see the 
+woman’s status and know what care 
+has been given.
+2. If Mrs. A’s BP is 110/74 and her pulse is 
+90, what is her SI?
+ 
+—90/110 = SI 0.81 = <1.
+3. If Mrs. B’s BP is 110/74 and her pulse is 
+112, what is her SI?
+ 
+—112/110 = SI 1.02 = >1.
+4. Which woman has a SI that is a warning 
+sign and why?
+ 
+—Mrs. B because her pulse is higher 
+than her systolic BP, meaning her 
+SI is >1.
+If bleeding is normal and uterus is hard
+ Continue care for 
+woman and baby
+ 
+ 
+16
+16b
+
+ 
+ 
+Scenario practice 1
+PPH prevention
+17
+
+Scenario practice 1
+Immediately after birth
+ 
+ Check for 2nd baby 
+ 
+ Give uterotonic within one min 
+ 
+ Help woman be comfortable in bed 
+ 
+ Place blood loss measurement tool
+ 
+ Clamp and cut cord (1–3 min) 
+ 
+ Gentle cord traction during contractions
+ 
+ Hold placenta in both hands
+ 
+ Twist membranes
+Simulator: 
+• Allow placenta to be delivered intact. 
+• Keep uterus hard and blood flow very light 
+when placenta delivers.
+Example prompts if steps missing: Does she 
+need medication? Is the placenta out? 
+Check tone, placenta and tears
+ 
+ Communicate with woman
+ 
+ Check tone, massage if soft
+ 
+ 
+Simulator: Stop bleeding.
+Example prompt: Did you remember to check 
+tone/placenta/tears?
+ 
+ Check for PPH
+ 
+ 
+ Check BP, pulse and SI
+ 
+• Blood loss: what is in the tool, ensure it remains 
+below 500 mL
+• Blood flow: no bleeding
+• Pulse: 95 bpm
+• BP: 110/65 mmHg
+Example prompt: Does she have PPH? 
+Say: 15 min have passed. What will you do now?
+ 
+ Check for PPH
+ 
+ 
+ Check BP, pulse and SI
+ 
+ Communicate with woman 
+ 
+ Continue to monitor
+• Blood loss: less than 300 mL
+• Blood flow: no bleeding
+• Pulse: 92 bpm
+• BP: 116/68 mmHg
+Example prompt: Is she OK? Did you record in 
+the Postpartum Monitoring Form?
+ 
+ 
+—baby on woman’s chest with cord attached
+ 
+—be ready for very light bleeding once placenta 
+is delivered.
+• Actively prevent PPH immediately after birth.
+• Use Postpartum Monitoring Form to guide care.
+• Provide respectful care.
+• Health worker
+“You are caring for me, Mrs. C, a G2P2, and 
+I just gave birth to a healthy baby after an 
+uncomplicated labour. The baby is crying and the 
+placenta is not delivered.” 
+• Let us look at the Postpartum Monitoring Form.
+ 
+— Ensure it is filled in correctly.
+Scenario practice 1
+PPH prevention
+17b
+
+Placenta is not out after 15 min
+Empty bladder and 
+repeat controlled 
+ 
+ 
+18
+
+Empty bladder and repeat controlled cord traction
+• We will review problems that can 
+happen before PPH. 
+• Prompt treatment can prevent PPH.
+• The placenta will usually deliver within 
+15 min, when a uterotonic is given for 
+prevention. 
+• If it takes longer than 15 min:
+ 
+—encourage an empty bladder
+ 
+—repeat CCT.
+If PPH, but placenta is not out
+Start PPH bundle immediately, then 
+move to manual removal.
+1. Why should you never pull on the 
+placenta or cord when you feel 
+resistance? 
+ 
+—Because you might tear the cord off or 
+pull the uterus out.
+2. How does turning the placenta reduce 
+the risk of leaving tissue behind? 
+ 
+—It helps it form a rope with the 
+membranes, which is stronger and 
+less likely to leave pieces behind.
+Placenta is not out after 15 min
+Empty bladder and 
+repeat controlled 
+ 
+ 
+18
+Introduce by saying, “We will now review complications on the 
+yellow zone of Action Plan 1”
+18b
+
+Placenta not out after 30 min 
+or retained fragments
+Remove manually 
+ 
+ 
+19
+
+Remove manually
+• Perform manual removal if:
+ 
+—the placenta is not out after 30 min 
+ 
+—or the placenta is not complete.
+• If PPH before the placenta is out: 
+ 
+—start PPH bundle immediately, 
+ 
+—then move to manual removal.
+Suspect placenta accreta if unable to 
+remove the placenta or tissue is very 
+adherent. Call for help and advanced 
+care. Proceed to laparotomy and possible 
+total hysterectomy
+If PPH start the bundle immediately.
+• Show video Manual removal of the 
+placenta (5 min) or demonstrate using 
+the simulator. 
+• Ask participants to practise in pairs and 
+provide guidance.
+Provide respectful care and 
+prepare
+ 
+ Obtain consent and ensure privacy.
+ 
+ Explain your actions and be gentle.
+ 
+ Secure an IV if not in place.
+ 
+ Ensure empty bladder.
+ 
+ Give pain medication and a single dose 
+of antibiotics – follow protocols.
+ 
+ Wash your hands, and put on long 
+sterile gloves.
+Perform manual removal 
+ 
+ Hold umbilical cord with a clamp.
+ 
+ Pull gently, using the cord as a guide.
+ 
+ Form the hand into a cone and insert it 
+into the uterus.
+ 
+ Follow the cord to locate the placenta.
+ 
+ Feel for the edge of the placenta.
+ 
+ Identify the rough surface behind it.
+ 
+ Sweep fingers gently back and forth to 
+separate it from the uterine wall.
+ 
+ Confirm total separation of placenta.
+ 
+ Provide counter‐traction to the fundus 
+abdominally with your other hand.
+ 
+ Withdraw your hand bringing the 
+placenta out with it.
+Placenta out but incomplete
+ 
+ Using the same basic procedures, 
+explore the uterus and remove retained 
+lobes or tissue.
+Check tone and placenta 
+ 
+ Check uterine tone.
+ 
+ Massage if soft.
+ 
+ Examine placenta for completeness.
+ 
+ Check for PPH:
+ 
+—if PPH, start treatment bundle
+ 
+—if no PPH, give oxytocin with 20 IU 
+in 1 L Ringer’s Lactate (RL) or normal 
+saline (NS) IV, over 4 h.
+ 
+ Assess and record – tone, total blood 
+lost, blood flow, pulse and BP.
+Placenta not out after 30 min 
+or retained fragments
+Remove manually 
+ 
+ 
+19
+19b
+
+MODULE 3 
+Treatment with the PPH bundle
+M
+O
+TXAT
+IVIV
+Examine
+E
+Diagnose and treat PPH early
+PPH bundle
+min
+
+• Many deaths from PPH at both vaginal 
+and caesarean births can be prevented 
+with:
+ 
+—prompt recognition with the 
+objective blood loss measuring tool 
+and warning signs/vital signs 
+ 
+—prompt treatment with the PPH 
+bundle.
+Early diagnosis 
+Early diagnosis is the first step and it 
+begins with you. 
+• Blood loss ≥ 300 mL with any other 
+warning sign, or
+• Blood loss ≥ 500 mL, or
+• Clinical judgment.
+If PPH, call for help and start 
+treatment bundle
+• A clinical bundle is a set of interventions 
+that, when given together, improves 
+outcomes.
+• For the PPH clinical bundle, use the 
+mnemonic MOTIVE to remember the 
+interventions: 
+ 
+—massage the uterus to stimulate 
+contractions 
+ 
+—oxytocic (uterotonic) drugs to 
+stimulate contractions 
+ 
+—TXA prevents clots from breaking 
+down 
+ 
+—IV access/fluids 
+ 
+—examine to find the cause of 
+After the PPH bundle, escalate care if 
+bleeding persists, the cause is unclear, or 
+cannot be managed.
+When the woman gave birth 
+elsewhere, you may not know the 
+amount of blood lost. Rely on your 
+assessment and clinical judgment. 
+When in doubt, treat.
+Practice
+Taking a “quick pulse”
+• Count your heart beat at your neck or 
+wrist for 6 seconds, using a watch or 
+clock. 
+• Multiply this number by 10 for the quick 
+pulse rate.
+1. If a woman has lost <500 mL of blood but 
+>300 mL, what are the warning signs that 
+would have you diagnose PPH and begin 
+treatment? 
+ 
+—Pulse >100, or systolic BP <100, or 
+diastolic BP <60 or a SI >1 (pulse > 
+systolic BP)
+ 
+—Rapid blood flow, large clots, history 
+of anaemia.
+MODULE 3 
+Treatment with the PPH bundle
+M
+O
+TXAT
+IVIV
+Examine
+E
+Diagnose and treat PPH early
+PPH bundle
+min
+Point to each letter on the front of this page as you explain 
+what it stands for. Do not go into detail now, you will 
+explain more later.
+20b
+
+21
+
+When you diagnose PPH
+• Shout for help and emergency 
+equipment and medication.
+• Do a rapid assessment for shock. 
+• Explain your actions to the woman and 
+her companion.
+• Communicate with the health team and 
+establish roles.
+Tools for team communication
+• Good team communication saves lives.
+• It helps reduce errors, especially when 
+calling for help or handing over care.
+• We will review two techniques: 
+ 
+—SBAR to present a clinical case to 
+team members in a structured way
+ 
+—closed-loop communication to 
+confirm clear understanding. 
+1. SBAR 
+Act out the following example explaining 
+what the letters stand for. 
+• Situation: What’s happening now?
+ 
+—Please, come help me with Mariam! 
+She gave birth an hour ago and is 
+now bleeding heavily.
+• Background: What led up to this?
+ 
+—She had a normal bith, but has 
+lost 350 mL of blood. She received 
+oxytocin after birth.
+• Assessment: What do you think is 
+going on? 
+ 
+—I think she may be having PPH. Her 
+pulse is 110, BP 90/60, and the uterus 
+is soft.
+• Recommendation: What do you need?
+ 
+—I need you to help me. We need to 
+start the PPH bundle so please bring 
+the emergency trolley.
+2. Closed-loop communication
+Ask two participants to act out the 
+example of closed-loop on page 10 of the 
+Provider Guide. 
+Practice
+Read with participants the SBAR case on 
+page 11 of the Provider Guide.
+1. Individual reflection (2 min)
+ 
+—Review the SBAR template in the 
+Provider Guide.
+ 
+—Based on the case, how would you 
+use it when calling a colleague?
+2. Share-out (5 min)
+ 
+—One participant demonstrates to the 
+larger group how they would use the 
+tool to communicate this case.
+• Do you have an emergency trolley or 
+kit? If not, how could you create one? 
+• What was easy or difficult about using 
+SBAR and closed-loop?
+• How could this help in real 
+emergencies?
+• Why is it important to establish roles?
+21
+21b
+
+22
+
+Starting the PPH bundle
+• Administer all interventions, even if the 
+woman improves after only one or two. 
+• The order does not matter.
+• Aim to finish all interventions in 15 min. 
+Massage the uterus 
+• To cause contraction, expel blood and 
+clots, assess for distended bladder. 
+• If alone, massage first, then move on. 
+Give oxytocin/uterotonic 
+• Give oxytocin 10 IU IV:
+ 
+—diluted in 100–500 mL of crystalloid 
+fluids as fast as possible (preferable to 
+avoid hypotension)
+ 
+—or as bolus over 1–2 min.
+• If no IV access:
+ 
+—give oxytocin 10 IU IM or misoprostol 
+ 
+—call for help to start IV.
+Give TXA
+• 1 g IV over 10 min. Faster administration 
+can cause hypotension. 
+• TXA and oxytocin can be given in the 
+same line, but not in the same bag.
+• Do not start TXA if: 
+ 
+—3 h or more since birth
+ 
+—or if there is a contraindication or 
+hypersensitivity to TXA, known 
+thromboembolic event, renal failure 
+or history of convulsions. 
+• Use 18 gauge cannula or largest available. 
+• Collect blood for: 
+ 
+—bedside haemoglobinometer, or
+ 
+—lab testing for Hb, cross‐match, and 
+clotting studies if available.
+• Begin infusion of crystalloid fluids NS or 
+RL, if not given with oxytocin already.
+• If clinically indicated, insert 2nd IV line 
+with crystalloid fluids (NS or RL) for fluid 
+resuscitation.
+Examine for causes
+• As you are providing care, notice 
+potential causes such as:
+ 
+—atony when you massage
+ 
+—tears as you check blood flow.
+• We will review examination shortly.
+During and after a caesarean 
+section (CS)
+• Challenges:
+ 
+—there is often more bleeding
+ 
+—interpreting the haemodynamic 
+signs which may be affected by 
+anaesthesia.
+• Most PPH bundle components are 
+already given.
+• Use clinical judgment to initiate 
+treatment and decide to give TXA.
+1. How is the PPH bundle different to your 
+current practice?
+2. What challenges do you see in this new 
+practice?
+3. How do you measure blood loss at CS? 
+22
+22b
+
+ Examine and address 
+causes
+23
+
+ Examine and address causes
+The last E in MOTIVE is for examination.
+Once the other interventions in the 
+bundle have been started:
+• Communicate with the woman and 
+companion. Explain respectfully what is 
+happening.
+• Examine thoroughly to identify and 
+address all causes of bleeding.
+• Begin with tone and work through 
+causes. 
+• Record findings and actions.
+Examine and address
+Tone 
+• Recheck frequently that it remains firm.
+• Check if fundus is firm, below umbilicus 
+and midline.
+• If the uterus is soft, massage to improve 
+tone and expel clots.
+• Assess for full bladder. Encourage 
+frequent urination.
+• Catheterize the bladder if she cannot 
+urinate or the bleeding is heavy.
+Tissue 
+• Inspect the placenta carefully for 
+missing lobes, fragments or membranes.
+• Inspect vagina, cervix and uterus to 
+remove clots and tissue.
+• Remember, if the placenta is adherent, 
+suspect accreta and surgery is needed. 
+Trauma 
+• Check for perineal vaginal and cervical 
+tears, and repair.
+• Refer if you are unable to do the repair.
+• If inverted uterus, replace and follow 
+local protocols.
+• If you suspect uterine rupture, seek 
+advanced care.
+Thrombin/coagulopathies 
+• If possible, collect blood for bedside or 
+lab testing for: 
+ 
+—Hb 
+ 
+—type and cross match 
+ 
+—prothrombin time, partial 
+thromboplastin time and platelets
+ 
+—fibrinogen 
+ 
+—coagulopathy. 
+Advanced Care Note 
+If within your scope of practice and 
+training, provide additional care 
+per local protocols. If beyond your 
+scope of practice, seek advanced care 
+ Examine and address 
+causes
+23
+23b
+
+Scenario practice 2
+Immediately following birth
+24
+
+Scenario practice 2
+Assess and communicate
+ 
+ Assess
+ 
+ 
+ Call for help and emergency equipment
+ 
+ 
+ 
+Simulator: Uterus soft, 500 mL in measurement 
+tool, light blood flow.
+Example prompt: Is her bleeding normal? Do you 
+need help?
+ 
+ Massage uterus
+ 
+ 
+ Give Oxytocin (10 IU in 100–500 mL IV, as fast 
+as possible)
+ 
+ Give TXA (1 g in 10 mL IV, 10 min)
+Example prompt: Does she need medication?
+Continue PPH bundle (Examine)
+ 
+ 
+ Check uterus
+ 
+ Check bladder
+ 
+ 
+ 
+ Check for clots and fragments
+Results 
+• Uterus soft
+• Bladder empty
+• Placenta intact
+• No tears
+• No clots or fragments
+Example prompt: Why is she bleeding? Is the 
+placenta intact?
+ 
+ 
+ 
+ 
+• Blood loss: more than 500 mL
+• Pulse: 90 bpm
+• BP: 110/64 mmHg 
+Example prompt: How is she now? Did you fill 
+out the Postpartum Monitoring Form?
+ 
+ 
+ 
+—placenta in tray, intact
+ 
+—500 mL or more blood in measuring tool
+ 
+—light blood flow
+ 
+• Diagnose PPH at 500 mL with no other clinical 
+signs.
+• Treat PPH with the PPH bundle.
+• Health worker
+You are caring for me, an 18 year old G1P1. I gave 
+birth to my first baby without problems 10 min 
+ago. You gave me 10 IU oxytocin IM within 1 min. 
+You delivered the placenta without problems. I 
+am feeling good, breastfeeding my baby. Please 
+care for me. 
+• Did you diagnose PPH?
+ 
+• Why did you diagnose PPH?
+ 
+—The blood loss was 500 mL or more, though 
+there were no other warning signs.
+• Let’s look at the postpartum monitoring form. 
+ 
+—Ensure it is filled in correctly. 
+ 
+Scenario practice 2
+Immediately following birth
+24b
+
+Scenario practice 3
+15 min after birth
+25
+
+Scenario practice 3
+• Read about facilitating a scenario on page 1b.
+ 
+ 
+ 
+—placenta in tray, intact
+ 
+—300 mL blood in measuring tool
+ 
+—light blood flow
+ 
+• Appropriately use the Postpartum Monitoring 
+Form to diagnose PPH.
+• Diagnose PPH < 500 mL with hemodynamic 
+warning signs.
+• Treat PPH with the PPH bundle.
+• Health worker 1
+• Health worker 2
+You are caring for me, a 29 year old. I gave birth 
+to my third baby without problems 15 min ago. 
+You gave me 10 IU oxytocin IM within 1 min. You 
+delivered my placenta without problems. You 
+have come to check on me. Please care for me. 
+• Was her SI >1?
+ 
+• Did you diagnose PPH?
+ 
+• Why did you diagnose PPH?
+ 
+—Any of: SI >1, pulse >100, systolic BP <100
+• Let’s look at the Postpartum Monitoring Form. 
+ 
+—Ensure it is filled in correctly.
+ 
+Assess, record and communicate
+ 
+ 
+ 
+ 
+ 
+ Call for help and emergency equipment
+ 
+ 
+ 
+• Uterine tone: soft
+• Blood loss: less than 500 mL
+• Blood flow: light
+• Pulse: 110 bpm
+• BP: 90/64 mmHg
+Simulator: Uterus soft, light blood flow.
+Example prompts if steps missing: Does she 
+have a trigger? What is her SI? Is it >1? Can 
+somebody help you?
+ 
+ Massage uterus
+ 
+ 
+ Give Oxytocin (10 IU in 100–500 mL IV, as fast 
+as possible)
+ 
+ Give TXA (1 g in 10 mL IV, 10 min)
+Simulator: Uterus soft, light blood flow.
+Example prompt: Does she need medication?
+Continue PPH bundle (Examine)
+ 
+ 
+ Check uterus
+ 
+ Check bladder
+ 
+ 
+ 
+ Check for clots and fragments
+Results 
+• Uterus firm
+• Bladder empty
+• Placenta intact
+• No tears
+• No clots or fragments
+Simulator: After bundle, uterus hard and stop 
+blood flow.
+Example prompt: Did you check for (tone, tears, 
+placenta?)
+ 
+ 
+ 
+ 
+• Blood loss: (see what is in the tool)
+• Pulse: 98 bpm
+• BP: 104/68 mmHg , SI 0.94 or <1
+Example prompt: How is she now? Did you fill 
+out the Postpartum Monitoring Form?
+Scenario practice 3
+15 min after birth
+25b
+
+Scenario practice 4
+26
+
+Scenario practice 4
+Assess and communicate
+ 
+ Assess
+ 
+ 
+ Call for help and emergency equipment
+ 
+ 
+ 
+Simulator: Uterus soft, heavy blood flow. Placenta 
+will not deliver. 
+Example prompts if steps missing: Does she 
+have PPH? Can somebody help you? Should you 
+use SBAR?
+ 
+ Massage uterus
+ 
+ 
+ Give Oxytocin (10 IU in 100–500 mL IV, as fast 
+as possible)
+ 
+ Give TXA (1 g in 10 mL IV, 10 min)
+ 
+ Examine
+Placenta not delivered. 
+Example prompt: Does she need an 
+intervention?
+Prepare for manual removal
+ 
+ Obtain consent and ensure privacy
+ 
+ 
+ Give pain relief and antibiotic
+ 
+ Wash hands, wear long sterile gloves
+Placenta not delivered. 
+Manually remove the placenta
+ 
+ Pull cord gently and follow as guide
+ 
+ Insert cone‐shaped hand through cervix
+ 
+ Detach placenta gently
+ 
+ Provide counter traction to the uterus
+ 
+ Remove hand with placenta
+Simulator: Allow placenta removal. 
+Contract uterus and stop bleeding.
+Example prompt: Do you need to remove the 
+placenta?
+Once placenta is out
+ 
+ Check tone, massage if soft
+ 
+Simulator: Uterus hard, no blood flow.
+Example prompt: Did you check the placenta?
+ 
+ 
+ 
+ 
+• Blood loss: (whatever is in the tool)
+• Pulse: 88 bpm
+• BP: 130/72 mmHg 
+Example prompt: How is she now? Did you fill 
+out the Postpartum Monitoring Form?
+ 
+ 
+ 
+—placenta not out
+ 
+—200 mL blood in measuring tool
+ 
+—heavy blood flow
+ 
+• Identify PPH with retained placenta.
+• Start PPH bundle first.
+• Manually remove placenta according to protocol.
+• Health worker 1
+• Health worker 2
+You are caring for me, Ms. S. and my first baby 
+was born with no problems 20 min ago. You gave 
+me 10 IU oxytocin IM within 1 min. You attempted 
+CCT but my placenta has not delivered. Please 
+care for me. 
+• Did you diagnose PPH?
+ 
+• Why did you diagnose PPH?
+ 
+—Retained placenta at 20 min with heavy 
+• Let’s look at the Postpartum Monitoring Form.
+ 
+—Ensure it is filled in correctly.
+ 
+Scenario practice 4
+26b
+
+MODULE 4
+if bleeding continues
+27
+
+The last E in MOTIVE is also for escalation.
+• If bleeding: 
+ 
+—is heavy while giving the bundle, or
+ 
+—continues after bundle is complete, 
+ 
+—is more than 1000 mL at any time.
+• If a woman:
+ 
+—has extensive trauma or
+ 
+—has uterine inversion or
+ 
+—is hypotensive or unresponsive. 
+• If you are unable to identify or manage 
+the cause. 
+Act fast. The woman’s life is in danger. 
+Call for more help 
+• There should always be at least two 
+health workers during an emergency.
+• Request the most senior health worker 
+to urgently attend the woman. 
+• Always continue monitoring and give 
+what treatment you can while waiting 
+for help or transfer. 
+• Call for the anaesthetist if there is one at 
+this facility.
+Communicate and assign roles 
+• Use SBAR tool to communicate clinical 
+status. 
+• The most senior health worker leads the 
+team and assigns roles.
+• Use closed‐loop communication to 
+confirm understanding and completion 
+of tasks.
+Continually assess for shock 
+Early signs of shock
+• Fast or weak pulse > 100 bpm.
+• Systolic BP < 100 mmHg. 
+• SI >1 (pulse > systolic BP).
+Late signs of shock
+• Very low BP and weak pulse.
+• Rapid breathing >30 breaths/min.
+• Pale skin, including eyelids, mouth, 
+palms.
+• Sweating.
+• Change in mental status – anxiety, 
+confusion, unconsciousness.
+• Scanty urine output (<30 mL/h). 
+If shock – Check ABCs and manage
+• Open airway and ensure breathing.
+• If not breathing or in cardiac arrest, 
+begin resuscitation. 
+• Start oxygen at 6–8 L/min.
+• Assess circulation – BP and heart rate.
+• Insert second IV for crystalloid fluids and 
+blood transfusion. 
+• Support/increase blood volume.
+• Apply NASG if shock or risk of shock. 
+• Prepare for blood transfusion.
+Advanced care note 
+Transfer immediately while still providing 
+care if what the woman needs is beyond 
+the scope of your facility.
+MODULE 4
+if bleeding continues
+27
+27b
+
+If needed
+Arrange transfer 
+or surgery
+28
+
+Arrange transfer or surgery
+All facilities should have a formal referral 
+protocol, including for internal referrals.
+• The woman may need to be transferred:
+ 
+—to another facility or
+ 
+—to the surgical unit in your facility.
+Act fast 
+• Delay in care is a common reason for 
+PPH deaths. 
+• Don not wait until she is in shock to 
+initiate transfer.
+Prepare in advance 
+• Transfers may be complicated and delay 
+care. 
+• Visibly post contact information for 
+health workers, facilities, surgical and 
+transport teams. 
+• Communicate the need for transport 
+or surgery to your team and woman as 
+soon as possible. 
+• Explain to the woman and her family, 
+what is happening.
+Communicate with referral facility 
+or surgical team
+• Notify the referral facility or surgical 
+team of the transfer. 
+• Use SBAR to communicate with the 
+referral health worker. 
+• Write a note for the receiving facility 
+following national guidelines. Include:
+ 
+—assessment
+ 
+—diagnosis
+ 
+—care provided
+ 
+—last vital signs. 
+Care before and during transport 
+• If available, place NASG before transport. 
+• Never leave the woman alone. 
+• Continue care during referral and 
+transport.
+• Ensure all elements of the PPH bundle 
+were given, plus the 2nd dose TXA.
+• Continue the oxytocin and crystalloid IV 
+infusion.
+• Monitor and record uterine tone, blood 
+flow and loss, pulse and BP.
+• Always transfer the baby with the 
+woman. Keep them warm.
+Minimize bleeding during transfer
+• Insert indwelling catheter to keep the 
+bladder empty. 
+• For bleeding tears you cannot repair: 
+continue to apply firm, steady pressure 
+with a sterile cloth. 
+• Continue massage or bimanual uterine 
+compression.
+• Use bimanual or aortic compression, as 
+needed. 
+Advanced Care Note 
+If participants have additional training 
+and authorization to provide more 
+advanced care, they should do so prior to 
+and during transport. 
+If needed
+Arrange transfer 
+or surgery
+28
+28b
+
+If available
+ Rapidly apply NASG
+29
+
+ Rapidly apply NASG
+• The NASG applies pressure to the lower 
+body and abdomen.
+• It forces blood to the heart, lungs, and 
+brain to prevent shock, or stabilize a 
+woman in shock.
+• NASG does not treat PPH but gives you 
+time to seek treatment.
+When to use NASG
+• Any time there is a delay in care 
+– transfer, waiting for blood, surgery, or 
+procedures.
+• Keep it on during all procedures, 
+transport and surgery. 
+• Remove per protocol, only when 
+bleeding stops and the woman is stable.
+Usage tips
+• Apply segments with strong pressure, 
+but allow breathing in the abdominal 
+area.
+• It’s faster with two people, but only one 
+should handle segments 4, 5, and 6 to 
+avoid overtightening.
+• Leave the knees exposed for bending.
+• For short women, fold segment 1 into 
+segment 2 and start from segment 2. 
+• Apply the NASG even if the woman is 
+unconscious.
+Procedures and treatment while 
+NASG is in place
+• The NASG stretches for checking uterine 
+tone and massage.
+• It can remain on during vaginal 
+procedures and toileting – slide 
+segment 4 if needed.
+• Leave it on during surgery, but remove 
+segments 4, 5, and 6 before incision, 
+replacing them afterward.
+In your facility, who can:
+1. Train staff on cleaning and storage of the 
+NASG?
+2. Manage NASG transport and 
+maintenance between referral and 
+referring facilities?
+3. Train new health workers on the NASG 
+protocol?
+If available
+ Rapidly apply NASG
+29
+Before the course day, determine if NASG is available at this 
+facility. If it is, check the protocol for timing of use. 
+If NASG is not available, skip this page and the next.
+29b
+
+Skills practice – NASG
+30
+
+Skills practice – NASG
+Skills practice
+Skip this page if NASG is not available in the participants’ facility.
+• Divide participants in groups, with one NASG per group.
+• Gather necessary equipment and ensure the NASG is laid out flat.
+• Refer to page 33 in the Provider Guide.
+2. Demonstrate
+Show video Using an anti‐shock garment (9:15 min) or demonstrate 
+with help of a volunteer using the checklist on this page.
+3. Practise
+Allow participants to practise. Use the checklist, also available in 
+Provider Guide page 33.
+Skills practice checklist
+ 
+ Explain your actions and be gentle.
+ 
+ Assign roles in the team.
+Place the woman on the NASG
+ 
+ Roll her onto her side.
+ 
+ Align the top of the NASG at her lowest rib.
+ 
+ Align the pressure ball at the level of umbilicus.
+ 
+ Align the dotted line with her spine.
+ 
+ Roll her to the other side and flatten the garment.
+ 
+ Roll her to her back again.
+ 
+ Close each segment pair, starting from the ankles and ending with 
+6th segment.
+ 
+ Use sufficient strength while ensuring the woman can breathe 
+normally.
+Check fit
+ 
+ Place 1–2 fingers under the top of each closed segment.
+ 
+ Pull up on the fabric, release and listen for a snapping sound.
+ 
+ If no snapping sound, tighten the segment.
+ 
+ Check woman can breathe comfortably.
+ 
+ Loosen segments 5 and 6 if necessary .
+Monitoring during use
+ 
+ Continue to check tone, blood loss and flow, pulse and BP, per 
+protocol.
+ 
+ Note any signs of shortness of breath or decreased urine output.
+Before removal
+ 
+ Ensure the following has happened for at least 2 h:
+ 
+—pulse is 100 bpm or less
+ 
+—systolic BP is 100 mmHg or greater
+ 
+—bleeding is reduced to 50 mL/h or less.
+ 
+ Ensure IV fluids continue.
+Removing the NASG
+ 
+ Begin removal by opening ankle segments only.
+ 
+ Wait 15 min and check that:
+ 
+—pulse does not increase more than 20 bpm 
+ 
+—systolic BP does not decrease more than 20 mmHg.
+ 
+ If vitals stable, open next segment pair in order, wait 15 min, then 
+check vital signs.
+ 
+ Continue in the same way with remaining segments.
+ 
+ If any vital signs change beyond limits:
+ 
+—quickly re‐secure all segments starting from the last segment 
+opened 
+ 
+—check for bleeding source.
+After removal
+ 
+ Record procedure and observations in the Postpartum Monitoring 
+Form.
+ 
+ Continue to assess and record the woman’s vital signs and 
+condition.
+30b
+
+Health worker 1
+Continue massage, 
+catheterize bladder, 
+remove clots/debris
+31
+
+Continue massage, catheterize bladder, remove clots/debris
+There should always be at least two health 
+workers during an emergency. The first 
+health worker will focus on care at the 
+perineum and abdomen. 
+Actions include:
+1. Communicate with the woman, family 
+and team: 
+ 
+—explain what you are doing, and why 
+ 
+—let her know that she may feel 
+discomfort. 
+2. Massage:
+ 
+—expel clots contract the uterus 
+ 
+—monitor and report uterine tone and 
+3. Catheterize the bladder: 
+ 
+—use sterile technique and place a 
+catheter to empty the bladder 
+ 
+—ensure no urine goes into the blood 
+loss measurement tool. 
+4. Remove clots and debris:
+ 
+—ensure cervix is not blocked before 
+clearing the uterus 
+ 
+—remove clots and tissue to aid 
+contraction and prevent infection. 
+Ensure the uterus is clear before 
+considering UBT. If you cannot clear the 
+uterus, seek advanced care. 
+ 
+ Ensure privacy. Explain to the woman 
+what you will do and why.
+ 
+ Catheterize the bladder.
+Remove clots and debris from 
+the cervix 
+ 
+ Use sterile gloves.
+ 
+ Gently perform a vaginal exam until you 
+reach the cervix. It will feel swollen and 
+loose.
+ 
+ Check for clots and tissue in the 
+cervical os. 
+ 
+ Gently pull them out. 
+ 
+ At the same time, massage the fundus 
+with your other hand to assist removal 
+and stimulate contractions.
+Remove clots and debris from 
+the uterus
+If the uterus is not firm, and it is within 
+your scope of practice. 
+ 
+ Offer pain relief per local protocol, 
+before you begin.
+ 
+ Give a single dose of antibiotics:
+ 
+—Ampicillin 2 g or
+ 
+—Cefazolin 1 g IV. 
+ 
+ Wash your hands, use long, sterile 
+gloves.
+ 
+ Wrap sterile gauze around your index 
+and middle fingers.
+ 
+ Similar to manual removal of placenta:
+ 
+—form the hand into a cone and 
+ 
+—gently guide it into the uterus.
+ 
+ Wipe the interior of the uterus with the 
+gauze.
+ 
+ Bring out all debris as you remove your 
+hand. 
+ 
+ Ensure you remove all the gauze.
+ 
+ Check uterine tone and massage if soft.
+Health worker 1
+Continue massage, 
+catheterize bladder, 
+remove clots/debris
+31
+31b
+
+Health worker 2
+Start 2nd IV, 
+give additional uterotonics, 
+repeat TXA, 
+assess and record
+32
+
+Start second IV, give additional uterotonics and TXA second dose
+The second health worker will manage the 
+medications, IV and recording. If you are 
+alone, you will provide all treatments.
+Actions include: 
+1. Place a second IV line:
+ 
+—for additional IV fluid
+ 
+—to administer other medications
+ 
+—to allow for blood transfusion 
+ 
+—to allow for additional laboratory 
+tests per local protocols.
+2. Give additional uterotonics.
+3. Repeat TXA.
+4. Assess and record every 15 min or 
+more often until stable:
+ 
+—tone, blood loss and flow, as reported 
+by health worker
+ 
+—pulse and BP.
+• Act fast. If bleeding continues, she 
+may go into shock and die. Delays are a 
+common reason women die from PPH.
+Additional uterotonics
+The choice of uterotonic should be 
+based on availability and health worker’s 
+experience.
+Oxytocin 
+• 20 IU in 1 L crystalloid fluids (NS or RL) IV. 
+• Infuse at 40 drops/min over 4 h. 
+• Do not give more than 3 L of IV fluids 
+with oxytocin in 24 h. 
+• Maximum 60 IU in 24 h.
+• Consider other uterotonic if oxytocin 
+already infusing. 
+Ergometrine or ergometrine/oxytocin 
+fixed dose
+• Ergometrine:
+ 
+—200 μg IV or IM in 15 min
+ 
+—if needed, repeat every 4 h up to 5 
+doses (1 mg total) in 24 h.
+• Ergometrine/oxytocin fixed dose:
+ 
+—500 μg / 5 IU IM
+ 
+—do not repeat.
+• Use either if oxytocin unavailable or not 
+effective.
+• Do not use either if suspected retained 
+placenta or if hypertension cannot be 
+ruled out.
+Misoprostol
+• 800 μg SL – or PR if concerned about 
+pyrexia or under anaesthesia.
+Do not give heat-stable carbetocin for 
+treatment – only for PPH prevention.
+TXA second dose 
+• 1 g IV over 10 min
+• Give if bleeding:
+ 
+—continues more than 30 min after first 
+dose 
+ 
+—or restarts within 24 h after first dose.
+• Can be given in the same line as 
+oxytocin but not mixed in the same IV 
+bag. 
+Pause and reflect 
+If additional uterotonics and TXA fail, 
+move quickly to transfer/surgery.
+1. If oxytocin fails or is not available, how 
+do you choose which uterotonic to give?
+ 
+—Availablilty and health workers 
+experience.
+Health worker 2
+Start 2nd IV, 
+give additional uterotonics, 
+repeat TXA, 
+assess and record
+32
+32b
+
+Scenario practice 5
+Assessing after the PPH bundle
+33
+
+Scenario practice 5
+Act and communicate
+ 
+ Call for more help
+ 
+ 
+ 
+ 
+ Assess and record: 
+ 
+—uterine Tone
+ 
+—blood loss
+ 
+—blood flow
+ 
+—pulse and BP
+• Pulse: 112 bpm
+• BP: 94/60 mmHg
+Example prompt if steps missing: 
+• Can you get more help?
+• Should you use SBAR?
+• Should you take vital signs?
+ 
+ 
+ Catheterize bladder
+ 
+ Clear cervix, sweep uterus, massage
+ 
+ Insert second IV
+ 
+ Give IV fluids
+ 
+ Give additional oxytocic
+ 
+ Assess vital signs
+ 
+ Give 2nd dose of TXA
+ 
+ Closed-loop communication
+ 
+Simulator: After vaginal exam, tell participant 
+they cleared clots from cervix. Make uterus firm 
+and stop bleeding.
+Example prompts: 
+• Do you need another IV?
+• Can you do anything else to stop the bleeding?
+• Can you give more medications?
+ 
+ 
+ 
+• Blood loss: more than 1000 mL
+• Pulse: 98 bpm
+• BP: 108/60 mmHg
+Example prompt: How is she now?
+ 
+ 
+ 
+—550 mL blood in measuring tool
+ 
+—medium blood flow
+ 
+• Identify the PPH bundle has failed.
+• Escalate and manage care for refractory PPH.
+• Health worker 1
+• Health worker 2
+You are caring for me, Ms. T. and I gave birth an 
+hour ago. You gave me 10 IU oxytocin IM within 
+1 min for prevention. My placenta delivered a few 
+min later. My uterus would not contract and I bled 
+heavily. You completed the PPH bundle. Please 
+continue to care for me.
+• Why did you escalate her care? 
+ 
+—She continued to bleed after the bundle was 
+given.
+• Let us look at the Postpartum Monitoring Form. 
+ 
+—Be sure it is filled in and check the shock 
+indices. If not filled, ask what it was
+ 
+—First check: 1.87 or
+pulse > systolic BP = warning
+ 
+—Second check: 0.91 or 
+pulse < systolic BP = OK
+ 
+Scenario practice 5
+Assessing after PPH bundle
+33b
+
+Module 5
+Advanced interventions 
+and post-PPH care
+34
+
+By now you have: 
+• Completed the PPH bundle. 
+• Called for more help, assigned tasks. 
+• Inserted a 2nd IV and given extra doses 
+of medications.
+• Repaired tears, removed the placenta, 
+and clots and tissue as needed.
+• Applied NASG, if available.
+If bleeding continues, consider:
+• More than one cause of bleeding.
+• Uterine rupture, especially if augmented 
+labour or prior CS. 
+• Deep vaginal or cervical laceration.
+Remember – atony is the most common 
+cause of PPH. 
+Additional care includes
+Start safe blood transfusion
+• If the woman has severe or ongoing PPH 
+and there is a clinical need.
+• Or if the woman is severely anaemic:
+ 
+—Hb <7 g/dl, or
+ 
+—she looks anaemic clinically. 
+Repair deep vaginal and cervical tears
+• Recheck for vaginal and cervical 
+lacerations that might have been 
+missed.
+• Repair if within your scope, or refer.
+Apply bimanual compression 
+• As a temporizing measure. 
+• Squeeze the uterus to compress vessels, 
+decrease blood flow and express clots. 
+Insert UBT 
+• To compress blood vessels from the 
+inside of the uterus. 
+Apply aortic compression
+• As a temporizing measure. 
+• Often done for better visualization 
+when repairing a laceration or inserting 
+a UBT.
+Surgical interventions
+These interventions should only be 
+conducted by trained health workers.
+• When all other methods fail, these 
+surgical can interventions address the 
+causes of PPH directly: 
+ 
+—uterine compression sutures
+ 
+—uterine or uteroovarian artery 
+ligation
+ 
+—subtotal or total hysterectomy.
+• See page 51 in the Provider Guide 
+for details.
+• Prepare for surgery and provide 
+additional care in the operating room if:
+ 
+—blood loss >1 L, or
+ 
+—blood loss >500 mL with warning 
+signs:
+pulse >100 bpm
+systolic BP <100 mmHg
+diastolic BP <60 mmHg
+SI >1. 
+Module 5
+Advanced interventions 
+and post-PPH care
+34
+34b
+
+For temporary control of bleeding
+35
+
+Act quickly. Do not wait until the woman 
+is in shock to compress the uterus.
+• Squeeze the uterus between your hands 
+to reduce bleeding and buy time for 
+medications to work. 
+• Bimanual compression can be used 
+while awaiting placement of UBT or 
+surgery. 
+• This is painful, but lifesaving. Inform the 
+woman.
+• Do not use vaginal packing. It can 
+restrict optimal assessment of blood 
+loss and cause infection. 
+• Show video Uterine compression 
+(2:40 min) or demonstrate using the 
+simulator.
+• Ask participants to practise in pairs and 
+provide guidance.
+• As facilitator, wear the simulator with 
+the baby and placenta delivered. 
+Tighten the cervix. 
+Prepare
+ 
+ Tell the woman what you are about to 
+do, why, and that it will hurt.
+ 
+ Consider pain medication.
+ 
+ Wash hands and put on long sterile 
+gloves.
+ 
+ Form the hand into a cone and gently 
+guide it into the vagina.
+ 
+ Make a fist against the upper part of the 
+vagina and the uterus.
+ 
+ Place the other hand on the abdomen 
+at the fundus. 
+ 
+ Compress the uterus between your 
+hands for at least 5 min.
+ 
+ After 5 min, slowly remove hand and 
+check if bleeding restarts.
+ 
+ If bleeding restarts, resume 
+compression.
+ 
+ If no bleeding:
+ 
+—ensure IV infusion with oxytocin 
+continues
+ 
+—monitor closely.
+For temporary control of bleeding
+35
+35b
+
+ Insert uterine 
+balloon tamponade
+While compressing the aorta
+36
+
+ Insert uterine balloon tamponade
+• Insert a UBT only after completing the 
+PPH bundle and if it fails. 
+• Do not place UBT until retained tissue 
+and trauma have been ruled out.
+• Keep UBT supplies in PPH emergency kit. 
+• Consider aortic compression before 
+insertion to minimize bleeding for 
+better visualization. 
+Advanced care note 
+Health workers should act within their 
+scope of practice. UBT should only be 
+placed by health workers specifically 
+trained to do so.
+• Show video Aortic compression (2:50 
+min) and UBT manufacturer video 
+if available. Or demonstrate using a 
+simulator.
+• Use a postpartum uterus model or 
+500 mL bottle for practice. 
+• Ask participants to practise in pairs and 
+provide guidance.
+Aortic compression
+ 
+ Ensure the woman is on a firm surface.
+ 
+ Explain the procedure to her.
+ 
+ With thumb tucked, make a fist and 
+apply downward pressure on the 
+abdominal aorta – just above and to the 
+left of the umbilicus.
+ 
+ Palpate the femoral pulse with your 
+other hand. 
+ 
+ If still palpable, increase pressure.
+UBT insertion prep 
+ 
+ Check and remove any retained clots 
+and tissue.
+ 
+ Ensure deep tears are repaired.
+ 
+ Ensure empty bladder.
+ 
+ Administer antibiotics (ampicillin 2 g or 
+cefazolin 1 g IV).
+ 
+ Explain the procedure to the woman 
+and ensure privacy.
+UBT insertion 
+ 
+ Follow manufacturer’s checklist for 
+instructions.
+ 
+ Monitor blood loss. If still bleeding after 
+15 min, seek surgical help.
+ 
+ Record the procedure in the Postpartum 
+Monitoring Form.
+ 
+ Leave the UBT in place per 
+manufacturer’s instructions.
+UBT removal 
+ 
+ Remove per manufacturer’s instructions.
+ 
+ Monitor closely.
+ 
+ Assess and record tone, blood loss and 
+flow, pulse and BP.
+ Insert uterine 
+balloon tamponade
+While compressing the aorta
+36
+• Skip this page if
+ 
+—UBT is not in local guidelines, or
+ 
+—The facility does not meet WHO recommendations of 
+immediate access to surgery, blood, and PPH bundle 
+components. 
+• Use locally preferred UBT. 
+ 
+—Have manufacturer instructions available for use during 
+demonstration and practice.
+36b
+
+Repair deep tears
+37
+
+Repair deep tears
+• Tears that cause PPH are most often deep 
+vaginal or cervical tears.
+• Cervical tears often occur at 3 and 9 
+o’clock.
+• Bleeding from a tear may be slow, heavy, 
+or spurting from an artery. 
+• Seek advanced care if repair does not 
+stop bleeding – surgery may be required. 
+• Show video Cervical tears (5 min) or 
+demonstrate. Then practise.
+Vaginal tears – Identify 
+ 
+ Ensure privacy and inform the woman.
+ 
+ Ensure good lighting. 
+ 
+ Give IV sedative per protocol. Do not give 
+if in shock.
+ 
+ Wash hands and wear sterile gloves.
+ 
+ Clean perineum, vulva, and vagina with 
+antiseptic solution.
+ 
+ Gently separate the labia and assess 
+completely.
+ 
+ Wrap fingers in gauze and press on the 
+vaginal floor to expose the entire sulcus.
+Vaginal tears – Repair 
+ 
+ Draw 10 mL of 1% lignocaine into syringe.
+ 
+ Insert the needle from the bottom to the 
+apex on one side of the tear.
+ 
+ Withdraw plunger to ensure needle is not 
+in a blood vessel.
+ 
+ Inject medication as needle is withdrawn.
+ 
+ Repeat on other side of the tear. Wait 2 
+min for effect.
+ 
+ Repair in 2 layers:
+ 
+—interrupted sutures to close deep layer 
+first
+ 
+—continuous suturing starting just 
+beyond the apex to close the vaginal 
+mucosa.
+ 
+ Avoid suturing into rectum.
+ 
+ Review wound care and hygiene.
+Cervical tears – Identify 
+ 
+ Have an assistant apply fundal pressure 
+to help visualize the cervix.
+ 
+ Use a sponge forceps to grasp cervix 
+at 12 o’clock position and another at 3 
+o’clock.
+ 
+ Inspect between the forceps for tears.
+ 
+ Move the first forceps to 6 o’clock and 
+inspect again.
+ 
+ Continue to rotate forceps until full cervix 
+is inspected.
+Cervical tears – Repair
+ 
+ Gently hold both forceps in one hand.
+ 
+ Use 0 Vicryl suture.
+ 
+ Place first suture above the tear.
+ 
+ Close tear with continuous suture.
+Repair deep tears
+37
+• Follow local protocols on laceration repair.
+• Participants can use foam blocks or towels as tear repair 
+simulators. Encourage participants to create their own 
+simulators for ongoing practice.
+37b
+
+When bleeding stops
+ Provide post‐PPH care
+38
+
+ Provide post‐PPH care
+Special care after PPH 
+• Monitor closely until stable.
+• Assess and record tone, blood loss and 
+flow, pulse and BP: 
+ 
+—at least every 15 min until stable 
+ 
+—then every 30 min for 2 h
+ 
+—then as per routine.
+• A maintenance infusion of oxytocin 
+10–20 IU in 500–1000 mL may be 
+needed in the 4 h after treatment to 
+prevent recurrence.
+• Increase PO hydration and remove 
+urinary catheter.
+• Decrease oxygen per protocol.
+• Support breastfeeding.
+• Ensure the woman’s record is complete 
+with final measured blood loss, timing 
+of escalation, all assessments and 
+interventions.
+When stable
+• Repeat lab tests – FBC/Hb per protocol.
+• Gradually increase physical activity.
+Home readiness 
+• Before discharge, ensure:
+ 
+—normal vital signs, urine output, and 
+mental state 
+ 
+—no dizziness with walking 
+ 
+—she can care for herself and her baby 
+ 
+—no sign of infection.
+• Continue or begin antibiotics per 
+protocol. 
+Discharge instructions 
+Counsel the woman and her family
+• Ensure rest and good nutrition to 
+support breastfeeding and recovery.
+• Teach signs of anaemia, bleeding, and 
+infection, and to seek care right away. 
+• Provide routine postpartum care 
+including family planning. 
+• Counsel on the risk of PPH in future and 
+importance of a facility birth. 
+• Recommend non-steroidal antiinflammatory drugs or paracetamol for 
+pain relief. 
+• Plan follow up for care at 48 h, 10 days, 
+and 6 weeks. 
+In case of anaemia
+• If Hb was less than 7 g/dl:
+ 
+—provide blood transfusion and 
+consider IV iron
+ 
+—do not discharge until Hb >7 g/dl.
+• If Hb was 7–11 g/dl discharge with at 
+least 3 months of:
+ 
+—iron supplement 120 mg and 
+ 
+—folic acid 400 μg daily. 
+Instructions in case of perineal tears 
+• Wash the perineum gently front to back, 
+twice daily and after bowel movements.
+• Change pads frequently. 
+• Wash hands before and after self‐care.
+Debrief after PPH
+• PPH can be a traumatic experience 
+– for the woman, her family and the 
+healthcare team. 
+• To learn how to debrief and support 
+each other, review page 53 in the 
+Provider Guide with your team. 
+When bleeding stops
+ Provide post-PPH care
+38
+38b
+
+MODULE 6
+Ongoing practice and 
+quality improvement
+39
+
+Module 6: Ongoing practice and quality improvement
+Low Dose High Frequency
+• LDHF is an approach for training:
+ 
+—on‐site
+ 
+—hands‐on
+ 
+—with the whole team.
+• It ensures continuous improvement, 
+better retention of skills, and sustainable 
+behavioural change.
+Key Points of LDHF
+• Competency focused on mastering 
+clinical decision‐making, essential skills 
+and behaviours.
+• Case‐based training with simulations 
+and hands‐on practice.
+• Team and facility‐based to support 
+multidisciplinary teamwork.
+• Brief ongoing activities after the initial 
+course:
+ 
+—brief skills practice and drills
+ 
+—quality improvement activities
+ 
+—based on activities outlined in the 
+Provider Guide
+ 
+—led by peers selected from your 
+facility. 
+• Measuring quality of care indicators, 
+clinical performance, and outcomes 
+to identify areas for improvement 
+guided by local needs and adaptation:
+ 
+—uterotonic use for prevention
+ 
+—facility use of simulation and drills
+ 
+—presence of formal protocols for 
+PPH prevention, treatment, blood 
+transfusion and referral
+ 
+—PPH cases, severe PPH cases (>1000 
+mL) cases treated, and deaths from 
+PPH.
+Have health workers turn to the table of 
+contents in the Provider Guide to review 
+practice sessions.
+• What do you think you need to practise 
+at your facility?
+• Do you do regular drills at your facility 
+already?
+References
+1. Consolidated guidelines for the prevention, diagnosis and 
+treatment of postpartum haemorrhage. Web Annexes: Evidence 
+base. Geneva: World Health Organization; 2025. Licence: CC BY-NC-
+SA 3.0 IGO.
+2. Consolidated guidelines for the prevention, diagnosis and 
+treatment of postpartum haemorrhage. Geneva: World Health 
+Organization; 2025. Licence: CC BY-NC-SA 3.0 IGO.
+3. WHO labour care guide: user’s manual. Geneva: World Health; 2020. 
+Organization. License: CC BY-NC-SA 3.0 IGO
+Additional resources 
+Find all learning materials, job aids and planing tools at 
+www.who.int/tools/bleeding-after-birth
+• Action Plans
+• Provider Puide
+• postpartum monitoring form
+• knowledge assessment
+• OSCEs
+• videos
+• planing templates.
+MODULE 6
+Ongoing practice and 
+quality improvement
+39
+Facilitation note – assessments
+• When you are done with this page you will move on to 
+assessments:
+ 
+—post‐course knowledge check
+ 
+—OSCEs.
+• Have sheets and equipment ready. See page 1b.
+39b
+
+ 
+ 
+The Bleeding after birth training 
+course aims to translate standards into 
+care. It incorporates the latest WHO 
+recommendations related to PPH1,2 and 
+includes links to key references and 
+resources for training. 
+www.who.int/tools/bleeding-after-birth
+Course development methods. The development of this training 
+product followed a rigorous, evidence-based, and iterative process. 
+The training package was validated using the Kirkpatrick framework, 
+assessing feasibility, acceptability, changes in provider performance, and 
+improvements in health outcomes. The materials and teaching methods 
+are grounded in adult learning principles and clinical best practices, 
+ensuring relevance and effectiveness in real-world settings. Beta versions 
+of the package were piloted in Afghanistan, Democratic Republic of 
+the Congo, Guinea, India, Kenya, Malawi, Nigeria, United Republic of 
+Tanzania and Zambia with adaptations made based on feedback and 
+implementation learnings from these contexts. The training package was 
+used in the EMOTIVE trial, providing robust evidence for its effectiveness 
+and impact on maternal and newborn health outcomes. The development 
+process involved collaboration with global health experts and institutions 
+to ensure alignment with international standards and contextual relevance.
+Declaration of interest. All external experts signed declaration of interest 
+to WHO, disclosing any potential conflicts of interest that might influence 
+or could reasonably be perceived to influence their objectivity and 
+independence in relation to the guide’s content. WHO thoroughly reviewed 
+each declaration and determined that none posed an actual or reasonably 
+perceived conflict of interest concerning any aspect of the course.
+Department of Sexual, Reproductive, 
+Maternal, Child, Adolescent Health and 
+Ageing
+World Health Organization, Geneva,

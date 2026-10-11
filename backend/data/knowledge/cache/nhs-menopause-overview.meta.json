@@ -1,0 +1,10 @@
+{
+  "source_id": "nhs-menopause-overview",
+  "url": "https://www.nhs.uk/conditions/menopause/what-is-it/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 1627,
+  "chunk_count": 2,
+  "warnings": []
+}

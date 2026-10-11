@@ -1,0 +1,10 @@
+{
+  "source_id": "nhs-period-pain",
+  "url": "https://www.nhs.uk/conditions/period-pain/",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 3991,
+  "chunk_count": 5,
+  "warnings": []
+}

@@ -56,6 +56,30 @@ const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url);
   let pathname = decodeURIComponent(parsedUrl.pathname);
 
+  // Reverse proxy API and health calls to Python FastAPI backend (port 8000)
+  if (pathname.startsWith('/api/') || pathname === '/health' || pathname === '/docs' || pathname === '/openapi.json') {
+    const proxyReq = http.request({
+      hostname: '127.0.0.1',
+      port: 8000,
+      path: req.url,
+      method: req.method,
+      headers: req.headers
+    }, (proxyRes) => {
+      res.writeHead(proxyRes.statusCode, proxyRes.headers);
+      proxyRes.pipe(res);
+    });
+    proxyReq.on('error', (err) => {
+      res.writeHead(503, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({
+        error: 'Backend API unavailable',
+        detail: 'Please run: python start.py in the Backend folder',
+        code: err.code
+      }));
+    });
+    req.pipe(proxyReq);
+    return;
+  }
+
   // Default to index.html
   if (pathname === '/' || pathname === '') {
     return serveFile(res, path.join(BASE_DIR, 'index.html'));

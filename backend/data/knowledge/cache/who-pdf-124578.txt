@@ -1,0 +1,3818 @@
+WHO guidelines 
+on expanding 
+contraceptive options 
+
+WHO guidelines 
+on expanding 
+contraceptive options 
+
+ISBN 978-92-4-012457-8 (electronic version)
+ISBN 978-92-4-012458-5 (print version)
+© World Health Organization 2026
+Some rights reserved. This work is available under the Creative Commons Attribution-NonCommercial-ShareAlike 
+3.0 IGO licence (CC BY-NC-SA 3.0 IGO; https://creativecommons.org/licenses/by-nc-sa/3.0/igo). 
+Under the terms of this licence, you may copy, redistribute and adapt the work for non-commercial purposes, 
+provided the work is appropriately cited, as indicated below. In any use of this work, there should be no 
+suggestion that WHO endorses any specific organization, products or services. The use of the WHO logo is 
+not permitted. If you adapt the work, then you must license your work under the same or equivalent Creative 
+Commons licence. If you create a translation of this work, you should add the following disclaimer along with 
+the suggested citation: “This translation was not created by the World Health Organization (WHO). WHO is not 
+responsible for the content or accuracy of this translation. The original English edition shall be the binding and 
+authentic edition”. 
+Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation 
+rules of the World Intellectual Property Organization (http://www.wipo.int/amc/en/mediation/rules/).
+Suggested citation. WHO guidelines on expanding contraceptive options. Geneva: World Health Organization; 
+2026. Licence: CC BY-NC-SA 3.0 IGO.
+Cataloguing-in-Publication (CIP) data. CIP data are available at http://iris.who.int.
+Sales, rights and licensing. To purchase WHO publications, see https://www.who.int/publications/book-orders. 
+To submit requests for commercial use and queries on rights and licensing, see https://www.who.int/copyright.
+Third-party materials. If you wish to reuse material from this work that is attributed to a third party, such as 
+tables, figures or images, it is your responsibility to determine whether permission is needed for that reuse and 
+to obtain permission from the copyright holder. The risk of claims resulting from infringement of any third-partyowned component in the work rests solely with the user.
+General disclaimers. The designations employed and the presentation of the material in this publication do not 
+imply the expression of any opinion whatsoever on the part of WHO concerning the legal status of any country, 
+territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Dotted and 
+dashed lines on maps represent approximate border lines for which there may not yet be full agreement.
+The mention of specific companies or of certain manufacturers’ products does not imply that they are endorsed or 
+recommended by WHO in preference to others of a similar nature that are not mentioned. Errors and omissions 
+excepted, the names of proprietary products are distinguished by initial capital letters.
+All reasonable precautions have been taken by WHO to verify the information contained in this publication. 
+However, the published material is being distributed without warranty of any kind, either expressed or implied. 
+The responsibility for the interpretation and use of the material lies with the reader. In no event shall WHO be 
+liable for damages arising from its use. 
+Design and layout: Green Ink Publishing Services Ltd 
+
+ 
+iii
+Contents
+Acknowledgements 
+v
+Abbreviations 
+vii
+Executive summary 
+Target audience 
+Guideline development methods 
+Summary of recommendations 
+ix
+1. 
+1
+1.1 
+2
+1.2 
+Purpose 
+1.3 
+Scope and target audience 
+2. 
+Methods 
+5
+2.1 
+Scoping 
+6
+2.2 
+Framework to prioritize guideline topics 
+7
+2.3 
+Prioritized guideline topics 
+7
+2.4 
+Evidence identification and synthesis 
+8
+2.5 
+Decision-making during the final GDG meeting 
+9
+3. 
+11
+3.1 
+12
+3.2 
+14
+3.3 
+Quinestrol-containing pills: quinestrol-quingestanol, quinestrol-levonorgestrel 
+and quinestrol-norgestrel 
+16
+3.4 
+18
+3.5 
+Extended use of etonogestrel contraceptive implants 
+21
+4. 
+Guideline-relevant research needs 
+23
+4.1 
+4.2 
+4.3 
+Quinestrol-containing pills: Quin-Quin, Quin-LNG and Quin-NG 
+4.4 
+25
+4.5 
+Extended use of ETG contraceptive implants 
+25
+5. 
+Publication, dissemination, monitoring and evaluation 
+26
+6. 
+Updating 
+28
+References 
+30
+
+iv
+Annex 1 Declarations of interests from Guideline Development Group members 36
+A1.1 
+Individuals without any conflict or with non-significant conflicts of interest 
+36
+A1.2 
+Expertise of GDG members 
+37
+Annex 2 Evidence-to-decision tables 
+38
+A2.1 
+Recommendation: mifepristone for emergency contraception 
+38
+A2.2 
+Recommendation: ormeloxifene 
+46
+A2.3 
+Recommendation: quinestrol-containing pills: quinestrol-quingestanol, 
+quinestrol-levonorgestrel and quinestrol-norgestrel 
+53
+A2.4 
+Recommendation: continuous or extended use of COCs 
+62
+A2.5 
+Recommendation: extended use of etonogestrel contraceptive implants 
+70
+References 
+78
+
+Acknowledgements
+The World Health Organization (WHO) would 
+like to thank the members of the Guideline 
+Development Group (GDG) and the Evidence 
+Synthesis Team (EST) for their contributions 
+throughout the development of these 
+recommendations. WHO convened two GDG 
+meetings (11 to 13 June 2024 and 17 to 19 June 
+2025) to finalize the WHO expanding contraceptive 
+options (ECO) guideline. All members of the GDG 
+and the EST participated in at least one of the 
+GDG meetings. WHO is very grateful for the 
+suggestions provided by colleagues who peerreviewed the earlier drafts of the guideline as 
+members of the External Review Group (ERG). 
+Names of the participants in each group and 
+their institutional affiliations and country 
+locations are listed below.
+Guideline Development Group
+Faisal Abbas (National University of Sciences 
+and Technology, Islamabad, Pakistan), Valeria 
+Bahamondes (independent consultant, the 
+United States of America [USA]), Harriet Chanza 
+(Credo Community Support Group, Lilongwe, 
+Malawi), Rodrica Comendant (Reproductive 
+Training Center, Chisinau, Moldova), Galina 
+Dikke (Medical Academy of Postgraduate 
+Education, Moscow, the Russian Federation), 
+Andy Gray (Centre for the AIDS Programme of 
+Research in South Africa [CAPRISA], University 
+of KwaZulu-Natal, Pretoria, South Africa), 
+Lisa Haddad (Population Council, New York 
+City, USA), Philip Hannaford (University of 
+Aberdeen, the United Kingdom of Great Britain 
+and Northern Ireland), Unnop Jaisamrarn 
+(Chulalongkorn University, Bangkok, Thailand), 
+Beena Joshi (National Institute for Research 
+in Reproductive and Child Health [NIRRCH], 
+India), Enriquito Lu (independent consultant, 
+Manila, the Philippines), Philip Mbithi Muia 
+(Kenya Medical Research Institute, Nairobi, 
+Kenya), Ashraf Nabhan (Ain Shams University, 
+Cairo, Egypt), Ingrid Sääv (Stockholm County 
+Youth Clinics, Stockholm, Sweden), Farida Shah 
+(International Confederation of Midwives, 
+Islamabad, Pakistan), Aparna Sridhar (University 
+of California, Los Angeles and International 
+Federation of Gynecology and Obstetrics 
+[FIGO], USA), Nandana Suresh (White Paper 
+Academy Alappuzha, Kerala, India), Kun Tang 
+(Vanke School of Public Health, Tsinghua 
+University, China), Peace Samuel Umanah 
+(International Youth Alliance for Family Planning, 
+Abuja, Nigeria). WHO wishes to recognize the 
+expertise and contribution of Katherine Curtis 
+(independent consultant, Atlanta, USA) who was, 
+until 20 January 2025, the co-chair of this GDG.
+Evidence Synthesis Team
+The guideline methodologist was Nancy Santesso 
+(McMaster University, Toronto, Canada), and 
+the members of the systematic review team 
+leads for the ECO topics were: Yaolong Chen 
+(Research Unit of Evidence-Based Evaluation and 
+Guidelines, Chinese Academy of Medical Sciences 
+[2021RU017]), School of Basic Medical Sciences, 
+Lanzhou University, China), Li Jiang (Hospital 
+for Sick Children, Toronto, Canada), Shaalini 
+Ramanadhan (Oregon Health and Science 
+University, Portland, USA), Sarita Sonalkar 
+(University of Pennsylvania, Philadelphia, USA) 
+and Tesfaye Tufa (St Paul’s Hospital Millennium 
+Medical College, Addis Ababa, Ethiopia). Sesilia 
+Shirima (Young and Alive, the United Republic 
+of Tanzania) conducted the youth engagement 
+survey. Sameera Mokkarala (Planned Parenthood 
+Association of America, USA) contributed to the 
+scoping review.
+External Review Group
+Sylvia Ayieko (University of Iowa, Iowa City, USA), 
+Nurun Nahar Begum (Former Line Director, 
+Directorate General of Family Planning, Dhaka, 
+Bangladesh), Blami Dao (Université Nazi Boni, 
+Institut Supérieur des Sciences de la Santé 
+[INSSA], Ouagadougou, Burkina Faso), Nasser 
+El Kholy (Ain Shams University, Cairo, Egypt), 
+ 
+v
+
+Neena Malhotra (All India Institute of Medical 
+Sciences, New Delhi, India), Richard Mugahi 
+(Ministry of Health, Kampala, Uganda), 
+Phanupong Phutrakool (Chula Data Management 
+Center, Bangkok, Thailand), Hanna Teklu 
+(St Paul’s Hospital Millennium Medical College, 
+Addis Ababa, Ethiopia) and Mariano Salazar 
+Torres (Karolinska Institute, Stockholm, Sweden).
+Observers
+WHO wishes to thank the representatives of 
+the following agencies who acted as observers 
+during the GDG meetings: All India Institute of 
+Medical Sciences (AIIMS; Aparna Sharma), Child 
+Investment Fund Foundation (CIFF; Trisha Wood 
+Santos), Concept Foundation (Petra Procter), 
+International Planned Parenthood Federation 
+(IPPF; Nathalie Kapp), United Nations Population 
+Fund (UNFPA; Agnes Chidanyika) and United 
+States Agency for International Development 
+(USAID; Amanda Cordova, until 20 January 2025).
+WHO Guideline Steering Group
+WHO is also grateful for the input to this 
+guideline from the following WHO Guideline 
+Steering Group (GSG) members from a range 
+of departments in the Division of Health 
+Promotion, Disease Prevention and Control 
+at WHO headquarters in Geneva, Switzerland: 
+Department of Sexual and Reproductive, 
+Maternal, Child and Adolescent Health and 
+Ageing (LHR) and the UNDP-UNFPA-UNICEF-
+WHO-World Bank Special Programme of 
+Research, Development and Research Training 
+in Human Reproduction (HRP): Pascale Allotey 
+(Director); James Kiarie (Unit Head), Moazzam 
+Ali, Rita Kabra, Asantesana Kamuyango, Nancy 
+Kidula, Petrus Steyn and Nandita Thatte 
+(Contraception and Fertility Care Unit [CFC]); 
+Mercedes Bonet (Maternal and Perinatal Health 
+Unit); Kidist Gizachew, Caron Kim (Prevention of 
+Unsafe Abortion Unit); Aasa Hanna Mari Nihlén 
+(Rights and Equality Across the Lifecourse Unit); 
+Tigest Tamrat (Sexual and Reproductive Health 
+Integration in Health Systems Unit); and Manjula 
+Narasimhan (Sexual, Reproductive and Newborn 
+Health Unit).
+Department of Essential Medicines and Health 
+Products: Lorenzo Moja and Matthias Stahl; 
+Director-General’s Office: Anna Coates; and WHO 
+Innovation Hub: Louise Agersnap.
+WHO also appreciates the support provided to 
+the GSG by reproductive health advisors from 
+WHO regional offices: Adeniyi Aderoba (Regional 
+Office for Africa), Rodolfo Gómez Ponce de León 
+(Regional Office for the Americas [also Pan 
+American Sanitary Bureau]), Manjula Danansuriya 
+(Regional Office for South-East Asia), Oleg 
+Kuzmenko (Regional Office for Europe), Karima 
+Gholbzouri (Regional Office for the Eastern 
+Mediterranean); and Leontien Hanna Andrea 
+Becker (Regional Office for the Western Pacific).
+Coordination and writing
+Overall coordination for guideline development 
+was provided by the WHO Secretariat Team, 
+comprising James Kiarie (Unit Head), Asantesana 
+Kamuyango and Nancy Kidula (responsible 
+technical officer), both from the CFC Unit in WHO 
+LHR/HRP. The first draft of the guideline was 
+written by Mary Lyn Gaffield (Health Guideline 
+Advisors, Auxonne, France), Nancy Kidula 
+(CFC Unit) and Nancy Santesso (Grading of 
+Recommendations, Assessment, Development 
+and Evaluation [GRADE] methodologist, 
+McMaster University, Toronto, Canada). Drafts 
+were reviewed and input was provided by 
+members of the GDG, EST, ERG and WHO GSG. 
+The authorship of the five systematic reviews 
+providing summarized evidence for this guideline 
+was led by the EST, with the full set of coauthors 
+reflected in the respective papers as published 
+in the BMJ Sexual and Reproductive Health 2026 
+supplement issue (https://doi.org/10.1136/
+bmjsrh-2026). The GRADE evidence-to-decision 
+tables and expertise on GRADE methodology 
+were provided by Nancy Santesso (McMaster 
+University, Toronto, Canada).
+Funding
+WHO gratefully acknowledges the financial 
+support of the Gates Foundation under the 
+WHO Family Planning Accelerator Project for the 
+development of this guideline. 
+vi
+
+Abbreviations
+BMI 
+ 
+body mass index
+CI 
+ 
+confidence interval
+CIRE 
+ 
+Continuous Identification of Research Evidence process
+COCs 
+ 
+combined oral contraceptives
+DMPA 
+ 
+depo medroxyprogesterone acetate
+DVT 
+ 
+deep vein thrombosis
+EC 
+ 
+emergency contraception
+ECO 
+ 
+expanding contraceptive options
+ERG 
+ 
+External Review Group
+EST 
+ 
+Evidence Synthesis Team
+EtD 
+ 
+evidence-to-decision
+ETG 
+ 
+etonogestrel
+GDG 
+ 
+Guideline Development Group 
+GRADE 
+ 
+Grading, Recommendations, Assessment, Development and Evaluation
+HRP 
+ 
+UNDP-UNFPA-UNICEF-WHO-World Bank Special Programme of Research, 
+Development and Research Training in Human Reproduction
+INN 
+ 
+International Non-proprietary Name 
+IUD 
+ 
+intrauterine device 
+LNG 
+ 
+levonorgestrel
+MEC 
+ 
+Medical eligibility criteria for contraceptive use guideline
+OR 
+ 
+odds ratio
+PICO 
+ 
+population, intervention, comparator and outcome 
+Quin-Quin 
+quinestrol-quingestanol
+Quin-LNG 
+quinestrol-levonorgestrel
+Quin-NG 
+quinestrol-norgestrel
+RCT 
+ 
+randomized controlled trial 
+SPR 
+ 
+Selected practice recommendations for contraceptive use guideline
+VTE 
+ 
+venous thromboembolism
+ 
+vii
+
+Executive summary
+The World Health Organization (WHO) expanding 
+contraceptive options (ECO) guideline aims 
+to improve access to and quality of family 
+planning services by providing evidence-based 
+recommendations on emerging contraceptive 
+methods and service delivery practices with 
+global potential. Expanding the range of 
+contraceptive methods and service delivery 
+practices can improve access to a wider range of 
+contraceptive options for women, girls, men and 
+boys, and couples. This is particularly important 
+in settings with limited access to and choice of 
+contraceptive methods, including in many low- 
+and middle-income countries. Enhancing the 
+quality of family planning services is essential 
+for reducing maternal mortality and morbidity 
+and advancing progress towards the Sustainable 
+Development Goals.
+As new contraceptive methods and alternative 
+approaches to the use of existing methods 
+become available, Member States require 
+evidence-based guidelines to support decisions 
+regarding their incorporation into national 
+family planning policies, programmes and 
+service delivery protocols, especially when 
+specific recommendations are not yet available 
+in WHO published guidelines. These new 
+methods and/or practices may be approved 
+by local health authorities but have yet to be 
+prequalified by a WHO-recognized stringent 
+regulatory authority and may not be in the 
+WHO Model List of Essential Medicines. It is 
+envisaged that contraceptive methods and 
+practices in the WHO ECO guideline that are 
+either recommended or suggested for inclusion 
+into national contraceptive mixes may be 
+incorporated into future updates of the WHO 
+Medical eligibility criteria for contraceptive use 
+(MEC) and WHO Selected practice recommendations 
+for contraceptive use (SPR) guidelines once 
+they meet the inclusion criteria for these 
+normative guidelines. This would facilitate WHO 
+prequalification and consideration for addition to 
+the WHO Model List of Essential Medicines.
+Target audience
+This guideline is intended for policy-makers, 
+family planning programme managers, 
+health workers and the scientific community. 
+Recommendations in the guideline are 
+intended to inform national family planning and 
+reproductive health programmes regarding the 
+inclusion of specific emerging contraceptives 
+and emerging contraceptive usage practices into 
+their national contraceptive method mix.
+Guideline 
+development methods
+The Guideline Development Group (GDG) 
+convened by WHO consisted of 20 individuals 
+from 16 countries, representing all six WHO 
+regions. The GDG included experts in family 
+planning, midwifery, gynaecology, obstetrics, 
+epidemiology, pharmacology, gender, policymaking, health systems, health communications, 
+health economics, guideline methodology 
+and evidence synthesis. Representatives of 
+key stakeholders and users were also part of 
+the GDG membership. The Acknowledgement 
+section lists all GDG members, and their 
+declarations of interests are described in 
+Annex 1. The meetings were held at WHO 
+headquarters in Geneva, Switzerland, 11–13 June 
+2024 and 17–19 June 2025.
+The GDG prioritized for consideration five topics 
+for the development of the ECO guideline: 
+three topics concerned the inclusion of new 
+contraceptive methods within WHO guidance 
+(ormeloxifene, quinestrol-containing pills and 
+mifepristone for emergency contraception [EC]) 
+and two topics concerned new contraceptive 
+practices (continuous or extended use of 
+
+combined oral contraceptive pills and extended 
+duration of etonogestrel [ETG] implant use).
+The GDG applied the Grading of 
+Recommendations, Assessment, Development 
+and Evaluation (GRADE) approach to consider the 
+overall certainty of the available evidence, and 
+the GRADE evidence-to-decision (EtD) framework 
+to develop recommendations. The GDG defined 
+the strength of recommendations as strong or 
+conditional and the direction as for or against 
+implementation. 
+At a minimum, this guideline will be reviewed 
+every five years with periodic updates as new 
+contraceptive methods and delivery practices 
+become available and utilized in WHO Member 
+States. Any change in recommendation will be 
+promptly communicated to Member States and 
+partners to guide policy and programming and 
+made available on the WHO web pages for 
+the Department of Sexual and Reproductive 
+Health and Research at www.who.int/hrp and 
+www.who.int/health-topics/contraception. 
+WHO encourages research aimed at addressing 
+key unresolved issues related to contraceptive 
+methods and practices presented in this 
+guideline. WHO also invites comments and 
+suggestions for improving this guideline.
+Summary of recommendations
+Recommendations reviewed for the ECO guideline
+Strength of recommendation 
+and certainty of evidence
+WHO recommends adding mifepristone to the method mix for EC, as a single 
+dose between 10 and 50 mg. 
+Remarks: the availability of mifepristone dosage forms may differ across 
+settings and countries. A dose between 10 and 25 mg may be preferred if 
+available. EC pills are taken as soon as possible after unprotected sex and 
+within five days.
+Strong recommendation
+Moderate-certainty evidence
+WHO suggests against adding ormeloxifene to the contraceptive method mix 
+for women of reproductive age.
+Remarks: high-quality evidence is needed to confirm the efficacy and safety of 
+ormeloxifene as a contraceptive.
+ 
+ix
+
+Recommendations reviewed for the ECO guideline
+Strength of recommendation 
+and certainty of evidence
+Quinestrol-containing pills: quinestrol-quingestanol, quinestrol-norgestrel and quinestrol-levonorgestrel
+WHO recommends against adding quinestrol-quingestanol to the 
+contraceptive method mix for women of reproductive age.
+Strong recommendation
+WHO recommends against adding quinestrol-norgestrel to the contraceptive 
+mix for women of reproductive age.
+Strong recommendation
+WHO suggests against adding quinestrol-levonorgestrel to the contraceptive 
+Low-certainty evidence
+Remarks: where quinestrol-containing products are being used, rigorous 
+pharmacovigilance is needed to monitor safety. High-quality evidence about 
+its efficacy and safety is needed.
+WHO suggests that COCs can be used for extended durations up to six months 
+or continuously up to one year, as well as their cyclical use for contraception in 
+women of reproductive age.
+Low-certainty evidence
+Remarks: extended-cycle regimen is defined as taking active combined hormonal 
+contraceptive pills continuously for more than 28 days, followed by a planned 
+hormone-free interval. Extended use may be for flexible or fixed duration.
+A continuous regimen is defined as taking active combined hormonal 
+contraceptive pills every day without any breaks in daily pill-taking 
+(no hormone-free interval).
+Extended use of ETG contraceptive implants
+WHO suggests ETG contraceptive subdermal implants can be used for up to five years, 
+as an option in line with updated manufacturers’ approved duration of five years.
+COCs: combined oral contraceptives; EC: emergency contraception; ETG: etonogestrel.
+x
+
+1 
+
+1.1 
+Universal access to high-quality sexual and 
+reproductive health services, and specifically the 
+recognition of family planning/contraception as 
+a key strategy for reducing maternal and child 
+mortality, remains a global priority. While the 
+number of women of reproductive age using 
+modern contraceptive methods increased by 
+87% between 1990 and 2022 (from 467 million 
+to 874 million), there are still 164 million women 
+wanting to delay or avoid pregnancy who are 
+not using contraception and thus have an unmet 
+need for family planning. Addressing unmet 
+need for family planning and assuring that there 
+are laws and regulations that guarantee women 
+and girls’ access to family planning remains 
+critical in reaching targets outlined in key global 
+health agendas (e.g. Sustainable Development 
+Goals 3.7.1 and 5.6.2; the Global Strategy 
+for Women’s, Children’s and Adolescents’ 
+Health 2016–2030).
+Since 1996, the Department of Sexual and 
+Reproductive, Maternal, Child and Adolescent 
+Health and Ageing (LHR) and the UNDP-UNFPA-
+UNICEF-WHO-World Bank Special Programme of 
+Research, Development and Research Training 
+in Human Reproduction (HRP) at the World 
+Health Organization (WHO), in collaboration with 
+relevant partners, have produced the Medical 
+eligibility for contraceptive use guideline (MEC) 
+(1) and the Selected practice recommendations 
+for contraceptive use guideline (SPR) (2). These 
+evidence-based guidelines inform and support 
+the efforts of Member States to implement family 
+planning programmes. Recommendations in 
+these guidelines focus on contraceptive methods 
+that are approved by a globally recognized 
+regulatory authority and use that follows product 
+label instructions. Specifically, the MEC provides 
+recommendations on the safety of various 
+contraceptive methods for use in the context of 
+specific health conditions or characteristics, and 
+the SPR includes recommendations on how to 
+use contraceptive methods safely and effectively 
+once they are deemed medically appropriate. The 
+overarching goal of these guidelines is to remove 
+unnecessary medical barriers to contraception, 
+while ensuring safety, fostering choice and 
+safeguarding correct use.
+As new contraceptive methods and different 
+ways of using existing methods become 
+available, Member States need evidence-based 
+guidance on whether to include or exclude these 
+methods and the alternative usage practices 
+into their national contraceptive method mix 
+policies, family planning programmes and 
+service delivery protocols, especially when 
+specific recommendations are not available 
+in the WHO published guidelines. These 
+contraceptive methods and/or practices may be 
+approved by local health authorities but have 
+yet to be prequalified by a stringent regulatory 
+authority and may not be in the WHO Model List 
+of Essential Medicines. In the WHO expanding 
+contraceptive options (ECO) guidelines, WHO 
+responds to this need by providing evidencebased guidance on the effectiveness, safety and 
+acceptability of these methods and recommends 
+whether or not they can be included in the 
+contraceptive method mix and used by national 
+family planning programmes.
+It is envisaged that contraceptive methods 
+and practices in this guideline that are either 
+recommended or suggested to be added into a 
+national contraceptive mix, would be integrated 
+into future editions of the WHO MEC and 
+SPR once they meet the thresholds for these 
+normative guidelines (see Fig. 1 on how the 
+ECO guideline intersects with the MEC and SPR). 
+Plus, their inclusion in these guidelines would 
+facilitate prequalification by WHO and addition 
+to the WHO Model List of Essential Medicines. 
+Additionally, the ECO guideline provides 
+recommendations against certain methods and 
+practices that may be in use but should not be 
+adopted until evidence demonstrating their 
+efficacy and safety becomes available.
+2
+
+1.2 
+Purpose
+The ECO guideline aims to improve access 
+to and quality of family planning services by 
+providing evidence-based recommendations 
+on emerging contraceptive methods and 
+alternative contraceptive use practices with 
+potential for global application. Expanding 
+the range of available contraceptive methods 
+and use practices can increase contraceptive 
+choice for women, girls and couples. This is 
+particularly important in settings with limited 
+access to and choice of contraceptive methods 
+including in many low- and middle-income 
+countries. Strengthening the quality of family 
+planning services contributes to improved sexual 
+and reproductive health outcomes, including 
+reductions in maternal morbidity and mortality, 
+and supports progress towards the Sustainable 
+Development Goals across the themes of people, 
+planet, prosperity, peace and partnership.
+1.3 
+Scope and 
+target audience
+The intended audience for this guideline includes 
+policy-makers, family planning programme 
+managers, health workers and the scientific 
+community. Recommendations presented 
+within the ECO guideline are intended to inform 
+national family planning and reproductive 
+health programmes regarding the inclusion 
+– or exclusion – of specific contraceptives and 
+alternative contraceptive usage practices into 
+their national contraceptive method mix.
+
+ECO guideline
+• Provides 
+information on the 
+effectiveness, safety 
+and acceptability 
+of contraceptive 
+methods approved 
+and used in limited 
+geographies BUT are 
+not in the MEC or are 
+used differently from 
+what is in the SPR.
+• Provides 
+recommendations 
+on whether these 
+methods can be 
+added to the family 
+planning method mix 
+in countries.
+• Recommended 
+methods may 
+transition to 
+the MEC or SPR 
+once they meet 
+additional criteria.
+MEC
+• Provides recommendations 
+on the safety of contraceptive 
+methods in use globally across 
+various regions when used by 
+clients with different medical 
+conditions or relevant physiologic 
+conditions (e.g. breastfeeding).
+• Eligibility to use the method is 
+categorized from 1–4, with 1 
+indicating that the client can 
+safely use the method and 4 
+indicating that the client should 
+not use the method.
+SPR 
+• Provides recommendations on 
+HOW to use the contraceptive 
+methods in the MEC safely and 
+effectively once deemed eligible 
+for a client.
+• Includes recommendations on 
+initiation, continuation, switching 
+methods, managing side 
+effects, etc.
+Criteria for transitioning from the 
+ECO guideline to the MEC
+• Up-to-date, high-quality evidence from 
+systematic reviews on effectiveness and 
+safety is available (methods must be 
+effective and safe).
+• Used in several countries spanning 
+different WHO regions including low- and 
+middle-income countries).
+• Approved by a WHO stringent regulatory 
+authority or WHO-listed authority.
+• Evidence on safety for various medical 
+conditions and physical characteristics in 
+line with the MEC is available.
+• High programmatic impact and increased 
+demand by family planning programmes.
+Criteria for transitioning from the 
+ECO guideline to the SPR
+• New delivery mechanisms for methods 
+already in the MEC.
+• New evidence on common or widely 
+implemented practices impacting safe 
+use of methods, respectful care and 
+positive user experience.
+• Changes in labelling of contraceptive 
+products’ utilization, return to fertility, 
+drug interactions, etc.
+ECO: WHO expanding contraceptive options guideline; MEC: WHO medical eligibility criteria for contraceptive use guideline; SPR: WHO selected practice 
+recommendations for contraceptive use guideline.
+Fig. 1 
+Relationship of the ECO guideline with the MEC and SPR guidelines
+4
+
+2 Methods
+
+In recent years, Member States and non-state 
+actors have approached WHO with requests 
+for guidance on the safety and effectiveness of 
+novel or new usage of a contraceptive method 
+that are not included in the WHO MEC and SPR 
+guidelines but are being used in some WHO 
+Member States (1,2). Contraceptive methods 
+and usage practices within the ECO guideline 
+will need to fulfil the following criteria to be 
+included in the MEC guideline: they are used 
+globally in many countries (including low- and 
+middle-income countries); they have been 
+approved by a stringent regulatory authority; 
+they have evidence of safety in various medical 
+conditions or physiologic characteristics; there is 
+a demonstrated demand from family planning 
+programmes; and they have high programmatic 
+impact (see Fig. 1). The ECO guideline – a new 
+WHO guideline – was developed in response 
+to these requests following the guideline 
+development requirements outlined in the WHO 
+handbook for guideline development, 2nd edition (3).
+The groups responsible for the development 
+of this guideline include a WHO Secretariat, 
+an Evidence Synthesis Team (EST) (including 
+a guideline methodologist), a Guideline 
+Development Group (GDG) and an External 
+Review Group (ERG). For the names of 
+the members of all these groups, see the 
+Acknowledgements, and for details of declared 
+academic and financial interests see Annex 1.
+Development of the guideline involved several 
+steps: 1) preparation of a scoping review of 
+studies to identify existing evidence on emerging 
+contraceptive methods and uses; 2) formation of 
+groups responsible for the development of the 
+guideline; 3) convening a GDG scoping meeting 
+to prioritize which topics should be addressed 
+in the guideline; 4) conducting systematic 
+reviews of the published literature and preparing 
+Grading, Recommendations, Assessment, 
+Development and Evaluation (GRADE) evidence 
+profiles and evidence-to-decision (EtD) tables; 
+5) convening a final GDG meeting to formulate 
+the recommendations; 6) external review and 7) 
+approval of the guidelines by WHO.
+2.1 
+Scoping
+A scoping review was undertaken to identify 
+published evidence on (a) contraceptive 
+methods not included in the MEC 5th edition but 
+registered in at least one Member State; and (b) 
+contraceptive methods included in the 5th edition 
+of the MEC but used differently from what is 
+described in the 3rd edition of the SPR. Prior to 
+conducting the scoping review, an online survey 
+was conducted in English, French and Spanish 
+among WHO Member States and various WHO 
+partners from 1 October to 30 November 2023, 
+to ascertain which contraceptive methods, other 
+than those already cited in the WHO normative 
+guidelines, are in use. The survey yielded 
+responses from 958 individuals in 141 Members 
+States across six continents. Additionally, 
+suggestions from subject-matter experts and 
+inquiries from Member States also informed 
+which contraceptive methods should be included 
+in the review.
+The following methods were identified from the 
+stakeholder survey and interactions with Member 
+States and key partners:
+Methods not in the MEC: ormeloxifene, 
+quinestrol/quingestanol, mifepristone for 
+emergency contraception (EC), levonorgestrel 
+intrauterine device (LNG- IUD) for EC, 
+pericoital contraception.
+Methods used differently than stated in the 
+SPR: extended use of LNG and etonogestrel 
+(ETG) implants, extended use of depo 
+medroxyprogesterone acetate (DMPA), 
+extended and continuous use of combined 
+oral contraceptives (COCs) and extended use 
+of the progesterone vaginal ring.
+The PubMed and EMBASE bibliographic 
+databases were searched, using terms for 
+methods identified by the online survey or expert 
+informants, from database inception through 
+December 2023. Quantitative, qualitative and 
+mixed-methods studies investigating the efficacy, 
+safety and/or acceptability of the contraceptive 
+methods were included. The review protocol was 
+registered with Open Science Framework (https://
+osf.io/h9nj3). Results of the scoping reviews are 
+published in Mokkarala et al. (4). 
+6
+
+2.2 
+Framework 
+to prioritize 
+guideline topics
+The findings of the scoping review were 
+presented to the GDG during the first of two 
+GDG meetings. At the first scoping meeting, 
+held 11–13 June 2024, the GDG agreed on a 
+framework to prioritize topics to be discussed 
+during the second GDG meeting. The 
+prioritization framework contained three possible 
+actions: 1) proceed to full systematic review and 
+include in the ECO guideline, 2) do not proceed 
+to systematic review but recommend additional 
+research as the method looks promising, and 3) 
+do not proceed with any further action 
+(see Box 1). 
+To undertake this exercise, the GDG first 
+evaluated whether there was evidence 
+regarding the efficacy, safety and acceptability 
+of the method. Depending on the available 
+evidence, the GDG then determined whether 
+the contraceptive method had important 
+implications for family planning programmes 
+and/or expansion of the contraceptive method 
+mix. If both of these criteria were met, the GDG 
+recommended that a systematic review should 
+be conducted. If implications for programmes 
+and expansion of the method mix existed, 
+but evidence did not appear to be available 
+regarding efficacy, safety and acceptability, the 
+GDG advised that additional research should be 
+pursued. If evidence about a method’s efficacy, 
+safety and acceptability were available but 
+implications for programmes and the expansion 
+of the method mix were deemed to be minimal, 
+a systematic review was not recommended. If 
+evidence on the efficacy, safety and acceptability 
+of a method was not available and implications 
+for programmes and the expansion of the 
+method mix were deemed to be minimal, no 
+further action was recommended. 
+2.3 
+Prioritized 
+guideline topics
+Based on the findings of the scoping review 
+and plenary discussions and debate, the GDG 
+prioritized three emerging contraceptive 
+methods and two contraceptive usage 
+practices to include in the new guideline. 
+And as a result, the GDG proposed the 
+following recommendation questions for 
+further evaluation:
+1. Should mifepristone be added to the 
+contraceptive method mix for EC (and at 
+what dose) for women of reproductive age?
+2. Should ormeloxifene be added to the 
+contraceptive method mix for women of 
+reproductive age?
+3. Should quinestrol-containing pills be added 
+to the contraceptive method mix for women 
+of reproductive age?
+4. Should COCs at extended or continuous 
+duration versus cyclical use be used in 
+women of reproductive age?
+5. Should ETG contraceptive subdermal 
+implants be used up to five years versus 
+three years in women of reproductive age?
+In addition, the GDG determined the outcomes to 
+be assessed by each systematic review, with the 
+same effectiveness and acceptability outcomes 
+used for all questions, and the safety outcomes 
+varying according to the question asked (see 
+Box 2).
+Methods
+7
+
+2.4 
+Evidence 
+identification and 
+synthesis 
+For each recommendation question, evidence 
+synthesis teams conducted new or updated 
+existing systematic reviews. A protocol for each 
+review was developed, guided by the outcomes 
+listed in Box 2, and registered in the International 
+Prospective Register of Systematic Reviews 
+(PROSPERO) open access online database. The 
+systematic reviews are available as open access 
+in the BMJ Sexual and Reproductive Health 2026 
+supplement issue or on request via email to WHO 
+(srhcfc@who.int). In general, multiple databases 
+(e.g. PubMed and Cochrane databases) were 
+searched for studies published in any language 
+from database inception to: 21 October 2024 
+(COCs), 27 November 2024 (mifepristone), 
+1 December 2024 (quinestrol) and 30 June 2025 
+(ormeloxifene). In addition, studies published 
+from 1 January 1996 to 8 November 2024 were 
+searched for ETG. Reference lists and direct 
+communications with experts in the field were 
+also used to identify other studies and data.
+The risk of bias for each study included in a 
+systematic review was assessed by review 
+authors using version 2 of the Cochrane risk-ofbias tool for randomized trials (RoB 2) (5) and a 
+modified version of the Cochrane tool to assess 
+risk of bias in non-randomized studies (ROBINS-I) 
+(6). GRADE evidence profiles were prepared, 
+and the GRADE approach was used to assess 
+the certainty of the evidence as high, moderate, 
+low or very low; and communicated as: the 
+intervention has an effect, likely has an effect, 
+may have an effect, or it is uncertain, respectively 
+(7). The systematic review reports were made 
+electronically available to all GDG members prior 
+to the second GDG meeting. 
+Additional information about the feasibility, 
+resources and equity issues were also 
+summarized from the systematic reviews. Results 
+from a global systematic review of qualitative 
+and quantitative studies on the values and 
+preferences of contraceptive users (8) as well 
+as voices of young people who participated in 
+a global series of online sessions, workshops 
+and webinars conducted from November 2024 
+to July 2025, were presented to the GDG. More 
+than 5000 youth representing all WHO regions, 
+including youth from low- and middle-income 
+countries (e.g. Democratic Republic of the 
+Congo, Ghana, Nepal, Uganda, United Republic 
+of Tanzania and Zimbabwe) provided their views 
+during interactive sessions on Facebook, TikTok, 
+Instagram, LinkedIn, Club House and WhatsApp. 
+The report of the youth consultation is available 
+on request via email to WHO (srhcfc@who.int).
+Box 1 Framework for prioritization of topics for systematic review
+Evidence available of 
+efficacy, safety and 
+acceptability?
+Important implications for 
+programmes and expansion 
+of method mix?
+GDG decision
+Systematic review recommended
+Systematic review not recommended
+Further research recommended
+No further action recommended
+GDG: Guideline Development Group.
+8
+
+Box 2 Outcomes for systematic reviews
+Type of outcome
+Outcomes of interest
+Effectiveness outcomes
+Pearl Index,a pregnancy rate,b ectopic pregnancy
+Safety outcomes
+Severe adverse events (e.g. venous thromboembolism, cardiovascular outcomes, 
+abnormal liver function, fetal birth defects)
+Side effects (e.g. headaches, nausea, cramping or pain, early/delayed menses, 
+abnormal uterine bleeding, amenorrhoea)
+Acceptability outcomes
+Acceptability (satisfaction), return to fertility, discontinuation
+a 
+The Pearl Index is defined as the number of pregnancies per 100 woman-years using a specific contraceptive method. The Pearl Index represents 
+the number of unintended pregnancies that occur while using a contraceptive method over a year of usage for 100 women.
+b Pregnancy rate refers to the overall rate of pregnancies in a population of reproductive age women (15–44 years of age). Pregnancy rate can 
+be calculated as: total number of pregnancies (includes live births + induced abortions + fetal deaths and stillbirths) divided by the number of 
+women aged 15–44 years, then multiplied by 1000.
+2.5 
+Decision-making 
+during the final 
+GDG meeting
+WHO convened the final GDG meeting 
+17–19 June 2025, at WHO headquarters in 
+Geneva, Switzerland, to determine and finalize 
+the recommendations. Members of the GDG 
+submitted declaration of interest forms to the 
+WHO Secretariat and six individuals declared a 
+conflict of interest relevant to the ECO guideline. 
+The WHO Secretariat reviewed all declaration of 
+interest forms and found one participant, who 
+had disclosed a potentially significant conflict 
+of interest related to the topic of ormeloxifene, 
+which was deemed sufficient to preclude 
+her from participating in the discussions and 
+development of the recommendation relevant 
+to ormeloxifene. The remaining GDG members 
+had no conflicts of interest sufficient to preclude 
+them from participating in the deliberations or 
+development of recommendations. For details of 
+the declared interests see Annex 1.
+The GDG considered all the criteria in the 
+GRADE EtD framework when making its 
+recommendations: evidence for benefits 
+and harms and the certainty, the values and 
+preferences of contraceptive users and health 
+workers, acceptability to users, cost and resource 
+implications, feasibility of implementation and 
+equity. The GDG took a population perspective 
+when making the recommendations and 
+considered that populations should have access 
+to a wide range of contraceptive options, without 
+misinformation or financial or policy barriers, 
+and can base their decisions for implementation 
+on their own unique temporal, societal and 
+cultural context (8).
+To formulate recommendations, the GDG applied 
+the following taxonomy: recommendations 
+were either “strong” or “conditional” and “for” 
+or “against” implementation and use. In the 
+ECO guideline, a strong recommendation is 
+presented as recommends and a conditional 
+recommendation is presented as suggests 
+(see Box 3). 
+Methods
+9
+
+Box 3 Definitions of strong and conditional recommendations
+Strong recommendation (WHO recommends)
+The GDG judged that the desirable consequences clearly outweigh the undesirable ones (FOR). 
+The GDG judged that the undesirable consequences clearly outweigh the desirable ones (AGAINST).
+A strong recommendation TO ADD a method indicates the method can be adopted as policy.
+A strong recommendation AGAINST ADDING a method indicates the method should not be adopted as policy.
+Users should adhere to the contraceptive usage practices that WHO denotes as a strong recommendation FOR the practice to 
+safeguard high-quality family planning care.
+Users should not adhere to contraceptive usage practice that WHO determined as a strong recommendation AGAINST the practice 
+to safeguard high-quality family planning care.
+Conditional recommendation (WHO suggests)
+The GDG judged that the desirable consequences probably outweigh the undesirable consequences (FOR).
+The GDG judged that the undesirable consequences probably outweigh the desirable consequences (AGAINST).
+A conditional recommendation TO ADD or AGAINST ADDING a method indicates the method may be adopted as policy. However, 
+different choices may be appropriate for some individuals or settings depending on considerations such as resources, feasibility 
+or availability.
+New evidence may result in a change to the balance of risks to benefits.
+GDG: Guideline Development Group.
+Through consensus during the in-person 
+meeting, the GDG developed four of the five 
+recommendations. Voting was required to 
+achieve a decision on the recommendation 
+for ormeloxifene. All GDG members eligible 
+to participate in the discussions and decisions 
+agreed to the final direction and strength 
+of the ormeloxifene recommendation. The 
+wording and decisions presented in the 
+EtD frameworks were completed through 
+discussions during the in-person June 2025 
+meeting and electronically via teleconference 
+on 17 July 2025 and email discussions through 
+7 October 2025 (see Annex 2).
+A draft of the entire ECO guideline document 
+was sent to the ERG, which comprised eight 
+experts who did not participate in the GDG 
+meeting. The WHO Secretariat reviewed all 
+declarations of interests and found no conflicts 
+of interest sufficient to preclude any ERG 
+members from reviewing and commenting 
+on the entire document. For details of 
+their declarations of interests see Annex 1. 
+Comments received from these reviewers 
+were addressed and incorporated into this 
+guideline as appropriate. The final version of 
+this document was approved by the Guidelines 
+Review Committee on 11 March 2026.
+10
+
+
+3.1 
+WHO recommends adding mifepristone to the method mix for EC, as a single dose between 
+10 and 50 mg.
+Remarks: the availability of mifepristone dosage forms may differ across settings and countries. 
+A dose between 10 and 25 mg may be preferred if available. EC pills are taken as soon as possible after 
+unprotected sex and within five days.
+Strong recommendation, moderate-certainty evidence
+3.1.1 
+EC remains an important tool for individuals 
+seeking to prevent pregnancy. Unintended 
+pregnancy affects an estimated 121 million 
+people worldwide (9). When individuals are 
+not using a consistent contraceptive method, 
+do not have access to contraception, have a 
+regular method that fails or are victims of sexual 
+violence, EC can be the only option to reduce 
+the risk of becoming pregnant. EC oral methods 
+that are currently used and included in clinical 
+guidelines are ulipristal acetate, LNG and COCs 
+– often referred to as the Yuzpe method (10, 11). 
+The copper intrauterine device (IUD) is also used 
+for EC.
+Mifepristone is a norethindrone derivative 
+that strongly binds to progesterone and 
+glucocorticoid receptors, functioning as an 
+antagonist. Mifepristone has been found to 
+delay or prevent ovulation via this progesterone 
+receptor antagonism. Mifepristone as EC 
+is approved and utilized in a few countries 
+including Armenia, China, the Russian Federation 
+and Ukraine (12). The dosing regimen of 
+mifepristone as EC varies, with doses ranging 
+from 10 to 600 mg taken within 120 hours of 
+unprotected intercourse.
+The GDG examined the following key 
+question: “Should mifepristone be added to 
+the contraceptive method mix for EC (and at 
+what dose)?”
+3.1.2 
+Evidence from a recent systematic review 
+of 87 randomized controlled trials (RCTs) 
+was included (13). The literature search was 
+performed through December 2024. The review 
+included studies comparing mifepristone to 
+other methods of EC (COCs [Yuzpe method], 
+LNG oral pills, and copper IUDs [as EC]). No 
+studies comparing mifepristone to ulipristal 
+acetate were identified. Studies were included 
+if the population was women seeking EC for the 
+prevention of pregnancy within 120 hours of 
+unprotected intercourse.
+Results showed that compared with LNG, middose mifepristone (25–50 mg) likely resulted in 
+12 fewer pregnancies per 1000 women (risk ratio 
+[RR] 0.67, 95% confidence interval [CI]: 0.49 to 
+0.91). Compared to LNG, low-dose mifepristone 
+(10–25 mg) resulted in 5 fewer pregnancies per 
+1000 women (RR 0.73, 95% CI: 0.59 to 0.90). 
+Compared with COCs (Yuzpe regimen), any dose 
+of mifepristone assessed was found to likely 
+result in 22 fewer pregnancies per 1000 women 
+(RR 0.14, 95% CI: 0.05 to 0.41).
+In terms of undesirable effects experienced 
+per 1000 women, there was moderate-certainty 
+evidence. Mid-dose mifepristone, when 
+compared with LNG likely resulted in 91 fewer 
+side effects including nausea, vomiting and 
+spotting (RR 0.55, 95% CI: 0.39 to 0.76) and likely 
+resulted in 31 more delayed menses events (RR 
+1.29, 95% CI: 1.01 to 1.64).
+12
+
+When low-dose mifepristone was compared with 
+LNG, mifepristone likely reduced side effects (RR 
+0.26, 95% CI: 0.17 to 0.38) and slightly increased 
+delayed menses (RR 1.52, 95% CI: 1.11 to 2.08).
+When comparing mifepristone to Yuzpe, 
+mifepristone likely reduced side effects (RR 0.89, 
+95% CI: 0.83 to 0.95), and increased delayed 
+menses (RR 2.83, 95% CI: 2.31 to 3.47).
+3.1.3 
+There is moderate certainty in the results for 
+acceptability: mifepristone was compared with 
+other oral methods (LNG and Yuzpe) and found 
+to probably increase satisfaction (RR 1.09, 95% 
+CI: 1.05 to 1.13).
+Mifepristone costs can be variable, and it is not 
+currently widely manufactured or available. 
+Because the other primary use of mifepristone is 
+for medical abortion, political and legal contexts 
+in various countries may influence access. The 
+GDG noted that there may be some concerns 
+related to potential for misuse, however these 
+could be overcome by education, packaging 
+or promotion.
+The GDG discussed the need for programmatic 
+monitoring of the use of mifepristone for EC. 
+Countries may need to determine how to make 
+it available (e.g. over the counter or prescribed) 
+and whether the costs are covered. The GDG also 
+noted that registration and inclusion in essential 
+medicines lists may motivate production 
+and access.
+3.1.4 
+The GDG made a strong recommendation for 
+the inclusion of mifepristone in the method 
+mix for EC. Overall, there is moderate certainty 
+in the evidence for the effects of mifepristone; 
+mifepristone is likely to be as effective and 
+safe as other emergency contraceptive 
+methods. Providing mifepristone instead of 
+other EC methods may be more cost-effective 
+in contexts where the cost of mifepristone is 
+lower and thereby increase equitable access 
+to EC if made widely available. It is probably as 
+acceptable to women and clinicians as other 
+methods, and probably feasible to provide. As 
+with all emergency contraceptive methods, the 
+provision of quality information for users and 
+health professionals will be necessary to ensure 
+appropriate use when added to the contraceptive 
+method mix.
+3.1.5 
+When implementing this recommendation, the 
+GDG underscored the paramount importance 
+of the right to contraceptive choice. Further, the 
+GDG emphasized the imperative of addressing 
+the following overarching issues when adding 
+mifepristone for EC to national programmes.
+Essential screening procedures for 
+administering EC pills
+Referral and follow-up care for contraceptive 
+use, as appropriate.
+In addition, the GDG advised that WHO Member 
+States should specifically consider the following 
+when implementing mifepristone for EC:
+The cost of mifepristone varies depending on 
+the dosage in countries; current estimates 
+range from US$ 0.90–1.00 for 25 mg and 
+US$ 1.20–1.35 for 50 mg.
+13
+
+3.2 
+WHO suggests against adding ormeloxifene to the contraceptive method mix for women of 
+reproductive age.
+Remarks: high-quality evidence on the efficacy and safety of ormeloxifene as an oral contraceptive 
+is needed.
+Conditional recommendation, very low-certainty evidence of effects
+3.2.1 
+Ormeloxifene, also known as centchroman, is 
+a non-hormonal selective estrogen receptor 
+modulator (SERM) developed in India as a weekly 
+oral contraceptive. Ormeloxifene (marketed 
+under various brands including Saheli, Choice-7 
+and Chhaya) is commonly used as a 30 mg 
+tablet taken twice weekly for 12 weeks, then 
+once weekly. Its contraceptive action is believed 
+to occur by disrupting the synchronization 
+between the embryo and the endometrium, 
+thereby preventing implantation. Ormeloxifene 
+is currently used only in India, where it was 
+approved by the Drug Controller General of 
+India (DCGI) for use in 1991. In 2016, it was 
+incorporated into India’s national programme 
+and has been on the National List of Medicines of 
+India since 2022. Ormeloxifene is currently not in 
+the WHO Model List of Essential Medicines.
+The GDG examined the following key 
+question: “Should ormeloxifene be added to 
+the contraceptive method mix for women of 
+reproductive age?”
+3.2.2 
+A systematic review of evidence on the 
+safety and effectiveness of ormeloxifene was 
+conducted. Multiple bibliographic databases 
+were searched from database inception through 
+30 June 2025. Fourteen studies met the inclusion 
+criteria (14–27). Of these studies, three were 
+RCTs, two were prospective comparative studies 
+and nine were case series.
+Eleven of the 14 included studies reported data 
+on the effectiveness of ormeloxifene as a regular 
+contraceptive (15–25) measured using the Pearl 
+Index and the number of pregnancies recorded 
+during the study period. The Pearl Index varied 
+between 0.48 and 4.2 pregnancies per 100 
+woman-years. Method failure rates ranged 
+from 0% to 4%, while user-related failure rates 
+were between 0.8% and 10.1%. Based on the 
+comparative and non-comparative studies, the 
+GDG agreed that the number of pregnancies with 
+ormeloxifene may be similar to the percentages 
+with other oral contraceptive pills or with 
+injectable contraceptives, which usually ranged 
+from 4% to 7% for typical use, but the evidence 
+is uncertain.
+All 14 studies assessed the safety of the 
+drug, including the occurrence of serious 
+adverse events of interest (hepatotoxicity, 
+thromboembolic events, hypertension, 
+endometrial hyperplasia, uterine prolapse, loss 
+of bone density, the effect on breastfeeding and 
+fetal birth defects). One study (n = 3139 women) 
+with a 24-month follow-up reported two cases 
+of endometrial hyperplasia within six months of 
+ormeloxifene use (24). Another study (n = 247) 
+followed the number of women who reported 
+reduced milk production at one, three and six 
+months among women who used ormeloxifene 
+in the postpartum period (20). According to this 
+study, 5.7%, 2.7% and 2% of women reported a 
+reduction in milk production at one, three and six 
+months, respectively.
+14
+
+All 14 studies reported one or more side 
+effects. The most commonly reported was 
+menstrual irregularity – with delayed menstrual 
+cycles, light menstrual flow and amenorrhoea 
+the most frequently recorded irregularities. 
+Menstrual irregularity was also found to 
+be the major reason for discontinuation of 
+ormeloxifene, with some studies observing up 
+to 31.5% discontinuation due to the menstrual 
+irregularity (25). However, none of these studies 
+reported menstrual irregularities that required 
+intervention or treatment, such as treatment for 
+anaemia or blood product transfusion. 
+One study (n = 280) compared irregular bleeding 
+between ormeloxifene and COCs and showed 
+a higher number of irregular cycles in the 
+ormeloxifene group (11.1% vs 7.5%) (16). This 
+finding is consistent with another study (n = 240) 
+which showed a higher number of delayed cycles 
+(19.2% vs 5.8%), light flow (22.2% vs 7.77%) and 
+amenorrhoea (3.3% vs 0%) in the ormeloxifene 
+group compared to the COCs group (15).
+The GDG discussed whether studies 
+including women with other conditions (e.g. 
+postmenopausal women) receiving ormeloxifene 
+could be included to provide evidence for 
+undesirable effects. The GDG agreed not to 
+include these studies as the population would be 
+too indirect to inform the safety outcomes (e.g. 
+differences in hormonal levels may influence 
+adverse effects).
+Regarding undesirable effects, the GDG noted 
+that reports of side effects were inconsistent 
+between the two comparative studies. It 
+judged the body of evidence on the occurrence 
+of adverse events as uncertain. Because the 
+publicly available peer-reviewed reports and the 
+manufacturer’s report (which was shared with 
+WHO for the meeting’s deliberations) did not 
+discuss or present any severe adverse events, 
+the GDG was unable to interpret whether or not 
+there were any (or no) severe adverse events 
+associated with ormeloxifene use.
+3.2.3 
+Five studies reported on the method satisfaction 
+and acceptability of ormeloxifene compared 
+with other contraceptive methods. In general, 
+these studies found slightly higher levels of 
+satisfaction among women using ormeloxifene 
+versus women using other methods (such as 
+COCs or IUDs). Overall satisfaction rates among 
+ormeloxifene users across the five studies 
+ranged between 75% and 95%. The GDG noted 
+that ormeloxifene is very low cost in India or may 
+be provided at no cost to women. Ormeloxifene 
+needs to be taken once weekly, making it 
+feasible. It also appears feasible to distribute – its 
+use has increased over time in India and is now 
+used by approximately 2 million people. During 
+the in-person meeting, the GDG was unable 
+to reach consensus on this recommendation 
+because of the lack of data for adverse events in 
+practice. Voting was required to achieve the final 
+decision. Ultimately all GDG members eligible 
+to participate in the discussions and decisions 
+agreed to the final direction and strength of 
+the recommendation.
+3.2.4 
+against the inclusion of ormeloxifene in the 
+Overall, the GDG determined that the evidence 
+for ormeloxifene is of very low-certainty and 
+suggests that its effect on the prevention of 
+pregnancy and its side effects are similar to 
+other COCs, but the evidence is uncertain. The 
+effect on adverse events is unknown due to the 
+very low quality of reporting and presentation 
+of the safety data. The cost of ormeloxifene 
+is very low (and currently can be provided at 
+no cost to users) in India which may increase 
+equitable access to contraceptives, and evidence 
+suggests that it is acceptable to individuals and 
+feasible given the once weekly dose schedule. 
+15
+
+Since the effects on benefits is uncertain, and 
+the inability to assess adverse events with the 
+current evidence available is a major concern, 
+a conditional recommendation not to add it 
+to the contraceptive method mix was made. 
+High-quality evidence on its efficacy and safety 
+is needed before considering adding it to the 
+contraceptive method mix.
+3.2.5 
+As the GDG formulated a conditional 
+recommendation against adding ormeloxifene 
+into national programmes’ contraceptive method 
+mix, implementation considerations were 
+not discussed.
+3.3 
+Quinestrol-containing pills: quinestrolquingestanol, quinestrol-norgestrel and 
+quinestrol-levonorgestrel 
+WHO recommends against adding quinestrol-quingestanol (Quin-Quin) to the contraceptive 
+Strong recommendation, very low-certainty evidence
+WHO recommends against adding quinestrol-norgestrel (Quin-NG) to the contraceptive mix 
+for women of reproductive age.
+Strong recommendation, very low-certainty evidence
+WHO suggests against adding quinestrol-levonorgestrel (Quin-LNG) to the contraceptive 
+Conditional recommendation, low-certainty evidence
+Remarks: where quinestrol-containing products are being used, rigorous pharmacovigilance is needed to 
+monitor safety. High-quality evidence about its efficacy and safety is needed.
+3.3.1 
+Quinestrol is a 3-cyclopentylether of 
+ethinylestradiol that has been available in a 
+once-a-month contraceptive pill combined 
+with a progesterone since the late 1960s (28). 
+Quinestrol by itself is not biologically active, but, 
+after oral intake, it is stored in fat tissue from 
+where it is slowly released and metabolized 
+to ethinylestradiol – it has a long half-life. The 
+progestogen component is short-acting and 
+produces a progestogen peak followed by a 
+decline which induces a menstruation-like 
+withdrawal bleeding, typically starting on day 
+three after intake of the pill (28, 29). 
+Quinestrol has historically been combined with 
+quingestanol, norgestrel or levonorgestrel. 
+Quingestanol acetate, the 3-cyclopentylenol 
+ether derivative of norethindrone acetate, is a 
+progestin with twice the potency of and with 
+the same biological profile as norethindrone 
+acetate (30). In 1969, three contraceptive pill 
+16
+
+formulations were introduced in China: the 
+three preparations contained 3.0–3.3 mg 
+quinestrol and a progestogen (norgestrel 
+12 mg, chlormadinone 15 mg or 16-methylenechlormadinone 10 mg) (31). Since 1998, a pill 
+containing quinestrol 3.0 mg and LNG 6 mg has 
+been the only quinestrol-containing pill that 
+has received approval for use in public clinics in 
+China (32). Pills containing quinestrol 3.0 mg and 
+norgestrel 12 mg have also been reported to be 
+available in such clinics (33).
+The GDG examined the following key question: 
+“Should quinestrol-containing pills be added 
+to the contraceptive method mix for women of 
+reproductive age, including Quin-Quin, Quin-LNG 
+and Quin-NG?”
+3.3.2 
+Evidence from one RCT (34) and 11 case series 
+(30, 35–44) was included, with searches updated 
+to 1 December 2024. The RCT included 732 
+participants under 40 years of age. One group 
+(n = 370) received 3 mg quinestrol, combined 
+with 6 mg LNG (Quin-LNG), with a total followup period of 6560 cycles and a control group 
+(n = 362) received 3 mg quinestrol, combined 
+with 12 mg norgestrel (Quin-NG), with a total of 
+5716 follow-up cycles. The 11 case series (4632 
+participants) focused on quinestrol combined 
+with quingestanol (Quin-Quin). There was very 
+low-certainty evidence for all the effects.
+In terms of efficacy, 10 pregnancies occurred in 
+370 participants (2.7%) in the Quin-LNG group 
+and 14 pregnancies among 362 participants 
+(3.87%) in the Quin-NG group. Compared with 
+Quin-NG, Quin-LNG may result in 12 fewer 
+pregnancies per 1000 women, ranging from 
+21 fewer to 21 more (RR 0.70, 95% CI: 0.31 to 
+1.55). Among the 4093 women using Quin-Quin 
+presented in the 11 case series, 154 pregnancies 
+occurred (3.76%).
+According to case series reports of Quin-Quin 
+use, two cases of venous thromboembolism 
+(VTE) (0.12%) occurred among 1684 women 
+taking Quin-Quin. Among the 18 women who 
+experienced a contraceptive failure, no fetal 
+malformations and/or birth defects were 
+reported. There were no reports of breast 
+cancer within the case series (n = 600 Quin-Quin 
+users) recording this outcome. Relevant adverse 
+event outcome data for Quin-LNG and Quin-NG 
+are lacking.
+In general, reports of side effects among women 
+participating in the RCT who were assigned to 
+use either Quin-LNG or Quin-NG were similar. 
+Nausea/cramping/vomiting (7.3% vs 11.3%), 
+dizziness (3.7% vs 4.7%) and leucorrhoea (6.4% 
+vs 8.3%) were the most commonly observed 
+side effects, respectively. Reports of side effects 
+were greater among Quin-Quin users compared 
+with women using Quin-LNG or Quin-NG. Nearly 
+60% of Quin-Quin users experienced dizziness 
+(58.8%), while 35.4% reported headaches, 50.3% 
+noted leucorrhoea and 44% reported vomiting.
+During the discussions, the WHO Secretariat 
+informed the GDG that it had received concerns 
+about serious adverse events reported in the 
+media from five countries (e.g. Uganda reported 
+a maternal death, Zambia reported an incidence 
+of venous thromboembolism (VTE), and a 
+bleeding disorder was also reported). The WHO 
+Secretariat indicated that it is unclear what type 
+of quinestrol contraceptive is being taken or 
+when and how often. The GDG suspected that 
+people could be taking quinestrol-containing 
+pills at higher doses and/or more than once per 
+month, which may explain adverse events from 
+high estrogen intake.
+3.3.3 
+Quin-LNG remains commercially available and 
+is associated with relatively low economic costs 
+to the individual; it has been available for over 
+40 years. Quin-NG is not available to purchase 
+and does not appear to be available online. The 
+GDG noted that many individuals may prefer 
+to have a single monthly oral contraceptive pill, 
+but if unavailable, individuals would find other 
+contraceptives acceptable.
+17
+
+3.3.4 
+The GDG made strong recommendations against 
+the inclusion of both Quin-Quin and Quin-NG in 
+the method mix for women of reproductive age. 
+suggesting against the inclusion of Quin-LNG 
+in the method mix for women of reproductive 
+age. Overall, the GDG judged that there may be 
+serious adverse events with the use of Quin-NG 
+and Quin-Quin and there are uncertain effects 
+on benefits (e.g. risk of pregnancy). For Quin-
+LNG, the adverse effects are unknown and the 
+effects on benefits are also uncertain (e.g. risk 
+of pregnancy). The evidence overall for benefits 
+and harms was very low, but the potential for 
+harms with Quin-NG and Quin-Quin led the GDG 
+to make a strong recommendation against those 
+formulations. In addition, warnings are needed 
+about the dangers of taking medicines that have 
+not been prescribed for oneself. The GDG agreed 
+that if quinestrol-containing contraceptives were 
+not added to the method mix, there was unlikely 
+to be an important impact on equity. The GDG 
+however noted that more research into an oral 
+contraceptive pill taken once monthly is needed.
+3.3.5 
+Owing to reports of serious adverse events 
+linked with quinestrol-containing pill use from 
+news media outlets outside of the health 
+sector in five WHO Member States, the GDG 
+strongly encourages Member States to conduct 
+pharmacovigilance that includes monitoring 
+for adverse events with quinestrol-containing 
+contraceptive pill use. Such pharmacovigilance 
+is particularly warranted because these reported 
+adverse events linked to unregulated use of 
+quinestrol-containing contraceptive pills cannot 
+be confirmed.
+3.4 
+WHO suggests that COCs can be used for a) extended durations up to six months or b) 
+continuously up to one year, as well as their cyclical use for contraception in women of 
+reproductive age.
+Remarks: an extended regimen is defined as taking active combined hormonal contraceptive pills 
+continuously for more than 28 days, followed by a planned hormone-free interval. Extended use may be for 
+fixeda or flexibleb duration up to six months.
+A continuous regimen is defined as taking active combined hormonal contraceptive pills every day without 
+any breaks in daily pill-taking (no hormone-free interval) for up to one year.
+Conditional recommendation, low-certainty evidence
+a Fixed: involves taking active hormone pills daily for an extended fixed period of time depending on user preference (e.g. for 60 consecutive days) followed 
+by a 7-day hormone-free interval before restarting the pills.
+b Flexible: involves taking active pills daily for more than 28 days without a break, but instead of introducing the hormone-free period on a fixed day, the 
+user waits to experience 3–7 consecutive days of breakthrough bleeding or spotting as the cue to introduce a hormone-free period of about 4 days before 
+restarting the pills.
+18
+
+3.4.1 
+Globally, in 2019, an estimated 151 million 
+women of reproductive age (15–49 years) 
+used COCs or other contraceptive pills for 
+contraception (45), accounting for 14.8% of all 
+contraceptive users (46). First approved in 1960 
+(47), the contraceptive mechanisms of COCs 
+include: (a) progestins and estrogens suppress 
+the hypothalamus from releasing gonadotropinreleasing hormone, which in turn reduces the 
+release of luteinizing hormone and folliclestimulating hormone from the pituitary and 
+prevents ovulation (48, 49); (b) progestins thicken 
+cervical mucus and reduce its permeability to 
+sperms (50, 51); and (c) progestins may also 
+reduce endometrial receptivity (52, 53).
+The majority of COCs have a 28-day-cycle 
+regimen: 21 active hormone pills followed 
+by 7 days of placebo or no drug, resulting in 
+withdrawal bleeding every 28 days. This regimen 
+was initially designed to accommodate cultural 
+and social pressures rather than address actual 
+biological considerations or contraceptive 
+mechanisms of action (54). Nevertheless, some 
+users find daily pill-taking burdensome and 
+adherence a challenge. As a result, continuous 
+and extended COCs pill-taking regimens have 
+been developed to offer alternatives – without 
+compromising contraceptive efficacy – that 
+may be more attractive to some COCs users 
+(e.g. fewer menstrual cycles, reduced need for 
+feminine hygiene products).
+Therefore, the GDG examined the following 
+key question: “Should COCs at extended or 
+continuous duration versus cyclical use be used 
+in women of reproductive age?”
+3.4.2 
+A systematic review was conducted up to 
+October 2024 and found 18 RCTs (55–72) and 10 
+studies (73–82) of other study designs.
+Evidence of moderate certainty showed that 
+there is likely no difference between use of 
+continuous or extended regimen compared to 
+cyclic use, in terms of unintended pregnancy 
+rates or Pearl Index. There would likely be one 
+fewer unexpected pregnancy per 1000 women in 
+one year with extended or continuous regimens 
+(odds ratio [OR] 0.79, 95% CI: 0.41 to 1.52) and 
+the Pearl Index would likely be 0.20 lower (from 
+-1.31 to 0.92). Results from five studies (55, 56, 
+58–60) consistently demonstrated a favourable 
+effect for continuous or extended-cycle use 
+of COCs on reducing scheduled bleeding and/
+or spotting but an unfavourable effect on 
+unscheduled bleeding and/or spotting. However, 
+across the studies, their results consistently 
+showed that there will likely be fewer bleedingonly days but more spotting-only days with 
+continuous or extended use of COCs. Additional 
+analyses explored effects with flexible or fixed 
+duration regimens; flexible regimens may result 
+in less bleeding, but the evidence is uncertain.
+Regarding harms, low-certainty evidence showed 
+that there may be little to no difference in harms 
+with extended or continuous use of COCs. 
+There may be 45 more women per 1000 women 
+experiencing side effects such as headaches or 
+dysmenorrhoea (OR 1.20, 95% CI: 1.03 to 1.41) 
+and 10 fewer serious adverse events (OR 0.69, 
+95% CI: 0.27 to 1.73). Six RCTs (55, 58, 60, 65, 
+66, 72) including 4517 women measured deep 
+vein thrombosis (DVT)/VTE over one year. When 
+comparing the continuous or extended use of 
+COCs with cyclic COCs, the odds of developing 
+DVT/VTE is 1.05 with a 95% CI of 0.16 to 6.79, 
+indicating 0.7 more DVT/VTE cases per 1000 
+women in extended or continuous COCs users 
+than cyclic COCs users. Three longitudinal 
+studies measured the incidence of DVT/VTE in 
+continuous or extended COCs users. In one 
+cohort study (82), three cases of DVT (including 
+one case of postoperative thrombosis) occurred 
+in 727 participants who received the flexible 
+regimen during the overall two-year period. 
+Results from Optum Research Database in the 
+United States of America from January 2006 to 
+June 2017 (77) reported a hazard ratio of 1.40 
+(95% CI: 0.90 to 2.19). According to data from 
+another medical record database, from May 
+2007 to September 2015 (78), the absolute risk 
+difference and incidence rate difference in VTE 
+was 0.27 per 1000 persons and 0.35 cases per 
+1000 person-years between the continuous/
+extended use of COCs and the cyclic COCs 
+users, respectively.
+19
+
+3.4.3 
+Other considerations. 
+Moderate-certainty evidence came from eleven 
+RCTs (55, 56, 58–62, 65, 66, 69, 72) and three 
+studies of other study designs (73, 76, 79) 
+reporting outcomes related to the acceptability 
+of using continuous or extended-cycle COCs. 
+In general, there is likely high satisfaction with 
+continuous or extended-cycle use of COCs, and 
+in most studies higher satisfaction compared to 
+cyclic use. Most studies (55, 65–67, 70) showed 
+that there is likely no difference in compliance or 
+discontinuation up to one year between all the 
+regimens. Additional analyses providing lowcertainty evidence showed that discontinuation 
+may be due to bleeding, but the numbers of 
+women discontinuing was importantly greater 
+with continuous or extended-cycle COCs, 
+although discontinuation may be higher in 
+regimens with progestin. The GDG agreed that 
+if an individual discontinued the extended or 
+continuous regimen, there would be few barriers 
+to moving to cyclic use, but that women may 
+discontinue because of unexpected bleeding 
+patterns or the belief that women should have a 
+period at certain time points.
+The GDG judged that the costs of COCs may be 
+similar between regimens, but there may be 
+slight cost savings to the user with less need 
+for menstrual products. The number of healthcare visits is also likely to be similar between 
+regimens, since counselling to explain how to 
+take extended or continuous regimens could 
+occur in those visits. Overall, the cost differences 
+are likely to be negligible. Use of an extended 
+or continuous regimen is probably feasible and 
+there is unlikely to be an impact on equity given 
+the current widespread availability of COCs.
+3.4.4 
+suggesting that COCs can be used for extended 
+durations up to six months or continuously 
+up to one year, as well as their cyclical use for 
+contraception in women of reproductive age. 
+Overall, there is moderate-certainty evidence 
+that there are likely to be small differences in the 
+benefits of extended or continuous regimens 
+compared to cyclic use, and the harms (e.g. VTE/
+DVT) are likely to be similar to cyclical regimens 
+of other contraceptives. The GDG agreed that 
+effects may not vary by duration. Acceptability is 
+probably high, and there may be little difference 
+in discontinuation between regimens. Extended 
+or continuous regimens are probably feasible. 
+The costs may vary in different contexts, but 
+in most countries, the cost differences are 
+likely to be negligible and would not reduce 
+equity. However, counselling for women 
+should be provided to explain how to use these 
+regimens and whether bleeding should occur or 
+be expected.
+3.4.5 
+When implementing this recommendation, 
+the GDG underscored the importance of the 
+right to contraceptive choice. Further, the GDG 
+emphasized the imperative of addressing the 
+following overarching issues when adding 
+continuous- or extended-use COCs regimens to 
+national programmes.
+Essential screening procedures for 
+administering COCs
+Referral and follow-up care for contraceptive 
+use, as appropriate.
+In addition, when implementing this 
+recommendation at a programme level, there are 
+important considerations (e.g. additional training 
+for health-care providers, and resources to 
+manage and counsel women about benefits and 
+harms). Specifically, the GDG highlighted that 
+extended or continuous use of COCs needs:
+enhanced counselling (e.g. about changes 
+in bleeding patterns), which may not be 
+practical in some settings; and
+adequate supplies of COCs, which may not 
+exist in all settings.
+20
+
+3.5 
+Extended use of etonogestrel 
+contraceptive implants
+WHO suggests etonogestrel (ETG) contraceptive subdermal implants can be used up to five 
+years, in line with updated manufacturers’ approved duration of five years.
+Conditional recommendation, very low-certainty evidence
+3.5.1 
+The ETG implant is a single rod of ethylene vinyl 
+acetate copolymer containing 68 mg of ETG, 
+covered in a rate-controlling membrane (83, 
+84). The ETG implant reliably inhibits ovulation 
+when serum levels remain above 90 pg/ml (83). 
+Although labelled for use up to three years when 
+first approved in 1998, the consistent serum 
+levels observed at the end of the three-year 
+period of use suggested that the implant could 
+continue to provide effective contraception 
+beyond the approved duration. The current 
+WHO SPR describes product labelling regarding 
+length of use for “Implanon NXT (also known as 
+Nexplanon; replaces Implanon) which is a 1 rod 
+containing ETG, labelled for up to 3 years of 
+use” (2). On 16 January 2026, the manufacturer 
+announced an update of the Nexplanon product 
+label, following the United States Food and 
+Drug Administration approval of the use of 
+Nexplanon for pregnancy prevention in women 
+of reproductive potential for up to fiveyears 
+(https://organonpro.com/en-us/product/
+nexplanon/home/).
+Prolonging the use of the ETG implant beyond 
+three years of use could offer substantial benefits 
+including improved accessibility, reduced need 
+for replacements and overall lower health-care 
+costs. This may be especially important in lowerresource settings where regular clinical followups may be more challenging.
+Therefore, the GDG examined the following key 
+question: “Should ETG contraceptive subdermal 
+implants be used up to five years versus three 
+years in women of reproductive age?”
+3.5.2 
+A systematic review of studies published up to 
+8 November 2024 found six studies comparing 
+the extended interval use of ETG implant 
+for contraception beyond three years to the 
+currently approved duration of three years. Two 
+studies (306 participants) assessed efficacy of the 
+implant within three to five years, as measured 
+by Pearl Index or pregnancy rate (85, 86). This 
+evidence was judged to be of low certainty: the 
+Pearl Index was 0/100 woman-years, indicating 
+zero pregnancies were recorded during the 
+observation period. Six studies (860 participants) 
+assessed efficacy of the implant within three to 
+four years according to the Pearl Index (85–90). 
+This evidence was also of low certainty: the 
+Pearl Index ranged from 0 to 1.4/100 womanyears across the studies during this time, with 
+three pregnancies occurring during the first 
+three years of implant use. The GDG discussed 
+whether there could be differences in efficacy 
+based on body mass index (BMI). However, some 
+laboratory evidence suggests that there may be 
+no differences (e.g. serum levels are not lower if 
+BMI is greater).
+One study (204 participants) reporting very 
+low-certainty evidence assessed acceptability of 
+the implant within three to five years measured 
+by bothersome bleeding prompting removal 
+(85). The proportion of bothersome bleeding 
+prompting removal during this timeframe 
+was 11/204. Four studies (494 participants) 
+presenting low-certainty evidence assessed 
+acceptability of the implant within three to 
+four years measured by bothersome bleeding 
+21
+
+prompting removal (85, 88–90). Across these four 
+studies, the proportion of bothersome bleeding 
+prompting removal during this time was 15/494.
+3.5.3 
+There was very low-certainty evidence for 
+acceptability of the implant within three to five 
+years; there were 11/204 removals beyond the 
+currently approved duration of three years (84). 
+At three to four years, there was low-certainty 
+evidence from four studies (494 participants) 
+which reported 15 removals (85, 88–90).
+The GDG agreed that extending the use of the 
+implant could lead to a reduction in overall 
+number of procedures and visits for women, 
+as well as a reduction in overall cost to the 
+medical system and to the patient. Outside of 
+education and guideline changes, no significant 
+infrastructure changes are needed to support a 
+duration longer than three years given that the 
+contraceptive method would already be in place. 
+There was some concern that clinicians may not 
+offer replacement at three years if extended use 
+was available; information should be provided 
+to enable women to make their own decision 
+about length of use of the implant. The GDG also 
+indicated that there could be some confusion 
+that women who do not remove it may think 
+that they can become pregnant after the three 
+years. However, the GDG agreed that providing 
+education and information could reduce 
+any misconceptions.
+3.5.4 
+suggesting that ETG contraceptive subdermal 
+implants can be used for up to five years. There 
+was very low-certainty evidence that extended 
+use of ETG contraceptive implants up to five 
+years may be as effective and safe as implants up 
+to three years. The longer duration is probably 
+acceptable to women and clinicians and would 
+have little impact on equity but could reduce 
+the need for resources associated with visits, 
+procedures and costs. Implants up to five years 
+are probably as feasible to provide as up to 
+three years and would not require additional 
+implementation strategies.
+3.5.5 
+When implementing this recommendation, the 
+GDG underscored the paramount importance 
+of the right to contraceptive choice. The GDG 
+emphasized the imperative of addressing 
+the following overarching issues when 
+adding extended use of ETG implants to 
+national programmes.
+Essential screening procedures for 
+administering ETG implants
+Referral and follow-up care for contraceptive 
+use, as appropriate.
+The GDG advised that WHO Member States 
+should specifically consider the following when 
+implementing extended use of ETG implants.
+A client’s right to contraceptive choice and 
+how long they wish to use an implant must 
+be protected.
+Allowing for extended use may require 
+additional national-level policy and 
+programmatic decisions depending on the 
+national regulatory and legal context.
+Irrespective of the option to extend implant 
+use, programmes and providers must 
+safeguard a client’s right to have their 
+implant removed when they wish.
+Additional training and communication 
+materials may be needed for providers to 
+implement extended implant use.
+Lastly, the GDG encourages WHO Member States 
+to continue to enable access to implant removals, 
+as well as opportunities to train clinicians to 
+remove implants.
+22
+
+4 Guideline-relevant 
+research needs
+
+As part of its deliberations and considerations, 
+the GDG identified an array of knowledge 
+gaps related to recommendations within the 
+ECO guideline, where further research could 
+strengthen the existing body of evidence 
+and contribute to potential improvements in 
+expanding contraceptive method choices and 
+client-centred contraceptive services. While 
+recognizing the topics are neither complete 
+nor exhaustive, the GDG aims to stimulate 
+researchers and institutions supporting research 
+on contraception to pursue these topics within 
+their research portfolios.
+Generally, and across all methods discussed, 
+the GDG noted that where there is low- or verylow-certainty evidence for priority outcomes 
+(such as pregnancy and serious adverse 
+effects including VTE), additional high-quality 
+studies are needed. While RCTs comparing 
+different contraceptives, doses, duration or 
+formulation would be ideal, large prospective 
+studies and/or pharmacovigilance could also 
+provide high-quality evidence. In addition, 
+acceptability studies of different contraceptive 
+methods should also be undertaken to inform 
+education and counselling efforts. The following 
+sections highlight research gaps specific to the 
+contraceptive method.
+4.1 
+Mifepristone 
+for EC
+The GDG identified that additional research 
+should be conducted on the effects of 
+mifepristone on breastfeeding and breast 
+milk. Particular to mifepristone are questions 
+related to the optimal dose for EC, the timing 
+(e.g. within five days), understanding the effect 
+of repeated use within a menstrual cycle and if 
+effects vary by subgroups (e.g. people with high 
+BMI where there is the potential for alterations 
+in pharmacokinetics). The GDG also noted that 
+research is needed to determine the effects of 
+mifepristone as an emergency contraceptive 
+following a medical abortion regimen (e.g. when 
+a higher dose of mifepristone has been used), 
+and when hormonal contraceptives (e.g. implants 
+or switching) should be started after using 
+mifepristone as an emergency contraceptive. 
+Implementation and acceptability research, 
+in particular related to barriers to access 
+and cultural context, could inform policy and 
+programmes, especially in settings where it is not 
+currently used.
+4.2 
+As well as the need for high-quality research 
+for efficacy and safety, the GDG highlighted 
+the need for research into the effects of 
+ormeloxifene on breastfeeding (breast milk) and 
+neonatal health, and long-term outcomes such 
+as osteoporosis (bone mineral density), BMI, 
+cardiovascular outcomes, urinary incontinence 
+and uterine prolapse. One of the perceived 
+benefits of ormeloxifene is the infrequent dosing 
+schedule, and therefore additional research on 
+the effects of dosing schedules on compliance 
+and efficacy could inform future development of 
+contraceptive methods.
+4.3 
+Quinestrolcontaining pills: 
+Quin-Quin, Quin-
+LNG and Quin-NG
+Given the concerns with Quin-Quin and Quin-
+NG, the GDG emphasized the need to collect 
+data related to adverse events across multiple 
+platforms (including pharmacovigilance 
+and social media). The GDG also noted that, 
+in general, research into reversible oral 
+contraceptive methods with monthly dosing 
+should be conducted.
+
+4.4 
+Continuous or 
+extended use 
+of COCs
+Although there was moderate-certainty evidence 
+for the effects of extended or continuous 
+use compared to cyclic use of COCs for most 
+outcomes, there remained uncertainty for the 
+effects on bleeding, especially in relation to 
+progestin content of different COCs formulations, 
+and on return to fertility. Most studies followed 
+women up to one year, and therefore studies 
+reporting longer-term use would be valuable.
+4.5 
+Extended use of 
+ETG contraceptive 
+implants 
+The evidence for extended use of ETG 
+contraceptive implants beyond three years 
+was of very low certainty for some outcomes, 
+and there was no evidence for other critical 
+outcomes. Therefore, additional research is 
+needed in general, but should also measure 
+bleeding patterns, drug-drug interactions and 
+removal complications. While data are needed 
+for all women, the GDG questioned whether high 
+BMI could reduce the effects of the implants 
+beyond three years. Finally, the GDG encouraged 
+research into possible toxicity of continued use 
+of ETG implants, especially in women who have 
+a new implant inserted immediately after the 
+removal of the old one.
+Guideline-relevant research needs
+
+25
+
+5 
+Publication, 
+dissemination, 
+monitoring and 
+evaluation
+
+The WHO ECO guideline is published in English 
+on the WHO website (iris.who.int). Translations 
+into the six official United Nations languages 
+will be undertaken in collaboration with 
+WHO regional offices. When available, these 
+translations will be accessible through the WHO/
+HRP webpage at http://www.who.int/hrp.
+A comprehensive dissemination and evaluation 
+plan will be designed and implemented. This plan 
+will include widespread dissemination through 
+the WHO regional and country offices, WHO 
+Member States, WHO collaborating centres, 
+professional organizations (e.g. International 
+Federation of Gynecology and Obstetrics and 
+International Confederation of Midwives), 
+governmental and nongovernmental partner 
+organizations working in sexual and reproductive 
+health, and civil society groups engaged in sexual 
+and reproductive health projects. HRP and WHO 
+communications will create awareness about 
+the guideline through various media platforms. 
+A strategic launch event will be organized to 
+coincide with important sexual and reproductive 
+health conferences. WHO will collaborate 
+with its regional offices to organize webinars 
+for stakeholders in English and other United 
+Nations languages. The systematic reviews which 
+informed the guideline’s recommendations will 
+be published in peer-reviewed journals.
+After the guideline’s dissemination, an 
+evaluation survey targeting ministries of 
+health, WHO offices and partners, professional 
+organizations and civil society will be undertaken 
+to assess the extent and effectiveness of the 
+dissemination, evaluate the level of inclusion 
+of these methods in national family planning 
+programme method mixes and identify barriers 
+to effective implementation. In collaboration 
+with its Member States and partners, WHO will 
+monitor the implementation and impact of the 
+recommendations at the health-service, national 
+and regional levels.
+27
+Publication , dissemination , monitori ng and evaluation
+Publication , dissemination , monitori ng and evaluation
+
+6 Updating
+
+At a minimum, this guideline will be reviewed 
+every five years. In the interim, WHO will 
+continue to monitor the body of evidence 
+informing these recommendations using the 
+Continuous Identification of Research Evidence 
+process (CIRE) (91). The CIRE system was created 
+by WHO and its partners in 2002 to identify 
+regularly and systematically, newly published 
+evidence that is relevant to WHO family planning 
+guidelines. To this end, WHO will convene 
+additional consultations, as needed, should new 
+evidence around the methods in this guideline 
+be identified through the CIRE process, or 
+should new contraceptive methods and service 
+delivery practices become available and utilized 
+within WHO Member States. This may entail 
+the updating of evidence regarding existing 
+methods in the guideline and any changes in the 
+recommendations, the addition of new emerging 
+methods to the guideline and the transitioning 
+of methods from this guideline to the WHO 
+MEC, and new service delivery practices to the 
+SPR once they meet the necessary criteria. Any 
+change in recommendation will be promptly 
+communicated to Member States and partners to 
+guide policy and programming.
+29
+Updating
+
+References1
+1. 
+Medical eligibility criteria for contraceptive use, 6th ed. 
+Geneva: World Health Organization; 2025. (https://iris.
+who.int/handle/10665/383293). Licence: CC BY-NC-SA 3.0 
+IGO.
+2. 
+Selected practice recommendations for contraceptive 
+use, 4th ed. Geneva: World Health Organization; 2025. 
+(https://iris.who.int/handle/10665/383255). Licence: CC 
+BY-NC-SA 3.0 IGO.
+3. 
+WHO handbook for guideline development, 2nd edition. 
+Geneva: World Health Organization; 2014. (https://iris.
+who.int/handle/10665/145714).
+4. 
+Mokkarala S, Kamuyango A, Kiarie J, Kidula N, Jiang L, 
+Sonalkar S. Expanding contraceptive options: a scoping 
+review of medically approved contraceptive methods 
+that are not in the WHO Medical Eligibility Criteria. 
+Contraception. 2025;149. (https://doi.org/10.1016/j.
+contraception.2025.110983).
+5. 
+Sterne JAC, Savović J, Page MJ, Elbers RG, Blencowe NS, 
+Boutron I et al. RoB 2: a revised tool for assessing risk of 
+bias in randomised trials. BMJ. 2019;366:l4898. (https://
+doi.org/10.1136/bmj.l4898).
+6. 
+Sterne JA, Hernán MA, Reeves BC, Savović J, Higgins JP 
+et al. ROBINS-I: a tool for assessing risk of bias in nonrandomised studies of interventions. BMJ. 2016;355. 
+(https://doi.org/10.1136/bmj.i4919).
+7. 
+Neumann I, Schünemann H, editors. The GRADE book 
+version 1.0 (updated September 2024). The GRADE 
+Working Group; 2025. (https://book.gradepro.org).
+8. 
+Yeh PT, Kautsar H, Kennedy CE, Gaffield ME. Values 
+and preferences for contraception: a global systematic 
+review. Contraception. 2022;111:3-21. (https://doi.
+org/10.1016/j.contraception.2022.04.011).
+9. 
+State of the World Population 2022. Seeing the unseen: 
+the case for action in the neglected crisis of unintended 
+pregnancy. New York: UNFPA; 2022. (https://www.unfpa.
+org/sites/default/files/pub-pdf/EN_SWP22%20report_0.
+pdf).
+10. 
+Practice Bulletin Summary No. 152: Emergency 
+Contraception. Obstet. Gynecol. 2015;126(3):685-6. 
+(https://doi.org/10.1097/01.AOG.0000471179.25809.d8).
+11. 
+Emergency contraception. Fact sheet. Geneva: World 
+Health Organization; 2021. (https://www.who.int/newsroom/fact-sheets/detail/emergency-contraception).
+12. 
+Puig, C. Russian Federation: mifepristone EC pills less 
+accessible [news release]. Tirgu Mures, Romania: 
+European Consortium for Emergency Contraception; 24 
+March 2025. (https://www.ec-ec.org/russian-federationmifepristone-ec-pills-less-accessible).
+13. 
+Ramanadhan S, Edelman A, Che Y, Paynter R, Hersh A, 
+Henderson J. Effectiveness, safety, and acceptability 
+of mifepristone compared to other interventions in 
+reproductive age women using emergency contraception 
+for the prevention of pregnancy: a systematic review and 
+meta-analysis. BMJ Sex Reprod Health. 2026. 
+(https://doi.org/10.1136/bmjsrh-2026-203328). 
+14. 
+Sarkar A, Wadhawan I, Raj A, Nagabhushana P, Singh 
+P. Improving the acceptance rate of centchroman 
+as a postpartum contraceptive through a quality 
+improvement initiative. Cureus. 2022;14(9):e29277. 
+(https://doi.org/10.7759/cureus.29277).
+15. 
+Miuli I, Dewan R, Agarwal K. A study to compare 
+acceptability, safety and continuation rates of combined 
+hormonal pill and centchroman as post abortion 
+contraceptives. Int J Reprod Contracept Obstet Gynecol. 
+2020;9(8):3350-9. (https://doi.org/10.18203/2320-1770.
+ijrcog20203322).
+16. 
+Gupta N, Siddiqui E, Dwivedi D, Jahan U. Study of 
+acceptability, efficacy and side effects of non-steroidal 
+contraceptive ormeloxifene and its comparative 
+evaluation with combined oral contraceptives. Int J 
+Reprod Contracept Obstet Gynecol. 2024;13(12):3585-91. 
+(https://doi.org/10.18203/2320-1770.ijrcog20243590).
+17. 
+Gupta M, Bansiwal R, Anand HP. Comparison of 
+centchroman and PPIUCD in terms of efficacy, safety and 
+continuation rate in immediate postpartum period. Int 
+J Reprod Contracept Obstet Gynecol. 2020;10(1):203-6. 
+(https://doi.org/10.18203/2320-1770.ijrcog20205769).
+18. 
+Ganguli G, Mukherjee K, Raman N. Centchroman, a safe 
+contraceptive coverage following medical termination 
+of pregnancy. Journal of Obstetrics and Gynaecology 
+of India. 1995;649-53. (https://jogi.co.in/articles/files/
+filebase/Archives/1995/aug/1995_649_653_Aug.pdf).
+19. 
+Agarwal K, Dewan R. Evaluation of acceptability, safety 
+and continuation rates of centchroman as postabortion 
+nonsteroidal contraceptive pill. Contraception. 
+2023 May;121:109961. (https://doi.org/10.1016/j.
+contraception.2023.109961).
+20. 
+Chhatria B, Das L, Priya SN, Mohapatra I, Mohanty S, 
+Samantaray SR. Exploring the efficacy of centchroman as 
+a postpartum contraceptive: an observational study. Int 
+J Reprod Contracept Obstet Gynecol. 2025;14(6):1908-14. 
+(https://doi.org/10.18203/2320-1770.ijrcog20251583).
+21. 
+Nityanand S, Kamboj VP, Chandravati: Contraceptive 
+efficacy and safety of centchroman with biweekly-cumweekly schedule. In: Puri CP, Van Look PFA, eds. Current 
+Concepts in Fertility Regulation and Reproduction. New 
+Delhi: Wiley Eastern Ltd; 1994:61–68. (https://scholar.
+google.com/scholar?hl=en&as_sdt=0%2C5&q=.+Contrace
+ptive+efficacy+and+safety+of+centchroman+with+biwee
+kly-cum-+weekly+schedule.+In%3A+++Puri++CP+%2C++V
+anLook++PFA++%2C+eds.+C).
+1 
+All references were accessed on 06 May 2026.
+30
+
+22. 
+Puri V, Kamboj VP, Chandra H, et al. Results of 
+multicentric trial of centchroman. In: Dhawan BN, 
+Agarwal KK, Arora RB, et al, eds. Pharmacology 
+for Health in Asia. New Delhi: Allied Publishers; 
+1988:439–447. (https://scholar.google.com/scholar_
+lookup?title=Pharmacology%20for%20health%20
+in%20Asia&author=V%20Puri&author=VP%20
+Kamboj&author=H%20Chandra&publication_
+year=1988&).
+23. 
+Nityanand S, Chandrawati, Singh L, et al. Clinical 
+evaluation of centchroman: a new oral contraceptive. 
+In: Puri CP, Van Look PFA, eds. Hormone Antagonists 
+for Fertility Regulation. Bombay: Indian Society 
+for the Study of Reproduction and Fertility; 
+1988:223–230. (https://scholar.google.com/scholar_
+lookup?hl=en&publication_year=1988&pages=223-
+230&author=S+Nityanand&author=+Chandrawati&auth
+or=L+Singh&author=JS+Srivastava&author=VP+Kambo
+j&title=Hormone+Antagonists+for+Fertility+Regulation).
+24. 
+Radhika AG, Suneja A, Gupta R, Dorairajan G, Aggarwal 
+P, Ashok V et al. Clinical outcomes among centchroman 
+users across six medical college hospitals in India. 
+Int J Gynecol Obstet. 2025;170:1153-61. (https://doi.
+org/10.1002/ijgo.70107).
+25. 
+Doke G, Kamda J. A study of centchroman users with 
+special reference to its contraceptive benefit. Int J 
+Reprod Contracept Obstet Gynecol. 2019;8(11):4204-07. 
+(https://doi.org/10.18203/2320-1770.ijrcog20194594).
+26. 
+Gupta RC, Paliwal JK, Nityanand S, Asthana OP, Lal J. 
+Centchroman: a new non-steroidal oral contraceptive in 
+human milk. Contraception. 1995;52(5):301-5. 
+(https://doi.org/10.1016/0010-7824(95)00214-U).
+27. 
+Mittal S, Sehgal R, Jindal VI, Sikka P, Kandpal S, Maiti 
+L et al. Single dose levonorgestrel and two regimens 
+of centchroman for emergency contraception. J Turk 
+Ger Gynecol Assoc 2008;9:132-7. (https://www.jtgga.
+org/pdf/a5223c9c-50f0-490d-b293-6a74c2af8d3b/
+articles/12993/JTGGA-134-1382.pdf).
+28. 
+Greenblatt RB. One-pill-a-month contraceptive. Fertil 
+Steril. 1967;18(2):207-11. (https://doi.org/10.1016/
+S0015-0282(16)36245-8).
+29. 
+Maqueo-Topete M, Berman E, Soberón J, Calderón JJ. A 
+pill-a-month contraceptive. Fertil Steril. 1969;20(6):884-
+91. (https://doi.org/10.1016/S0015-0282(16)37203-X).
+30. 
+Guiloff E, Berman E, Montiglio A, Osorio R, Lloyd CW. 
+Clinical study of a once-a-month oral contraceptive: 
+quinestrol-quingestanol. Fertil Steril. 1970;21(2):110-18. 
+(https://doi.org/10.1016/S0015-0282(16)37331-9).
+31. 
+Fan HM. Studies on Long-acting oral contraceptives. 
+In: Chang CF, Griffin D, Wallman A. Recent advances 
+in fertility regulation: proceedings of a symposium 
+organized by the Ministry of Public Health of the 
+People’s Republic of China and the World Health 
+Organization’s Special Programme of Research, 
+Development and Research Training in Human 
+Reproduction, Beijing, 2–5 September 1980; Atar. 
+1981:378-93. (https://iris.who.int/handle/10665/39071).
+32. 
+Kejuan F, Meirik O, Yongang D, Yan C, Weijin Z, Fajans P. 
+Once-a-month contraceptive pills in China: a review of 
+available evidence. Contraception. 2007;75(5):337-43. 
+(https://doi.org/10.1016/j.contraception.2007.01.007).
+33. 
+Fang K, Shou W, Cheng J. A strategic assessment of 
+the need for contraceptive introduction in Chongqing 
+Municipality, China. Chinese Journal of Family Planning. 
+2002;1:38-44 (in Chinese). (https://api.semanticscholar.
+org/CorpusID:74108106).
+34. 
+Weng LJ, Han XJ, Sang GW. Clinical observation on longacting oral contraceptives levonorgestrel + quinestrol. 
+Reprod Contracept. 1992;12(3):1-17 (in Chinese). 
+(https://oversea.cnki.net/kcms2/article/abstract?v=K9
+8h8hrtvamLlKNB3W2WWQ2yLBpy50Hx5RF6Q0MnQD
+mWSwtK-euF_RAJDdLeU20-ZD3WIbZBmP7CeiqtIxhXcv1BVDckgTEJNkiKsM_B_utdhzCG73HJNM-kFtPKz4Bw4
+OAiSlXGNXNcKx9rSKxuYrCFFk7RROfMtRVd60VKkp1y_
+AhG0pDTQ==&uniplatform=OVERSEA&language=EN).
+35. 
+Donde UM, Virkar KD. Biochemical studies with oncea-month contraceptive pill containing quinestrolquingestanol acetate. Contraception. 1975;11(6):681-88. 
+(https://doi.org/10.1016/0010-7824(75)90065-7).
+36. 
+Rubio B, Mischler TW, Berman E. Further experience 
+with a once-a-month oral contraceptive: quinestrolquingestanol. Fertility and Sterility. 1972;23(10):734-38. 
+(https://doi.org/10.1016/S0015-0282(16)39254-8).
+37. 
+Mishell DR, Freid ND. Life table analysis of a clinical 
+study of a once-a-month oral steroid contraceptive: 
+quinestrol-quingestanol. Contraception. 1973;8(1):37-
+42. (https://doi.org/10.1016/0010-7824(73)90157-1).
+38. 
+Maqueo-Topete M, Mischler TW, Berman E. Fertility 
+following termination of the once-a-month oral 
+contraceptive. Contraception. 1974;10(3):299-304. 
+(https://doi.org/10.1016/0010-7824(74)90008-0).
+39. 
+Hefnawi F, Hassanein M, Younis N. Pill-a-month as 
+an oral contraceptive. Egypt Popul Fam Plann Rev. 
+1972;5(1):1-17. PMID: 12256024. (https://pubmed.ncbi.
+nlm.nih.gov/12256024/).
+40. 
+Tejuja S, Choudhury AD, Saxena NC, Malhotra U, 
+Bhinder G. Clinical experience in India with a oncea-month oral contraceptive pill: quingestanol and 
+quinestrol. Contraception. 1974;10(4):375-83. 
+(https://doi.org/10.1016/0010-7824(74)90037-7).
+41. 
+Larranaga A, Berman E. Clinical study of a once-amonth oral contraceptive: quinestrol-quingestanol. 
+Contraception. 1970;1(2):137-48. (https://doi.
+org/10.1016/0010-7824(70)90053-3).
+42. 
+Ansari AH, Duangjak V, Shalhoub D. Quinestrolquingestanol combination for conception control. J. 
+Reprod. Med. 1974;13(3):89-92. PMID: 4415438. 
+(https://pubmed.ncbi.nlm.nih.gov/4415438/).
+43. 
+Vaidya RA, Kore S, Adatia A, Iyengar V, Dikshit S, Virkar 
+K. Poor acceptability of “pill-a-month” contraceptive: 
+high pregnancy and drop-out rates in a small sample. 
+J Postgrad Med. 1976;22(4):176-79. PMID: 1032832. 
+(https://pubmed.ncbi.nlm.nih.gov/1032832/).
+31
+
+44. 
+Leguia AL. A Latin American field trial with a 
+once-a-month oral contraceptive. J. Reprod. Med. 
+1973;10(4):202-3. PMID: 4695503. (https://pubmed.ncbi.
+nlm.nih.gov/4695503/).
+45. 
+Contraceptive use by method 2019: data booklet 
+(ST/ESA/SER.A/435). New York (NY): United Nations 
+Department of Economic and Social Affairs, Population 
+Division; 2019. (https://digitallibrary.un.org/
+record/3849735?ln=en&v=pdf).
+46. 
+Haakenstad A, Angelino O, Irvine CMS, Bhutta ZA, 
+Bienhoff K, Bintz C et al. Measuring contraceptive 
+method mix, prevalence and demand satisfied by age 
+and marital status in 204 countries and territories, 
+1970–2019: a systematic analysis for the Global Burden 
+of Disease Study. Lancet. 2019;400(10348):295-327. 
+(https://doi.org/10.1016/S0140-6736(22)00936-9).
+47. 
+Christin-Maitre S. History of oral contraceptive drugs 
+and their use worldwide. Best Pract Res Clin Endocrinol 
+Metab. 2013;27(1):3-12. (https://doi.org/10.1016/j.
+beem.2012.11.004).
+48. 
+Mishell DR, Kletzky OA, Brenner PF, Roy S, Nicoloff J. 
+The effect of contraceptive steroids on hypothalamicpituitary function. Am J Obstet Gynecol. 1977;128(1):60-
+74. (https://doi.org/10.1016/0002-9378(77)90295-2).
+49. 
+Kastin AJ, Schally AV, Gual C, Arimura A. Release of LH 
+and FSH after administration of synthetic LH-releasing 
+hormone. J Clin Endocrinol Metab. 1972;34(4):753-56. 
+(https://doi.org/10.1210/jcem-34-4-753).
+50. 
+Elstein M, Morris SE, Groom GV, Jenner DA, 
+Scarisbrick JJ, Cameron EHD. Studies on low-dose oral 
+contraceptives: cervical mucus and plasma hormone 
+changes in relation to circulating D-norgestrel and 
+17alpha ethynyl-estradiol concentrations. Fertil Steril. 
+1976;27(8):892-99. (https://doi.org/10.1016/s0015-
+0282(16)42008-x).
+51. 
+Shoupe D. New progestins–clinical experiences: 
+gestodene. Am J Obstet Gynecol. 1994;170(5):1562-68. 
+(https://doi.org/10.1016/s0002-9378(94)05020-9).
+52. 
+Rossmanith WG, Steffens D, Schramm G. A comparative 
+randomized trial on the impact of two low-dose oral 
+contraceptives on ovarian activity, cervical permeability 
+and endometrial receptivity. Contraception. 
+1977;56(1):23-30. (https://doi.org/10.1016/s0010-
+7824(97)00070-x).
+53. 
+Bronson RA. Oral contraception: mechanism of action. 
+Clin Obstet Gynecol. 1981;24(3):869-77. (https://doi.
+org/10.1097/00003081-198109000-00014).
+54. 
+Edelman A, Micks E, Motu’apuaka ML, Benson LS, 
+Stewart F. Continuous or extended cycle vs cyclic use of 
+combined hormonal contraceptives for contraception. 
+Cochrane Database Syst Rev. 2014;7:Cd004695. 
+(https://doi.org/10.1002/14651858.CD004695.pub3).
+55. 
+Anderson FD, Hait H. A multicenter, randomized study 
+of an extended cycle oral contraceptive. Contraception. 
+2003;68(2):89-96. (https://doi.org/10.1016/S0010-
+7824(03)00141-0). (Erratum to: Anderson F, Hait 
+H. Contraception. 2004;69(2):175. (https://doi.
+org/10.1016/j.contraception.2003.12.003).
+56. 
+Cachrimanidou AC, Hellberg D, Nilsson S, Waldenström 
+U, Olsson SE, Sikström B. Long-interval treatment 
+regimen with a desogestrel-containing oral 
+contraceptive. Contraception. 1993;48(3):205-16. 
+(https://doi.org/10.1016/0010-7824(93)80141-h).
+57. 
+Gersten J, Hsieh J, Weiss H, Ricciotti NA. Effect of 
+extended 30 μg ethinyl estradiol with continuous 
+low-dose ethinyl estradiol and cyclic 20 μg ethinyl 
+estradiol oral contraception on adolescent bone 
+density: a randomized trial. J Pediatr Adolesc Gynecol. 
+2016 Dec;29(6):635-42. (https://doi.org/10.1016/j.
+jpag.2016.05.012). 
+58. 
+Hadji P, Neulen J, Schaudig K, Schwenkhagen A, 
+Grimmbacher S, Wiegratz I. Extended-cycle versus 
+conventional treatment with a combined oral 
+contraceptive containing ethinylestradiol (30 μg) and 
+levonorgestrel (150 μg) in a randomized controlled trial. 
+Gynecol Endocrinol. 2020;36(6):513-20. (https://doi.org/
+10.1080/09513590.2020.1725963). 
+59. 
+Jensen JT, Garie SG, Trummer D, Elliesen J. 
+Bleeding profile of a flexible extended regimen of 
+ethinylestradiol/drospirenone in US women: an 
+open-label, three-arm, active-controlled, multicenter 
+study. Contraception. 2012;86(2):110-8. (https://doi.
+org/10.1016/j.contraception.2011.12.009). 
+60. 
+Klipping C, Duijkers I, Fortier MP, Marr J, Trummer 
+D, Elliesen J. Contraceptive efficacy and tolerability 
+of ethinylestradiol 20 μg/drospirenone 3 mg in a 
+flexible extended regimen: an open-label, multicentre, 
+randomised, controlled study. J Fam Plann Reprod 
+Health Care. 2012;38(2):73-83. (https://doi.org/10.1136/
+jfprhc-2011-100213).
+61. 
+Kwiecien M, Edelman A, Nichols MD, Jensen JT. 
+Bleeding patterns and patient acceptability of standard 
+or continuous dosing regimens of a low-dose oral 
+contraceptive: a randomized trial. Contraception. 
+2003 Jan;67(1):9-13. (https://doi.org/10.1016/s0010-
+7824(02)00445-6).
+62. 
+Legro RS, Pauli JG, Kunselman AR, Meadows JW, Kesner 
+JS, Zaino RJ et al. Effects of continuous versus cyclical 
+oral contraception: a randomized controlled trial. J Clin 
+Endocrinol Metab. 2008 Feb;93(2):420-9. (https://doi.
+org/10.1210/jc.2007-2287).
+63. 
+Machado RB, de Melo NR, Maia H Jr. Bleeding patterns 
+and menstrual-related symptoms with the continuous 
+use of a contraceptive combination of ethinylestradiol 
+and drospirenone: a randomized study. Contraception. 
+2010 Mar;81(3):215-22. (https://doi.org/10.1016/j.
+contraception.2009.10.010).
+32
+
+64. 
+Bonassi Machado R, Pompei LM, Andrade R, Nahas 
+E, Guazzelli C, Wender MC et al. Bleeding pattern and 
+management of unexpected bleeding/spotting with an 
+extended regimen of a combination of ethinylestradiol 
+20 mcg and drospirenone 3 mg. Int J Womens Health. 
+2020;12:235-42. (https://doi.org/10.2147/IJWH.
+S238294).
+65. 
+Miller L, Notter KM. Menstrual reduction with extended 
+use of combination oral contraceptive pills: randomized 
+controlled trial. Obstet Gynecol. 2001;98(5 Pt 1):771-8. 
+(https://doi.org/10.1016/s0029-7844(01)01555-1).
+66. 
+Miller L, Hughes JP. Continuous combination oral 
+contraceptive pills to eliminate withdrawal bleeding: a 
+randomized trial. Obstet Gynecol. 2003;101(4):653-61. 
+(https://doi.org/10.1016/s0029-7844(03)00014-0).
+67. 
+Nanda K, Lendvay A, Kwok C, Tolley E, Dubé K, 
+Brache V. Continuous compared with cyclic use of 
+oral contraceptive pills in the Dominican Republic: 
+a randomized controlled trial. Obstet Gynecol. 
+2014;123(5):1012-22. (https://doi.org/10.1097/
+AOG.0000000000000235).
+68. 
+Nappi RE, Paoletti AM, Volpe A, Chiovato L, Howard B, 
+Weiss H et al. Multinational, multicentre, randomised, 
+open-label study evaluating the impact of a 91-day 
+extended regimen combined oral contraceptive, 
+compared with two 28-day traditional combined 
+oral contraceptives, on haemostatic parameters in 
+healthy women. Eur J Contracept Reprod Health Care. 
+2014;19(4):285-94. (https://doi.org/10.3109/13625187.2
+014.918596). 
+69. 
+Stephenson J, Shawe J, Panicker S, Brima N, Copas A, 
+Sauer U et al. Randomized trial of the effect of tailored 
+versus standard use of the combined oral contraceptive 
+pill on continuation rates at 1 year. Contraception. 
+2013;88(4):523-31. (https://doi.org/10.1016/j.
+contraception.2013.03.014).
+70. 
+Teichmann A, Apter D, Emerich J, Greven K, Klasa-
+Mazurkiewicz D, Melis GB et al. Continuous, daily 
+levonorgestrel/ethinyl estradiol vs. 21-day, cyclic 
+levonorgestrel/ethinyl estradiol: efficacy, safety 
+and bleeding in a randomized, open-label trial. 
+Contraception. 2009;80(6):504-11. (https://doi.
+org/10.1016/j.contraception.2009.05.128).
+71. 
+Vandever MA, Kuehl TJ, Sulak PJ, Witt I, Coffee A, Wincek 
+TJ et al. Evaluation of pituitary-ovarian axis suppression 
+with three oral contraceptive regimens. Contraception. 
+2008;77(3):162-70. (https://doi.org/10.1016/j.
+contraception.2007.11.005).
+72. 
+Wiegratz I, Stahlberg S, Manthey T, Sänger N, 
+Mittmann K, Lange E et al. Effect of extended-cycle 
+regimen with an oral contraceptive containing 30 
+mcg ethinylestradiol 2 mg dienogest on bleeding 
+patterns, safety, acceptance and contraceptive 
+efficacy. Contraception. 2011;84(2):133-43. (https://doi.
+org/10.1016/j.contraception.2011.01.002). 
+73. 
+Caruso S, Malandrino C, Cicero C, Ciancio F, Cariola 
+M, Cianci A. Quality of sexual life of women on oral 
+contraceptive continued-regimen: pilot study. J Sex 
+Med. 2013;10(2):460-6. (https://doi.org/10.1111/j.1743-
+6109.2012.03004.x).
+74. 
+Coffee AL, Kuehl TJ, Willis S, Sulak PJ. Oral 
+contraceptives and premenstrual symptoms: 
+comparison of a 21/7 and extended regimen. Am 
+J Obstet Gynecol. 2006;195(5):1311-9. (https://doi.
+org/10.1016/j.ajog.2006.05.012).
+75. 
+Coffee AL, Sulak PJ, Kuehl TJ. Long-term assessment of 
+symptomatology and satisfaction of an extended oral 
+contraceptive regimen. Contraception. 2007;75(6):444-
+9. (https://doi.org/10.1016/j.contraception.2007.01.014). 
+76. 
+Foidart JM, Sulak PJ, Schellschmidt I, Zimmermann 
+D; Yasmin Extended Regimen Study Group. The use 
+of an oral contraceptive containing ethinylestradiol 
+and drospirenone in an extended regimen over 126 
+days. Contraception. 2006;73(1):34-40. (https://doi.
+org/10.1016/j.contraception.2005.06.068).
+77. 
+Kaplan S, Bertoia ML, Wang FT, Zhou L, Lass A, Evans 
+A et al. Long-term safety of extended levonorgestrelcontaining oral contraceptives in the United 
+States. Contraception. 2022;105:26-32. (https://doi.
+org/10.1016/j.contraception.2021.09.013).
+78. 
+Li J, Panucci G, Moeny D, Liu W, Maro JC, Toh S et al. 
+Association of risk for venous thromboembolism 
+with use of low-dose extended- and continuouscycle combined oral contraceptives: a safety study 
+using the sentinel distributed database. JAMA Intern 
+Med. 2018;178(11):1482-8. (https://doi.org/10.1001/
+jamainternmed.2018.4251).
+79. 
+Nappi RE, Lete I, Lee LK, Flores NM, Micheletti MC, Tang 
+B. Real-world experience of women using extendedcycle vs monthly-cycle combined oral contraception in 
+the United States: the National Health and Wellness 
+Survey. BMC Womens Health. 2018;18(1):22. (https://
+doi.org/10.1186/s12905-017-0508-6).
+80. 
+Sulak PJ, Kuehl TJ, Ortiz M, Shull BL. Acceptance of 
+altering the standard 21-day/7-day oral contraceptive 
+regimen to delay menses and reduce hormone 
+withdrawal symptoms. Am J Obstet Gynecol. 
+2002;186(6):1142-9. (https://doi.org/10.1067/
+mob.2002.122988).
+81. 
+Sulak P, Willis S, Kuehl T, Coffee A, Clark J. Headaches 
+and oral contraceptives: impact of eliminating 
+the standard 7-day placebo interval. Headache. 
+2007;47(1):27-37. (https://doi.org/10.1111/j.1526-
+4610.2007.00650.x). 
+82. 
+Klipping C, Duijkers I, Fortier MP, Marr J, Trummer D, 
+Elliesen J. Long-term tolerability of ethinylestradiol 20 
+μg/drospirenone 3 mg in a flexible extended regimen: 
+results from a randomised, controlled, multicentre 
+study. BMJ Sex Reprod Health. 2012;38(2):84-93. 
+(https://doi.org/10.1136/jfprhc-2011-100214).
+33
+
+83. 
+Diaz S, Pavez M, Moo-Young AJ, Bardina CW, Croxatto 
+HB. Clinical trial with 3-keto-desogestrel subdermal 
+implants. Contraception. 1991;44(4):393-408. 
+(https://doi.org/10.1016/0010-7824(91)90030-j).
+84. 
+Wenzl R, van Beek A, Schnabel P, Huber J. 
+Pharmacokinetics of etonogestrel released from 
+the contraceptive implant Implanon. Contraception. 
+1998;58(5):283-8. (https://doi.org/10.1016/s0010-
+7824(98)00110-3).
+85. 
+Ali M, Akin A, Bahamondes L, Brache V, Habib N, 
+Landoulsi S et al. Extended use up to 5 years of the 
+etonogestrel-releasing subdermal contraceptive 
+implant: comparison to levonorgestrel-releasing 
+subdermal implant. Hum Reprod. 2016;31(11):2491-8. 
+(https://doi.org/10.1093/humrep/dew222).
+86. 
+McNicholas C, Swor E, Wan L, Peipert JF. Prolonged 
+use of the etonogestrel implant and levonorgestrel 
+intrauterine device: 2 years beyond Food and Drug 
+Administration-approved duration. Am J Obstet 
+Gynecol. 2017;216(6):586.e1-.e6. (https://doi.
+org/10.1016/j.ajog.2017.01.036).
+87. 
+Kiriwat O, Patanayindee A, Koetsawang S, Korver T, 
+Coelingh Bennink HJT. A 4-year pilot study on the 
+efficacy and safety of Implanon, a single-rod hormonal 
+contraceptive implant, in healthy women in Thailand. 
+Eur J Contracept Reprod Health Care. 1998;3(2):85-91. 
+(https://doi.org/10.3109/13625189809051409).
+88. 
+Yao XY, Du MK. A randomized study comparing the 
+efficacy and bleeding pattern of Implanon and Norplant 
+hormonal contraceptive implant (in Chinese). Zhonghua 
+Fu Chan Ke Za Zhi.2003;38(7):419-22. (https://pubmed.
+ncbi.nlm.nih.gov/12921554/).
+89. 
+Zheng SR, Zheng HM, Qian SZ, Sang GW, Kaper RF. A 
+randomized multicenter study comparing the efficacy 
+and bleeding pattern of a single-rod (Implanon) and a 
+six-capsule (Norplant) hormonal contraceptive implant. 
+Contraception. 1999;60(1):1-8. (https://doi.org/10.1016/
+s0010-7824(99)00053-0).
+90. 
+Zheng SR, Zheng HM, Qian SZ, Sang GW, Kaper RF. 
+A long-term study of the efficacy and acceptability 
+of a single-rod hormonal contraceptive implant 
+(Implanon) in healthy women in China. Eur J Contracept 
+Reprod Health Care. 1999;4(2):85-93. (https://doi.
+org/10.3109/13625189909064009).
+91. 
+Mohllajee AP, Curtis KM, Flanagan RG, Rinehart W, 
+Gaffield ML, Peterson HB. Keeping up with evidence: a 
+new system for WHO’s evidence-based family planning 
+guidance. Am J Prev Med. 2005;28(5):483-90. (http://doi.
+org/10.1016/j.amepre.2005.02.008).
+34
+
+
+Annex 1 Declarations of interests from Guideline 
+Development Group members
+Of the 20 experts who participated in this 
+work, six declared an interest related to 
+contraception (see details below in alphabetical 
+order). The World Health Organization 
+(WHO) Secretariat reviewed all declarations 
+and determined that Beena Joshi reported a 
+potentially significant conflict of interest related 
+to the topic of ormeloxifene which precluded 
+her from participating in the discussion and 
+recommendation development related to 
+ormeloxifene. Declarations of conflicts of interest 
+from the other five GDG members were deemed 
+insignificant in view of the topics being discussed 
+in the GDG meeting, consequently, they were 
+invited to fully participate in the WHO expanding 
+contraceptive options (ECO) GDG meeting.
+A1.1 Individuals without any 
+conflict or with nonsignificant conflicts 
+of interest
+Andy Gray was a member of the South African 
+National Essential Medicines List Committee 
+(until April 2025). This committee is responsible 
+for medicines selection and the development 
+of standard treatment guidelines in the public 
+sector. He serves on three technical advisory 
+committees at the South African Health Products 
+Regulatory Authority. He is the Chair of the 
+Names and Scheduling Committee, a member of 
+the Pharmacovigilance Committee and a member 
+of the Legal Committee. He has not received any 
+income or honorarium from these activities.
+Lisa Haddad is employed by the Population 
+Council, where her work involves developing 
+novel contraceptive methods.
+Philip Hannaford serves as the Chair of the 
+United Kingdom’s Commission on Human 
+Medicines, Medicines for Women’s Health Expert 
+Advisory Group (2020–to date). He has been 
+a member of this Advisory Group since 2011. 
+In this capacity, he provides expert opinion on 
+regulatory matters in relation to contraceptives. 
+The fee is approximately £ 250 for each 
+meeting attended.
+Beena Joshi is an employee of the Indian 
+Council for Medical Research (ICMR). ICMR 
+is an organization within the Department of 
+Health Research, Ministry of Health and Family 
+Welfare, Government of India. Ormeloxifene 
+(centchroman) is approved for use in the national 
+family planning programme by the Government 
+of India. ICMR supported the conduct of several 
+of the studies included in the systematic review 
+of the safety and efficacy of ormeloxifene.
+Enriquito Lu was the Technical Unit Director for 
+Jhpiego’s global portfolio of projects supporting 
+ministries of health to implement high-quality 
+family planning/reproductive health services in 
+compliance with global family planning practices 
+until February 2021. As of February 2021, he 
+has worked for Jhpiego on a part-time basis 
+with the family planning/reproductive health 
+unit as a Senior Advisor in supporting initiatives 
+on comprehensive family planning within the 
+Asia Pacific Economic Cooperation (APEC). Lu 
+was a member of the Organizing and Steering 
+committee, as well as a scientific session lead, 
+for the 6th International IUD Symposium that 
+was convened by a consortium of organizations 
+(Columbia University, Population Council, FHI360 
+and the United States National Institutes of 
+Health; 2020–2021). He received a US$ 1000 
+honorarium for this role. The engagement was 
+completed in July 2022. He was also a member 
+of the Organizing and Steering Group for virtual 
+courses that provide technical updates on 
+reproductive health services for the International 
+Planned Parenthood Federation’s South Asia 
+Regional Office’s Member Association clinicians 
+and programme managers. For this role, he 
+36
+
+received an honorarium of US$ 1000. This work 
+ended in 2021.
+Farida Shah undertook a short-term consultancy 
+related to reproductive, maternal, newborn, child 
+and adolescent health with the WHO Country 
+Office, Somalia. The consultancy ended in 
+July 2022.
+The following GDG members had no 
+conflicts of interest declared, and internet 
+searches and public scrutiny did not reveal 
+any undeclared conflicts of interest. They 
+therefore participated in the GDG meetings 
+fully, including discussions, decision-making 
+and voting on recommendations: Faisal Abbas, 
+Valeria Bahamondes, Harriet Chanza, Rodica 
+Comendant, Katherine Curtis, Galina Dikke, 
+Unnop Jaisamrarn, Philip Mbithi Muia, Ashraf 
+Nabhan, Ingrid Sääv, Aparna Sridhar, Nandana 
+Suresh, Kun Tang and Peace Samuel Umanah.
+A1.2 Expertise of 
+GDG members
+Faisal Abbas: health economics; population 
+studies; gender and development
+Valeria Bahamondes: women’s health 
+research; clinical trials; medical monitor and 
+safety pharmacovigilance
+Harriet Chanza: community stakeholder; 
+reproductive health rights; reproductive 
+health management
+Rodica Comendant: obstetrics and gynaecology; 
+training and capacity-building
+Katherine Curtis: epidemiology; evidence 
+synthesis; guideline development
+Galina Dikke: abortion care; obstetrics and 
+gynaecology; training
+Andy Gray: pharmacology; pharmaceutical 
+policy; IT-based health-care solutions; 
+pharmacovigilance; essential medicines; scientific 
+editing; development and assessment of 
+medicines; guideline development
+Lisa Haddad: obstetrics and gynaecology; novel 
+contraception research; product development
+Philip Hannaford: clinical practice; epidemiology; 
+women’s health; primary care; research and 
+knowledge exchange; pharmacovigilance
+Unnop Jaisamrarn: women’s health; clinical trials
+Enriquito Lu: research and innovation; guideline 
+and training curricula development; smart 
+technologies; programme management
+Philip Mbithi Muia: sexual and reproductive 
+health and rights; human rights; gender and 
+diversity; equity and social inclusion
+Ashraf Nabhan: obstetrics and 
+gynaecology; research; evidence synthesis; 
+guideline development
+Ingrid Sääv: obstetrics and gynaecology; 
+abortion care; contraceptive devices
+Farida Shah: nursing and midwifery; community 
+health nursing; health economics; health 
+workforce planning and management; quality 
+improvement; programme development 
+and management; primary health care; 
+humanitarian settings
+Aparna Sridhar: adolescent sexual and 
+reproductive health; innovation; obstetrics 
+and gynaecology
+Nandana Suresh: user perspectives; office 
+management and administrative support
+Kun Tang: epidemiology; sexual and 
+reproductive health and rights; development 
+aid research
+Peace Samuel Umanah: youth perspectives; 
+communications; advocacy
+37
+
+Annex 2 
+Evidence-to-decision tables
+A2.1 Recommendation: mifepristone for emergency contraception
+Should mifepristone be recommended for inclusion in the contraceptive method mix for emergency contraception (EC) or not?
+Other emergency contraceptives 
+ 
+Contraceptive efficacy: pregnancy rate or proportion; ectopic pregnancy and pregnancy outcomes if fails (including live birth, termination, miscarriage); side effects: 
+early/delayed menses, abnormal uterine bleeding, cramping or pain, gastrointestinal symptoms, others
+Acceptability (satisfaction), resources/costs, feasibility, equity
+Emergency contraceptive oral methods are currently used and include ulipristal acetate, levonorgestrel (LNG), combined oral contraceptives (COCs) – often referred to as 
+the Yuzpe method – and the copper intrauterine device (IUD). Globally, many of these methods remain inaccessible to many people due to lack of resources.
+Mifepristone is a norethindrone derivative that strongly binds to progesterone and glucocorticoid receptors, functioning as an antagonist. Mifepristone has been found 
+to delay or prevent ovulation via this progesterone receptor antagonism. Mifepristone is widely used for medical abortion. It is used in a few countries around the world 
+as EC, including Armenia, China, the Russian Federation and Ukraine.
+38
+
+A systematic review of studies up to December 2024 found 86 randomized controlled trials (RCTs) comparing mifepristone to other methods of EC (COCs [Yuzpe method], 
+LNG oral pills and copper IUDs). Most studies took place in China (1).
+Risk within 
+other method
+Risk difference 
+with mifepristone
+LNG 
+Risk with 
+mifepristone 
+(mid-dose 
+25–50 mg 
+mifepristone)
+6052
+(27 RCTs)
+RR 0.67
+(0.49 to 0.91)
+30 per 1000
+12 fewer per 1000
+(3 to 18 fewer)
+(low-dose < 25 mg
+mifepristone)
+8752
+(14 RCTs)
+RR 0.73
+(0.59 to 0.90)
+30 per 1000
+5 fewer per 1000
+(2 to 8 fewer)
+YUZPE
+2144
+(3 RCTs)
+RR 0.14
+(0.05 to 0.41)
+25 per 1000
+22 fewer per 1000
+(15 to 24 fewer)
+Copper IUD
+395
+(2 RCTs)
+
+Very Low 
+There were 3/245 pregnancies with 
+mifepristone; and 0/150 with copper IUD 
+(12 more per 1000 with mifepristone)
+CI: confidence interval; GRADE: Grading, Recommendations, Assessment, Development and Evaluation; IUD: intrauterine device; LNG: levonorgestrel; RCT: randomized controlled trials; RR: risk ratio.
+Studies directly comparing mid-dose to low-dose mifepristone also found fewer pregnancies with mid-dose mifepristone, but the difference is very small (trivial). 
+The Guideline Development Group (GDG) agreed that effects are seen with lower doses.
+The GDG considered that the body mass index (BMI) is likely lower in Chinese participants, however they agreed that evidence would be applicable. The GDG also noted that 
+although results indicated more pregnancies with mifepristone than the copper IUD, the increase is very small and the evidence is uncertain.
+39
+
+From the same systematic review (1).
+Side effects per 1000 women
+Outcomes (risk difference) 
+ 
+Ectopic 
+pregnancies 
+Any side effect 
+Nausea 
+Vomiting 
+Spotting/
+bleeding 
+Altered menses 
+Early 
+Delayed 
+Mid-dose vs LNG
+91 fewer 
+(48 to 123 fewer)
+15 fewer 
+(35 fewer to 
+14 more)
+96 fewer 
+(77 to 113 fewer)
+27 fewer (48 fewer 
+to 3 more)
+31 more 
+(1 to 68 more)
+Low-dose vs LNG
+1 fewer
+253 fewer 
+(212 to 284 fewer) 
+5 fewer 
+(21 fewer to 
+12 more) 
+3 more 
+(3 fewer to 
+11 more)
+115 fewer 
+(95 to 135 fewer) 
+100 fewer 
+(76 to 118 fewer) 
+35 more 
+(7 to 72 more) 
+Mifepristone 
+vs Yuzpe
+78 fewer
+(35 to 120 
+fewer) Moderate
+152 fewer
+(119 to 182 fewer) 
+120 fewer 
+(109 to 126 fewer) 
+202 more
+(145 to 273 more) 
+Mifepristone vs 
+copper IUD
+138 more 
+(24 to 450 more) 
+Mid-dose vs 
+low-dose
+1 more
+40 more 
+(4 to 93 more) 
+9 more 
+(10 fewer to 
+33 more) 
+6 more 
+(2 fewer to 
+28 more) 
+47 more 
+(13 to 97 more) 
+13 more 
+(5 fewer to 
+33 more) 
+38 more 
+(17 to 59 more) 
+LNG: levonorgestrel; IUD: intrauterine device.
+The GDG agreed that the side effects are trivial and are also tolerable. There may be slightly fewer side effects with lower doses, although even in other conditions where 
+mifepristone is used daily and in higher doses it has been found to be safe.
+40
+
+ Very low
+ Moderate
+Although most studies were from China, results are applicable to other settings. Sensitivity analyses were conducted according to risk of bias, but effects were 
+maintained with or without studies at high risk of bias – so evidence was not rated down for risk of bias. For most side effects, the evidence was high or moderate. 
+Therefore, the overall evidence was moderate.
+Is there important uncertainty about or variability in how much people value the main outcomes?
+No important uncertainty 
+The GDG agreed that most women would probably place higher value on avoiding pregnancy.
+Does the balance between desirable and undesirable effects favour the intervention or the comparison?
+ Favours the comparison 
+Probably favours the intervention 
+There are likely trivial differences in benefits and harms between mifepristone and other emergency contraceptive methods.
+41
+
+ Negligible costs and savings 
+ Moderate savings 
+Estimates for cost for mifepristone was found in different countries.
+ The Russian Federation: ~US$ 8/€ 7 (Zhenale 10 mg)
+ Moldova: ~US$ 5 /€ 4.3 (Ginestril 10 mg – no longer made)
+ Global average LNG: ~US$ 11–40/€ 9.5–34
+ Global average Yuzpe: (~US$ 0.25–15/€ 0.2–13 outside the United States of America [USA]) 
+ For 10 mg US$ 0.60–0.70 (in practice – significantly lower cost than LNG) 
+ For 25 mg US$ 0.90–1.00
+ For 50 mg or more US$ 1.20–1.35
+ Probably no impact 
+ Probably increased 
+The GDG agreed that given the lower costs it may increase equity. However, it may not be available in many countries.
+42
+
+Risk difference 
+No of participants
+Certainty of the evidence (GRADE) 
+Risk with
+mifepristone
+Risk with 
+Comparator
+(Mid- and 
+low-doses)
+LNG or Yuzpe
+77 more per 1000 
+(51 to 95 more) 
+RR 1.09 
+(1.06 to 1.11) 
+1339 
+(2 RCTs) 
+
+938 per 1000 
+(912 to 956) 
+861 per 1000
+Rated down for risk of bias because of high loss to follow-up
+CI: confidence interval; GRADE: Grading, Recommendations, Assessment, Development and Evaluation; LNG: levonorgestrel; RCT: randomized controlled trial; RR: risk ratio.
+The GDG agreed that there may be some concerns related to potential for misuse, however these could be overcome by education, packaging or promotion.
+The GDG discussed that it would be important that there is quality assurance for its use. There may need to be planning in countries to determine how it is made available 
+(e.g. over the counter or prescribed) and whether the costs are covered.
+43
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Favours the 
+ 
+ 
+44
+
+WHO recommends adding mifepristone to the method mix for EC, as a single dose between 10 and 50 mg (strong recommendation, moderate certainty of evidence)
+Remarks: the availability of mifepristone dosage forms may differ across setting and countries. A dose between 10 and 25 mg may be preferred if available. EC pills are taken as soon as possible 
+after unprotected sex and within five days.
+Overall, there is moderate-certainty evidence that mifepristone is likely as effective and safe as other emergency contraceptive methods. Providing it instead of other methods would likely result in moderate cost 
+savings given its lower costs and increase equitable access to EC if made widely available and if the cost is covered. It is probably as acceptable to women and clinicians as other methods, and probably feasible to 
+provide. There is some concern that education and literature will be necessary to ensure quality assurance and appropriate use.
+Consideration of the cost of mifepristone dosages within a country will be important to implement this recommendation. The GDG notes the cost of mifepristone dosages may vary depending upon the country: 
+current estimates range from US$ 0.90–1.00 for 25 mg and US$ 1.20–1.35 for 50 mg.
+45
+
+A2.2 Recommendation: ormeloxifene
+Should WHO recommend adding ormeloxifene to the contraceptive method mix for women of reproductive age? 
+Other contraceptives or none 
+Number of pregnancies; Pearl Index; bleeding; amenorrhoea; side effects (e.g. headaches, nausea); serious adverse events (e.g. thrombosis, fetal birth defects if 
+contraception fails)
+Ormeloxifene is a non-steroidal selective estrogen receptor modulator that acts on estrogen receptors selectively. It is commonly used as a 30 mg tablet taken twice 
+weekly for 12 weeks, then once weekly. It modulates the body’s response to estrogen. Common indications for use of ormeloxifene include contraception, abnormal 
+uterine bleeding, fibrocystic breast disease and prevention of osteoporosis.
+It has been available in the Indian market since1992 and only approved in India. It is on the National List of Essential Medicines 2022 of India, but it is not on the WHO 
+Essential Medicines List. It is very low cost (or free in India) and is taken by approximately 2 million women.
+46
+
+A systematic review was conducted up to December 2024 and found 13 studies (2):
+one RCT comparing ormeloxifene to COCs (n = 240)
+one non-randomized study comparing ormeloxifene to COCs (n = 200)
+one RCT comparing ormeloxifene to postpartum intrauterine contraceptive device
+10 case series (n = ~5300).
+Pregnancies
+Participants 
+Certainty 
+of evidence
+Study event (%)
+Anticipated absolute effects
+Risk with COCs
+Risk difference with ormeloxifene
+With COCs
+With ormeloxifene
+383 
+(2 comparative 
+studies) 
+
+3/173
+(1.7%)
+2/210 
+(0.95%) 
+RR 0.55 
+(0.09 to 3.25) 
+17 per 1000
+8 fewer per 1000 
+(from 16 fewer to 39 more)
+CI: confidence interval; COCs: combined oral contraceptives.
+Pearl Index
+Participants 
+Overall certainty 
+of evidence
+Absolute effect 
+(Pearl Index)
+Note
+5985 receiving 
+ormeloxifene 
+(8 case series, 2 RCTs, 
+1 observational 
+comparative study)
+
+0.48–4.2 
+pregnancies per 
+100 woman-years 
+with ormeloxifene
+Method failure: 0–4% across the 10 studies 
+User-related failure: 0.8–10.1% across the studies 
+RCT: randomized controlled trial.
+Reversibility (pregnancy in people who stopped taking ormeloxifene)
+One study reported that 21 out of 22 women became pregnant in 6–12 months (very low-certainty evidence).
+The GDG agreed that the number of pregnancies with ormeloxifene is similar to the percentages with other contraceptives, which usually ranges from 4 to 7% for typical use, and 
+was similar in the comparative studies.
+47
+
+From the same systematic review.
+None of the 13 studies reported venous thromboembolism (VTE), hypertension, endometrial hyperplasia, hepatotoxicity, uterine prolapse, urinary incontinence, 
+vaginal dryness, bone mineral density changes, breastfeeding performance and safety for newborns, and heavy vaginal bleeding (very low-certainty evidence).
+It was unclear whether it was measured, and none occurred or it was not measured and therefore not reported.
+Side effects
+Abnormal 
+uterine bleeding 
+Headache 
+Weight gain 
+Nausea/
+vomiting 
+Discontinue due 
+to menstrual 
+irregularity 
+Ormeloxifene = 90
+COCs = 53
+Irregular cycle:
+I = 11.1%
+C = 7.5%
+Breakthrough
+bleeding:
+I = 0
+C = 11.3%
+I = 1.1%
+C = 7.5% 
+I = 0
+C = 13.2% 
+I = 1.1%
+C = 9.4% 
+I = 11.1%
+C = 7.5% 
+Ormeloxifene = 120
+COCs = 120 
+Delayed cycle:
+I = 19.2%
+C = 5.8%
+Light flow:
+I = 22.2%
+C = 7.77%
+Amenorrhoea:
+I = 3.3%
+C = 0
+I = 3 months 
+(1.66%), 6 months 
+(0), 12 months (0) 
+C = 3 months 
+(8.84%), 6 months 
+(14.81%), 12 
+months (3.73%) 
+I = 4%
+C = 3.33% 
+COCs: combined oral contraceptives.
+I = ormeloxifene; C = COCs.
+The side effects were inconsistent between the two comparative studies, and the evidence was uncertain about whether there were no adverse events.
+The GDG discussed whether studies including women with other conditions (e.g. postmenopausal women) receiving ormeloxifene could be included to provide evidence for 
+undesirable effects. The GDG agreed not to include these studies as the population would be too indirect to inform these outcomes (e.g. differences in hormonal levels may affect 
+adverse effects).
+48
+
+ Very low
+There was very low-certainty evidence from the studies due to concerns with risk of bias and very little comparative data. In addition, there was also some concern that all 
+studies were conducted in India in people who were attending government clinics.
+Is there important uncertainty about or variability in how much people value the main outcomes?
+No important uncertainty 
+The GDG agreed that most women would probably place higher value on avoiding pregnancy.
+Does the balance between desirable and undesirable effects favour the intervention or the comparison?
+ Favours the comparison 
+Probably favours the intervention 
+Given that the benefits and the harms may be similar between ormeloxifene and other contraceptives (although uncertain), the balance probably does not favour either.
+49
+
+The GDG noted that ormeloxifene is very low cost in India or may be covered at no cost to the patient.
+The GDG identified that ormeloxifene is currently distributed mostly in the public sector through government clinics, but there is some effort to increase availability.
+There were four studies from the systematic review that measured satisfaction or acceptability. From the two comparative studies, satisfaction was slightly higher 
+with ormeloxifene (78 vs 65%, n = 240; and 45 vs 41%, n = 143). In two studies where satisfaction was measured in people taking ormeloxifene only, satisfaction was 
+approximately 75% and ranging from 96% to 83% over time from one to six months.
+50
+
+Ormeloxifene needs to be taken only once weekly, making it feasible. It also appears feasible to distribute as its use has increased over time in India and is now used by 
+very large numbers of people (around 2 million). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+51
+
+WHO suggests against adding ormeloxifene to the contraceptive method mix for women of reproductive age.
+Remarks: high-quality evidence of the efficacy and safety of ormeloxifene as an oral contraceptive is needed.
+Overall, the GDG determined that the evidence for ormeloxifene suggests that its effect on the prevention of pregnancy and side effects associated with its use are similar to other COCs, but the evidence is 
+uncertain. The effect on adverse events is unknown due to the very low quality of reporting and presentation of the safety data. The GDG judged the inability to assess adverse events to be of major concern. The 
+GDG determined that the seriousness of this concern warrants suggesting against the inclusion of ormeloxifene into a national contraceptive method mix until high-quality evidence on its safety becomes available. 
+The cost of ormeloxifene is very low (and currently can be covered) in India which may increase equitable access to contraceptives, and evidence suggests that it is acceptable to individuals and feasible given the 
+once weekly dosage schedule. Since the effects on benefits and harms (including adverse events) are uncertain, a conditional recommendation not to add it to the contraceptive method mix was made.
+The GDG did not discuss implementation considerations for this recommendation.
+52
+
+A2.3 Recommendation: quinestrol-containing pills: quinestrol-quingestanol, quinestrollevonorgestrel and quinestrol-norgestrel
+Should WHO recommend adding to the contraceptive method mix for women of reproductive age? 
+Quinestrol-containing pills (quinestrol-quingestanol [Quin-Quin], quinestrol-levonorgestrel [Quin-LNG], quinestrol-norgestrel [Quin-NG]) 
+Other contraceptives or none 
+Number of pregnancies; Pearl Index; bleeding; amenorrhoea; side effects (e.g. headaches, nausea); serious adverse events (e.g. thrombosis, fetal birth defects if 
+contraception fails)
+Quinestrol is a 3-cyclopentylether of ethinylestradiol that has been available in a once-a-month contraceptive pill combined with a progesterone since the late 1960s. 
+Since 1998, a pill containing quinestrol 3.0 mg and LNG 6 mg has been the only quinestrol-containing pill that has received approval for use in public clinics in China. 
+Several countries have banned its use due to concerns around severe adverse events. However, the drug is still sold on the black market in some countries due to its 
+single monthly dosage, which is attractive to users.
+
+53
+
+A systematic review was conducted up to December 2024 and found one RCT and 11 case series that were published between 1970 and 1990 (3).
+Pregnancy events
+(%)
+10/370
+(2.70%)
+14/362
+(3.87%)
+154/4093 
+(3.76%)
+ 
+LNG: levonorgestrel; NG: norgestrel; Quin: quinestrol: Quin + Quin: quinestrol + quingestanol.
+The GDG agreed that these numbers of pregnancies are similar to the typical percentages with other contraceptives, which usually ranges from 4 to 7% for typical use.
+54
+
+ Large for QUIN+NG and 
+QUIN+QUIN 
+ Trivial 
+Don’t know for QUIN+LNG
+Safety
+Venous thromboembolism (participants)
+2/1684 (0.12%)
+Fetal malformations/birth defects (participants) 
+0/18 (0.00%)
+Breast cancer (participants)
+0/600 (0.00%)
+Hypertension (participants)
+2/666 (0.30%) (3130 woman months)
+LNG: levonorgestrel; NG: norgestrel; Quin: quinestrol; Quin + Quin: quinestrol + quingestanol.
+WHO described concerns that there have been serious adverse events reported in the media and by five countries (e.g. Uganda reported a maternal death, Zambia reported venous 
+thromboembolism, and a bleeding disorder was also reported). However, a member of the GDG reported that from a large database in Sweden, serious adverse events have not 
+been reported. WHO indicated that it is unclear what type of QUIN contraceptive is being taken or when and how often. The GDG suspected that people could be taking higher 
+doses and/or more than once per month, which may explain adverse events from high estrogen intake.
+55
+
+Side effects 
+Nausea and vomiting (participants/cycles)
+Cycles: 476/6560 (7.26%) 
+Cycles: 647/5716 (11.32%) 
+Participants: 101/666 (15.17%) 
+Nausea (participants/cycles)
+Participants: 227/509 (44.60%) 
+Cycles: 1177/28 676 (4.10%)
+Vomiting (participants/cycles)
+Participants: 93/509 (18.27%)
+Cycles: 449/15 859 (2.83%)
+Dizziness (participants/cycles)
+Cycles: 242/6560 (3.69%) 
+Cycles: 269/5716 (4.71%) 
+Participants: 55/94 (58.51%)
+Cycles: 447/10 055 (4.45%)
+Mood change (cycles)
+49/6560 (0.75%) 
+12/5716 (0.21%) 
+95/5668 (1.68%) 
+Pigmentation (cycles)
+Cycles: 154/6560 (2.35%) 
+Cycles: 61/5716 (1.07%) 
+Headache (participants/cycles) 
+Cycles: 58/6560 (0.88%)
+Cycles: 59/5716 (1.03%)
+Participants: 124/350 (35.43%)
+Cycles: 1144/15 859 (7.21%) 
+Epigastric pain (cycles)
+29/6560 (0.44%)
+120/5716 (2.10%)
+Leucorrhoea (participants/cycles)
+Cycles: 420/6560 (6.40%)
+Cycles: 104/5716 (1.82%)
+Participants: 209/415 (50.36%) 
+Cycles: 404/11 472 (3.52%) 
+56
+
+Side effects 
+Breast tenderness (participants/cycles)
+Cycles: 74/6560 (1.13%)
+Cycles: 104/5716 (1.82%)
+Participants: 112/1015 (11.03%) 
+Cycles: 93/5804 (1.60%) 
+Hair loss (participants)
+1/759 (0.13%)
+LNG: levonorgestrel; NG: norgestrel; Quin: quinestrol; Quin + Quin: quinestrol + quingestanol.
+ Very low
+There was very low-certainty evidence from the one RCT and the case series for benefits and harms.
+Is there important uncertainty about or variability in how much people value the main outcomes?
+ Important uncertainty or variability 
+Possibly important uncertainty or 
+Probably no important uncertainty 
+No important uncertainty or 
+The GDG agreed that most women would probably place higher value on avoiding pregnancy.
+57
+
+Does the balance between desirable and undesirable effects favour the intervention or the comparison?
+Probably favours the intervention 
+Given the harms that may be occurring with the Quin-NG and Quin-Quin, the GDG agreed that these would not be favoured. Because of the little evidence available for 
+benefits and harms of Quin-LNG, the GDG agreed that it is probably not favoured.
+QUIN formulations are low-cost to individuals. 
+58
+
+The GDG agreed that a low-cost single monthly pill could improve equity, but it is unknown what is currently occurring. However, the GDG agreed that not providing these 
+contraceptives in the method mix would not change equity.
+From the studies included in the systematic review:
+Discontinuation (participants)
+62/370 
+(16.76%) 
+111/362 
+(30.66%) 
+1073/2775 
+(38.67%) 
+Return to fertility
+2 studies: 290/290 (82% pregnant 
+in < 12 months) and 118/256 (5% 
+pregnant in 1–5 months) had return 
+to menstruation
+LNG: levonorgestrel; NG: norgestrel; Quin: quinestrol; Quin + Quin: quinestrol + quingestanol.
+The GDG agreed that many individuals would likely prefer to have a single monthly oral contraceptive pill. But if not available, individuals 
+would find other contraceptives acceptable. 
+59
+
+Quin-LNG has been widely available with over 40 years of use. Quin-NG is not available to purchase (and does not seem to be available online). Pharmacovigilance is 
+needed for adverse reporting and specific method used.
+Other contraceptive methods are available. 
+It is probably feasible to add and to not add these contraceptives to the method mix. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Favours the 
+ 
+ 
+60
+
+WHO recommends against adding Quin-Quin to the contraceptive method mix for women of reproductive age (strong recommendation, very low certainty of evidence).
+WHO recommends against adding Quin-NG to the contraceptive method mix for women of reproductive age (strong recommendation, very low certainty of evidence).
+WHO suggests against adding Quin-LNG to the contraceptive method mix for women of reproductive age (conditional recommendation, low certainty of evidence).
+Remarks: where quinestrol-containing products are being used, rigorous pharmacovigilance is needed to monitor safety. High-quality evidence about its efficacy and safety are needed.
+Overall, the GDG judged that there may be serious adverse events with Quin-NG and Quin-Quin and uncertain effects on benefits (e.g. no pregnancies). For Quin-LNG, the adverse effects are unknown and 
+there are uncertain effects on benefits (e.g. pregnancies). The evidence overall for benefits and harms was very low, but the potential for harms with Quin-NG and Quin-Quin means a strong recommendation 
+against those formulations. In addition, warnings about taking medicines not prescribed as dangerous, and pharmacovigilance with standard reporting of adverse events is needed. The GDG agreed that if these 
+quinestrol formulations were not added to the contraceptive method mix, there are other contraceptives that can be used instead which would make not recommending them acceptable and feasible and likely 
+have no impact on equity. The GDG however noted that more research into an oral contraceptive pill taken once monthly is needed.
+The GDG did not discuss implementation considerations for recommendations relating to quinestrol-containing contraceptive pills.
+61
+
+A2.4 Recommendation: continuous or extended use of COCs 
+Should COCs be used: a) for extended durations up to six months or b) continuously up to one year versus cyclical use for contraception in women of 
+reproductive age?
+COCs used: a) for extended durations up to six months or b) continuously up to one year 
+Cyclical use of COCs 
+Number of pregnancies; Pearl Index; bleeding; amenorrhoea; side effects (e.g. headaches, nausea); serious adverse events (e.g. thrombosis) 
+The majority of COCs have a 28-day-cycle regimen: 21 active hormone pills followed by 7 days of placebo or no drug resulting in withdrawal bleeding every 28 days. 
+Extended and continuous regimens have been explored and developed since the 1970s. While these regimens have been approved in some countries, these products are 
+not always readily available, especially in low- and middle-income countries and resource-limited areas.
+
+62
+
+ Trivial 
+ Small 
+A systematic review was conducted up to October 2024 and found 18 RCTs and nine studies of other study design (4).
+Risk with cyclic
+Risk difference with extended 
+or continuous
+Pregnancy 
+8337 
+(14 RCTs) 
+
+OR 0.79
+(0.41 to 1.52)
+7 per 1000
+1 fewer per 1000 
+(from 4 fewer to 4 more)
+Pearl Index
+2548 
+(3 RCTs) 
+
+0.2 lower 
+(1.31 lower to 0.92 higher)
+Participants with 
+no bleeding and no 
+spotting (amenorrhoea)
+1550 
+(6 RCTs) 
+
+All studies’ findings favoured the continuous or extended-cycle use of COCs 
+(i.e. more participants achieved amenorrhoea).
+Total bleeding days 
+(spotting + bleeding) 
+during the 1-year 
+study period
+3474 
+(3 RCTs) 
+
+11.27 lower 
+(21.15 lower to 1.4 lower) 
+CI: confidence interval; GRADE: Grading, Recommendations, Assessment, Development and Evaluation; OR: odds ratio; RCTs: randomized controlled trials
+The GDG agreed that there is likely no difference between use of continuous or extended regimen compared to cyclic use for unexpected pregnancy or when measured with a Pearl 
+Index. With extended or continuous regimens, more women will likely achieve amenorrhoea at 168 days and one year and have fewer bleeding days at one year. The studies also 
+consistently showed that there will likely be fewer bleeding-only days but more spotting-only days with continuous or extended COCs. In addition, flexible regimens may result in less 
+bleeding, but the evidence is uncertain.
+63
+
+ Large 
+A systematic review was conducted up to October 2024 and found 18 RCTs and nine studies of other study design (4).
+evidence 
+(GRADE) 
+Risk with no 
+treatment 
+Risk difference with anticoagulant 
+or other treatments 
+Participants with at least 1 
+adverse event
+4634 
+(6 RCTs) 
+
+OR 1.20 
+(1.03 to 1.41) 
+521 per 1000
+45 more per 1000 
+(from 7 more to 80 more) 
+Severe adverse event 
+2090 
+(4 RCTs) 
+
+OR 0.69 
+(0.27 to 1.73) 
+33 per 1000
+10 fewer per 1000 
+(from 24 fewer to 23 more) 
+DVT or VTE 
+RCTs and NRS
+
+Four RCTs reported the number of DVT/VTE during the study period, resulting in an 
+OR of 1.05 (95% CI: 0.16 to 6.79) (6/3104 in the continuous or extended COCs group 
+vs 1/1373 in the cyclic COCs group, 0 fewer per 1000 [from 1 fewer to 4 more]). 
+Three studies reported the occurrence of DVT/VTE related to the continuous/
+extended-cycle use of COCs, including one prospective cohort study of 727 flexible 
+extended regimen users and two retrospective cohort studies of 236 284 continuous/
+extended-cycle COCs users. All three studies found a very low incidence of DVT/VTE 
+in continuous/extended-cycle COCs users. In one study, there were two cases of 
+DVT among 727 flexible extended regimen users during the second year of study. In 
+another study, 35 and 68 patients developed VTEs among 25 593 treatment episodes 
+in 91-day COCs-LNG and among 76 586 treatment episodes in 28-day COCs-LNG, 
+respectively. In another study, there were 228 incident VTE cases identified in 210 691 
+noncyclic COCs users and 297 in 522 316 cyclic COCs users. 
+CI: confidence interval; DVT: deep vein thrombosis; GRADE: Grading, Recommendations, Assessment, Development and Evaluation; LNG: levonorgestrel; NRS: non-randomized studies; OR: odds 
+ratio; RCTs: randomized controlled trials; VTE: venous thromboembolism.
+There was some discussion about the number of deep vein thrombosis (DVT) or VTE reported in the studies. Because some settings may not have adequate access to 
+health care in case of a thrombosis, a small increase could be important. However, the GDG noted that the number of thrombotic events may not be higher than most 
+contraceptives. The GDG agreed that there may be little to no difference in harms with extended or continuous COCs compared to cyclic regimens.
+64
+
+ Very low
+ Low
+Evidence of benefits was of moderate certainty and typically rated down for risk of bias due to high loss to follow-up. The evidence of adverse events was of low certainty, 
+with risk of bias due to high loss to follow-up and few people in the studies, resulting in wide confidence intervals. Based on the low certainty of evidence of adverse 
+events, the overall certainty is low.
+Is there important uncertainty about or variability in how much people value the main outcomes?
+ Important uncertainty or variability 
+Possibly important uncertainty or 
+Probably no important uncertainty 
+No important uncertainty or 
+The GDG agreed that most women would probably place higher value on avoiding pregnancy. 
+Does the balance between desirable and undesirable effects favour the intervention or the comparison?
+ Probably favours the intervention 
+Given the small benefits (on which greater value is placed) and trivial harms but low certainty, the GDG agreed that extended or continuous cycle COCs are probably 
+favoured over cyclic. 
+65
+
+Instead, the GDG agreed that there is likely no additional cost when using extended or continuous COCs compared to cyclic since the same pack of medicine could be 
+used. The GDG also noted that it may save on the costs of feminine products. 
+The GDG agreed that providing or taking continuous or extended COCs would probably not have a different impact on health equity than cyclic COCs. 
+66
+
+ Probably yes 
+ Yes 
+Satisfaction was measured in 11 RCTs, two prospective cohort studies and one study using national survey data. In general, the continuous or extended-cycle use of COCs 
+had a high level of satisfaction/acceptance. Nine RCTs (4176 participants) and all three studies of other study design (487 participants followed for four to five months) 
+favoured the continuous or extended-cycle use of COCs in terms of satisfaction. Only two RCTs (582 participants) showed mixed results in satisfaction.
+Overall discontinuation was measured in 15 RCTs. There is moderate-certainty evidence that discontinuation may be slightly higher with continuous or extended COCs. 
+However, the GDG agreed that counselling to explain to women the bleeding patterns would likely help reduce discontinuation, since the desire to bleed may be based 
+on misinformation (where women think they need to bleed even when taking continuous/extended). 
+The GDG agreed that providing continuous or extended COCs would be feasible, but counselling and health-care involvement would be important to put in place.
+67
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+68
+
+WHO suggests that COCs can be used for a) extended durations up to six months or b) continuously up to one year, as well as their cyclical use for contraception in women of reproductive age 
+(conditional recommendation, low-certainty evidence).
+Remarks: an extended regimen is defined as taking active combined hormonal contraceptive pills continuously for more than 28 days, followed by a planned hormone-free interval. Extended 
+use may be for flexible or fixed duration. A continuous regimen is defined as taking active combined hormonal contraceptive pills every day without any breaks in daily pill-taking (no 
+hormone-free interval).
+Overall, the GDG judged that there are likely small differences in the benefits of extended or continuous regimens compared to cyclic use, and the harms (e.g. VTE/DVT) are likely similar to other contraceptives and 
+trivial. The GDG also agreed that effects may not vary by regimen or duration. Acceptability is also probably high, and there may be little difference in discontinuation between regimens. Extended or continuous 
+regimens are probably feasible, resulting in negligible cost differences, and would not reduce equity. However, counselling for women should be provided to explain how to use these regimens and whether 
+bleeding should occur or be expected.
+When implementing this recommendation, the GDG underscored the paramount importance of the right to contraceptive choice. Further, the GDG emphasized the imperative of addressing the following 
+overarching issues when applying continuous or extended COCs regimens to national programmes.
+Essential screening procedures for administering COCs
+Referral and follow-up care for contraceptive use, as appropriate.
+In addition, the GDG advised that WHO Member States should specifically consider the following when implementing continuous or extended COCs: offering continuous use of COCs should be done in the context 
+of enhanced counselling (e.g. changes in bleeding patterns), which may not be practical in some settings; the ability to offer continuous or extended use regimens relies upon an adequate supply of commodities, 
+which may not exist in all settings.
+69
+
+A2.5 Recommendation: extended use of etonogestrel contraceptive implants
+Should etonogestrel (ETG) contraceptive subdermal implants be used up to five years versus three years in women of reproductive age? 
+ETG contraceptive subdermal implants up to five years
+ETG contraceptive subdermal implants up to three years 
+Number of pregnancies; Pearl Index; bleeding; amenorrhoea; side effects (e.g. headaches, nausea); serious adverse events (e.g. thrombosis) 
+The ETG implant is a single rod of ethylene vinyl acetate copolymer containing 68 mg of ETG, covered in a rate-controlling membrane. The WHO Selected practice 
+recommendations for contraceptive use guideline (SPR) describes product labelling regarding length of use for: “Implanon NXT (also known as Nexplanon; replaces 
+Implanon) which is a 1 rod containing etonogestrel, labelled for up to 3 years of use”.
+Although labelled for use up to three years, the consistent serum levels observed at the end of the three-year period of use suggest that the implant could continue to 
+provide effective contraception beyond the approved duration.
+70
+
+A systematic review of studies up to 8 November 2024 found six studies comparing the extended interval use of ETG implant for contraception beyond three years to the 
+currently approved duration of three years (5).
+Risk within 3 years 
+Risk after 3 years 
+Contraceptive efficacy within 3–5 
+Pearl Index) 
+
+Pearl Index was 0/100 woman-years in Ali (6) and McNicholas (7). Pearl 
+indices in Moray (8) systematic review of ETG implant efficacy ranged 
+from 0 to 1.4/100 woman-years in 5 studies
+Contraceptive efficacy within 3–5 
+pregnancy rate) 
+1249
+
+3/943 
+(0.3%) 
+0/306 
+(0.0%) 
+Contraceptive efficacy within 3–4 
+Pearl Index) 
+(6 single-arm 
+
+Pearl Index was 0/100 woman-years in Ali (6) and McNicholas (7). 
+Pearl indices in the Moray (8) systematic review of ETG implant efficacy 
+ranged from 0 to 1.4/100 woman-years in 5 studies
+Contraceptive efficacy within 3–4 
+pregnancy rate)
+2843
+(6 single-arm 
+
+3/1983 
+(0.2%) 
+0/860 
+(0.0%) 
+CI: confidence interval; ETG: etonogestrel; GRADE: Grading, Recommendations, Assessment, Development and Evaluation. 
+The GDG agreed that there may be no difference in pregnancies with implant use up to three years or five years. 
+The GDG discussed whether there could be differences in efficacy based on BMI. However, some laboratory evidence suggests that there may be no differences (e.g. serum levels are 
+not lower if BMI is greater). Therefore, the GDG agreed that efficacy may be similar regardless of BMI.
+71
+
+ Large 
+A systematic review of studies up to 8 November 2024 found six studies comparing the extended interval use of ETG implant for contraception beyond three years to the 
+currently approved duration of three years (5).
+Risk within 3 years 
+Risk after 3 years 
+Greater than one attempt at removal
+
+Nonpalpable implant requiring 
+referral 
+1070 
+(3 single-arm 
+
+0/843(0.0%) 
+1/227 (0.4%)
+Implant breakage 
+
+Infection at 4 and 5 years 
+
+Neurological sequelae of removal/
+attempted removal at years 4 and 5
+
+Other adverse events related to the 
+implant
+
+CI: confidence interval; GRADE: Grading, Recommendations, Assessment, Development and Evaluation. 
+The GDG agreed that although the evidence is uncertain about the safety of extended use, the studies did not report any events for up to three- or five-year intervals (except 
+for one woman out of 227 who had the implant up to five years and required a referral for removal).
+72
+
+ Very low
+Evidence for benefits was of low certainty and typically rated down for risk of bias because there were no direct comparisons of length of time within a study; and there 
+were few people across the studies. The evidence for adverse events was of very low certainty for similar reasons. Based on the very low-certainty evidence of adverse 
+events, the overall certainty is very low. 
+Is there important uncertainty about or variability in how much people value the main outcomes?
+ Important uncertainty or variability 
+Possibly important uncertainty or 
+Probably no important uncertainty 
+No important uncertainty or 
+The GDG agreed that most women would probably place higher value on avoiding pregnancy. 
+Does the balance between desirable and undesirable effects favour the intervention or the comparison?
+ Probably favours the intervention 
+Given that there may be trivial differences in benefits and harms between using the implant up to three or five years, the balance does not favour one over the other. 
+73
+
+Instead, the GDG agreed that since fewer visits and procedures would be needed if use of the implant was extended up to five years, the costs to the patient and healthcare system could be slightly reduced. However, it would not have a moderate or large impact on costs. 
+The GDG agreed that extending its use would probably not have an impact on equity. 
+74
+
+One study (204 participants) assessed acceptability of the implant within three to five years measured by bothersome bleeding prompting removal. The proportion of 
+bothersome bleeding prompting removal during this timeframe was 11/204.
+Four studies (494 participants) assessed acceptability of the implant within three to four years measured by bothersome bleeding prompting removal. The proportion of 
+bothersome bleeding prompting removal during this timeframe was 15/494.
+The GDG agreed that the proportions were trivial, and extending its use is probably acceptable. The GDG also indicated that there could be some confusion that women 
+who do not remove it may think they can become pregnant after the three years.
+The GDG expressed some concern that clinicians may not offer replacement at three years if extended use was available, but information would need to be provided to 
+ensure women could receive what they prefer.
+The GDG agreed that using the implant for up to five years would not require any infrastructure changes where it is currently available. Additional education for women 
+may be necessary given concerns with understanding of extended use (see acceptability section). Ongoing education is needed for clinicians on how to remove implants 
+(regardless of how long the client has had it, whether up to three or five years).
+75
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+76
+
+WHO suggests ETG contraceptive implants can be used for up to five years, in line with the updated manufacturer’s approved duration of five years (conditional recommendation, very lowcertainty evidence). 
+There is very low-certainty evidence that extended use of ETG contraceptive implants up to five years may be as effective and safe as implants up to three years. The longer duration is probably acceptable to 
+women and clinicians and would have little impact on equity, but could reduce resources associated with visits, procedures and costs. Implants up to five years are probably as feasible to provide as up to three 
+years and would not require additional implementation strategies.
+When implementing this recommendation, the GDG underscored the paramount importance of the right to contraceptive choice. The GDG emphasized the imperative of addressing the following overarching 
+issues when applying extended use of ETG implants to national programmes.
+Essential screening procedures for administering ETG implants
+Referral and follow-up care for contraceptive use, as appropriate
+The GDG advised that WHO Member States should specifically consider the following when implementing extended use of ETG implants.
+A client’s right to contraceptive choice and how long they wish to use an implant must be assured.
+Irrespective of the option to extend implant use, programmes and providers must safeguard a client’s right to have their implant removed when they wish.
+Additional training and communication materials may be needed for providers to implement extended implant use.
+Lastly, the GDG encourages WHO Member States to continue to enable access to implant removals, as well as opportunities to train clinicians to remove implants.
+77
+
+References
+1. 
+Ramanadhan S, Edelman A, Che Y, Paynter R, 
+Hersh A, Henderson J. Effectiveness, safety, and 
+acceptability of Mifepristone compared to other 
+interventions in reproductive age women using 
+Emergency Contraception for the prevention of 
+pregnancy: A systematic review and meta-analysis. 
+BMJ Sex Reprod Health 2026. (https://doi.org/10.1136/
+bmjsrh-2026-203328). 
+2. 
+Tufa T, Idrees M, Odey G, Kamuyango A, Kabra R et al. 
+Contraceptive effectiveness and safety of ormeloxifene: 
+a systematic review. BMJ Sex Reprod Health 2026. 
+(https://doi.org/10.1136/bmjsrh-2026-203329). 
+3. 
+Chen Y, Yao Y, Liu H, Yang L et al. Efficacy, safety and 
+acceptability of quinestrol-quingestanol (Quin-QUIN), 
+quinestrol-levonorgestrel (Quin-LNG) or quinestrolnorgestrel (Quin-NG): a systematic review and 
+meta-analysis. BMJ Sex Reprod Health 2026. 
+(https://doi.org/10.1136/bmjsrh-2026-203330). 
+4. 
+Jiang L, Kshatriya M, Santesso N, Kamuyango A, Kidula 
+N, Kiarie J. Effectiveness, safety and acceptability of 
+continuous or extended-cycle use of combined oral 
+contraceptives (COCs): a systematic review and 
+meta-analysis. BMJ Sex Reprod Health 2026. 
+(https://doi.org/10.1136/bmjsrh-2026-203331).
+5. 
+Chen J, Sothornwit J, Kamuyango A, Sonalkar S et al. 
+Efficacy, acceptability, and safety of the use of 68 mg 
+etonogestrel contraceptive subdermal implant for 
+longer than 3 years compared with up to 3 years: 
+A systematic review. BMJ Sex Reprod Health 2026. 
+(https://doi.org/10.1136/bmjsrh-2026-203332).
+6. 
+Ali M, Akin A, Bahamondes L, Brache V, Habib N, 
+Landoulsi S et al. Extended use up to 5 years of the 
+etonogestrel-releasing subdermal contraceptive 
+implant: comparison to levonorgestrel-releasing 
+subdermal implant. Hum Reprod. 2016;31(11):2491-8. 
+(https://doi.org/10.1093/humrep/dew222).
+7. 
+McNicholas C, Swor E, Wan L, Peipert JF. 
+Prolonged use of the etonogestrel implant and 
+levonorgestrel intrauterine device: 2 years beyond 
+Food and Drug Administration-approved duration. 
+Am J Obstet Gynecol. 2017;216(6):586.e1-e6. 
+(https://doi.org/10.1016/j.ajog.2017.01.036).
+8. 
+Moray KV, Chaurasia H, Sachin O, Joshi B. A systematic 
+review on clinical effectiveness, side-effect profile and 
+meta-analysis on continuation rate of etonogestrel 
+contraceptive implant. Reprod Health. 2021;18(1):4. 
+(https://doi.org/10.1186/s12978-020-01054-y).
+78
+
+For more information, please contact:
+UNDP-UNFPA-UNICEF-WHO-World Bank Special Programme 
+of Research, Development and Research Training in 
+Human Reproduction (HRP) 
+Department of Sexual, Reproductive, Maternal, Child, 
+Adolescent and Ageing Health (LHR). 
+World Health Organization
+20 Avenue Appia
+1211 Geneva 27
+Switzerland
+Email: srhcfc@who.int 
+Website: https://www.who.int/hrp; 
+https://www.who.int/health-topics/contraception 
+www.who.int

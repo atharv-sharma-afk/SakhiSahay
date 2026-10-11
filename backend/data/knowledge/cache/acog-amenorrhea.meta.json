@@ -1,0 +1,12 @@
+{
+  "source_id": "acog-amenorrhea",
+  "url": "https://www.acog.org/womens-health/faqs/amenorrhea",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 9810,
+  "chunk_count": 12,
+  "warnings": [
+    "removed 1 repeated header/footer lines"
+  ]
+}

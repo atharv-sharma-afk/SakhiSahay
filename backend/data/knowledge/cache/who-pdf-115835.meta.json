@@ -1,0 +1,12 @@
+{
+  "source_id": "who-pdf-115835",
+  "url": "https://www.who.int",
+  "accessed_date": "2026-10-11",
+  "content_type": "pdf",
+  "extraction_method": "pymupdf",
+  "char_count": 88593,
+  "chunk_count": 96,
+  "warnings": [
+    "removed 198 repeated header/footer lines"
+  ]
+}
