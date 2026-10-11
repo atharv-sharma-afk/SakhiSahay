@@ -1,0 +1,19 @@
+# Install CPU-only torch first to avoid multi-GB CUDA wheels:
+#   uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   uv pip install -r requirements.txt
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+pydantic>=2.7,<3
+pydantic-settings>=2.3,<3
+SQLAlchemy>=2.0,<3
+httpx>=0.27,<1
+PyYAML>=6.0,<7
+beautifulsoup4>=4.12,<5
+lxml>=5.0,<7
+trafilatura>=1.9,<3
+PyMuPDF>=1.24,<2
+qdrant-client>=1.10,<2
+sentence-transformers>=3.0,<6
+torch>=2.2
+google-genai>=1.0,<2
+pytest>=8.0,<9

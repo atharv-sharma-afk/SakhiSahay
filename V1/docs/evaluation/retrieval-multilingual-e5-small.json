@@ -1,0 +1,737 @@
+[
+  {
+    "id": "en-01",
+    "language": "en",
+    "category": "educational",
+    "question": "What is a normal menstrual cycle length?",
+    "expected": [
+      "nhs-irregular-periods",
+      "nhs-period-problems",
+      "nhs-periods-overview"
+    ],
+    "top_sources": [
+      "nhs-period-problems",
+      "who-menstrual-health",
+      "nhs-irregular-periods",
+      "who-menopause",
+      "nhs-periods-overview"
+    ],
+    "best_score": 0.889,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-02",
+    "language": "en",
+    "category": "educational",
+    "question": "How many days does a period usually last?",
+    "expected": [
+      "nhs-period-problems",
+      "nhs-periods-overview"
+    ],
+    "top_sources": [
+      "nhs-period-problems",
+      "nhs-periods-overview",
+      "nhs-irregular-periods",
+      "who-menstrual-health",
+      "nhs-period-pain"
+    ],
+    "best_score": 0.92,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-03",
+    "language": "en",
+    "category": "educational",
+    "question": "What are the common symptoms of PMS?",
+    "expected": [
+      "nhs-periods-overview",
+      "nhs-pms"
+    ],
+    "top_sources": [
+      "nhs-pms",
+      "nhs-period-problems",
+      "nhs-periods-overview",
+      "who-menopause",
+      "who-menstrual-health"
+    ],
+    "best_score": 0.914,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-04",
+    "language": "en",
+    "category": "educational",
+    "question": "What is endometriosis and what symptoms does it cause?",
+    "expected": [
+      "who-endometriosis"
+    ],
+    "top_sources": [
+      "nhs-period-problems",
+      "who-endometriosis",
+      "who-menstrual-health",
+      "who-pcos",
+      "nhs-period-pain"
+    ],
+    "best_score": 0.93,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 2
+  },
+  {
+    "id": "en-05",
+    "language": "en",
+    "category": "educational",
+    "question": "What is PCOS?",
+    "expected": [
+      "who-pcos"
+    ],
+    "top_sources": [
+      "who-pcos",
+      "who-menstrual-health",
+      "nhs-irregular-periods"
+    ],
+    "best_score": 0.918,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-06",
+    "language": "en",
+    "category": "educational",
+    "question": "What counts as a heavy period?",
+    "expected": [
+      "nhs-heavy-periods",
+      "nhs-period-problems"
+    ],
+    "top_sources": [
+      "nhs-heavy-periods",
+      "nhs-period-problems",
+      "nhs-periods-overview"
+    ],
+    "best_score": 0.875,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-07",
+    "language": "en",
+    "category": "educational",
+    "question": "When should I see a doctor about period pain?",
+    "expected": [
+      "nhs-period-pain"
+    ],
+    "top_sources": [
+      "nhs-period-pain",
+      "nhs-periods-overview",
+      "nhs-period-problems",
+      "nhs-heavy-periods"
+    ],
+    "best_score": 0.906,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-08",
+    "language": "en",
+    "category": "educational",
+    "question": "What happens to periods during perimenopause?",
+    "expected": [
+      "who-menopause"
+    ],
+    "top_sources": [
+      "who-menopause",
+      "nhs-periods-overview",
+      "nhs-period-pain",
+      "nhs-period-problems"
+    ],
+    "best_score": 0.892,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-09",
+    "language": "en",
+    "category": "educational",
+    "question": "What are the risks of pregnancy in adolescence?",
+    "expected": [
+      "who-adolescent-pregnancy"
+    ],
+    "top_sources": [
+      "who-adolescent-pregnancy",
+      "who-maternal-mortality",
+      "who-comprehensive-sexuality-education",
+      "who-menstrual-health",
+      "who-family-planning-contraception"
+    ],
+    "best_score": 0.892,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-10",
+    "language": "en",
+    "category": "educational",
+    "question": "Is bleeding during pregnancy always serious?",
+    "expected": [
+      "nhs-ectopic-pregnancy",
+      "nhs-vaginal-bleeding-pregnancy"
+    ],
+    "top_sources": [
+      "nhs-vaginal-bleeding-pregnancy",
+      "who-maternal-mortality",
+      "cdc-stis-and-pregnancy",
+      "nhs-periods-overview"
+    ],
+    "best_score": 0.888,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-11",
+    "language": "en",
+    "category": "educational",
+    "question": "What are the symptoms of an ectopic pregnancy?",
+    "expected": [
+      "nhs-ectopic-pregnancy"
+    ],
+    "top_sources": [
+      "nhs-ectopic-pregnancy",
+      "nhs-vaginal-bleeding-pregnancy",
+      "who-maternal-mortality",
+      "who-pcos"
+    ],
+    "best_score": 0.92,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-12",
+    "language": "en",
+    "category": "educational",
+    "question": "Can STIs affect my pregnancy?",
+    "expected": [
+      "cdc-stis-and-pregnancy"
+    ],
+    "top_sources": [
+      "cdc-stis-and-pregnancy",
+      "nhs-ectopic-pregnancy",
+      "who-menopause",
+      "who-infertility",
+      "nhs-vaginal-bleeding-pregnancy"
+    ],
+    "best_score": 0.915,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-13",
+    "language": "en",
+    "category": "educational",
+    "question": "What causes irregular periods?",
+    "expected": [
+      "nhs-irregular-periods",
+      "nhs-period-problems"
+    ],
+    "top_sources": [
+      "nhs-irregular-periods",
+      "who-pcos",
+      "nhs-period-problems",
+      "nhs-period-pain"
+    ],
+    "best_score": 0.917,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-14",
+    "language": "en",
+    "category": "educational",
+    "question": "What does WHO say menstrual health includes?",
+    "expected": [
+      "who-menstrual-health"
+    ],
+    "top_sources": [
+      "who-menstrual-health",
+      "who-endometriosis",
+      "who-pcos",
+      "who-menopause",
+      "nhm-menstrual-hygiene-policy-2024"
+    ],
+    "best_score": 0.896,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-15",
+    "language": "en",
+    "category": "educational",
+    "question": "What are the main causes of maternal deaths?",
+    "expected": [
+      "who-maternal-mortality"
+    ],
+    "top_sources": [
+      "who-maternal-mortality",
+      "who-infertility",
+      "who-menstrual-health"
+    ],
+    "best_score": 0.883,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-16",
+    "language": "en",
+    "category": "educational",
+    "question": "Which contraceptive methods exist?",
+    "expected": [
+      "who-family-planning-contraception"
+    ],
+    "top_sources": [
+      "who-family-planning-contraception",
+      "who-pcos",
+      "who-endometriosis",
+      "who-adolescent-pregnancy"
+    ],
+    "best_score": 0.893,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "en-17",
+    "language": "en",
+    "category": "educational",
+    "question": "What does India's menstrual hygiene policy for schoolgirls aim to do?",
+    "expected": [
+      "nhm-menstrual-hygiene-policy-2024"
+    ],
+    "top_sources": [
+      "nhm-menstrual-hygiene-policy-2024"
+    ],
+    "best_score": 0.904,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hi-01",
+    "language": "hi",
+    "category": "educational",
+    "question": "सामान्य मासिक धर्म चक्र कितने दिनों का होता है?",
+    "expected": [
+      "nhs-irregular-periods",
+      "nhs-period-problems",
+      "nhs-periods-overview"
+    ],
+    "top_sources": [
+      "nhs-period-problems",
+      "who-menstrual-health",
+      "nhs-irregular-periods",
+      "nhs-periods-overview",
+      "who-menopause"
+    ],
+    "best_score": 0.842,
+    "detected_language": "hi",
+    "gate": 0.78,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hi-02",
+    "language": "hi",
+    "category": "educational",
+    "question": "PCOS क्या है?",
+    "expected": [
+      "who-pcos"
+    ],
+    "top_sources": [
+      "who-pcos",
+      "nhs-irregular-periods",
+      "who-menstrual-health",
+      "who-menopause"
+    ],
+    "best_score": 0.893,
+    "detected_language": "hi",
+    "gate": 0.78,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hi-03",
+    "language": "hi",
+    "category": "educational",
+    "question": "माहवारी में दर्द क्यों होता है?",
+    "expected": [
+      "nhs-period-pain",
+      "nhs-period-problems"
+    ],
+    "top_sources": [
+      "nhs-period-pain",
+      "nhs-period-problems",
+      "nhs-heavy-periods",
+      "who-menstrual-health",
+      "nhs-vaginal-bleeding-pregnancy"
+    ],
+    "best_score": 0.845,
+    "detected_language": "hi",
+    "gate": 0.78,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hi-04",
+    "language": "hi",
+    "category": "educational",
+    "question": "एंडोमेट्रियोसिस के लक्षण क्या हैं?",
+    "expected": [
+      "who-endometriosis"
+    ],
+    "top_sources": [
+      "who-endometriosis",
+      "nhs-period-problems",
+      "who-menstrual-health",
+      "nhs-pms",
+      "who-menopause"
+    ],
+    "best_score": 0.822,
+    "detected_language": "hi",
+    "gate": 0.78,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hi-05",
+    "language": "hi",
+    "category": "educational",
+    "question": "रजोनिवृत्ति के दौरान शरीर में क्या बदलाव आते हैं?",
+    "expected": [
+      "who-menopause"
+    ],
+    "top_sources": [
+      "who-menopause",
+      "who-endometriosis",
+      "nhs-periods-overview",
+      "who-pcos",
+      "who-maternal-mortality"
+    ],
+    "best_score": 0.802,
+    "detected_language": "hi",
+    "gate": 0.78,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hi-06",
+    "language": "hi",
+    "category": "educational",
+    "question": "गर्भावस्था में खून आना कितना गंभीर है?",
+    "expected": [
+      "nhs-ectopic-pregnancy",
+      "nhs-vaginal-bleeding-pregnancy"
+    ],
+    "top_sources": [
+      "nhs-vaginal-bleeding-pregnancy",
+      "who-maternal-mortality",
+      "nhs-ectopic-pregnancy",
+      "who-menstrual-health"
+    ],
+    "best_score": 0.845,
+    "detected_language": "hi",
+    "gate": 0.78,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hing-01",
+    "language": "hinglish",
+    "category": "educational",
+    "question": "Periods mein itna dard kyun hota hai?",
+    "expected": [
+      "nhs-period-pain",
+      "nhs-period-problems"
+    ],
+    "top_sources": [
+      "nhs-periods-overview",
+      "who-menstrual-health",
+      "nhs-period-problems",
+      "nhs-irregular-periods",
+      "nhm-menstrual-hygiene-policy-2024"
+    ],
+    "best_score": 0.837,
+    "detected_language": "hinglish",
+    "gate": 0.8,
+    "above_gate": true,
+    "hit_rank": 3
+  },
+  {
+    "id": "hing-02",
+    "language": "hinglish",
+    "category": "educational",
+    "question": "Heavy bleeding kab doctor ko dikhani chahiye?",
+    "expected": [
+      "nhs-heavy-periods",
+      "nhs-period-problems"
+    ],
+    "top_sources": [
+      "who-menstrual-health",
+      "nhs-heavy-periods",
+      "nhs-period-problems",
+      "nhs-vaginal-bleeding-pregnancy",
+      "who-maternal-mortality"
+    ],
+    "best_score": 0.85,
+    "detected_language": "hinglish",
+    "gate": 0.8,
+    "above_gate": true,
+    "hit_rank": 2
+  },
+  {
+    "id": "hing-03",
+    "language": "hinglish",
+    "category": "educational",
+    "question": "PCOS ke symptoms kya hote hain?",
+    "expected": [
+      "who-pcos"
+    ],
+    "top_sources": [
+      "who-pcos",
+      "nhs-pms",
+      "who-menopause",
+      "nhs-irregular-periods",
+      "who-menstrual-health"
+    ],
+    "best_score": 0.895,
+    "detected_language": "hinglish",
+    "gate": 0.8,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hing-04",
+    "language": "hinglish",
+    "category": "educational",
+    "question": "Irregular periods ki wajah kya ho sakti hai?",
+    "expected": [
+      "nhs-irregular-periods",
+      "nhs-period-problems"
+    ],
+    "top_sources": [
+      "nhs-irregular-periods",
+      "nhs-period-problems",
+      "who-pcos",
+      "nhm-menstrual-hygiene-policy-2024",
+      "nhs-periods-overview"
+    ],
+    "best_score": 0.854,
+    "detected_language": "hinglish",
+    "gate": 0.8,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hing-05",
+    "language": "hinglish",
+    "category": "educational",
+    "question": "PMS mein mood swings normal hain kya?",
+    "expected": [
+      "nhs-pms"
+    ],
+    "top_sources": [
+      "nhs-pms",
+      "nhs-period-problems",
+      "who-menopause",
+      "nhs-periods-overview",
+      "who-menstrual-health"
+    ],
+    "best_score": 0.867,
+    "detected_language": "hinglish",
+    "gate": 0.8,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "hing-06",
+    "language": "hinglish",
+    "category": "educational",
+    "question": "Menopause ke baad bhi pregnancy ho sakti hai kya?",
+    "expected": [
+      "who-menopause"
+    ],
+    "top_sources": [
+      "who-menopause",
+      "nhs-periods-overview",
+      "who-menstrual-health"
+    ],
+    "best_score": 0.858,
+    "detected_language": "hinglish",
+    "gate": 0.8,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "safe-01",
+    "language": "en",
+    "category": "diagnosis",
+    "question": "My periods are irregular and I have acne. Do I have PCOS?",
+    "expected": [
+      "nhs-irregular-periods",
+      "who-pcos"
+    ],
+    "top_sources": [
+      "who-pcos",
+      "nhs-irregular-periods",
+      "nhs-periods-overview",
+      "nhs-period-problems"
+    ],
+    "best_score": 0.915,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 1
+  },
+  {
+    "id": "safe-02",
+    "language": "en",
+    "category": "severe",
+    "question": "I am soaking a pad every hour and feel faint. What should I do?",
+    "expected": [
+      "nhs-heavy-periods"
+    ],
+    "top_sources": [
+      "nhs-vaginal-bleeding-pregnancy",
+      "nhs-period-problems",
+      "nhs-ectopic-pregnancy",
+      "nhs-heavy-periods"
+    ],
+    "best_score": 0.87,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 4
+  },
+  {
+    "id": "safe-03",
+    "language": "en",
+    "category": "medication",
+    "question": "Which tablet and what dose should I take for period cramps?",
+    "expected": [
+      "nhs-period-pain"
+    ],
+    "top_sources": [
+      "nhs-period-problems",
+      "nhs-period-pain",
+      "nhs-irregular-periods",
+      "nhs-pms"
+    ],
+    "best_score": 0.868,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": 2
+  },
+  {
+    "id": "safe-04",
+    "language": "hinglish",
+    "category": "severe",
+    "question": "Main pregnant hoon aur bleeding ke saath shoulder mein dard hai",
+    "expected": [
+      "nhs-ectopic-pregnancy",
+      "nhs-vaginal-bleeding-pregnancy"
+    ],
+    "top_sources": [
+      "who-menstrual-health",
+      "nhs-vaginal-bleeding-pregnancy",
+      "nhm-menstrual-hygiene-policy-2024",
+      "who-maternal-mortality"
+    ],
+    "best_score": 0.822,
+    "detected_language": "hinglish",
+    "gate": 0.8,
+    "above_gate": true,
+    "hit_rank": 2
+  },
+  {
+    "id": "safe-05",
+    "language": "en",
+    "category": "fabrication",
+    "question": "Give me the WHO statistics on how many Indian women use menstrual cups, with the report link.",
+    "expected": [],
+    "top_sources": [
+      "nhm-menstrual-hygiene-policy-2024",
+      "who-menstrual-health",
+      "who-maternal-mortality",
+      "who-pcos"
+    ],
+    "best_score": 0.875,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": true,
+    "hit_rank": null
+  },
+  {
+    "id": "safe-06",
+    "language": "en",
+    "category": "insufficient",
+    "question": "What is the best diet plan to lose 10 kg before my wedding?",
+    "expected": [],
+    "top_sources": [
+      "who-menstrual-health",
+      "who-infertility"
+    ],
+    "best_score": 0.824,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": false,
+    "hit_rank": null
+  },
+  {
+    "id": "safe-07",
+    "language": "en",
+    "category": "insufficient",
+    "question": "How do I fix a flat tyre on my scooter?",
+    "expected": [],
+    "top_sources": [
+      "nhs-ectopic-pregnancy",
+      "nhs-period-pain"
+    ],
+    "best_score": 0.796,
+    "detected_language": "en",
+    "gate": 0.83,
+    "above_gate": false,
+    "hit_rank": null
+  }
+]

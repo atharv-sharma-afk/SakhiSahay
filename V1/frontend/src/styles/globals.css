@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/noto-sans";
+@import "@fontsource/noto-sans-devanagari/400.css";
+@import "@fontsource/noto-sans-devanagari/500.css";
+@import "@fontsource/noto-sans-devanagari/600.css";
+
+/* ---------------------------------------------------------------------------
+   SakhiSahay design tokens
+   Palette: warm ivory surfaces, deep plum primary, soft lavender secondary,
+   restrained rose accent, sage for positive states, warm charcoal text.
+   All text/background pairs below were checked against WCAG AA (4.5:1 body).
+--------------------------------------------------------------------------- */
+@theme {
+  --font-display: "Fraunces Variable", "Noto Sans Devanagari", ui-serif, Georgia, serif;
+  --font-sans: "Noto Sans Variable", "Noto Sans Devanagari", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ivory-50: #fdfbf8;
+  --color-ivory-100: #faf6f1;
+  --color-ivory-200: #f3ece4;
+  --color-ivory-300: #e9dfd4;
+
+  --color-plum-50: #f7eff4;
+  --color-plum-100: #efdfe8;
+  --color-plum-200: #dcbcce;
+  --color-plum-300: #c292ad;
+  --color-plum-400: #a66b8c;
+  --color-plum-500: #8a4b6f;
+  --color-plum-600: #70385a;
+  --color-plum-700: #5b2a4e;
+  --color-plum-800: #44203b;
+  --color-plum-900: #2d1527;
+
+  --color-lavender-100: #eeebf7;
+  --color-lavender-200: #dcd6ee;
+  --color-lavender-300: #bdb2df;
+  --color-lavender-500: #7f6db5;
+  --color-lavender-700: #564795;
+
+  --color-rose-100: #fbe9ed;
+  --color-rose-200: #f5cfd8;
+  --color-rose-300: #ecaab9;
+  --color-rose-500: #d4657f;
+  --color-rose-700: #a33f58;
+
+  --color-sage-100: #e8efe9;
+  --color-sage-200: #cfdfd2;
+  --color-sage-500: #6b9873;
+  --color-sage-700: #456b4c;
+
+  --color-amber-100: #fcf1dd;
+  --color-amber-200: #f6dfb3;
+  --color-amber-600: #a86f0b;
+  --color-amber-800: #6f4a06;
+
+  --color-danger-100: #fce8e6;
+  --color-danger-200: #f6c9c5;
+  --color-danger-600: #b9382e;
+  --color-danger-800: #7f241c;
+
+  --color-ink-900: #2b2327;
+  --color-ink-700: #4b4046;
+  --color-ink-500: #6e6267;
+  --color-ink-400: #8d8186;
+  --color-ink-300: #b5aaaf;
+
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.75rem;
+  --radius-3xl: 2.25rem;
+
+  --shadow-soft: 0 1px 2px rgba(43, 35, 39, 0.04), 0 10px 30px -14px rgba(91, 42, 78, 0.22);
+  --shadow-lift: 0 2px 4px rgba(43, 35, 39, 0.05), 0 18px 40px -16px rgba(91, 42, 78, 0.28);
+  --shadow-ring: 0 0 0 3px rgba(127, 109, 181, 0.35);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-ink-900);
+    background-color: var(--color-ivory-100);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    min-height: 100dvh;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72, "SOFT" 60, "WONK" 0;
+    letter-spacing: -0.012em;
+  }
+  :lang(hi) {
+    font-family: "Noto Sans Devanagari", var(--font-sans);
+    line-height: 1.75;
+  }
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-ring);
+    border-radius: 0.5rem;
+  }
+  ::selection {
+    background: var(--color-plum-200);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl border border-ivory-300/70 shadow-soft;
+  }
+  .card-muted {
+    @apply bg-ivory-50 rounded-2xl border border-ivory-300/70;
+  }
+  .eyebrow {
+    @apply text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-plum-500;
+  }
+  .prose-answer {
+    @apply text-[0.98rem] leading-7 text-ink-900;
+  }
+  .prose-answer p { @apply mb-3 last:mb-0; }
+  .prose-answer ul { @apply list-disc pl-5 mb-3 space-y-1; }
+  .prose-answer ol { @apply list-decimal pl-5 mb-3 space-y-1; }
+  .prose-answer strong { @apply font-semibold text-plum-800; }
+  .prose-answer h1, .prose-answer h2, .prose-answer h3 { @apply font-sans font-semibold text-ink-900 text-base mt-4 mb-2; }
+  .prose-answer a { @apply text-plum-600 underline decoration-plum-300 underline-offset-2; }
+  .prose-answer blockquote { @apply mb-3 border-l-[3px] border-plum-200 pl-3.5 text-[0.93rem] text-ink-700 italic; }
+  .prose-answer blockquote p { @apply mb-0; }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-rise { animation: rise 260ms ease-out both; }
+
+@keyframes pulse-dot {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.45; }
+  40% { transform: scale(1); opacity: 1; }
+}
+.typing-dot { animation: pulse-dot 1.2s infinite ease-in-out; }
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.3s; }

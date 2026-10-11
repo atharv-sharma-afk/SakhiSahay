@@ -1,0 +1,12 @@
+{
+  "source_id": "nhs-periods-overview",
+  "url": "https://www.nhs.uk/conditions/periods/",
+  "accessed_date": "2026-10-11",
+  "content_type": "html",
+  "extraction_method": "trafilatura-markdown",
+  "page_title": "Periods",
+  "date_hint": "2017-10-19",
+  "char_count": 6084,
+  "warnings": [],
+  "chunk_count": 10
+}

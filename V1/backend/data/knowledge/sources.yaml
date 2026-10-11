@@ -1,0 +1,173 @@
+# SakhiSahay curated knowledge manifest (mid-semester MVP).
+#
+# Every entry is an official page or document whose URL was verified before being
+# added. Ingestion fetches each URL, extracts text, records the access date, and
+# marks the source "failed" (never silently skipped) if extraction does not yield
+# usable content. Dates are left null unless they were confirmed on the page.
+#
+# doc_type values: fact_sheet | patient_education | policy_document | guideline | topic_overview
+# license_note is an attribution/usage reminder, not legal advice; verify before any
+# non-academic use.
+
+defaults:
+  language: en
+  min_chars: 800
+
+sources:
+  # ---------------------------------------------------------------- WHO
+  - id: who-menstrual-health
+    title: "Menstrual health (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/menstrual-health
+    doc_type: fact_sheet
+    topic: menstrual_health
+    license_note: "WHO content. WHO publications are licensed CC BY-NC-SA 3.0 IGO; used here non-commercially with attribution."
+
+  - id: who-endometriosis
+    title: "Endometriosis (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/endometriosis
+    doc_type: fact_sheet
+    topic: endometriosis
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  - id: who-pcos
+    title: "Polycystic ovary syndrome (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome
+    doc_type: fact_sheet
+    topic: pcos
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  - id: who-menopause
+    title: "Menopause (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/menopause
+    doc_type: fact_sheet
+    topic: menopause
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  - id: who-adolescent-pregnancy
+    title: "Adolescent pregnancy (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/adolescent-pregnancy
+    doc_type: fact_sheet
+    topic: pregnancy
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  - id: who-comprehensive-sexuality-education
+    title: "Comprehensive sexuality education (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/comprehensive-sexuality-education
+    doc_type: fact_sheet
+    topic: sexual_health
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  - id: who-maternal-mortality
+    title: "Maternal mortality (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/maternal-mortality
+    doc_type: fact_sheet
+    topic: maternal_health
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  - id: who-family-planning-contraception
+    title: "Family planning/contraception methods (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception
+    doc_type: fact_sheet
+    topic: reproductive_health
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  - id: who-infertility
+    title: "Infertility (fact sheet)"
+    publisher: World Health Organization
+    url: https://www.who.int/news-room/fact-sheets/detail/infertility
+    doc_type: fact_sheet
+    topic: reproductive_health
+    license_note: "WHO content. CC BY-NC-SA 3.0 IGO for WHO publications; non-commercial educational use with attribution."
+
+  # ---------------------------------------------------------------- NHS (patient-facing)
+  - id: nhs-periods-overview
+    title: "Periods - overview"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/conditions/periods/
+    doc_type: patient_education
+    topic: menstrual_health
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  - id: nhs-period-problems
+    title: "Period problems"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/conditions/periods/period-problems/
+    doc_type: patient_education
+    topic: menstrual_health
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  - id: nhs-heavy-periods
+    title: "Heavy periods"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/conditions/heavy-periods/
+    doc_type: patient_education
+    topic: menstrual_health
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  - id: nhs-period-pain
+    title: "Period pain"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/symptoms/period-pain/
+    doc_type: patient_education
+    topic: menstrual_health
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  - id: nhs-irregular-periods
+    title: "Irregular periods"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/symptoms/irregular-periods/
+    doc_type: patient_education
+    topic: menstrual_health
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  - id: nhs-pms
+    title: "PMS (premenstrual syndrome)"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/conditions/pre-menstrual-syndrome/
+    doc_type: patient_education
+    topic: menstrual_health
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  - id: nhs-vaginal-bleeding-pregnancy
+    title: "Vaginal bleeding in pregnancy"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/pregnancy/common-symptoms/vaginal-bleeding/
+    doc_type: patient_education
+    topic: pregnancy
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  - id: nhs-ectopic-pregnancy
+    title: "Ectopic pregnancy - overview"
+    publisher: NHS (UK)
+    url: https://www.nhs.uk/conditions/ectopic-pregnancy/
+    doc_type: patient_education
+    topic: pregnancy
+    license_note: "NHS website content; reuse is governed by NHS terms (most content under Open Government Licence v3.0). Attribution kept."
+
+  # ---------------------------------------------------------------- CDC (public domain)
+  - id: cdc-stis-and-pregnancy
+    title: "About STIs and Pregnancy"
+    publisher: US CDC
+    url: https://www.cdc.gov/sti/about/about-stis-and-pregnancy.html
+    doc_type: patient_education
+    topic: sexual_health
+    license_note: "US federal government work; generally public domain. Attribution kept."
+
+  # ---------------------------------------------------------------- India (MoHFW / NHM)
+  - id: nhm-menstrual-hygiene-policy-2024
+    title: "Menstrual Hygiene Policy for School-Going Girls"
+    publisher: National Health Mission, Ministry of Health & Family Welfare (India)
+    url: https://nhm.gov.in/New-Update-2025-26/Adolescent-Health/Menstrual-Hygiene-Policy/Menstrual-Hygiene-Policy-for-School-Going-Girls.pdf
+    landing_url: https://nhm.gov.in/index1.php?lang=1&level=3&lid=859&sublinkid=1531
+    doc_type: policy_document
+    topic: menstrual_hygiene
+    published_date: "2024-11"
+    license_note: "Government of India publication (policy approved November 2024); reproduced for non-commercial academic use with attribution."
