@@ -41,6 +41,7 @@
     }
   </style>
 
+  <script src="translations.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -156,7 +157,7 @@
         </div>
         <div class="flex flex-col">
           <span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">SakhiSahay</span>
-          <span class="font-label-sm text-label-sm text-on-surface-variant">Your women's health companion</span>
+          <span data-i18n="brand.subtitle" class="font-label-sm text-label-sm text-on-surface-variant">Your women's health companion</span>
         </div>
       </a>
 
@@ -164,31 +165,31 @@
       <nav class="flex flex-col gap-space-xs" id="desktop-nav">
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl transition-all active-nav-link" data-path="overview" href="#overview">
           <span class="material-symbols-outlined text-xl">grid_view</span>
-          <span class="font-label-lg text-label-lg">Overview</span>
+          <span data-i18n="nav.overview" class="font-label-lg text-label-lg">Overview</span>
         </a>
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ai-health-assistant" href="#ai-health-assistant">
           <span class="material-symbols-outlined text-xl">smart_toy</span>
-          <span class="font-label-lg text-label-lg">AI Health Assistant</span>
+          <span data-i18n="nav.ai_assistant" class="font-label-lg text-label-lg">AI Health Assistant</span>
         </a>
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="period-symptom-tracker" href="#period-symptom-tracker">
           <span class="material-symbols-outlined text-xl">calendar_today</span>
-          <span class="font-label-lg text-label-lg">Period & Symptom Tracker</span>
+          <span data-i18n="nav.tracker" class="font-label-lg text-label-lg">Period & Symptom Tracker</span>
         </a>
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="health-insights" href="#health-insights">
           <span class="material-symbols-outlined text-xl">insights</span>
-          <span class="font-label-lg text-label-lg">Health Insights</span>
+          <span data-i18n="nav.insights" class="font-label-lg text-label-lg">Health Insights</span>
         </a>
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctor-connect" href="#doctor-connect">
           <span class="material-symbols-outlined text-xl">medical_services</span>
-          <span class="font-label-lg text-label-lg">Doctor Connect</span>
+          <span data-i18n="nav.doctors" class="font-label-lg text-label-lg">Doctor Connect</span>
         </a>
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="health-history-privacy" href="#health-history-privacy">
           <span class="material-symbols-outlined text-xl">lock</span>
-          <span class="font-label-lg text-label-lg">Health History & Privacy</span>
+          <span data-i18n="nav.privacy" class="font-label-lg text-label-lg">Health History & Privacy</span>
         </a>
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#settings">
           <span class="material-symbols-outlined text-xl">settings</span>
-          <span class="font-label-lg text-label-lg">Settings</span>
+          <span data-i18n="nav.settings" class="font-label-lg text-label-lg">Settings</span>
         </a>
       </nav>
     </div>
@@ -201,7 +202,7 @@
         </div>
         <div class="flex flex-col">
           <span class="font-label-lg text-label-lg text-on-surface font-semibold">Priya Sharma</span>
-          <span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-space-xs rounded-full w-fit">Personal Care</span>
+          <span data-i18n="user.category" class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-space-xs rounded-full w-fit">Personal Care</span>
         </div>
       </div>
       <span class="material-symbols-outlined text-on-surface-variant text-lg">expand_more</span>
@@ -222,9 +223,9 @@
           </a>
           <div class="flex flex-col">
             <div class="flex items-center gap-space-xs">
-              <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="header-greeting">Good morning, Priya 🌷</h2>
+              <h2 data-i18n="header.greeting" class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="header-greeting">Good morning, Priya 🌷</h2>
             </div>
-            <span class="font-label-md text-label-md text-on-surface-variant" id="header-date">Tuesday, Oct 24, 2024</span>
+            <span data-i18n="header.date" class="font-label-md text-label-md text-on-surface-variant" id="header-date">Tuesday, Oct 24, 2024</span>
           </div>
         </div>
 
@@ -243,7 +244,7 @@
           <!-- Quick Log Button (Global Modal Trigger) -->
           <button id="btn-global-quick-log" class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-space-md py-space-sm rounded-full transition-all flex items-center gap-space-xs shadow-sm hover:shadow-md active:scale-95" type="button">
             <span class="material-symbols-outlined text-base">add</span>
-            <span>Quick Log</span>
+            <span data-i18n="header.quick_log">Quick Log</span>
           </button>
 
           <!-- Notifications Bell -->
@@ -283,16 +284,16 @@
                 <div class="flex items-center gap-space-sm flex-wrap">
                   <span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm shadow-xs">
                     <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                    Tuesday, October 24, 2024 • Cycle Day 12
+                    <span data-i18n="dash.badge_cycle">Tuesday, October 24, 2024 • Cycle Day 12</span>
                   </span>
                   <span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm shadow-xs">
-                    <span class="material-symbols-outlined text-xs">spa</span> Follicular Window
+                    <span class="material-symbols-outlined text-xs">spa</span> <span data-i18n="dash.badge_phase">Follicular Window</span>
                   </span>
                 </div>
-                <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight" id="dash-greeting-h1">
+                <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight" id="dash-greeting-h1" data-i18n="dash.greeting_h1">
                   Good morning, Priya 🌷
                 </h1>
-                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl" data-i18n="dash.greeting_sub">
                   Take a moment for yourself. Let’s check in with your inner rhythm and health today.
                 </p>
               </div>
@@ -303,8 +304,8 @@
                   <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">favorite</span>
                 </div>
                 <div class="flex flex-col pr-space-xs">
-                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hormone State</span>
-                  <span class="font-label-lg text-label-lg text-on-surface font-semibold">Rising Estrogen • High Focus</span>
+                  <span data-i18n="dash.hormone_title" class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hormone State</span>
+                  <span data-i18n="dash.hormone_val" class="font-label-lg text-label-lg text-on-surface font-semibold">Rising Estrogen • High Focus</span>
                 </div>
               </div>
             </header>
@@ -320,9 +321,9 @@
                   <div class="flex items-center justify-between">
                     <div class="flex items-center gap-space-xs">
                       <span class="material-symbols-outlined text-primary text-xl">timelapse</span>
-                      <h2 class="font-headline-sm text-headline-sm text-on-surface">Cycle Dynamics</h2>
+                      <h2 data-i18n="dash.dynamics_title" class="font-headline-sm text-headline-sm text-on-surface">Cycle Dynamics</h2>
                     </div>
-                    <span class="text-label-md font-label-md px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
+                    <span data-i18n="dash.pattern_badge" class="text-label-md font-label-md px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
                       28-Day Pattern
                     </span>
                   </div>
@@ -348,10 +349,10 @@
                       </svg>
                       <!-- Central Dial Info -->
                       <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 pointer-events-none">
-                        <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold">Phase 02</span>
-                        <span class="font-headline-xl text-headline-xl text-on-surface leading-none my-1 tracking-tight font-bold">Day 12</span>
-                        <span class="font-label-md text-label-md text-primary font-semibold">Follicular Phase</span>
-                        <span class="font-label-sm text-label-sm text-tertiary mt-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed font-semibold">High Energy Expected</span>
+                        <span data-i18n="dash.phase_badge" class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold">Phase 02</span>
+                        <span data-i18n="dash.day_count" class="font-headline-xl text-headline-xl text-on-surface leading-none my-1 tracking-tight font-bold">Day 12</span>
+                        <span data-i18n="dash.phase_name" class="font-label-md text-label-md text-primary font-semibold">Follicular Phase</span>
+                        <span data-i18n="dash.phase_energy" class="font-label-sm text-label-sm text-tertiary mt-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed font-semibold">High Energy Expected</span>
                       </div>
                     </div>
 
@@ -360,22 +361,22 @@
                       <div class="flex items-center gap-2.5">
                         <span class="w-3.5 h-3.5 rounded-full bg-primary-container shrink-0"></span>
                         <div class="flex flex-col">
-                          <span class="font-label-md text-label-md text-on-surface font-semibold">Menstruation</span>
-                          <span class="font-label-sm text-label-sm text-on-surface-variant">Days 1 – 5 • Completed</span>
+                          <span data-i18n="dash.leg_menstruation" class="font-label-md text-label-md text-on-surface font-semibold">Menstruation</span>
+                          <span data-i18n="dash.leg_menstruation_sub" class="font-label-sm text-label-sm text-on-surface-variant">Days 1 – 5 • Completed</span>
                         </div>
                       </div>
                       <div class="flex items-center gap-2.5">
                         <span class="w-3.5 h-3.5 rounded-full bg-secondary-container shrink-0"></span>
                         <div class="flex flex-col">
-                          <span class="font-label-md text-label-md text-on-surface font-semibold">Fertile Window</span>
-                          <span class="font-label-sm text-label-sm text-primary font-semibold">Days 11 – 16 • Active today</span>
+                          <span data-i18n="dash.leg_fertile" class="font-label-md text-label-md text-on-surface font-semibold">Fertile Window</span>
+                          <span data-i18n="dash.leg_fertile_sub" class="font-label-sm text-label-sm text-primary font-semibold">Days 11 – 16 • Active today</span>
                         </div>
                       </div>
                       <div class="flex items-center gap-2.5">
                         <span class="w-3.5 h-3.5 rounded-full bg-surface-container-high shrink-0"></span>
                         <div class="flex flex-col">
-                          <span class="font-label-md text-label-md text-on-surface font-semibold">Luteal Phase</span>
-                          <span class="font-label-sm text-label-sm text-on-surface-variant">Days 17 – 28 • Approaching</span>
+                          <span data-i18n="dash.leg_luteal" class="font-label-md text-label-md text-on-surface font-semibold">Luteal Phase</span>
+                          <span data-i18n="dash.leg_luteal_sub" class="font-label-sm text-label-sm text-on-surface-variant">Days 17 – 28 • Approaching</span>
                         </div>
                       </div>
                     </div>
@@ -388,9 +389,9 @@
                         <span class="material-symbols-outlined text-lg">event_upcoming</span>
                       </div>
                       <div class="flex flex-col">
-                        <span class="font-label-sm text-label-sm text-on-surface-variant">Upcoming Period</span>
-                        <span class="font-headline-sm text-headline-sm text-on-surface font-bold">~16 days</span>
-                        <span class="font-body-sm text-body-sm text-on-surface-variant">Expected Nov 9, 2024</span>
+                        <span data-i18n="dash.stat_upcoming" class="font-label-sm text-label-sm text-on-surface-variant">Upcoming Period</span>
+                        <span data-i18n="dash.stat_upcoming_val" class="font-headline-sm text-headline-sm text-on-surface font-bold">~16 days</span>
+                        <span data-i18n="dash.stat_upcoming_date" class="font-body-sm text-body-sm text-on-surface-variant">Expected Nov 9, 2024</span>
                       </div>
                     </div>
                     <div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
@@ -398,13 +399,13 @@
                         <span class="material-symbols-outlined text-lg">verified</span>
                       </div>
                       <div class="flex flex-col">
-                        <span class="font-label-sm text-label-sm text-on-surface-variant">Cycle Regularity</span>
-                        <span class="font-headline-sm text-headline-sm text-on-surface font-bold">94% consistent</span>
-                        <span class="font-body-sm text-body-sm text-on-surface-variant">Based on 6 logged cycles</span>
+                        <span data-i18n="dash.stat_regularity" class="font-label-sm text-label-sm text-on-surface-variant">Cycle Regularity</span>
+                        <span data-i18n="dash.stat_regularity_val" class="font-headline-sm text-headline-sm text-on-surface font-bold">94% consistent</span>
+                        <span data-i18n="dash.stat_regularity_sub" class="font-body-sm text-body-sm text-on-surface-variant">Based on 6 logged cycles</span>
                       </div>
                     </div>
                   </div>
-                  <p class="font-body-sm text-body-sm text-on-surface-variant italic text-center sm:text-left">
+                  <p data-i18n="dash.disclaimer_star" class="font-body-sm text-body-sm text-on-surface-variant italic text-center sm:text-left">
                     * Estimates are personalized projections based on your logged history and natural biorhythms.
                   </p>
 
@@ -412,11 +413,11 @@
                   <div class="flex flex-col sm:flex-row items-center gap-3 pt-1">
                     <button onclick="switchRoute('period-symptom-tracker')" class="w-full sm:w-auto flex-1 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-3 px-6 rounded-full shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 active:scale-95" type="button">
                       <span class="material-symbols-outlined text-xl">add_circle</span>
-                      <span>Log today's symptoms</span>
+                      <span data-i18n="dash.btn_log_symptoms">Log today's symptoms</span>
                     </button>
                     <button onclick="switchRoute('period-symptom-tracker')" class="w-full sm:w-auto bg-primary-fixed hover:bg-primary-fixed-dim text-on-primary-fixed font-label-lg text-label-lg py-3 px-6 rounded-full transition-all flex items-center justify-center gap-2 active:scale-95" type="button">
                       <span class="material-symbols-outlined text-xl">calendar_month</span>
-                      <span>View cycle calendar</span>
+                      <span data-i18n="dash.btn_view_calendar">View cycle calendar</span>
                     </button>
                   </div>
                 </div>
@@ -425,57 +426,57 @@
                 <div class="bg-surface-container-lowest rounded-[20px] p-6 lg:p-8 shadow-sm flex flex-col gap-space-md border border-outline-variant/20">
                   <div class="flex items-center justify-between">
                     <div class="flex flex-col">
-                      <span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Daily Pulse</span>
-                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">How are you feeling today, Priya?</h3>
+                      <span data-i18n="pulse.title" class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Daily Pulse</span>
+                      <h3 data-i18n="pulse.question" class="font-headline-sm text-headline-sm text-on-surface font-semibold">How are you feeling today, Priya?</h3>
                     </div>
-                    <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2.5 py-1 rounded-full font-semibold">Day 12 Log</span>
+                    <span data-i18n="pulse.day_log" class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2.5 py-1 rounded-full font-semibold">Day 12 Log</span>
                   </div>
 
                   <!-- Mood Chips Selection -->
                   <div class="flex flex-col gap-2">
-                    <label class="font-label-md text-label-md text-on-surface-variant font-medium">Overall Mood</label>
+                    <label data-i18n="pulse.overall_mood" class="font-label-md text-label-md text-on-surface-variant font-medium">Overall Mood</label>
                     <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5" id="dash-mood-selector">
                       <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all" data-mood="Great" type="button">
                         <span class="text-2xl mb-1">🌸</span>
-                        <span class="font-label-md text-label-md text-on-surface">Great</span>
+                        <span data-i18n="mood.great" class="font-label-md text-label-md text-on-surface">Great</span>
                       </button>
                       <button class="mood-btn is-active flex flex-col items-center justify-center p-3 rounded-2xl bg-primary text-on-primary shadow-sm transition-all scale-[1.02]" data-mood="Good" type="button">
                         <span class="text-2xl mb-1">✨</span>
-                        <span class="font-label-md text-label-md text-on-primary">Good</span>
+                        <span data-i18n="mood.good" class="font-label-md text-label-md text-on-primary">Good</span>
                       </button>
                       <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all" data-mood="Okay" type="button">
                         <span class="text-2xl mb-1">🌿</span>
-                        <span class="font-label-md text-label-md text-on-surface">Okay</span>
+                        <span data-i18n="mood.okay" class="font-label-md text-label-md text-on-surface">Okay</span>
                       </button>
                       <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all" data-mood="Low" type="button">
                         <span class="text-2xl mb-1">☁️</span>
-                        <span class="font-label-md text-label-md text-on-surface">Low</span>
+                        <span data-i18n="mood.low" class="font-label-md text-label-md text-on-surface">Low</span>
                       </button>
                       <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all col-span-2 sm:col-span-1" data-mood="Stressed" type="button">
                         <span class="text-2xl mb-1">⚡</span>
-                        <span class="font-label-md text-label-md text-on-surface">Stressed</span>
+                        <span data-i18n="mood.stressed" class="font-label-md text-label-md text-on-surface">Stressed</span>
                       </button>
                     </div>
                   </div>
 
                   <!-- Physical Symptoms Selection Chips -->
                   <div class="flex flex-col gap-2 pt-1">
-                    <label class="font-label-md text-label-md text-on-surface-variant font-medium">Physical Signs & Sensations</label>
+                    <label data-i18n="pulse.signs_title" class="font-label-md text-label-md text-on-surface-variant font-medium">Physical Signs & Sensations</label>
                     <div class="flex flex-wrap gap-2" id="dash-physical-tags">
                       <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors" type="button">
-                        Light Cramps
+                        <span data-i18n="sym.light_cramps">Light Cramps</span>
                       </button>
                       <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed shadow-sm font-semibold" type="button">
-                        Energetic ✓
+                        <span data-i18n="sym.energetic">Energetic</span> ✓
                       </button>
                       <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-tertiary-fixed text-on-tertiary-fixed shadow-sm font-semibold" type="button">
-                        Clear Skin ✓
+                        <span data-i18n="sym.clear_skin">Clear Skin</span> ✓
                       </button>
                       <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors" type="button">
-                        Cravings
+                        <span data-i18n="sym.cravings">Cravings</span>
                       </button>
                       <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors" type="button">
-                        Restful Sleep
+                        <span data-i18n="sym.restful_sleep">Restful Sleep</span>
                       </button>
                     </div>
                   </div>
@@ -484,11 +485,11 @@
                   <div class="flex items-center justify-between pt-2 gap-space-md">
                     <button class="bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-2.5 px-6 rounded-full shadow-sm transition-all flex items-center gap-2 active:scale-95" id="dash-save-checkin-btn" type="button">
                       <span class="material-symbols-outlined text-lg">check</span>
-                      <span>Save check-in</span>
+                      <span data-i18n="pulse.save_btn">Save check-in</span>
                     </button>
                     <span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 transition-opacity opacity-100 font-semibold" id="dash-save-status-msg">
                       <span class="material-symbols-outlined text-base">cloud_done</span>
-                      <span>Saved today at 8:45 AM</span>
+                      <span data-i18n="pulse.saved_status">Saved today at 8:45 AM</span>
                     </span>
                   </div>
                 </div>
@@ -499,7 +500,7 @@
                 
                 <!-- Quick Portals Section -->
                 <div class="flex flex-col gap-3">
-                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold px-1">Quick Portals</span>
+                  <span data-i18n="portals.title" class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold px-1">Quick Portals</span>
                   
                   <!-- Card 1: Ask Sakhi AI -->
                   <div class="bg-secondary-fixed rounded-[20px] p-5 transition-transform hover:-translate-y-0.5 duration-200 shadow-sm flex flex-col gap-3 relative overflow-hidden group border border-outline-variant/20 cursor-pointer" onclick="switchRoute('ai-health-assistant')">
@@ -510,13 +511,13 @@
                       <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-secondary-fixed font-semibold">AI Sakhi</span>
                     </div>
                     <div>
-                      <h4 class="font-headline-sm text-headline-sm text-on-secondary-fixed mb-1 font-semibold">Ask Sakhi AI</h4>
-                      <p class="font-body-sm text-body-sm text-on-secondary-container">
+                      <h4 data-i18n="portal.ai_title" class="font-headline-sm text-headline-sm text-on-secondary-fixed mb-1 font-semibold">Ask Sakhi AI</h4>
+                      <p data-i18n="portal.ai_desc" class="font-body-sm text-body-sm text-on-secondary-container">
                         Get trusted, compassionate answers on hormones, cramps & wellness tailored to Day 12.
                       </p>
                     </div>
                     <div class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold pt-1">
-                      <span>Ask a question</span>
+                      <span data-i18n="portal.ai_action">Ask a question</span>
                       <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </div>
                   </div>
@@ -530,13 +531,13 @@
                       <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-primary-fixed font-semibold">Instant Log</span>
                     </div>
                     <div>
-                      <h4 class="font-headline-sm text-headline-sm text-on-primary-fixed mb-1 font-semibold">Track My Cycle</h4>
-                      <p class="font-body-sm text-body-sm text-on-primary-fixed-variant">
+                      <h4 data-i18n="portal.track_title" class="font-headline-sm text-headline-sm text-on-primary-fixed mb-1 font-semibold">Track My Cycle</h4>
+                      <p data-i18n="portal.track_desc" class="font-body-sm text-body-sm text-on-primary-fixed-variant">
                         Log flow, symptoms, and mood with one click to keep projections razor sharp.
                       </p>
                     </div>
                     <div class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold pt-1">
-                      <span>Open tracker</span>
+                      <span data-i18n="portal.track_action">Open tracker</span>
                       <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </div>
                   </div>
@@ -550,13 +551,13 @@
                       <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-tertiary-fixed font-semibold">Verified Doctors</span>
                     </div>
                     <div>
-                      <h4 class="font-headline-sm text-headline-sm text-on-tertiary-fixed mb-1 font-semibold">Find a Doctor</h4>
-                      <p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">
+                      <h4 data-i18n="portal.doc_title" class="font-headline-sm text-headline-sm text-on-tertiary-fixed mb-1 font-semibold">Find a Doctor</h4>
+                      <p data-i18n="portal.doc_desc" class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">
                         Consult top gynecologists and specialists online via secure video or at nearby clinics.
                       </p>
                     </div>
                     <div class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-tertiary hover:text-on-tertiary-fixed-variant font-semibold pt-1">
-                      <span>Explore doctors</span>
+                      <span data-i18n="portal.doc_action">Explore doctors</span>
                       <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </div>
                   </div>
@@ -567,7 +568,7 @@
                   <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                       <span class="material-symbols-outlined text-primary text-xl">auto_graph</span>
-                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Personalized Insights</h3>
+                      <h3 data-i18n="dash.insights_title" class="font-headline-sm text-headline-sm text-on-surface font-semibold">Personalized Insights</h3>
                     </div>
                     <span class="material-symbols-outlined text-on-surface-variant text-lg cursor-pointer" title="Algorithmic health predictions">info</span>
                   </div>
@@ -577,13 +578,13 @@
                     <div class="flex items-center justify-between">
                       <span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
                         <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        Your Recent Pattern
+                        <span data-i18n="dash.pattern_title">Your Recent Pattern</span>
                       </span>
-                      <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full font-semibold">
+                      <span data-i18n="dash.pattern_cycles" class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full font-semibold">
                         Based on 5 logged cycles
                       </span>
                     </div>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    <p data-i18n="dash.pattern_desc" class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                       Cramps were recorded in 4 of your last 5 logged cycles. Consider gentle magnesium-rich nutrition or a warm compress around Day 1.
                     </p>
                   </div>
@@ -593,13 +594,13 @@
                     <div class="flex items-center justify-between">
                       <span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
                         <span class="w-2 h-2 rounded-full bg-tertiary"></span>
-                        Hormone & Energy Phase
+                        <span data-i18n="dash.hormone_card_title">Hormone & Energy Phase</span>
                       </span>
-                      <span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-2 py-0.5 rounded-full font-semibold">
+                      <span data-i18n="dash.hormone_badge" class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-2 py-0.5 rounded-full font-semibold">
                         Follicular Surge
                       </span>
                     </div>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    <p data-i18n="dash.hormone_desc" class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                       Estrogen is gently rising during your follicular phase. Great time for creative deep work, collaborative tasks, and strength training.
                     </p>
                   </div>
@@ -614,11 +615,11 @@
                       </span>
                     </div>
                     <div class="p-4 flex flex-col gap-1">
-                      <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Cycle Science</span>
-                      <h4 class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors font-bold">
+                      <span data-i18n="dash.article_tag" class="font-label-sm text-label-sm text-primary uppercase font-semibold">Cycle Science</span>
+                      <h4 data-i18n="dash.article_title" class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors font-bold">
                         Understanding Follicular vs. Luteal Phase
                       </h4>
-                      <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                      <p data-i18n="dash.article_desc" class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
                         Discover how each phase modulates your dopamine, metabolism, and sleep patterns.
                       </p>
                     </div>
@@ -641,12 +642,12 @@
                 <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">verified_user</span>
               </div>
               <p class="font-body-sm text-body-sm text-on-surface">
-                <strong class="font-label-lg text-label-lg text-primary font-bold">Certified Medical Education:</strong>
-                Sakhi provides compassionate, clinically grounded educational guidance. It is not a substitute for clinical diagnosis, prescription, or emergency care.
+                <strong data-i18n="ai.disclaimer_tag" class="font-label-lg text-label-lg text-primary font-bold">Certified Medical Education:</strong>
+                <span data-i18n="ai.disclaimer_text">Sakhi provides compassionate, clinically grounded educational guidance. It is not a substitute for clinical diagnosis, prescription, or emergency care.</span>
               </p>
             </div>
             <a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container font-semibold whitespace-nowrap" href="#doctor-connect" onclick="switchRoute('doctor-connect')">
-              Emergency Guidelines
+              <span data-i18n="ai.emergency_link">Emergency Guidelines</span>
               <span class="material-symbols-outlined text-sm">arrow_forward</span>
             </a>
           </div>
@@ -659,11 +660,11 @@
               </div>
               <div class="flex flex-col">
                 <div class="flex items-center gap-space-xs">
-                  <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Ask Sakhi</h1>
+                  <h1 data-i18n="ai.header_title" class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Ask Sakhi</h1>
                   <span class="text-xl">🌷</span>
-                  <span class="ml-2 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-semibold">Active Care Mode</span>
+                  <span data-i18n="ai.care_badge" class="ml-2 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-semibold">Active Care Mode</span>
                 </div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">A supportive, confidential sanctuary for your women's health and hormonal wellness questions.</p>
+                <p data-i18n="ai.header_subtitle" class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">A supportive, confidential sanctuary for your women's health and hormonal wellness questions.</p>
               </div>
             </div>
 
@@ -694,32 +695,32 @@
                 </div>
                 <div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md sm:p-space-lg rounded-2xl rounded-tl-sm shadow-sm w-full border border-outline-variant/20">
                   <div class="flex items-center justify-between">
-                    <span class="font-label-lg text-label-lg text-primary font-bold">Sakhi Companion</span>
+                    <span data-i18n="ai.companion_name" class="font-label-lg text-label-lg text-primary font-bold">Sakhi Companion</span>
                     <span class="font-label-sm text-label-sm text-on-surface-variant">Just now</span>
                   </div>
-                  <p class="font-body-md text-body-md text-on-surface leading-relaxed" id="sakhi-intro-text">
+                  <p class="font-body-md text-body-md text-on-surface leading-relaxed" id="sakhi-intro-text" data-i18n="ai.intro_text">
                     Hi Priya, I'm Sakhi 🌷 You can ask me about periods, PMS, reproductive health, hormonal changes, nutrition, or everyday wellness. I'm here to explain your body's signals with clarity, gentle empathy, and certified medical context.
                   </p>
                   
                   <!-- Suggested Prompt Chips -->
                   <div class="mt-space-sm pt-space-sm flex flex-col gap-2 border-t border-outline-variant/20">
-                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Suggested Questions to Begin:</span>
+                    <span data-i18n="ai.suggested_title" class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Suggested Questions to Begin:</span>
                     <div class="flex flex-wrap gap-2">
                       <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
                         <span class="material-symbols-outlined text-sm text-primary">help</span>
-                        Why do I get period cramps?
+                        <span data-i18n="ai.prompt_cramps">Why do I get period cramps?</span>
                       </button>
                       <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
                         <span class="material-symbols-outlined text-sm text-primary">calendar_month</span>
-                        Help me understand my cycle phases
+                        <span data-i18n="ai.prompt_phases">Help me understand my cycle phases</span>
                       </button>
                       <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
                         <span class="material-symbols-outlined text-sm text-primary">eco</span>
-                        What natural remedies help with PMS bloating?
+                        <span data-i18n="ai.prompt_bloating">What natural remedies help with PMS bloating?</span>
                       </button>
                       <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
                         <span class="material-symbols-outlined text-sm text-primary">health_and_safety</span>
-                        Is it normal to have light twinges on Day 12?
+                        <span data-i18n="ai.prompt_twinges">Is it normal to have light twinges on Day 12?</span>
                       </button>
                     </div>
                   </div>
@@ -740,7 +741,7 @@
 
                   <!-- Main text input -->
                   <div class="relative flex-1">
-                    <input class="w-full h-12 bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-full px-5 pr-12 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all shadow-inner border border-outline-variant/20" id="messageInput" placeholder="Ask Sakhi anything about your cycle, symptoms, or wellness..." type="text" autocomplete="off"/>
+                    <input class="w-full h-12 bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-full px-5 pr-12 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all shadow-inner border border-outline-variant/20" id="messageInput" data-i18n-placeholder="ai.input_placeholder" placeholder="Ask Sakhi anything about your cycle, symptoms, or wellness..." type="text" autocomplete="off"/>
                     <!-- Voice simulation button -->
                     <button class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-primary transition-colors p-1" id="voiceBtn" title="Speak in Hindi or English" type="button">
                       <span class="material-symbols-outlined text-xl">mic</span>
@@ -755,7 +756,7 @@
 
                   <!-- Send Pill Button -->
                   <button class="h-11 px-5 rounded-full bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container flex items-center justify-center gap-1.5 font-label-md text-label-md transition-all shadow-md hover:shadow-lg flex-shrink-0 active:scale-95" id="sendBtn" type="submit">
-                    <span class="hidden sm:inline font-bold">Ask</span>
+                    <span data-i18n="ai.send_btn" class="hidden sm:inline font-bold">Ask</span>
                     <span class="material-symbols-outlined text-lg">arrow_upward</span>
                   </button>
                 </form>
@@ -764,7 +765,7 @@
                 <div id="voice-indicator" class="hidden flex items-center justify-between px-space-md py-1 bg-primary-fixed/40 rounded-full text-primary text-xs font-semibold animate-pulse">
                   <div class="flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
-                    <span>Sakhi is listening... Speak your question (Hindi, English, or Hinglish)</span>
+                    <span data-i18n="ai.voice_listening">Sakhi is listening... Speak your question (Hindi, English, or Hinglish)</span>
                   </div>
                   <button type="button" onclick="stopVoiceSimulation()" class="hover:underline">Cancel</button>
                 </div>
@@ -773,10 +774,10 @@
                 <div class="flex items-center justify-between px-space-xs font-label-sm text-label-sm text-on-surface-variant">
                   <div class="flex items-center gap-1.5">
                     <span class="material-symbols-outlined text-xs text-tertiary">lock</span>
-                    <span>Encrypted with strict health privacy compliance. Never shared with advertisers.</span>
+                    <span data-i18n="ai.security_text">Encrypted with strict health privacy compliance. Never shared with advertisers.</span>
                   </div>
                   <div class="hidden sm:flex items-center gap-2">
-                    <span>Sakhi v2.4 (Clinical-Safety Certified)</span>
+                    <span data-i18n="ai.version_text">Sakhi v2.4 (Clinical-Safety Certified)</span>
                   </div>
                 </div>
 
@@ -795,26 +796,26 @@
             <div class="flex flex-col max-w-xl">
               <span class="font-label-md text-label-md text-primary tracking-wider uppercase mb-space-xs flex items-center gap-1.5 font-semibold">
                 <span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                Active Cycle Rhythm
+                <span data-i18n="trk.header_title">Active Cycle Rhythm</span>
               </span>
-              <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Your Cycle, Understood.</h1>
-              <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              <h1 data-i18n="trk.header_title" class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Your Cycle, Understood.</h1>
+              <p data-i18n="trk.header_subtitle" class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
                 Track your symptoms, observe monthly patterns, and listen closely to your body’s natural cadence.
               </p>
             </div>
             
             <div class="flex flex-wrap items-center gap-space-sm sm:gap-space-md">
               <div class="bg-surface-container-low p-1 rounded-full flex items-center shadow-sm">
-                <button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all font-semibold" id="btn-month-view" type="button">Month</button>
-                <button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors font-semibold" id="btn-year-view" type="button">Year</button>
+                <button data-i18n="trk.btn_month" class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all font-semibold" id="btn-month-view" type="button">Month</button>
+                <button data-i18n="trk.btn_year" class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors font-semibold" id="btn-year-view" type="button">Year</button>
               </div>
               <button class="h-12 px-space-lg rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all flex items-center gap-space-xs shadow-sm active:scale-95 font-semibold" id="btn-open-symptoms" type="button">
                 <span class="material-symbols-outlined text-lg">water_drop</span>
-                <span>Log Today's Symptoms</span>
+                <span data-i18n="trk.btn_log_today">Log Today's Symptoms</span>
               </button>
               <button class="h-12 px-space-lg rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all flex items-center gap-space-xs shadow-sm hover:shadow-md active:scale-95 font-semibold" onclick="openQuickLogModal()" type="button">
                 <span class="material-symbols-outlined text-xl">add_circle</span>
-                <span>+ Log Period</span>
+                <span data-i18n="trk.btn_log_period">+ Log Period</span>
               </button>
             </div>
           </section>
@@ -824,15 +825,15 @@
             <!-- Card 1: Current Phase -->
             <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
               <div class="flex items-start justify-between mb-space-md">
-                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Current Phase</span>
+                <span data-i18n="trk.phase_title" class="font-label-md text-label-md text-on-surface-variant font-medium">Current Phase</span>
                 <span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1 font-semibold">
                   <span class="material-symbols-outlined text-xs">spa</span>
-                  Follicular
+                  <span data-i18n="trk.phase_name">Follicular</span>
                 </span>
               </div>
               <div>
                 <div class="font-headline-lg text-headline-lg text-on-surface font-bold">Day 12</div>
-                <p class="font-body-sm text-body-sm text-tertiary mt-1 flex items-center gap-1 font-medium">
+                <p data-i18n="trk.phase_status" class="font-body-sm text-body-sm text-tertiary mt-1 flex items-center gap-1 font-medium">
                   <span class="material-symbols-outlined text-sm">trending_up</span> Estrogen rising • Peak vitality
                 </p>
               </div>
@@ -844,14 +845,14 @@
             <!-- Card 2: Average Cycle Length -->
             <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
               <div class="flex items-start justify-between mb-space-md">
-                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Average Cycle Length</span>
+                <span data-i18n="trk.length_title" class="font-label-md text-label-md text-on-surface-variant font-medium">Average Cycle Length</span>
                 <span class="p-1.5 rounded-full bg-surface-container text-primary">
                   <span class="material-symbols-outlined text-base">repeat</span>
                 </span>
               </div>
               <div>
-                <div class="font-headline-lg text-headline-lg text-on-surface font-bold">28 Days</div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+                <div data-i18n="trk.length_val" class="font-headline-lg text-headline-lg text-on-surface font-bold">28 Days</div>
+                <p data-i18n="trk.length_sub" class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
                   <span class="material-symbols-outlined text-sm text-tertiary font-bold">check_circle</span> Regular across 6 months
                 </p>
               </div>
@@ -864,14 +865,14 @@
             <!-- Card 3: Last Period Duration -->
             <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
               <div class="flex items-start justify-between mb-space-md">
-                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Last Period Duration</span>
+                <span data-i18n="trk.last_title" class="font-label-md text-label-md text-on-surface-variant font-medium">Last Period Duration</span>
                 <span class="p-1.5 rounded-full bg-primary-fixed text-primary">
                   <span class="material-symbols-outlined text-base">calendar_view_week</span>
                 </span>
               </div>
               <div>
-                <div class="font-headline-lg text-headline-lg text-on-surface font-bold">5 Days</div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 font-medium">Oct 12 – Oct 16, 2024</p>
+                <div data-i18n="trk.last_val" class="font-headline-lg text-headline-lg text-on-surface font-bold">5 Days</div>
+                <p data-i18n="trk.last_sub" class="font-body-sm text-body-sm text-on-surface-variant mt-1 font-medium">Oct 12 – Oct 16, 2024</p>
               </div>
               <div class="flex items-center gap-1.5 mt-space-md">
                 <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
@@ -886,14 +887,14 @@
             <!-- Card 4: Next Estimated Period -->
             <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
               <div class="flex items-start justify-between mb-space-md">
-                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Next Estimated Period</span>
+                <span data-i18n="trk.next_title" class="font-label-md text-label-md text-on-surface-variant font-medium">Next Estimated Period</span>
                 <span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
                   ~16 days away
                 </span>
               </div>
               <div>
-                <div class="font-headline-lg text-headline-lg text-primary font-bold">Nov 9, 2024</div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">High confidence • Next cycle start</p>
+                <div data-i18n="trk.next_val" class="font-headline-lg text-headline-lg text-primary font-bold">Nov 9, 2024</div>
+                <p data-i18n="trk.next_sub" class="font-body-sm text-body-sm text-on-surface-variant mt-1">High confidence • Next cycle start</p>
               </div>
               <div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-space-md bg-surface-container-low px-space-sm py-1 rounded-lg">
                 <span class="flex items-center gap-1 font-medium">
@@ -1005,8 +1006,8 @@
                 <div class="flex items-center gap-space-xs">
                   <span class="material-symbols-outlined text-primary text-2xl">stylus_note</span>
                   <div>
-                    <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Daily Log • Today</h2>
-                    <p class="font-label-sm text-label-sm text-on-surface-variant">Update your sensations and physical markers</p>
+                    <h2 data-i18n="trk.log_title" class="font-headline-sm text-headline-sm text-on-surface font-semibold">Daily Log • Today</h2>
+                    <p data-i18n="trk.log_sub" class="font-label-sm text-label-sm text-on-surface-variant">Update your sensations and physical markers</p>
                   </div>
                 </div>
                 <span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed px-space-sm py-1 rounded-full">Day 12 / 28</span>
@@ -1015,31 +1016,31 @@
               <!-- Category 1: Physical Symptoms -->
               <div class="flex flex-col gap-space-xs">
                 <label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold">
-                  <span>Physical Symptoms</span>
-                  <span class="text-on-surface-variant font-normal text-xs">Tap all that apply</span>
+                  <span data-i18n="trk.physical_title">Physical Symptoms</span>
+                  <span data-i18n="trk.physical_hint" class="text-on-surface-variant font-normal text-xs">Tap all that apply</span>
                 </label>
                 <div class="flex flex-wrap gap-2 pt-1" id="chip-group-physical">
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary text-on-primary shadow-xs font-semibold" data-active="true" type="button">
                     <span class="material-symbols-outlined text-sm">check</span>
-                    <span>Cramps</span>
+                    <span data-i18n="sym.cramps">Cramps</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Headache</span>
+                    <span data-i18n="sym.headache">Headache</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Bloating</span>
+                    <span data-i18n="sym.bloating">Bloating</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Fatigue</span>
+                    <span data-i18n="sym.fatigue">Fatigue</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Breast Tenderness</span>
+                    <span data-i18n="sym.tender">Breast Tenderness</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Back Pain</span>
+                    <span data-i18n="sym.backpain">Back Pain</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Acne</span>
+                    <span data-i18n="sym.acne">Acne</span>
                   </button>
                 </div>
               </div>
@@ -1047,48 +1048,48 @@
               <!-- Category 2: Mood & Wellness -->
               <div class="flex flex-col gap-space-xs">
                 <label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold">
-                  <span>Mood & Emotional State</span>
-                  <span class="text-on-surface-variant font-normal text-xs">Mental wellness</span>
+                  <span data-i18n="trk.mood_title">Mood & Emotional State</span>
+                  <span data-i18n="trk.mood_hint" class="text-on-surface-variant font-normal text-xs">Mental wellness</span>
                 </label>
                 <div class="flex flex-wrap gap-2 pt-1" id="chip-group-mood">
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary text-on-primary shadow-xs font-semibold" data-active="true" type="button">
                     <span class="material-symbols-outlined text-sm">check</span>
-                    <span>Energetic</span>
+                    <span data-i18n="mood.energetic">Energetic</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Calm</span>
+                    <span data-i18n="mood.calm">Calm</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Irritable</span>
+                    <span data-i18n="mood.irritable">Irritable</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Anxious</span>
+                    <span data-i18n="mood.anxious">Anxious</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Low Mood</span>
+                    <span data-i18n="mood.low">Low Mood</span>
                   </button>
                   <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
-                    <span>Productive</span>
+                    <span data-i18n="mood.productive">Productive</span>
                   </button>
                 </div>
               </div>
 
               <!-- Category 3: Flow Intensity -->
               <div class="flex flex-col gap-space-xs">
-                <label class="font-label-md text-label-md text-on-surface font-semibold">Flow Intensity</label>
+                <label data-i18n="trk.flow_title" class="font-label-md text-label-md text-on-surface font-semibold">Flow Intensity</label>
                 <div class="grid grid-cols-5 gap-1.5 p-1 bg-surface-container-low rounded-xl">
-                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center transition-all bg-surface-container-lowest text-primary shadow-xs font-bold" data-flow="none" type="button">None</button>
-                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="spotting" type="button">Spotting</button>
-                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="light" type="button">Light</button>
-                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="medium" type="button">Medium</button>
-                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="heavy" type="button">Heavy</button>
+                  <button data-i18n="flow.none" class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center transition-all bg-surface-container-lowest text-primary shadow-xs font-bold" data-flow="none" type="button">None</button>
+                  <button data-i18n="flow.spotting" class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="spotting" type="button">Spotting</button>
+                  <button data-i18n="flow.light" class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="light" type="button">Light</button>
+                  <button data-i18n="flow.medium" class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="medium" type="button">Medium</button>
+                  <button data-i18n="flow.heavy" class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="heavy" type="button">Heavy</button>
                 </div>
               </div>
 
               <!-- Category 4: Discomfort Slider -->
               <div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl">
                 <div class="flex items-center justify-between">
-                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="discomfort-slider">Discomfort & Cramp Intensity</label>
+                  <label data-i18n="trk.discomfort_title" class="font-label-md text-label-md text-on-surface font-semibold" for="discomfort-slider">Discomfort & Cramp Intensity</label>
                   <span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold" id="discomfort-value-text">2/10 • Mild discomfort</span>
                 </div>
                 <input class="w-full accent-primary h-2 bg-surface-container-high rounded-lg cursor-pointer" id="discomfort-slider" max="10" min="0" type="range" value="2"/>
@@ -1102,20 +1103,20 @@
               <!-- Notes textarea -->
               <div class="flex flex-col gap-space-xs">
                 <label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold" for="symptom-notes">
-                  <span>Personal Notes & Observations</span>
-                  <span class="text-xs text-on-surface-variant">Private encrypted</span>
+                  <span data-i18n="trk.notes_title">Personal Notes & Observations</span>
+                  <span data-i18n="trk.notes_sub" class="text-xs text-on-surface-variant">Private encrypted</span>
                 </label>
-                <textarea class="w-full p-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none transition-all border border-outline-variant/20" id="symptom-notes" placeholder="E.g., Felt slight twinge on lower left side around midday, relaxed after herbal chamomile tea." rows="3">Felt slight twinge on lower left side around midday.</textarea>
+                <textarea data-i18n-placeholder="trk.notes_placeholder" class="w-full p-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none transition-all border border-outline-variant/20" id="symptom-notes" placeholder="E.g., Felt slight twinge on lower left side around midday, relaxed after herbal chamomile tea." rows="3">Felt slight twinge on lower left side around midday.</textarea>
               </div>
 
               <!-- Logging Action Buttons -->
               <div class="flex items-center gap-space-sm pt-space-xs">
                 <button class="flex-1 h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-sm flex items-center justify-center gap-2 active:scale-95 font-semibold" id="btn-save-log" type="button">
                   <span class="material-symbols-outlined text-lg">check</span>
-                  <span>Save Entry</span>
+                  <span data-i18n="trk.btn_save">Save Entry</span>
                 </button>
                 <button class="px-space-lg h-12 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors font-semibold" id="btn-clear-log" type="button">
-                  Clear
+                  <span data-i18n="trk.btn_clear">Clear</span>
                 </button>
               </div>
             </div>
@@ -1608,24 +1609,43 @@
         <!-- ============================================== -->
         <div id="view-settings" class="view-container">
           <header class="flex flex-col gap-space-xs mb-space-lg">
-            <span class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Preferences</span>
-            <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Platform Settings</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            <span data-i18n="set.tag" class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Preferences</span>
+            <h1 data-i18n="set.title" class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Platform Settings</h1>
+            <p data-i18n="set.subtitle" class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
               Configure your personal cycle baseline, notification alerts, and regional preferences.
             </p>
           </header>
 
           <div class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm border border-outline-variant/20 max-w-3xl flex flex-col gap-6">
-            <!-- Profile Info -->
+            <!-- Language & Regional Preferences -->
             <div>
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Profile Information</h3>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">translate</span>
+                <span data-i18n="set.language_label">Language & Regional Preferences</span>
+              </h3>
+              <div class="p-4 rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div class="flex flex-col">
+                  <span class="text-sm font-semibold text-on-surface">Select Interface Language</span>
+                  <span class="text-xs text-on-surface-variant">Changes entire UI and Ask Sakhi companion responses</span>
+                </div>
+                <select id="setting-language-select" class="bg-surface-container-lowest text-on-surface font-semibold text-sm py-2 px-4 rounded-xl border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary shadow-xs cursor-pointer">
+                  <option value="en">English</option>
+                  <option value="hi">हिंदी (Hindi)</option>
+                  <option value="hinglish">Hinglish</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Profile Info -->
+            <div class="pt-4 border-t border-outline-variant/20">
+              <h3 data-i18n="set.profile_title" class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Profile Information</h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Display Name</label>
+                  <label data-i18n="set.name_label" class="block text-xs font-semibold text-on-surface-variant mb-1">Display Name</label>
                   <input type="text" id="setting-name" value="Priya Sharma" class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary"/>
                 </div>
                 <div>
-                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Age</label>
+                  <label data-i18n="set.age_label" class="block text-xs font-semibold text-on-surface-variant mb-1">Age</label>
                   <input type="number" id="setting-age" value="27" class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary"/>
                 </div>
               </div>
@@ -1633,18 +1653,18 @@
 
             <!-- Cycle Parameters -->
             <div class="pt-4 border-t border-outline-variant/20">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Cycle Model Baseline</h3>
+              <h3 data-i18n="set.cycle_model" class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Cycle Model Baseline</h3>
               <div class="flex flex-col gap-4">
                 <div>
                   <div class="flex justify-between text-xs font-semibold mb-1">
-                    <span>Average Cycle Length</span>
+                    <span data-i18n="set.avg_cycle">Average Cycle Length</span>
                     <span id="setting-cycle-val" class="text-primary font-bold">28 Days</span>
                   </div>
                   <input type="range" min="21" max="40" value="28" class="w-full accent-primary" oninput="document.getElementById('setting-cycle-val').textContent = this.value + ' Days'"/>
                 </div>
                 <div>
                   <div class="flex justify-between text-xs font-semibold mb-1">
-                    <span>Average Period Duration</span>
+                    <span data-i18n="set.avg_period">Average Period Duration</span>
                     <span id="setting-period-val" class="text-primary font-bold">5 Days</span>
                   </div>
                   <input type="range" min="3" max="8" value="5" class="w-full accent-primary" oninput="document.getElementById('setting-period-val').textContent = this.value + ' Days'"/>
@@ -1654,18 +1674,18 @@
 
             <!-- Notifications -->
             <div class="pt-4 border-t border-outline-variant/20">
-              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Notification Preferences</h3>
+              <h3 data-i18n="set.notifications" class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Notification Preferences</h3>
               <div class="space-y-3">
                 <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
-                  <span class="text-sm font-medium">Period reminder alert (48 hours prior)</span>
+                  <span data-i18n="set.notif_period" class="text-sm font-medium">Period reminder alert (48 hours prior)</span>
                   <input type="checkbox" checked class="accent-primary w-5 h-5"/>
                 </label>
                 <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
-                  <span class="text-sm font-medium">Fertile window & ovulation notice</span>
+                  <span data-i18n="set.notif_fertile" class="text-sm font-medium">Fertile window & ovulation notice</span>
                   <input type="checkbox" checked class="accent-primary w-5 h-5"/>
                 </label>
                 <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
-                  <span class="text-sm font-medium">Evening wellness check-in reminder</span>
+                  <span data-i18n="set.notif_checkin" class="text-sm font-medium">Evening wellness check-in reminder</span>
                   <input type="checkbox" checked class="accent-primary w-5 h-5"/>
                 </label>
               </div>
@@ -1674,7 +1694,7 @@
             <!-- Save Settings Button -->
             <div class="pt-4 border-t border-outline-variant/20 flex justify-end">
               <button onclick="saveSettings()" class="px-6 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm">
-                Save Preferences
+                <span data-i18n="set.btn_save">Save Preferences</span>
               </button>
             </div>
           </div>
@@ -1688,23 +1708,23 @@
   <nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface/90 backdrop-blur-xl z-50 flex items-center justify-around px-space-xs shadow-[0_-1px_8px_rgba(0,0,0,0.04)] border-t border-outline-variant/30" id="mobile-nav">
     <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-primary font-semibold" data-path="overview" href="#overview">
       <span class="material-symbols-outlined text-xl">grid_view</span>
-      <span class="font-label-sm text-label-sm">Overview</span>
+      <span data-i18n="nav.overview" class="font-label-sm text-label-sm">Overview</span>
     </a>
     <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="ai-health-assistant" href="#ai-health-assistant">
       <span class="material-symbols-outlined text-xl">smart_toy</span>
-      <span class="font-label-sm text-label-sm">Ask Sakhi</span>
+      <span data-i18n="nav.ai_assistant" class="font-label-sm text-label-sm">Ask Sakhi</span>
     </a>
     <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="period-symptom-tracker" href="#period-symptom-tracker">
       <span class="material-symbols-outlined text-xl">calendar_today</span>
-      <span class="font-label-sm text-label-sm">Tracker</span>
+      <span data-i18n="nav.tracker" class="font-label-sm text-label-sm">Tracker</span>
     </a>
     <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="doctor-connect" href="#doctor-connect">
       <span class="material-symbols-outlined text-xl">medical_services</span>
-      <span class="font-label-sm text-label-sm">Doctors</span>
+      <span data-i18n="nav.doctors" class="font-label-sm text-label-sm">Doctors</span>
     </a>
     <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="settings" href="#settings">
       <span class="material-symbols-outlined text-xl">settings</span>
-      <span class="font-label-sm text-label-sm">Settings</span>
+      <span data-i18n="nav.settings" class="font-label-sm text-label-sm">Settings</span>
     </a>
   </nav>
 
@@ -1962,38 +1982,20 @@
     }
 
     // 3. MULTILINGUAL SUPPORT
-    const translations = {
-      en: {
-        greeting: "Good morning, Priya 🌷",
-        subgreeting: "Take a moment for yourself. Let’s check in with your inner rhythm and health today.",
-        sakhiIntro: "Hi Priya, I'm Sakhi 🌷 You can ask me about periods, PMS, reproductive health, hormonal changes, nutrition, or everyday wellness. I'm here to explain your body's signals with clarity, gentle empathy, and certified medical context."
-      },
-      hi: {
-        greeting: "नमस्ते, प्रिया 🌷",
-        subgreeting: "अपने लिए कुछ पल निकालें। आइए आज आपके स्वास्थ्य और प्राकृतिक चक्र को समझें।",
-        sakhiIntro: "नमस्ते प्रिया, मैं सखी हूँ 🌷 आप मुझसे पीरियड्स, पीएमएस, हार्मोनल स्वास्थ्य, पोषण या रोजमर्रा की सेहत के बारे में पूछ सकती हैं। मैं आपकी हर बात को संवेदनशीलता और प्रामाणिक चिकित्सा ज्ञान के साथ समझाने के लिए यहाँ हूँ।"
-      },
-      hinglish: {
-        greeting: "Good morning, Priya 🌷",
-        subgreeting: "Apne liye thoda time nikalein. Aaiye aaj aapke cycle rhythm aur health ko samajhte hain.",
-        sakhiIntro: "Hi Priya, main aapki Sakhi hoon 🌷 Aap mujhse period cramps, PMS, hormonal changes, nutrition ya wellness ke baare mein kuch bhi pooch sakti hain. Main yahan hoon trusted medical context aur care ke saath."
-      }
-    };
-
     function updateLanguage(lang) {
       AppState.lang = lang;
-      const t = translations[lang] || translations.en;
       
-      const greetingEl = document.getElementById('header-greeting');
-      const dashGreetingEl = document.getElementById('dash-greeting-h1');
-      const introEl = document.getElementById('sakhi-intro-text');
+      // Apply full UI translation from translations.js
+      if (typeof applyLanguageToUI === 'function') {
+        applyLanguageToUI(lang);
+      }
+      
       const globalSelect = document.getElementById('global-lang-select');
+      const settingSelect = document.getElementById('setting-language-select');
       const fastLangLabel = document.getElementById('chatFastLangLabel');
 
-      if (greetingEl) greetingEl.textContent = t.greeting;
-      if (dashGreetingEl) dashGreetingEl.textContent = t.greeting;
-      if (introEl) introEl.textContent = t.sakhiIntro;
       if (globalSelect) globalSelect.value = lang;
+      if (settingSelect) settingSelect.value = lang;
       if (fastLangLabel) fastLangLabel.textContent = lang.toUpperCase();
 
       // Update Chat pills
@@ -2005,72 +2007,42 @@
         }
       });
 
-      showToast(`Language switched to ${lang === 'hi' ? 'हिंदी (Hindi)' : lang === 'hinglish' ? 'Hinglish' : 'English'}`);
+      const langNames = { en: 'English', hi: 'हिंदी (Hindi)', hinglish: 'Hinglish' };
+      showToast(`Language switched to ${langNames[lang] || lang}`);
     }
 
     // 4. ASK SAKHI CONVERSATIONAL ENGINE
-    const sakhiKnowledgeBase = {
-      cramps: {
-        title: "Understanding Menstrual Cramps (Dysmenorrhea)",
-        en: "Period cramps occur primarily due to prostaglandins—hormone-like lipids released by the uterine lining that cause the muscular walls of your uterus to contract and shed tissue. On Day 12 (Follicular Window), light twinges can also indicate ovulation sensation (*mittelschmerz*). \n\n**Self-Care Protocol:**\n• Gentle warmth: A heating pad increases local pelvic blood flow.\n• Magnesium glycinate & chamomile tea help calm smooth muscle spasms.\n• Mild walking or restorative yoga releases natural pain-relieving endorphins.",
-        hi: "पीरियड में होने वाला दर्द (Dysmenorrhea) मुख्य रूप से प्रोस्टाग्लैंडीन (prostaglandins) नामक हार्मोन के कारण होता है, जो गर्भाशय की मांसपेशियों में संकुचन पैदा करते हैं। साइकिल डे 12 पर हल्का दर्द ओव्यूलेशन (mittelschmerz) का भी संकेत हो सकता है।\n\n**राहत के उपाय:**\n• गर्म पानी की थैली या हीटिंग पैड का उपयोग करें।\n• मैग्नीशियम युक्त आहार और कैमोमाइल चाय लें।\n• हल्का टहलना या योग एंडोर्फिन रिलीज करता है जो दर्द कम करता है।",
-        hinglish: "Period cramps prostaglandins ki wajah se hote hain jo uterus muscles ko contract karate hain. Cycle Day 12 par light cramping ovulation (*mittelschmerz*) ka bhi sign ho sakti hai.\n\n**Quick Tips:**\n• Warm heating pad use karein blood flow badhane ke liye.\n• Chamomile tea aur magnesium-rich food cramps ko soothe karte hain.\n• Light walking se endorphins release hote hain jo natural pain-relief dete hain.",
-        sources: [
-          { name: "American College of Obstetricians and Gynecologists (ACOG)", doc: "FAQ046: Dysmenorrhea, Painful Periods & Management Guidelines." },
-          { name: "NHS UK", doc: "Period Pain, Pelvic Sensitivity and Reproductive Cycle Phases." },
-          { name: "FOGSI India", doc: "Clinical Menstrual Health Protocols (Vol 18)." }
-        ]
-      },
-      phases: {
-        title: "The 4 Phases of Your Menstrual Cycle",
-        en: "Your 28-day cycle consists of 4 distinct biological phases:\n1. **Menstrual Phase (Days 1–5):** Estrogen & progesterone baseline; uterine lining sheds.\n2. **Follicular Phase (Days 6–13):** Estrogen rises, stimulating follicle development. You are currently on **Day 12**—vitality and focus are peak!\n3. **Ovulation Window (Days 14–16):** Luteinizing Hormone (LH) surge releases an egg.\n4. **Luteal Phase (Days 17–28):** Progesterone leads; restful and restorative pacing is beneficial.",
-        hi: "आपका 28-दिन का मासिक चक्र 4 मुख्य चरणों में विभाजित है:\n1. **माहवारी चरण (दिन 1–5):** गर्भाशय की परत का निष्कासन।\n2. **फॉलिक्युलर चरण (दिन 6–13):** एस्ट्रोजन बढ़ता है। आज आप **दिन 12** पर हैं—ऊर्जा और एकाग्रता सबसे अधिक होती है!\n3. **ओव्यूलेशन चरण (दिन 14–16):** अंडे का उत्सर्जन।\n4. **ल्यूटियल चरण (दिन 17–28):** प्रोजेस्टेरोन प्रमुख होता है; शरीर को आराम की जरूरत होती है।",
-        hinglish: "Aapka 28-day cycle 4 biological phases mein hota hai:\n1. **Menstrual Phase (Days 1–5):** Flow days, resting state.\n2. **Follicular Phase (Days 6–13):** Estrogen rise hota hai. Aaj aap **Day 12** par hain—high energy window!\n3. **Ovulation (Days 14–16):** Egg release window, peak fertility.\n4. **Luteal Phase (Days 17–28):** Progesterone high hota hai, self-care zaroori hai.",
-        sources: [
-          { name: "World Health Organization (WHO)", doc: "Guidelines on Reproductive Endocrinology & Menstrual Health." },
-          { name: "ACOG", doc: "Understanding the Menstrual Cycle & Ovulatory Patterns." }
-        ]
-      },
-      bloating: {
-        title: "Relieving PMS & Water Retention",
-        en: "Water retention and bloating stem from fluctuations in progesterone and aldosterone, which influence fluid retention in bodily tissues.\n\n**Natural Remedies:**\n• Hydrate consistently (2.5L daily) to signal kidneys to release excess sodium.\n• Potassium-rich foods: Bananas, spinach, and coconut water balance electrolytes.\n• Herbal peppermint, fennel, and ginger tea help calm gastrointestinal distension.",
-        hi: "ब्लोटिंग और शरीर में पानी का रुकना प्रोजेस्टेरोन और एल्डोस्टेरोन हार्मोनल बदलाव के कारण होता है।\n\n**प्राकृतिक उपाय:**\n• भरपूर पानी पिएं (रोजाना 2.5 लीटर) जिससे अतिरिक्त सोडियम बाहर निकले।\n• पोटेशियम युक्त खाद्य पदार्थ: केला, पालक और नारियल पानी लें।\n• सौंफ, पुदीना या अदरक की हर्बल चाय पेट को राहत देती है।",
-        hinglish: "Bloating hormonal balance change hone ki wajah se hoti hai jisse body sodium retain karti hai.\n\n**Remedies:**\n• Daily 2.5L paani pijiye taaki excess water flush out ho sake.\n• Bananas, spinach aur coconut water lein potassium balance ke liye.\n• Fennel (saunf) ya ginger tea digestive bloating ko instantly ease karti hai.",
-        sources: [
-          { name: "Indian Council of Medical Research (ICMR)", doc: "Nutritional Interventions in Women's Health & Premenstrual Symptoms." },
-          { name: "Mayo Clinic", doc: "PMS Bloating: Lifestyle & Dietary Solutions." }
-        ]
-      },
-      default: {
-        title: "Clinically Grounded Health Guidance",
-        en: "Thank you for asking, Priya. In women's reproductive health, every body has a unique rhythm. Based on your Day 12 Follicular state, your body is well-primed for active nutrition, hydration, and regular restorative sleep.\n\nIf you have persistent severe pain or sudden changes, consider scheduling a consult with one of our verified gynecologists in the Doctor Connect portal.",
-        hi: "पूछने के लिए धन्यवाद, प्रिया। हर महिला का शरीर अपने विशिष्ट चक्र के अनुसार काम करता है। आपके डे 12 फॉलिक्युलर स्थिति के अनुसार, संतुलित पोषण और पर्याप्त पानी पीना सबसे लाभकारी है।\n\nयदि आपको कोई अत्यधिक असुविधा हो, तो डॉक्टर कनेक्ट सेक्शन में जाकर विशेषज्ञ से परामर्श ले सकती हैं।",
-        hinglish: "Thank you for asking, Priya. Aapke Day 12 Follicular window ke hisaab se body high energy state mein hai. Balanced nutrition, hydration aur achhi neend maintain karein.\n\nAgar persistent discomfort ho, toh aap Doctor Connect portal se verified gynecologists se consult kar sakti hain.",
-        sources: [
-          { name: "Federation of Obstetric & Gynaecological Societies of India (FOGSI)", doc: "General Gynecological Consultation Best Practices." }
-        ]
-      }
-    };
-
-    function generateSakhiResponse(userQuery) {
+    async function generateSakhiResponse(userQuery) {
       const q = userQuery.toLowerCase();
-      let match = sakhiKnowledgeBase.default;
+      let match = (typeof SAKHI_KNOWLEDGE_BASE !== 'undefined') ? SAKHI_KNOWLEDGE_BASE.default : {
+        title: "Clinical Guidance",
+        en: "Take a moment for yourself. Listen closely to your cycle rhythm.",
+        hi: "अपने स्वास्थ्य का ध्यान रखें। अपने चक्र को समझें।",
+        hinglish: "Apna khayal rakhein aur cycle rhythm ko samjhein."
+      };
 
-      if (q.includes('cramp') || q.includes('pain') || q.includes('dard') || q.includes('pet')) {
-        match = sakhiKnowledgeBase.cramps;
-      } else if (q.includes('phase') || q.includes('cycle') || q.includes('follicular') || q.includes('luteal') || q.includes('ovulat')) {
-        match = sakhiKnowledgeBase.phases;
-      } else if (q.includes('bloat') || q.includes('pms') || q.includes('pet phool') || q.includes('water')) {
-        match = sakhiKnowledgeBase.bloating;
+      if (q.includes('cramp') || q.includes('pain') || q.includes('dard') || q.includes('मरोड़') || q.includes('दर्द')) {
+        match = SAKHI_KNOWLEDGE_BASE.cramps;
+      } else if (q.includes('phase') || q.includes('cycle') || q.includes('follicular') || q.includes('luteal') || q.includes('चरण') || q.includes('चक्र')) {
+        match = SAKHI_KNOWLEDGE_BASE.phases;
+      } else if (q.includes('bloat') || q.includes('pms') || q.includes('pet phool') || q.includes('water') || q.includes('ब्लोटिंग')) {
+        match = SAKHI_KNOWLEDGE_BASE.bloating;
+      } else if (q.includes('twinge') || q.includes('mittelschmerz') || q.includes('day 12') || q.includes('खिंचाव')) {
+        match = SAKHI_KNOWLEDGE_BASE.twinges;
       }
 
       const lang = AppState.lang;
-      const text = match[lang] || match.en;
+      let text = (match && match[lang]) ? match[lang] : (match ? match.en : "");
+
+      // For un-preset questions in Hindi, use real-time translator fallback
+      if (match === SAKHI_KNOWLEDGE_BASE.default && lang === 'hi' && typeof translateWithFreeFallback === 'function') {
+        text = await translateWithFreeFallback(match.en, 'hi');
+      }
 
       return {
         title: match.title,
         text: text,
-        sources: match.sources
+        sources: match.sources || []
       };
     }
 
@@ -2530,8 +2502,9 @@
       showToast(`Settings saved for ${name}!`);
     }
 
-    // Voice simulation
+    // Voice simulation & Web Speech API
     let isListening = false;
+    let speechRecognition = null;
     function startVoiceSimulation() {
       const indicator = document.getElementById('voice-indicator');
       const voiceBtn = document.getElementById('voiceBtn');
@@ -2539,22 +2512,69 @@
       if (indicator) indicator.classList.remove('hidden');
       if (voiceBtn) voiceBtn.classList.add('text-primary');
 
-      // Simulate voice capture after 2.5 seconds
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        try {
+          speechRecognition = new SpeechRecognition();
+          speechRecognition.continuous = false;
+          speechRecognition.interimResults = false;
+          speechRecognition.lang = AppState.lang === 'hi' ? 'hi-IN' : 'en-IN';
+
+          speechRecognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            const input = document.getElementById('messageInput');
+            if (input) {
+              input.value = transcript;
+              input.focus();
+            }
+            stopVoiceSimulation();
+            showToast(`Voice recognized: "${transcript}"`);
+          };
+
+          speechRecognition.onerror = (e) => {
+            console.warn("Speech API error, falling back to simulated query:", e);
+            fallbackVoiceSimulation();
+          };
+
+          speechRecognition.onend = () => {
+            stopVoiceSimulation();
+          };
+
+          speechRecognition.start();
+          return;
+        } catch (e) {
+          console.warn("Speech API failed to start:", e);
+        }
+      }
+
+      fallbackVoiceSimulation();
+    }
+
+    function fallbackVoiceSimulation() {
       setTimeout(() => {
         if (isListening) {
           const input = document.getElementById('messageInput');
           if (input) {
-            input.value = "Why do I get period cramps on Day 12?";
+            const sampleQuestions = {
+              en: "Why do I get period cramps on Day 12?",
+              hi: "मुझे साइकिल डे 12 पर क्रैम्प्स या दर्द क्यों होता है?",
+              hinglish: "Day 12 par period cramps kyu hote hain?"
+            };
+            const sample = sampleQuestions[AppState.lang] || sampleQuestions.en;
+            input.value = sample;
             input.focus();
+            showToast(`Voice recognized: "${sample}"`);
           }
           stopVoiceSimulation();
-          showToast('Speech recognized: "Why do I get period cramps on Day 12?"');
         }
-      }, 2400);
+      }, 2000);
     }
 
     function stopVoiceSimulation() {
       isListening = false;
+      if (speechRecognition) {
+        try { speechRecognition.stop(); } catch (e) {}
+      }
       const indicator = document.getElementById('voice-indicator');
       const voiceBtn = document.getElementById('voiceBtn');
       if (indicator) indicator.classList.add('hidden');
@@ -2595,7 +2615,7 @@
       const messageInput = document.getElementById('messageInput');
 
       if (chatForm && messageInput) {
-        chatForm.addEventListener('submit', (e) => {
+        chatForm.addEventListener('submit', async (e) => {
           e.preventDefault();
           const query = messageInput.value.trim();
           if (!query) return;
@@ -2603,11 +2623,35 @@
           appendUserMessage(query);
           messageInput.value = '';
 
-          // Show Sakhi typing delay simulation
-          setTimeout(() => {
-            const resp = generateSakhiResponse(query);
+          // Show typing indicator in chat
+          const typingIndicator = document.createElement('div');
+          typingIndicator.id = 'typing-indicator';
+          typingIndicator.className = 'flex items-center gap-2 p-3.5 bg-surface-container-low rounded-2xl w-fit text-primary text-xs font-semibold animate-pulse border border-outline-variant/20';
+          const indicatorText = AppState.lang === 'hi' ? 'सखी विचार कर रही हैं...' : (AppState.lang === 'hinglish' ? 'Sakhi soch rahi hain...' : 'Sakhi is consulting clinical sources...');
+          typingIndicator.innerHTML = `<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span><span>${indicatorText}</span>`;
+          const container = document.getElementById('chat-messages-container');
+          if (container) {
+            container.appendChild(typingIndicator);
+            container.scrollTop = container.scrollHeight;
+          }
+
+          try {
+            const resp = await generateSakhiResponse(query);
+            if (typingIndicator && typingIndicator.parentNode) {
+              typingIndicator.remove();
+            }
             appendSakhiMessage(resp);
-          }, 600);
+          } catch (err) {
+            console.error("Sakhi response error:", err);
+            if (typingIndicator && typingIndicator.parentNode) {
+              typingIndicator.remove();
+            }
+            appendSakhiMessage({
+              title: "Sakhi Companion",
+              text: "Thank you for asking. Please feel free to rephrase or consult Doctor Connect for urgent questions.",
+              sources: []
+            });
+          }
         });
       }
 
@@ -2634,6 +2678,14 @@
       const globalLang = document.getElementById('global-lang-select');
       if (globalLang) {
         globalLang.addEventListener('change', (e) => {
+          updateLanguage(e.target.value);
+        });
+      }
+
+      // Settings language dropdown
+      const settingLang = document.getElementById('setting-language-select');
+      if (settingLang) {
+        settingLang.addEventListener('change', (e) => {
           updateLanguage(e.target.value);
         });
       }
