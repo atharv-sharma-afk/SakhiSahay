@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_dashboard" name="shell-type"/>
+  <title>SakhiSahay - Women's Health & Hormonal Wellness Platform</title>
+  
+  <!-- Google Fonts: Manrope & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    * { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .view-container { display: none; }
+    .view-container.active { display: block; animation: fadeIn 0.25s ease-in-out; }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .active-nav-link {
+      background-color: #af5a71 !important;
+      color: #fffbff !important;
+      font-weight: 600 !important;
+      box-shadow: 0 1px 3px rgba(145, 66, 89, 0.2);
+    }
+    .active-nav-link span {
+      color: #fffbff !important;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed": "#121e17",
+            "surface-variant": "#ecdef0",
+            "surface-dim": "#e3d6e7",
+            "on-secondary-container": "#65636f",
+            "inverse-primary": "#ffb1c3",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed": "#1c1a25",
+            "on-background": "#201925",
+            "tertiary-fixed": "#d8e6db",
+            "background": "#fff7fd",
+            "on-tertiary-container": "#f5fff6",
+            "tertiary-container": "#6b786f",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#474551",
+            "surface": "#fff7fd",
+            "on-surface": "#201925",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#772d44",
+            "on-primary-container": "#fffbff",
+            "primary-fixed-dim": "#ffb1c3",
+            "surface-container-high": "#f2e4f5",
+            "tertiary": "#525f57",
+            "secondary": "#5f5d69",
+            "on-error-container": "#93000a",
+            "primary-container": "#af5a71",
+            "inverse-surface": "#362d3b",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary": "#914259",
+            "tertiary-fixed-dim": "#bccabf",
+            "surface-container": "#f7e9fb",
+            "secondary-fixed-dim": "#c9c4d3",
+            "on-tertiary-fixed-variant": "#3d4a42",
+            "surface-container-low": "#fcefff",
+            "on-surface-variant": "#534246",
+            "outline": "#867276",
+            "on-error": "#ffffff",
+            "primary-fixed": "#ffd9e0",
+            "secondary-fixed": "#e5e0ef",
+            "surface-bright": "#fff7fd",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#ecdef0",
+            "surface-tint": "#94445b",
+            "inverse-on-surface": "#faecfe",
+            "secondary-container": "#e5e0ef",
+            "outline-variant": "#d8c1c5",
+            "on-primary-fixed": "#3f0119"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "margin": "2.5rem",
+            "margin-mobile": "1rem"
+          },
+          fontFamily: {
+            "body-sm": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "headline-sm": ["Manrope", "sans-serif"],
+            "headline-md": ["Manrope", "sans-serif"],
+            "headline-lg": ["Manrope", "sans-serif"],
+            "headline-xl": ["Manrope", "sans-serif"],
+            "label-sm": ["Manrope", "sans-serif"],
+            "label-md": ["Manrope", "sans-serif"],
+            "label-lg": ["Manrope", "sans-serif"]
+          },
+          fontSize: {
+            "body-sm": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "500" }],
+            "headline-md": ["24px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "44px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "52px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.025em", fontWeight: "500" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+  <!-- Desktop Navigation Sidebar -->
+  <aside class="hidden lg:flex fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex-col justify-between py-space-lg px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="flex flex-col gap-space-lg">
+      <!-- App Brand Logo -->
+      <a href="#overview" class="flex items-center gap-space-sm px-space-sm group cursor-pointer">
+        <div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary shadow-sm group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">SakhiSahay</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">Your women's health companion</span>
+        </div>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <nav class="flex flex-col gap-space-xs" id="desktop-nav">
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl transition-all active-nav-link" data-path="overview" href="#overview">
+          <span class="material-symbols-outlined text-xl">grid_view</span>
+          <span class="font-label-lg text-label-lg">Overview</span>
+        </a>
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ai-health-assistant" href="#ai-health-assistant">
+          <span class="material-symbols-outlined text-xl">smart_toy</span>
+          <span class="font-label-lg text-label-lg">AI Health Assistant</span>
+        </a>
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="period-symptom-tracker" href="#period-symptom-tracker">
+          <span class="material-symbols-outlined text-xl">calendar_today</span>
+          <span class="font-label-lg text-label-lg">Period & Symptom Tracker</span>
+        </a>
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="health-insights" href="#health-insights">
+          <span class="material-symbols-outlined text-xl">insights</span>
+          <span class="font-label-lg text-label-lg">Health Insights</span>
+        </a>
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctor-connect" href="#doctor-connect">
+          <span class="material-symbols-outlined text-xl">medical_services</span>
+          <span class="font-label-lg text-label-lg">Doctor Connect</span>
+        </a>
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="health-history-privacy" href="#health-history-privacy">
+          <span class="material-symbols-outlined text-xl">lock</span>
+          <span class="font-label-lg text-label-lg">Health History & Privacy</span>
+        </a>
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#settings">
+          <span class="material-symbols-outlined text-xl">settings</span>
+          <span class="font-label-lg text-label-lg">Settings</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- User Profile Badge -->
+    <div class="p-space-sm bg-surface-container-lowest rounded-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)] cursor-pointer hover:bg-surface-container transition-colors" onclick="switchRoute('settings')">
+      <div class="flex items-center gap-space-sm">
+        <div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold">
+          PS
+        </div>
+        <div class="flex flex-col">
+          <span class="font-label-lg text-label-lg text-on-surface font-semibold">Priya Sharma</span>
+          <span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-space-xs rounded-full w-fit">Personal Care</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-on-surface-variant text-lg">expand_more</span>
+    </div>
+  </aside>
+
+  <!-- Main Content Wrap -->
+  <div class="lg:pl-72 flex flex-col min-h-screen">
+    
+    <!-- Top Header -->
+    <header class="fixed top-0 left-0 lg:left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-outline-variant/30">
+      <div class="h-20 w-full px-gutter lg:px-margin flex items-center justify-between">
+        
+        <!-- Mobile Logo & Current Greeting -->
+        <div class="flex items-center gap-space-md">
+          <a href="#overview" class="lg:hidden flex items-center gap-space-xs text-primary">
+            <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+          </a>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-space-xs">
+              <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="header-greeting">Good morning, Priya 🌷</h2>
+            </div>
+            <span class="font-label-md text-label-md text-on-surface-variant" id="header-date">Tuesday, Oct 24, 2024</span>
+          </div>
+        </div>
+
+        <!-- Header Actions: Language, Quick Log, Notifications, Avatar -->
+        <div class="flex items-center gap-space-sm md:gap-space-md">
+          <!-- Language Selector -->
+          <div class="relative hidden sm:inline-block">
+            <select id="global-lang-select" class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md py-space-xs pl-space-md pr-space-lg rounded-full focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer transition-colors shadow-xs">
+              <option value="en">English</option>
+              <option value="hi">हिंदी</option>
+              <option value="hinglish">Hinglish</option>
+            </select>
+            <span class="material-symbols-outlined text-sm absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">arrow_drop_down</span>
+          </div>
+
+          <!-- Quick Log Button (Global Modal Trigger) -->
+          <button id="btn-global-quick-log" class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-space-md py-space-sm rounded-full transition-all flex items-center gap-space-xs shadow-sm hover:shadow-md active:scale-95" type="button">
+            <span class="material-symbols-outlined text-base">add</span>
+            <span>Quick Log</span>
+          </button>
+
+          <!-- Notifications Bell -->
+          <button id="btn-notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface rounded-full hover:bg-surface-container-high transition-colors" type="button" title="View Notifications">
+            <span class="material-symbols-outlined text-xl">notifications</span>
+            <span class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary rounded-full animate-ping"></span>
+            <span class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary rounded-full"></span>
+          </button>
+
+          <!-- User Avatar -->
+          <div class="flex items-center pl-space-xs cursor-pointer" onclick="switchRoute('settings')">
+            <div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-xs ring-2 ring-primary/20">
+              PS
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Page Body Container -->
+    <main class="w-full pt-20 pb-24 lg:pb-margin px-gutter lg:px-margin bg-surface flex-1">
+      <div class="flex flex-col w-full max-w-[1280px] mx-auto py-space-md">
+
+        <!-- ========================================== -->
+        <!-- VIEW 1: OVERVIEW / PERSONALIZED DASHBOARD -->
+        <!-- ========================================== -->
+        <div id="view-overview" class="view-container active">
+          <!-- Subtle ambient decorative glow behind canvas -->
+          <div class="relative w-full">
+            <div class="absolute -top-12 -left-16 w-80 h-80 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none -z-10"></div>
+            <div class="absolute top-72 -right-20 w-96 h-96 rounded-full bg-secondary-fixed/35 blur-3xl pointer-events-none -z-10"></div>
+            <div class="absolute top-[600px] left-1/3 w-72 h-72 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+
+            <!-- Welcome Banner & Mood Greeting -->
+            <header class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center gap-space-sm flex-wrap">
+                  <span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm shadow-xs">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Tuesday, October 24, 2024 • Cycle Day 12
+                  </span>
+                  <span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm shadow-xs">
+                    <span class="material-symbols-outlined text-xs">spa</span> Follicular Window
+                  </span>
+                </div>
+                <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight" id="dash-greeting-h1">
+                  Good morning, Priya 🌷
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                  Take a moment for yourself. Let’s check in with your inner rhythm and health today.
+                </p>
+              </div>
+
+              <!-- Quick Status Snapshot Badge Pill -->
+              <div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-full shadow-sm self-start md:self-auto border border-outline-variant/30">
+                <div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                </div>
+                <div class="flex flex-col pr-space-xs">
+                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hormone State</span>
+                  <span class="font-label-lg text-label-lg text-on-surface font-semibold">Rising Estrogen • High Focus</span>
+                </div>
+              </div>
+            </header>
+
+            <!-- Main 2-Column Responsive Layout (60% / 40%) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+              
+              <!-- LEFT COLUMN (Approx 60% on desktop -> 7 cols) -->
+              <div class="lg:col-span-7 flex flex-col gap-space-lg">
+                
+                <!-- Circular Cycle Dynamics Card -->
+                <div class="bg-surface-container-lowest rounded-[20px] p-6 lg:p-8 shadow-sm flex flex-col gap-space-lg relative overflow-hidden border border-outline-variant/20">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-xl">timelapse</span>
+                      <h2 class="font-headline-sm text-headline-sm text-on-surface">Cycle Dynamics</h2>
+                    </div>
+                    <span class="text-label-md font-label-md px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
+                      28-Day Pattern
+                    </span>
+                  </div>
+
+                  <!-- SVG Concentric Cycle Ring -->
+                  <div class="flex flex-col sm:flex-row items-center justify-center gap-8 py-2">
+                    <div class="relative w-64 h-64 shrink-0 flex items-center justify-center">
+                      <svg class="w-full h-full -rotate-90 transform" viewBox="0 0 240 240">
+                        <!-- Background Track -->
+                        <circle cx="120" cy="120" fill="none" r="96" stroke="#f7e9fb" stroke-linecap="round" stroke-width="14"></circle>
+                        <!-- Period Phase Arc (Days 1-5 out of 28 => ~18%) -->
+                        <circle cx="120" cy="120" fill="none" r="96" stroke="#af5a71" stroke-dasharray="107 496" stroke-dashoffset="0" stroke-linecap="round" stroke-width="14"></circle>
+                        <!-- Fertile Window Arc (Days 11-16 => ~18%) -->
+                        <circle cx="120" cy="120" fill="none" r="96" stroke="#e5e0ef" stroke-dasharray="107 496" stroke-dashoffset="-215" stroke-linecap="round" stroke-width="14"></circle>
+                        <!-- Current Progress Stroke up to Day 12 -->
+                        <circle cx="120" cy="120" fill="none" opacity="0.6" r="82" stroke="#ffd9e0" stroke-dasharray="258 515" stroke-dashoffset="0" stroke-linecap="round" stroke-width="4"></circle>
+                        <!-- Day 12 Pin Marker Indicator on Outer Ring -->
+                        <g transform="rotate(154.3, 120, 120)">
+                          <circle cx="216" cy="120" fill="#914259" r="10"></circle>
+                          <circle cx="216" cy="120" fill="#ffffff" r="4.5"></circle>
+                          <circle class="animate-ping" cx="216" cy="120" fill="#914259" opacity="0.25" r="14"></circle>
+                        </g>
+                      </svg>
+                      <!-- Central Dial Info -->
+                      <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 pointer-events-none">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold">Phase 02</span>
+                        <span class="font-headline-xl text-headline-xl text-on-surface leading-none my-1 tracking-tight font-bold">Day 12</span>
+                        <span class="font-label-md text-label-md text-primary font-semibold">Follicular Phase</span>
+                        <span class="font-label-sm text-label-sm text-tertiary mt-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed font-semibold">High Energy Expected</span>
+                      </div>
+                    </div>
+
+                    <!-- Legend and Ring Insights -->
+                    <div class="flex flex-col gap-3 w-full sm:w-auto text-left">
+                      <div class="flex items-center gap-2.5">
+                        <span class="w-3.5 h-3.5 rounded-full bg-primary-container shrink-0"></span>
+                        <div class="flex flex-col">
+                          <span class="font-label-md text-label-md text-on-surface font-semibold">Menstruation</span>
+                          <span class="font-label-sm text-label-sm text-on-surface-variant">Days 1 – 5 • Completed</span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-2.5">
+                        <span class="w-3.5 h-3.5 rounded-full bg-secondary-container shrink-0"></span>
+                        <div class="flex flex-col">
+                          <span class="font-label-md text-label-md text-on-surface font-semibold">Fertile Window</span>
+                          <span class="font-label-sm text-label-sm text-primary font-semibold">Days 11 – 16 • Active today</span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-2.5">
+                        <span class="w-3.5 h-3.5 rounded-full bg-surface-container-high shrink-0"></span>
+                        <div class="flex flex-col">
+                          <span class="font-label-md text-label-md text-on-surface font-semibold">Luteal Phase</span>
+                          <span class="font-label-sm text-label-sm text-on-surface-variant">Days 17 – 28 • Approaching</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Stats Row -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    <div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+                      <div class="p-2 rounded-lg bg-surface-container text-primary">
+                        <span class="material-symbols-outlined text-lg">event_upcoming</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">Upcoming Period</span>
+                        <span class="font-headline-sm text-headline-sm text-on-surface font-bold">~16 days</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Expected Nov 9, 2024</span>
+                      </div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+                      <div class="p-2 rounded-lg bg-surface-container text-tertiary">
+                        <span class="material-symbols-outlined text-lg">verified</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">Cycle Regularity</span>
+                        <span class="font-headline-sm text-headline-sm text-on-surface font-bold">94% consistent</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Based on 6 logged cycles</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant italic text-center sm:text-left">
+                    * Estimates are personalized projections based on your logged history and natural biorhythms.
+                  </p>
+
+                  <!-- Action Buttons -->
+                  <div class="flex flex-col sm:flex-row items-center gap-3 pt-1">
+                    <button onclick="switchRoute('period-symptom-tracker')" class="w-full sm:w-auto flex-1 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-3 px-6 rounded-full shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 active:scale-95" type="button">
+                      <span class="material-symbols-outlined text-xl">add_circle</span>
+                      <span>Log today's symptoms</span>
+                    </button>
+                    <button onclick="switchRoute('period-symptom-tracker')" class="w-full sm:w-auto bg-primary-fixed hover:bg-primary-fixed-dim text-on-primary-fixed font-label-lg text-label-lg py-3 px-6 rounded-full transition-all flex items-center justify-center gap-2 active:scale-95" type="button">
+                      <span class="material-symbols-outlined text-xl">calendar_month</span>
+                      <span>View cycle calendar</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Daily Check-in Interactive Widget Card -->
+                <div class="bg-surface-container-lowest rounded-[20px] p-6 lg:p-8 shadow-sm flex flex-col gap-space-md border border-outline-variant/20">
+                  <div class="flex items-center justify-between">
+                    <div class="flex flex-col">
+                      <span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Daily Pulse</span>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">How are you feeling today, Priya?</h3>
+                    </div>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2.5 py-1 rounded-full font-semibold">Day 12 Log</span>
+                  </div>
+
+                  <!-- Mood Chips Selection -->
+                  <div class="flex flex-col gap-2">
+                    <label class="font-label-md text-label-md text-on-surface-variant font-medium">Overall Mood</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5" id="dash-mood-selector">
+                      <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all" data-mood="Great" type="button">
+                        <span class="text-2xl mb-1">🌸</span>
+                        <span class="font-label-md text-label-md text-on-surface">Great</span>
+                      </button>
+                      <button class="mood-btn is-active flex flex-col items-center justify-center p-3 rounded-2xl bg-primary text-on-primary shadow-sm transition-all scale-[1.02]" data-mood="Good" type="button">
+                        <span class="text-2xl mb-1">✨</span>
+                        <span class="font-label-md text-label-md text-on-primary">Good</span>
+                      </button>
+                      <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all" data-mood="Okay" type="button">
+                        <span class="text-2xl mb-1">🌿</span>
+                        <span class="font-label-md text-label-md text-on-surface">Okay</span>
+                      </button>
+                      <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all" data-mood="Low" type="button">
+                        <span class="text-2xl mb-1">☁️</span>
+                        <span class="font-label-md text-label-md text-on-surface">Low</span>
+                      </button>
+                      <button class="mood-btn flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all col-span-2 sm:col-span-1" data-mood="Stressed" type="button">
+                        <span class="text-2xl mb-1">⚡</span>
+                        <span class="font-label-md text-label-md text-on-surface">Stressed</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Physical Symptoms Selection Chips -->
+                  <div class="flex flex-col gap-2 pt-1">
+                    <label class="font-label-md text-label-md text-on-surface-variant font-medium">Physical Signs & Sensations</label>
+                    <div class="flex flex-wrap gap-2" id="dash-physical-tags">
+                      <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+                        Light Cramps
+                      </button>
+                      <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed shadow-sm font-semibold" type="button">
+                        Energetic ✓
+                      </button>
+                      <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-tertiary-fixed text-on-tertiary-fixed shadow-sm font-semibold" type="button">
+                        Clear Skin ✓
+                      </button>
+                      <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+                        Cravings
+                      </button>
+                      <button class="symptom-tag px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+                        Restful Sleep
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Save Button + Instant Feedback Row -->
+                  <div class="flex items-center justify-between pt-2 gap-space-md">
+                    <button class="bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-2.5 px-6 rounded-full shadow-sm transition-all flex items-center gap-2 active:scale-95" id="dash-save-checkin-btn" type="button">
+                      <span class="material-symbols-outlined text-lg">check</span>
+                      <span>Save check-in</span>
+                    </button>
+                    <span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 transition-opacity opacity-100 font-semibold" id="dash-save-status-msg">
+                      <span class="material-symbols-outlined text-base">cloud_done</span>
+                      <span>Saved today at 8:45 AM</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT COLUMN (Approx 40% on desktop -> 5 cols) -->
+              <div class="lg:col-span-5 flex flex-col gap-space-lg">
+                
+                <!-- Quick Portals Section -->
+                <div class="flex flex-col gap-3">
+                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold px-1">Quick Portals</span>
+                  
+                  <!-- Card 1: Ask Sakhi AI -->
+                  <div class="bg-secondary-fixed rounded-[20px] p-5 transition-transform hover:-translate-y-0.5 duration-200 shadow-sm flex flex-col gap-3 relative overflow-hidden group border border-outline-variant/20 cursor-pointer" onclick="switchRoute('ai-health-assistant')">
+                    <div class="flex items-start justify-between">
+                      <div class="w-10 h-10 rounded-2xl bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-secondary">
+                        <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+                      </div>
+                      <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-secondary-fixed font-semibold">AI Sakhi</span>
+                    </div>
+                    <div>
+                      <h4 class="font-headline-sm text-headline-sm text-on-secondary-fixed mb-1 font-semibold">Ask Sakhi AI</h4>
+                      <p class="font-body-sm text-body-sm text-on-secondary-container">
+                        Get trusted, compassionate answers on hormones, cramps & wellness tailored to Day 12.
+                      </p>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold pt-1">
+                      <span>Ask a question</span>
+                      <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                  </div>
+
+                  <!-- Card 2: Track My Cycle -->
+                  <div class="bg-primary-fixed rounded-[20px] p-5 transition-transform hover:-translate-y-0.5 duration-200 shadow-sm flex flex-col gap-3 relative overflow-hidden group border border-outline-variant/20 cursor-pointer" onclick="switchRoute('period-symptom-tracker')">
+                    <div class="flex items-start justify-between">
+                      <div class="w-10 h-10 rounded-2xl bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+                      </div>
+                      <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-primary-fixed font-semibold">Instant Log</span>
+                    </div>
+                    <div>
+                      <h4 class="font-headline-sm text-headline-sm text-on-primary-fixed mb-1 font-semibold">Track My Cycle</h4>
+                      <p class="font-body-sm text-body-sm text-on-primary-fixed-variant">
+                        Log flow, symptoms, and mood with one click to keep projections razor sharp.
+                      </p>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold pt-1">
+                      <span>Open tracker</span>
+                      <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                  </div>
+
+                  <!-- Card 3: Find a Doctor -->
+                  <div class="bg-tertiary-fixed rounded-[20px] p-5 transition-transform hover:-translate-y-0.5 duration-200 shadow-sm flex flex-col gap-3 relative overflow-hidden group border border-outline-variant/20 cursor-pointer" onclick="switchRoute('doctor-connect')">
+                    <div class="flex items-start justify-between">
+                      <div class="w-10 h-10 rounded-2xl bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-tertiary">
+                        <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                      </div>
+                      <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-tertiary-fixed font-semibold">Verified Doctors</span>
+                    </div>
+                    <div>
+                      <h4 class="font-headline-sm text-headline-sm text-on-tertiary-fixed mb-1 font-semibold">Find a Doctor</h4>
+                      <p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">
+                        Consult top gynecologists and specialists online via secure video or at nearby clinics.
+                      </p>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-tertiary hover:text-on-tertiary-fixed-variant font-semibold pt-1">
+                      <span>Explore doctors</span>
+                      <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Personalized Insights & Pattern Cards -->
+                <div class="bg-surface-container-lowest rounded-[20px] p-6 shadow-sm flex flex-col gap-space-md border border-outline-variant/20">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-primary text-xl">auto_graph</span>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Personalized Insights</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant text-lg cursor-pointer" title="Algorithmic health predictions">info</span>
+                  </div>
+
+                  <!-- Insight Card 1 -->
+                  <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+                    <div class="flex items-center justify-between">
+                      <span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-primary"></span>
+                        Your Recent Pattern
+                      </span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full font-semibold">
+                        Based on 5 logged cycles
+                      </span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      Cramps were recorded in 4 of your last 5 logged cycles. Consider gentle magnesium-rich nutrition or a warm compress around Day 1.
+                    </p>
+                  </div>
+
+                  <!-- Insight Card 2 -->
+                  <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+                    <div class="flex items-center justify-between">
+                      <span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                        Hormone & Energy Phase
+                      </span>
+                      <span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-2 py-0.5 rounded-full font-semibold">
+                        Follicular Surge
+                      </span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      Estrogen is gently rising during your follicular phase. Great time for creative deep work, collaborative tasks, and strength training.
+                    </p>
+                  </div>
+
+                  <!-- Educational Article Card -->
+                  <div class="group cursor-pointer rounded-xl bg-surface-container-low overflow-hidden hover:bg-surface-container-high transition-colors" onclick="openArticleModal()">
+                    <div class="relative h-28 w-full bg-primary-fixed/40 flex items-center justify-center overflow-hidden">
+                      <div class="absolute inset-0 bg-gradient-to-r from-primary/20 via-tertiary/20 to-secondary/20"></div>
+                      <span class="material-symbols-outlined text-5xl text-primary/40 group-hover:scale-110 transition-transform">menu_book</span>
+                      <span class="absolute bottom-2 left-3 font-label-sm text-label-sm text-white px-2 py-0.5 rounded bg-black/50 backdrop-blur font-semibold">
+                        3 min read
+                      </span>
+                    </div>
+                    <div class="p-4 flex flex-col gap-1">
+                      <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Cycle Science</span>
+                      <h4 class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors font-bold">
+                        Understanding Follicular vs. Luteal Phase
+                      </h4>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                        Discover how each phase modulates your dopamine, metabolism, and sleep patterns.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW 2: ASK SAKHI - AI HEALTH ASSISTANT -->
+        <!-- ============================================== -->
+        <div id="view-ai-health-assistant" class="view-container">
+          <!-- Top Safety Disclaimer Banner -->
+          <div class="w-full bg-secondary-container/60 rounded-xl p-space-sm md:p-space-md mb-space-md flex items-start sm:items-center justify-between gap-space-sm shadow-sm border border-outline-variant/30">
+            <div class="flex items-start sm:items-center gap-space-sm">
+              <div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface">
+                <strong class="font-label-lg text-label-lg text-primary font-bold">Certified Medical Education:</strong>
+                Sakhi provides compassionate, clinically grounded educational guidance. It is not a substitute for clinical diagnosis, prescription, or emergency care.
+              </p>
+            </div>
+            <a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container font-semibold whitespace-nowrap" href="#doctor-connect" onclick="switchRoute('doctor-connect')">
+              Emergency Guidelines
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Screen Header & Language Control -->
+          <div class="w-full bg-surface-container-lowest rounded-2xl p-space-md sm:p-space-lg mb-space-md shadow-sm flex flex-col md:flex-row md:items-center md:justify-between gap-space-md border border-outline-variant/20">
+            <div class="flex items-center gap-space-md">
+              <div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 shadow-inner text-primary">
+                <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-space-xs">
+                  <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Ask Sakhi</h1>
+                  <span class="text-xl">🌷</span>
+                  <span class="ml-2 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-semibold">Active Care Mode</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">A supportive, confidential sanctuary for your women's health and hormonal wellness questions.</p>
+              </div>
+            </div>
+
+            <!-- Multilingual Toggle Pills -->
+            <div class="flex items-center bg-surface-container-low p-1 rounded-full self-start md:self-center shadow-inner">
+              <button class="chat-lang-pill px-4 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm font-semibold" data-lang="en" type="button">
+                English
+              </button>
+              <button class="chat-lang-pill px-4 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface font-semibold" data-lang="hi" type="button">
+                हिंदी
+              </button>
+              <button class="chat-lang-pill px-4 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface font-semibold" data-lang="hinglish" type="button">
+                Hinglish
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Sanctuary Body -->
+          <div class="w-full bg-surface-container-lowest rounded-2xl p-space-md sm:p-space-lg shadow-sm flex flex-col gap-space-lg mb-space-md border border-outline-variant/20 min-h-[500px]">
+            
+            <!-- Chat Messages Container -->
+            <div class="flex flex-col gap-space-lg" id="chat-messages-container">
+              
+              <!-- Welcome Card from Sakhi -->
+              <div class="flex items-start gap-space-md max-w-3xl">
+                <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0 shadow-sm mt-1">
+                  <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+                </div>
+                <div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md sm:p-space-lg rounded-2xl rounded-tl-sm shadow-sm w-full border border-outline-variant/20">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-lg text-label-lg text-primary font-bold">Sakhi Companion</span>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant">Just now</span>
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface leading-relaxed" id="sakhi-intro-text">
+                    Hi Priya, I'm Sakhi 🌷 You can ask me about periods, PMS, reproductive health, hormonal changes, nutrition, or everyday wellness. I'm here to explain your body's signals with clarity, gentle empathy, and certified medical context.
+                  </p>
+                  
+                  <!-- Suggested Prompt Chips -->
+                  <div class="mt-space-sm pt-space-sm flex flex-col gap-2 border-t border-outline-variant/20">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Suggested Questions to Begin:</span>
+                    <div class="flex flex-wrap gap-2">
+                      <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
+                        <span class="material-symbols-outlined text-sm text-primary">help</span>
+                        Why do I get period cramps?
+                      </button>
+                      <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
+                        <span class="material-symbols-outlined text-sm text-primary">calendar_month</span>
+                        Help me understand my cycle phases
+                      </button>
+                      <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
+                        <span class="material-symbols-outlined text-sm text-primary">eco</span>
+                        What natural remedies help with PMS bloating?
+                      </button>
+                      <button class="prompt-chip text-left font-label-md text-label-md px-3.5 py-2 rounded-full bg-surface-container hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface transition-all flex items-center gap-1.5 shadow-sm active:scale-95" type="button">
+                        <span class="material-symbols-outlined text-sm text-primary">health_and_safety</span>
+                        Is it normal to have light twinges on Day 12?
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Message Composer & Input Sanctuary -->
+            <div class="sticky bottom-0 bg-surface-container-lowest pt-2 pb-1 z-30">
+              <div class="bg-surface-container-low rounded-2xl p-space-sm sm:p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-xs">
+                
+                <form class="flex items-center gap-space-xs sm:gap-space-sm" id="chatForm">
+                  <!-- Add Quick Log Trigger -->
+                  <button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex-shrink-0" title="Add symptom or report" type="button" onclick="openQuickLogModal()">
+                    <span class="material-symbols-outlined text-2xl">add_circle</span>
+                  </button>
+
+                  <!-- Main text input -->
+                  <div class="relative flex-1">
+                    <input class="w-full h-12 bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-full px-5 pr-12 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all shadow-inner border border-outline-variant/20" id="messageInput" placeholder="Ask Sakhi anything about your cycle, symptoms, or wellness..." type="text" autocomplete="off"/>
+                    <!-- Voice simulation button -->
+                    <button class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-primary transition-colors p-1" id="voiceBtn" title="Speak in Hindi or English" type="button">
+                      <span class="material-symbols-outlined text-xl">mic</span>
+                    </button>
+                  </div>
+
+                  <!-- Language Fast-Switch trigger -->
+                  <button id="chatFastLangBtn" class="hidden sm:flex items-center gap-1 px-3 h-10 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-label-sm text-label-sm font-semibold flex-shrink-0 border border-outline-variant/20" title="Toggle current chat language" type="button">
+                    <span class="material-symbols-outlined text-base">translate</span>
+                    <span id="chatFastLangLabel">EN</span>
+                  </button>
+
+                  <!-- Send Pill Button -->
+                  <button class="h-11 px-5 rounded-full bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container flex items-center justify-center gap-1.5 font-label-md text-label-md transition-all shadow-md hover:shadow-lg flex-shrink-0 active:scale-95" id="sendBtn" type="submit">
+                    <span class="hidden sm:inline font-bold">Ask</span>
+                    <span class="material-symbols-outlined text-lg">arrow_upward</span>
+                  </button>
+                </form>
+
+                <!-- Voice Listening Indicator -->
+                <div id="voice-indicator" class="hidden flex items-center justify-between px-space-md py-1 bg-primary-fixed/40 rounded-full text-primary text-xs font-semibold animate-pulse">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                    <span>Sakhi is listening... Speak your question (Hindi, English, or Hinglish)</span>
+                  </div>
+                  <button type="button" onclick="stopVoiceSimulation()" class="hover:underline">Cancel</button>
+                </div>
+
+                <!-- Trust, Privacy & Encryption Safety Subtext -->
+                <div class="flex items-center justify-between px-space-xs font-label-sm text-label-sm text-on-surface-variant">
+                  <div class="flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-xs text-tertiary">lock</span>
+                    <span>Encrypted with strict health privacy compliance. Never shared with advertisers.</span>
+                  </div>
+                  <div class="hidden sm:flex items-center gap-2">
+                    <span>Sakhi v2.4 (Clinical-Safety Certified)</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW 3: PERIOD & SYMPTOM TRACKER -->
+        <!-- ============================================== -->
+        <div id="view-period-symptom-tracker" class="view-container">
+          <!-- Header & Page Actions Row -->
+          <section class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+            <div class="flex flex-col max-w-xl">
+              <span class="font-label-md text-label-md text-primary tracking-wider uppercase mb-space-xs flex items-center gap-1.5 font-semibold">
+                <span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Active Cycle Rhythm
+              </span>
+              <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Your Cycle, Understood.</h1>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Track your symptoms, observe monthly patterns, and listen closely to your body’s natural cadence.
+              </p>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-space-sm sm:gap-space-md">
+              <div class="bg-surface-container-low p-1 rounded-full flex items-center shadow-sm">
+                <button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all font-semibold" id="btn-month-view" type="button">Month</button>
+                <button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors font-semibold" id="btn-year-view" type="button">Year</button>
+              </div>
+              <button class="h-12 px-space-lg rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all flex items-center gap-space-xs shadow-sm active:scale-95 font-semibold" id="btn-open-symptoms" type="button">
+                <span class="material-symbols-outlined text-lg">water_drop</span>
+                <span>Log Today's Symptoms</span>
+              </button>
+              <button class="h-12 px-space-lg rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all flex items-center gap-space-xs shadow-sm hover:shadow-md active:scale-95 font-semibold" onclick="openQuickLogModal()" type="button">
+                <span class="material-symbols-outlined text-xl">add_circle</span>
+                <span>+ Log Period</span>
+              </button>
+            </div>
+          </section>
+
+          <!-- Metric Summary Cards (Top Row - 4 Key Stats) -->
+          <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+            <!-- Card 1: Current Phase -->
+            <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
+              <div class="flex items-start justify-between mb-space-md">
+                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Current Phase</span>
+                <span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+                  <span class="material-symbols-outlined text-xs">spa</span>
+                  Follicular
+                </span>
+              </div>
+              <div>
+                <div class="font-headline-lg text-headline-lg text-on-surface font-bold">Day 12</div>
+                <p class="font-body-sm text-body-sm text-tertiary mt-1 flex items-center gap-1 font-medium">
+                  <span class="material-symbols-outlined text-sm">trending_up</span> Estrogen rising • Peak vitality
+                </p>
+              </div>
+              <div class="w-full bg-surface-container rounded-full h-1.5 mt-space-md overflow-hidden">
+                <div class="bg-tertiary h-1.5 rounded-full" style="width: 42%;"></div>
+              </div>
+            </div>
+
+            <!-- Card 2: Average Cycle Length -->
+            <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
+              <div class="flex items-start justify-between mb-space-md">
+                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Average Cycle Length</span>
+                <span class="p-1.5 rounded-full bg-surface-container text-primary">
+                  <span class="material-symbols-outlined text-base">repeat</span>
+                </span>
+              </div>
+              <div>
+                <div class="font-headline-lg text-headline-lg text-on-surface font-bold">28 Days</div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-tertiary font-bold">check_circle</span> Regular across 6 months
+                </p>
+              </div>
+              <div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant mt-space-md">
+                <span>Variance: ±1.2 days</span>
+                <span class="text-xs text-tertiary font-semibold">• Optimal baseline</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Last Period Duration -->
+            <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
+              <div class="flex items-start justify-between mb-space-md">
+                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Last Period Duration</span>
+                <span class="p-1.5 rounded-full bg-primary-fixed text-primary">
+                  <span class="material-symbols-outlined text-base">calendar_view_week</span>
+                </span>
+              </div>
+              <div>
+                <div class="font-headline-lg text-headline-lg text-on-surface font-bold">5 Days</div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 font-medium">Oct 12 – Oct 16, 2024</p>
+              </div>
+              <div class="flex items-center gap-1.5 mt-space-md">
+                <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant ml-1 font-medium">Normal flow trend</span>
+              </div>
+            </div>
+
+            <!-- Card 4: Next Estimated Period -->
+            <div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-outline-variant/20">
+              <div class="flex items-start justify-between mb-space-md">
+                <span class="font-label-md text-label-md text-on-surface-variant font-medium">Next Estimated Period</span>
+                <span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                  ~16 days away
+                </span>
+              </div>
+              <div>
+                <div class="font-headline-lg text-headline-lg text-primary font-bold">Nov 9, 2024</div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">High confidence • Next cycle start</p>
+              </div>
+              <div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-space-md bg-surface-container-low px-space-sm py-1 rounded-lg">
+                <span class="flex items-center gap-1 font-medium">
+                  <span class="material-symbols-outlined text-sm text-primary">notifications_active</span>
+                  Reminder alert
+                </span>
+                <span class="font-label-md text-label-md text-primary font-semibold">Nov 7 (48h prior)</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Main Interactive Layout (Calendar 60% / Log Panel 40%) -->
+          <section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl items-start">
+            
+            <!-- Left Column: Calendar (7 of 12 cols) -->
+            <div class="lg:col-span-7 flex flex-col gap-space-md">
+              <div class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm border border-outline-variant/20">
+                <!-- Calendar Header -->
+                <div class="flex items-center justify-between mb-space-lg">
+                  <div class="flex items-center gap-space-sm">
+                    <h2 class="font-headline-md text-headline-md text-on-surface font-semibold" id="calendar-current-month">October 2024</h2>
+                    <span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">28-day model</span>
+                  </div>
+                  <div class="flex items-center gap-space-xs">
+                    <button id="btn-prev-month" aria-label="Previous Month" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" type="button">
+                      <span class="material-symbols-outlined text-base">chevron_left</span>
+                    </button>
+                    <button id="btn-today-month" class="px-space-sm py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors font-semibold" type="button">
+                      Today
+                    </button>
+                    <button id="btn-next-month" aria-label="Next Month" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" type="button">
+                      <span class="material-symbols-outlined text-base">chevron_right</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Legend Ribbon -->
+                <div class="flex flex-wrap items-center gap-x-space-md gap-y-2 py-space-sm px-space-md bg-surface-container-low rounded-xl mb-space-md font-label-sm text-label-sm text-on-surface-variant">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full bg-primary inline-block"></span>
+                    <span>Logged Period (Oct 12-16)</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full bg-secondary-fixed text-primary flex items-center justify-center font-bold text-[9px]">•</span>
+                    <span>Fertile & Ovulation Window</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full bg-primary-fixed inline-block"></span>
+                    <span>Predicted Next Period</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-tertiary inline-block"></span>
+                    <span>Logged Symptoms</span>
+                  </div>
+                </div>
+
+                <!-- Days of the Week -->
+                <div class="grid grid-cols-7 text-center font-label-md text-label-md text-on-surface-variant mb-space-xs font-semibold">
+                  <div class="py-1">Mon</div>
+                  <div class="py-1">Tue</div>
+                  <div class="py-1">Wed</div>
+                  <div class="py-1">Thu</div>
+                  <div class="py-1">Fri</div>
+                  <div class="py-1">Sat</div>
+                  <div class="py-1">Sun</div>
+                </div>
+
+                <!-- Calendar Day Cells Grid -->
+                <div class="grid grid-cols-7 gap-1 sm:gap-2 text-center" id="calendar-days-grid">
+                  <!-- Generated dynamically in JS for full interactivity -->
+                </div>
+              </div>
+
+              <!-- Selected Date Summary Card Below Calendar -->
+              <div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md border border-outline-variant/20">
+                <div class="flex items-start gap-space-md">
+                  <div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex flex-col items-center justify-center shrink-0 shadow-sm">
+                    <span class="font-label-sm text-label-sm leading-none uppercase font-semibold" id="cal-selected-month-short">Oct</span>
+                    <span class="font-headline-sm text-headline-sm leading-none font-bold" id="cal-selected-day-number">24</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex items-center gap-2">
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="cal-selected-full-date">Wednesday, Oct 24</h3>
+                      <span class="px-space-xs py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold" id="cal-selected-cycle-day">Cycle Day 12</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-space-xs mt-1.5" id="cal-selected-symptoms-tags">
+                      <span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-xs flex items-center gap-1">
+                        <span class="material-symbols-outlined text-xs text-primary">healing</span> Mild Cramps
+                      </span>
+                      <span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-xs flex items-center gap-1">
+                        <span class="material-symbols-outlined text-xs text-tertiary">bolt</span> High Energy
+                      </span>
+                      <span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-xs flex items-center gap-1">
+                        <span class="material-symbols-outlined text-xs text-secondary">water_full</span> Hydrated (2.5L)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button onclick="document.getElementById('chip-group-physical').scrollIntoView({behavior: 'smooth'})" class="shrink-0 px-space-md py-2 rounded-full bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors shadow-sm flex items-center gap-1 font-semibold" type="button">
+                  <span class="material-symbols-outlined text-base">edit</span>
+                  <span>Edit Today's Entry</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: Symptom & Daily Logging Panel (5 of 12 cols) -->
+            <div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm flex flex-col gap-space-lg border border-outline-variant/20">
+              <div class="flex items-center justify-between pb-space-sm">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary text-2xl">stylus_note</span>
+                  <div>
+                    <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Daily Log • Today</h2>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant">Update your sensations and physical markers</p>
+                  </div>
+                </div>
+                <span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed px-space-sm py-1 rounded-full">Day 12 / 28</span>
+              </div>
+
+              <!-- Category 1: Physical Symptoms -->
+              <div class="flex flex-col gap-space-xs">
+                <label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold">
+                  <span>Physical Symptoms</span>
+                  <span class="text-on-surface-variant font-normal text-xs">Tap all that apply</span>
+                </label>
+                <div class="flex flex-wrap gap-2 pt-1" id="chip-group-physical">
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary text-on-primary shadow-xs font-semibold" data-active="true" type="button">
+                    <span class="material-symbols-outlined text-sm">check</span>
+                    <span>Cramps</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Headache</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Bloating</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Fatigue</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Breast Tenderness</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Back Pain</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Acne</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Category 2: Mood & Wellness -->
+              <div class="flex flex-col gap-space-xs">
+                <label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold">
+                  <span>Mood & Emotional State</span>
+                  <span class="text-on-surface-variant font-normal text-xs">Mental wellness</span>
+                </label>
+                <div class="flex flex-wrap gap-2 pt-1" id="chip-group-mood">
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary text-on-primary shadow-xs font-semibold" data-active="true" type="button">
+                    <span class="material-symbols-outlined text-sm">check</span>
+                    <span>Energetic</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Calm</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Irritable</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Anxious</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Low Mood</span>
+                  </button>
+                  <button class="chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-active="false" type="button">
+                    <span>Productive</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Category 3: Flow Intensity -->
+              <div class="flex flex-col gap-space-xs">
+                <label class="font-label-md text-label-md text-on-surface font-semibold">Flow Intensity</label>
+                <div class="grid grid-cols-5 gap-1.5 p-1 bg-surface-container-low rounded-xl">
+                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center transition-all bg-surface-container-lowest text-primary shadow-xs font-bold" data-flow="none" type="button">None</button>
+                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="spotting" type="button">Spotting</button>
+                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="light" type="button">Light</button>
+                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="medium" type="button">Medium</button>
+                  <button class="flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" data-flow="heavy" type="button">Heavy</button>
+                </div>
+              </div>
+
+              <!-- Category 4: Discomfort Slider -->
+              <div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl">
+                <div class="flex items-center justify-between">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="discomfort-slider">Discomfort & Cramp Intensity</label>
+                  <span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold" id="discomfort-value-text">2/10 • Mild discomfort</span>
+                </div>
+                <input class="w-full accent-primary h-2 bg-surface-container-high rounded-lg cursor-pointer" id="discomfort-slider" max="10" min="0" type="range" value="2"/>
+                <div class="flex justify-between text-[11px] font-label-sm text-on-surface-variant px-0.5">
+                  <span>0 (None)</span>
+                  <span>5 (Moderate)</span>
+                  <span>10 (Severe)</span>
+                </div>
+              </div>
+
+              <!-- Notes textarea -->
+              <div class="flex flex-col gap-space-xs">
+                <label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold" for="symptom-notes">
+                  <span>Personal Notes & Observations</span>
+                  <span class="text-xs text-on-surface-variant">Private encrypted</span>
+                </label>
+                <textarea class="w-full p-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none transition-all border border-outline-variant/20" id="symptom-notes" placeholder="E.g., Felt slight twinge on lower left side around midday, relaxed after herbal chamomile tea." rows="3">Felt slight twinge on lower left side around midday.</textarea>
+              </div>
+
+              <!-- Logging Action Buttons -->
+              <div class="flex items-center gap-space-sm pt-space-xs">
+                <button class="flex-1 h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-sm flex items-center justify-center gap-2 active:scale-95 font-semibold" id="btn-save-log" type="button">
+                  <span class="material-symbols-outlined text-lg">check</span>
+                  <span>Save Entry</span>
+                </button>
+                <button class="px-space-lg h-12 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors font-semibold" id="btn-clear-log" type="button">
+                  Clear
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bottom Analytics Trends Section -->
+          <section class="flex flex-col gap-space-lg">
+            <div class="flex items-center justify-between">
+              <div class="flex flex-col">
+                <h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Historical Rhythm & Biomarkers</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Aggregated patterns from your last 6 recorded menstrual cycles</p>
+              </div>
+              <div class="hidden sm:flex items-center gap-2">
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Data verified by</span>
+                <span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+                  <span class="material-symbols-outlined text-xs">verified</span> Sakhi Predictive Engine
+                </span>
+              </div>
+            </div>
+
+            <!-- Two Analytics Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+              
+              <!-- Chart A: Cycle Consistency SVG -->
+              <div class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between border border-outline-variant/20">
+                <div class="flex items-start justify-between mb-space-md">
+                  <div class="flex flex-col">
+                    <span class="font-label-md text-label-md text-on-surface font-semibold">Cycle Length Consistency Trend</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Last 6 recorded cycles (Target: 28 days)</span>
+                  </div>
+                  <span class="px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+                    96% Regular
+                  </span>
+                </div>
+                <div class="relative w-full h-48 py-2">
+                  <svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 500 160">
+                    <line class="text-surface-variant" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="480" y1="20" y2="20"></line>
+                    <line class="text-surface-variant" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="480" y1="65" y2="65"></line>
+                    <line class="text-surface-variant" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="480" y1="110" y2="110"></line>
+                    <text class="text-[11px] font-medium fill-current text-on-surface-variant" text-anchor="end" x="32" y="24">30d</text>
+                    <text class="text-[11px] font-medium fill-current text-primary" text-anchor="end" x="32" y="69">28d</text>
+                    <text class="text-[11px] font-medium fill-current text-on-surface-variant" text-anchor="end" x="32" y="114">26d</text>
+                    <line opacity="0.45" stroke="#914259" stroke-dasharray="6 4" stroke-width="1.5" x1="40" x2="480" y1="65" y2="65"></line>
+                    <defs>
+                      <linearGradient id="cycleGrad2" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="#914259" stop-opacity="0.2"></stop>
+                        <stop offset="100%" stop-color="#914259" stop-opacity="0.0"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path d="M 60,65 L 140,42 L 220,88 L 300,65 L 380,65 L 460,65 L 460,140 L 60,140 Z" fill="url(#cycleGrad2)"></path>
+                    <path d="M 60,65 L 140,42 L 220,88 L 300,65 L 380,65 L 460,65" fill="none" stroke="#914259" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                    <g class="cursor-pointer">
+                      <circle cx="60" cy="65" fill="#914259" r="5" stroke="#ffffff" stroke-width="2"></circle>
+                      <text class="text-[11px] fill-current text-on-surface-variant" text-anchor="middle" x="60" y="145">May</text>
+                      <text class="text-[10px] font-semibold fill-current text-primary" text-anchor="middle" x="60" y="55">28d</text>
+                      <circle cx="140" cy="42" fill="#914259" r="5" stroke="#ffffff" stroke-width="2"></circle>
+                      <text class="text-[11px] fill-current text-on-surface-variant" text-anchor="middle" x="140" y="145">Jun</text>
+                      <text class="text-[10px] font-semibold fill-current text-primary" text-anchor="middle" x="140" y="32">29d</text>
+                      <circle cx="220" cy="88" fill="#914259" r="5" stroke="#ffffff" stroke-width="2"></circle>
+                      <text class="text-[11px] fill-current text-on-surface-variant" text-anchor="middle" x="220" y="145">Jul</text>
+                      <text class="text-[10px] font-semibold fill-current text-primary" text-anchor="middle" x="220" y="103">27d</text>
+                      <circle cx="300" cy="65" fill="#914259" r="5" stroke="#ffffff" stroke-width="2"></circle>
+                      <text class="text-[11px] fill-current text-on-surface-variant" text-anchor="middle" x="300" y="145">Aug</text>
+                      <text class="text-[10px] font-semibold fill-current text-primary" text-anchor="middle" x="300" y="55">28d</text>
+                      <circle cx="380" cy="65" fill="#914259" r="5" stroke="#ffffff" stroke-width="2"></circle>
+                      <text class="text-[11px] fill-current text-on-surface-variant" text-anchor="middle" x="380" y="145">Sep</text>
+                      <text class="text-[10px] font-semibold fill-current text-primary" text-anchor="middle" x="380" y="55">28d</text>
+                      <circle cx="460" cy="65" fill="#af5a71" r="6" stroke="#ffffff" stroke-width="2"></circle>
+                      <text class="text-[11px] font-bold fill-current text-primary" text-anchor="middle" x="460" y="145">Oct</text>
+                      <text class="text-[10px] font-bold fill-current text-primary" text-anchor="middle" x="460" y="53">28d</text>
+                    </g>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+                  <span class="flex items-center gap-1.5"><span class="w-2.5 h-0.5 bg-primary inline-block"></span> Actual Cycle</span>
+                  <span class="flex items-center gap-1.5"><span class="w-2.5 h-0.5 bg-primary/40 border-dashed inline-block"></span> 28d Baseline</span>
+                  <span class="text-tertiary font-bold">Ideal Rhythm</span>
+                </div>
+              </div>
+
+              <!-- Chart B: Symptom Frequency -->
+              <div class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between border border-outline-variant/20">
+                <div class="flex items-start justify-between mb-space-md">
+                  <div class="flex flex-col">
+                    <span class="font-label-md text-label-md text-on-surface font-semibold">Top Recorded Symptoms Frequency</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Percentage of recorded cycles affected</span>
+                  </div>
+                  <span class="px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                    Past 180 Days
+                  </span>
+                </div>
+                <div class="flex flex-col gap-space-md my-auto">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex justify-between font-label-sm text-label-sm">
+                      <span class="text-on-surface font-medium flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-sm text-primary">healing</span> Abdominal Cramps
+                      </span>
+                      <span class="font-bold text-primary">80% of cycles (Days 1-3)</span>
+                    </div>
+                    <div class="w-full bg-surface-container-low rounded-full h-3 overflow-hidden">
+                      <div class="bg-primary h-3 rounded-full transition-all duration-700" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <div class="flex justify-between font-label-sm text-label-sm">
+                      <span class="text-on-surface font-medium flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-sm text-secondary">bedtime</span> Fatigue & Lethargy
+                      </span>
+                      <span class="font-bold text-on-surface">40% of cycles</span>
+                    </div>
+                    <div class="w-full bg-surface-container-low rounded-full h-3 overflow-hidden">
+                      <div class="bg-primary-container h-3 rounded-full transition-all duration-700" style="width: 40%;"></div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <div class="flex justify-between font-label-sm text-label-sm">
+                      <span class="text-on-surface font-medium flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-sm text-tertiary">water_drop</span> Water Retention / Bloating
+                      </span>
+                      <span class="font-bold text-on-surface">35% of cycles</span>
+                    </div>
+                    <div class="w-full bg-surface-container-low rounded-full h-3 overflow-hidden">
+                      <div class="bg-tertiary-container h-3 rounded-full transition-all duration-700" style="width: 35%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+                  <span>Observation: Peak symptoms concentrate in late luteal phase.</span>
+                  <a class="text-primary hover:underline flex items-center gap-0.5 font-semibold" href="#health-insights" onclick="switchRoute('health-insights')">
+                    Explore Correlations <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW 4: HEALTH INSIGHTS -->
+        <!-- ============================================== -->
+        <div id="view-health-insights" class="view-container">
+          <header class="flex flex-col gap-space-xs mb-space-lg">
+            <span class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Biomarker Analytics</span>
+            <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Personalized Health Insights</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+              Deep clinical intelligence based on your longitudinal cycle rhythm, symptom entries, and metabolic patterns.
+            </p>
+          </header>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg mb-space-xl">
+            <!-- Wellness Score Card -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col justify-between">
+              <div class="flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Hormonal Balance Index</span>
+                <span class="material-symbols-outlined text-tertiary">health_and_safety</span>
+              </div>
+              <div class="my-4 flex items-baseline gap-2">
+                <span class="font-headline-xl text-headline-xl text-primary font-bold">92</span>
+                <span class="text-on-surface-variant font-label-md">/ 100 • Optimal</span>
+              </div>
+              <p class="text-xs text-on-surface-variant">
+                High regularity, low inflammation markers, and predictable luteal transitions over past 180 days.
+              </p>
+            </div>
+
+            <!-- Follicular Phase Energy Forecast -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col justify-between">
+              <div class="flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Follicular Energy Wave</span>
+                <span class="material-symbols-outlined text-primary">bolt</span>
+              </div>
+              <div class="my-4 flex items-baseline gap-2">
+                <span class="font-headline-xl text-headline-xl text-on-surface font-bold">Peak</span>
+                <span class="text-tertiary font-label-md font-semibold">Next 4 Days</span>
+              </div>
+              <p class="text-xs text-on-surface-variant">
+                Estrogen surge boosts verbal fluency, mood stability, and metabolic efficiency. Recommended: HIIT and strength sessions.
+              </p>
+            </div>
+
+            <!-- Nutrition Focus -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col justify-between">
+              <div class="flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Target Nutrients</span>
+                <span class="material-symbols-outlined text-secondary">nutrition</span>
+              </div>
+              <div class="my-4">
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="px-2 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed text-xs font-semibold">Zinc + B6</span>
+                  <span class="px-2 py-1 rounded-md bg-primary-fixed text-primary text-xs font-semibold">Iron Replenishment</span>
+                  <span class="px-2 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold">Omega-3</span>
+                </div>
+              </div>
+              <p class="text-xs text-on-surface-variant">
+                Supports healthy follicle maturation and prevents post-period fatigue.
+              </p>
+            </div>
+          </div>
+
+          <!-- Comprehensive Cycle Comparison Table -->
+          <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 mb-space-lg">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">6-Month Cycle Comparison Dossier</h3>
+              <button onclick="downloadReport()" class="px-4 py-2 rounded-full bg-primary-fixed hover:bg-primary-fixed-dim text-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors">
+                <span class="material-symbols-outlined text-base">download</span>
+                <span>Export Clinical Report</span>
+              </button>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm">
+                <thead>
+                  <tr class="border-b border-outline-variant/30 text-on-surface-variant font-label-md">
+                    <th class="py-3 px-4">Cycle Month</th>
+                    <th class="py-3 px-4">Cycle Length</th>
+                    <th class="py-3 px-4">Period Duration</th>
+                    <th class="py-3 px-4">Flow Intensity</th>
+                    <th class="py-3 px-4">Peak Discomfort</th>
+                    <th class="py-3 px-4">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-outline-variant/20 font-body-sm">
+                  <tr>
+                    <td class="py-3 px-4 font-semibold text-primary">October 2024 (Current)</td>
+                    <td class="py-3 px-4">28 days (est.)</td>
+                    <td class="py-3 px-4">5 days</td>
+                    <td class="py-3 px-4">Medium</td>
+                    <td class="py-3 px-4">2/10 (Mild)</td>
+                    <td class="py-3 px-4"><span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-xs font-semibold">In Progress</span></td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 font-medium">September 2024</td>
+                    <td class="py-3 px-4">28 days</td>
+                    <td class="py-3 px-4">5 days</td>
+                    <td class="py-3 px-4">Medium</td>
+                    <td class="py-3 px-4">3/10 (Mild)</td>
+                    <td class="py-3 px-4"><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold">Regular</span></td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 font-medium">August 2024</td>
+                    <td class="py-3 px-4">28 days</td>
+                    <td class="py-3 px-4">4 days</td>
+                    <td class="py-3 px-4">Light-Med</td>
+                    <td class="py-3 px-4">2/10 (Mild)</td>
+                    <td class="py-3 px-4"><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold">Regular</span></td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 font-medium">July 2024</td>
+                    <td class="py-3 px-4">27 days</td>
+                    <td class="py-3 px-4">5 days</td>
+                    <td class="py-3 px-4">Medium</td>
+                    <td class="py-3 px-4">4/10 (Moderate)</td>
+                    <td class="py-3 px-4"><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold">Regular</span></td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 font-medium">June 2024</td>
+                    <td class="py-3 px-4">29 days</td>
+                    <td class="py-3 px-4">5 days</td>
+                    <td class="py-3 px-4">Medium</td>
+                    <td class="py-3 px-4">3/10 (Mild)</td>
+                    <td class="py-3 px-4"><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold">Regular</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW 5: DOCTOR CONNECT -->
+        <!-- ============================================== -->
+        <div id="view-doctor-connect" class="view-container">
+          <header class="flex flex-col gap-space-xs mb-space-lg">
+            <span class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Telehealth & Clinical Care</span>
+            <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Doctor Connect</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+              Connect confidentially with top certified gynecologists, obstetricians, and hormonal health specialists.
+            </p>
+          </header>
+
+          <!-- Emergency Helpline Banner -->
+          <div class="bg-error-container text-on-error-container p-4 rounded-xl flex items-center justify-between mb-space-lg">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-2xl text-error">emergency</span>
+              <div>
+                <strong class="font-semibold text-sm">Need Urgent Clinical Support?</strong>
+                <p class="text-xs">24/7 National Women's Health Helpline: Call <strong>1091</strong> or Emergency Services <strong>112</strong>.</p>
+              </div>
+            </div>
+            <a href="tel:1091" class="px-4 py-1.5 rounded-full bg-error text-white text-xs font-bold shadow-sm hover:opacity-90">Call 1091</a>
+          </div>
+
+          <!-- Doctor Profiles Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-xl">
+            <!-- Doctor 1 -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-lg">
+                    DA
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dr. Ananya Sen</h3>
+                    <span class="font-label-sm text-label-sm text-primary font-semibold">MD, OB-GYN</span>
+                    <span class="text-xs text-on-surface-variant">14 years experience</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-1 text-xs text-on-surface-variant">
+                  <span class="text-yellow-600">★ 4.9</span>
+                  <span>(420+ consultations) • AIIMS New Delhi</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                  Specializes in adolescent & adult cycle irregularities, PCOS management, and fertility planning.
+                </p>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">PCOS</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">Dysmenorrhea</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">Hormones</span>
+                </div>
+              </div>
+              <div class="pt-4 border-t border-outline-variant/20 mt-4 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-on-surface-variant block">Consult Fee</span>
+                  <span class="font-bold text-on-surface text-sm">₹800</span>
+                </div>
+                <button onclick="openBookingModal('Dr. Ananya Sen', 'MD, OB-GYN', '₹800')" class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm">
+                  Book Slot
+                </button>
+              </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold text-lg">
+                    DM
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dr. Meera Nambiar</h3>
+                    <span class="font-label-sm text-label-sm text-primary font-semibold">DGO, Endocrinologist</span>
+                    <span class="text-xs text-on-surface-variant">11 years experience</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-1 text-xs text-on-surface-variant">
+                  <span class="text-yellow-600">★ 4.9</span>
+                  <span>(380+ consultations) • CMC Vellore</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                  Expert in hormonal biochemistry, thyroid-cycle interactions, and perimenopause health autonomy.
+                </p>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">Endocrinology</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">Thyroid</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">PMS Care</span>
+                </div>
+              </div>
+              <div class="pt-4 border-t border-outline-variant/20 mt-4 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-on-surface-variant block">Consult Fee</span>
+                  <span class="font-bold text-on-surface text-sm">₹950</span>
+                </div>
+                <button onclick="openBookingModal('Dr. Meera Nambiar', 'DGO, Endocrinologist', '₹950')" class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm">
+                  Book Slot
+                </button>
+              </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-14 h-14 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-bold text-lg">
+                    DR
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dr. Radhika Joshi</h3>
+                    <span class="font-label-sm text-label-sm text-primary font-semibold">MD, Holistic Wellness</span>
+                    <span class="text-xs text-on-surface-variant">9 years experience</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-1 text-xs text-on-surface-variant">
+                  <span class="text-yellow-600">★ 4.8</span>
+                  <span>(290+ consultations) • KEM Hospital</span>
+                </div>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                  Integrative approach balancing clinical gynecology with nutritional therapy and stress physiology.
+                </p>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">Integrative Care</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">Nutrition</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">Fertility</span>
+                </div>
+              </div>
+              <div class="pt-4 border-t border-outline-variant/20 mt-4 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-on-surface-variant block">Consult Fee</span>
+                  <span class="font-bold text-on-surface text-sm">₹750</span>
+                </div>
+                <button onclick="openBookingModal('Dr. Radhika Joshi', 'MD, Holistic Wellness', '₹750')" class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm">
+                  Book Slot
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW 6: HEALTH HISTORY & PRIVACY -->
+        <!-- ============================================== -->
+        <div id="view-health-history-privacy" class="view-container">
+          <header class="flex flex-col gap-space-xs mb-space-lg">
+            <span class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Zero-Knowledge Sanctuary</span>
+            <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Health History & Privacy</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+              Your health logs are personal and private. Control encryption, biometric locks, and export options.
+            </p>
+          </header>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-xl">
+            <!-- Privacy Controls -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col gap-4">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Privacy Safeguards</h3>
+              
+              <div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">fingerprint</span>
+                  <div>
+                    <span class="font-semibold text-sm block">Biometric Lock (Touch/Face ID)</span>
+                    <span class="text-xs text-on-surface-variant">Require authentication to open SakhiSahay</span>
+                  </div>
+                </div>
+                <input type="checkbox" checked class="accent-primary w-5 h-5 cursor-pointer" onchange="showToast('Biometric lock preference updated')"/>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-tertiary">lock</span>
+                  <div>
+                    <span class="font-semibold text-sm block">Client-Side Encryption</span>
+                    <span class="text-xs text-on-surface-variant">AES-256 local key protection active</span>
+                  </div>
+                </div>
+                <span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed text-xs font-bold">Active</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-secondary">visibility_off</span>
+                  <div>
+                    <span class="font-semibold text-sm block">Discreet App Disguise</span>
+                    <span class="text-xs text-on-surface-variant">Hide cycle labels from lock screen & preview</span>
+                  </div>
+                </div>
+                <input type="checkbox" checked class="accent-primary w-5 h-5 cursor-pointer" onchange="showToast('Discreet mode updated')"/>
+              </div>
+            </div>
+
+            <!-- Data Management & Export -->
+            <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/20 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">Health Dossier Export</h3>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Download an official, encrypted medical summary that you can present to your gynecologist or retain in your personal archives.
+                </p>
+                <div class="p-4 rounded-xl bg-primary-fixed/30 border border-primary-fixed mb-4">
+                  <span class="font-semibold text-xs text-primary block mb-1">Dossier Contents:</span>
+                  <ul class="text-xs text-on-surface-variant list-disc pl-4 space-y-1">
+                    <li>Cycle regularity indices & ovulation estimates</li>
+                    <li>Symptom severity matrix across luteal and follicular phases</li>
+                    <li>Medication & nutritional supplementation journal</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <button onclick="downloadReport()" class="flex-1 py-3 px-4 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm flex items-center justify-center gap-2">
+                  <span class="material-symbols-outlined text-lg">download</span>
+                  <span>Download PDF Dossier</span>
+                </button>
+                <button onclick="clearLocalHistory()" class="py-3 px-4 rounded-full bg-surface-container text-error font-label-md text-label-md font-semibold hover:bg-error-container transition-colors">
+                  Clear Cache
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW 7: SETTINGS -->
+        <!-- ============================================== -->
+        <div id="view-settings" class="view-container">
+          <header class="flex flex-col gap-space-xs mb-space-lg">
+            <span class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Preferences</span>
+            <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Platform Settings</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+              Configure your personal cycle baseline, notification alerts, and regional preferences.
+            </p>
+          </header>
+
+          <div class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm border border-outline-variant/20 max-w-3xl flex flex-col gap-6">
+            <!-- Profile Info -->
+            <div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Profile Information</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Display Name</label>
+                  <input type="text" id="setting-name" value="Priya Sharma" class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary"/>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Age</label>
+                  <input type="number" id="setting-age" value="27" class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary"/>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cycle Parameters -->
+            <div class="pt-4 border-t border-outline-variant/20">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Cycle Model Baseline</h3>
+              <div class="flex flex-col gap-4">
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>Average Cycle Length</span>
+                    <span id="setting-cycle-val" class="text-primary font-bold">28 Days</span>
+                  </div>
+                  <input type="range" min="21" max="40" value="28" class="w-full accent-primary" oninput="document.getElementById('setting-cycle-val').textContent = this.value + ' Days'"/>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>Average Period Duration</span>
+                    <span id="setting-period-val" class="text-primary font-bold">5 Days</span>
+                  </div>
+                  <input type="range" min="3" max="8" value="5" class="w-full accent-primary" oninput="document.getElementById('setting-period-val').textContent = this.value + ' Days'"/>
+                </div>
+              </div>
+            </div>
+
+            <!-- Notifications -->
+            <div class="pt-4 border-t border-outline-variant/20">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Notification Preferences</h3>
+              <div class="space-y-3">
+                <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
+                  <span class="text-sm font-medium">Period reminder alert (48 hours prior)</span>
+                  <input type="checkbox" checked class="accent-primary w-5 h-5"/>
+                </label>
+                <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
+                  <span class="text-sm font-medium">Fertile window & ovulation notice</span>
+                  <input type="checkbox" checked class="accent-primary w-5 h-5"/>
+                </label>
+                <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
+                  <span class="text-sm font-medium">Evening wellness check-in reminder</span>
+                  <input type="checkbox" checked class="accent-primary w-5 h-5"/>
+                </label>
+              </div>
+            </div>
+
+            <!-- Save Settings Button -->
+            <div class="pt-4 border-t border-outline-variant/20 flex justify-end">
+              <button onclick="saveSettings()" class="px-6 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm">
+                Save Preferences
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface/90 backdrop-blur-xl z-50 flex items-center justify-around px-space-xs shadow-[0_-1px_8px_rgba(0,0,0,0.04)] border-t border-outline-variant/30" id="mobile-nav">
+    <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-primary font-semibold" data-path="overview" href="#overview">
+      <span class="material-symbols-outlined text-xl">grid_view</span>
+      <span class="font-label-sm text-label-sm">Overview</span>
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="ai-health-assistant" href="#ai-health-assistant">
+      <span class="material-symbols-outlined text-xl">smart_toy</span>
+      <span class="font-label-sm text-label-sm">Ask Sakhi</span>
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="period-symptom-tracker" href="#period-symptom-tracker">
+      <span class="material-symbols-outlined text-xl">calendar_today</span>
+      <span class="font-label-sm text-label-sm">Tracker</span>
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="doctor-connect" href="#doctor-connect">
+      <span class="material-symbols-outlined text-xl">medical_services</span>
+      <span class="font-label-sm text-label-sm">Doctors</span>
+    </a>
+    <a class="mobile-nav-item flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface" data-path="settings" href="#settings">
+      <span class="material-symbols-outlined text-xl">settings</span>
+      <span class="font-label-sm text-label-sm">Settings</span>
+    </a>
+  </nav>
+
+  <!-- ============================================== -->
+  <!-- GLOBAL MODALS & FLYOUTS -->
+  <!-- ============================================== -->
+
+  <!-- Quick Log Modal -->
+  <div id="quick-log-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-outline-variant/30 flex flex-col gap-4 animate-fadeIn">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-2xl">water_drop</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Quick Symptom Log</h3>
+        </div>
+        <button onclick="closeQuickLogModal()" class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-base">close</span>
+        </button>
+      </div>
+
+      <!-- Flow select -->
+      <div>
+        <label class="block text-xs font-semibold text-on-surface-variant mb-2">Today's Flow Intensity</label>
+        <div class="grid grid-cols-5 gap-1.5 p-1 bg-surface-container-low rounded-xl" id="quick-flow-group">
+          <button type="button" class="quick-flow-btn py-1.5 rounded-lg text-xs font-bold text-center bg-surface-container-lowest text-primary shadow-xs" data-flow="none">None</button>
+          <button type="button" class="quick-flow-btn py-1.5 rounded-lg text-xs text-center text-on-surface-variant hover:text-on-surface" data-flow="spotting">Spotting</button>
+          <button type="button" class="quick-flow-btn py-1.5 rounded-lg text-xs text-center text-on-surface-variant hover:text-on-surface" data-flow="light">Light</button>
+          <button type="button" class="quick-flow-btn py-1.5 rounded-lg text-xs text-center text-on-surface-variant hover:text-on-surface" data-flow="medium">Medium</button>
+          <button type="button" class="quick-flow-btn py-1.5 rounded-lg text-xs text-center text-on-surface-variant hover:text-on-surface" data-flow="heavy">Heavy</button>
+        </div>
+      </div>
+
+      <!-- Quick Symptoms -->
+      <div>
+        <label class="block text-xs font-semibold text-on-surface-variant mb-2">Select Symptoms</label>
+        <div class="flex flex-wrap gap-1.5" id="quick-symptoms-chips">
+          <button type="button" class="quick-chip px-3 py-1 rounded-full text-xs bg-primary text-on-primary font-semibold" data-val="Cramps">Cramps ✓</button>
+          <button type="button" class="quick-chip px-3 py-1 rounded-full text-xs bg-surface-container text-on-surface" data-val="Bloating">Bloating</button>
+          <button type="button" class="quick-chip px-3 py-1 rounded-full text-xs bg-surface-container text-on-surface" data-val="Headache">Headache</button>
+          <button type="button" class="quick-chip px-3 py-1 rounded-full text-xs bg-secondary-fixed text-on-secondary-fixed font-semibold" data-val="High Energy">High Energy ✓</button>
+          <button type="button" class="quick-chip px-3 py-1 rounded-full text-xs bg-surface-container text-on-surface" data-val="Acne">Acne</button>
+        </div>
+      </div>
+
+      <!-- Quick Note -->
+      <div>
+        <label class="block text-xs font-semibold text-on-surface-variant mb-1">Quick Note</label>
+        <input type="text" id="quick-note-input" placeholder="Brief notes for today..." class="w-full p-2.5 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary"/>
+      </div>
+
+      <div class="flex justify-end gap-2 pt-2">
+        <button onclick="closeQuickLogModal()" class="px-4 py-2 rounded-full bg-surface-container text-on-surface text-xs font-semibold">Cancel</button>
+        <button onclick="saveQuickLog()" class="px-6 py-2 rounded-full bg-primary text-on-primary text-xs font-bold shadow-md hover:bg-primary-container">Save & Update</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notifications Drawer / Popover -->
+  <div id="notifications-popover" class="fixed top-20 right-4 sm:right-8 w-80 bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline-variant/30 p-4 z-50 hidden animate-fadeIn">
+    <div class="flex items-center justify-between pb-3 border-b border-outline-variant/20">
+      <span class="font-headline-sm text-sm font-bold text-on-surface">Notifications</span>
+      <button onclick="clearNotifications()" class="text-[11px] text-primary hover:underline font-semibold">Mark all read</button>
+    </div>
+    <div class="flex flex-col gap-3 py-3" id="notifications-list">
+      <div class="flex items-start gap-2.5 p-2 rounded-xl bg-primary-fixed/30">
+        <span class="material-symbols-outlined text-primary text-lg">spa</span>
+        <div class="flex flex-col">
+          <span class="text-xs font-semibold text-on-surface">Follicular Peak Energy</span>
+          <span class="text-[11px] text-on-surface-variant">Estrogen rising • Ideal window for strength training.</span>
+          <span class="text-[10px] text-primary font-medium mt-1">Today, 8:00 AM</span>
+        </div>
+      </div>
+      <div class="flex items-start gap-2.5 p-2 rounded-xl bg-secondary-fixed/40">
+        <span class="material-symbols-outlined text-secondary text-lg">calendar_month</span>
+        <div class="flex flex-col">
+          <span class="text-xs font-semibold text-on-surface">Cycle Projection</span>
+          <span class="text-[11px] text-on-surface-variant">Next estimated period starts in ~16 days (Nov 9).</span>
+          <span class="text-[10px] text-on-surface-variant font-medium mt-1">Yesterday</span>
+        </div>
+      </div>
+      <div class="flex items-start gap-2.5 p-2 rounded-xl bg-surface-container-low">
+        <span class="material-symbols-outlined text-tertiary text-lg">verified</span>
+        <div class="flex flex-col">
+          <span class="text-xs font-semibold text-on-surface">Weekly Check-in Sync</span>
+          <span class="text-[11px] text-on-surface-variant">All 6 logged cycles backed up securely.</span>
+          <span class="text-[10px] text-on-surface-variant font-medium mt-1">2 days ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Doctor Booking Slot Modal -->
+  <div id="doctor-booking-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-outline-variant/30 flex flex-col gap-4 animate-fadeIn">
+      <div class="flex items-center justify-between">
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Book Telehealth Slot</h3>
+        <button onclick="closeBookingModal()" class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-base">close</span>
+        </button>
+      </div>
+      <div class="p-3 rounded-xl bg-primary-fixed/30 flex items-center gap-3">
+        <span class="material-symbols-outlined text-2xl text-primary">medical_services</span>
+        <div class="flex flex-col">
+          <span id="booking-doc-name" class="font-bold text-sm text-on-surface">Dr. Ananya Sen</span>
+          <span id="booking-doc-sub" class="text-xs text-primary font-semibold">MD, OB-GYN • ₹800</span>
+        </div>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-on-surface-variant mb-2">Available Time Slots (Tomorrow)</label>
+        <div class="grid grid-cols-2 gap-2" id="booking-slots">
+          <button type="button" class="slot-btn py-2 px-3 rounded-xl border border-primary bg-primary text-on-primary text-xs font-bold text-center">10:30 AM (Video)</button>
+          <button type="button" class="slot-btn py-2 px-3 rounded-xl border border-outline-variant/30 text-xs text-center hover:bg-surface-container">02:00 PM (Video)</button>
+          <button type="button" class="slot-btn py-2 px-3 rounded-xl border border-outline-variant/30 text-xs text-center hover:bg-surface-container">04:30 PM (Video)</button>
+          <button type="button" class="slot-btn py-2 px-3 rounded-xl border border-outline-variant/30 text-xs text-center hover:bg-surface-container">06:00 PM (Video)</button>
+        </div>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-on-surface-variant mb-1">Reason for Consultation</label>
+        <input type="text" placeholder="E.g., Period pain review, hormone questions..." class="w-full p-2.5 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary"/>
+      </div>
+      <div class="flex justify-end gap-2 pt-2">
+        <button onclick="closeBookingModal()" class="px-4 py-2 rounded-full bg-surface-container text-on-surface text-xs font-semibold">Cancel</button>
+        <button onclick="confirmBooking()" class="px-6 py-2 rounded-full bg-primary text-on-primary text-xs font-bold shadow-md hover:bg-primary-container">Confirm & Pay Later</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Educational Article Modal -->
+  <div id="article-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl border border-outline-variant/30 flex flex-col gap-4 animate-fadeIn">
+      <div class="flex items-center justify-between">
+        <span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary text-xs font-bold uppercase">Cycle Science</span>
+        <button onclick="closeArticleModal()" class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-base">close</span>
+        </button>
+      </div>
+      <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Understanding Follicular vs. Luteal Phase</h2>
+      <div class="text-sm text-on-surface-variant leading-relaxed space-y-3">
+        <p>
+          The menstrual cycle is a rhythmic symphony orchestrated primarily by estrogen and progesterone. 
+          Divided into two dominant phases separated by ovulation, understanding your biological state allows for intuitive harmony with work, movement, and emotional rest.
+        </p>
+        <h4 class="font-bold text-on-surface text-base pt-2">1. The Follicular Phase (Days 1–13)</h4>
+        <p>
+          Beginning with menstruation and continuing until ovulation, follicle-stimulating hormone (FSH) stimulates the growth of ovarian follicles. As estrogen steadily ascends, insulin sensitivity improves, serotonin production increases, and your capacity for creative synthesis and strenuous workouts reaches its monthly zenith.
+        </p>
+        <h4 class="font-bold text-on-surface text-base pt-2">2. The Luteal Phase (Days 15–28)</h4>
+        <p>
+          Following ovulation, the ruptured follicle transforms into the corpus luteum, producing progesterone. Progesterone exerts a calming, sedative effect on the central nervous system while elevating basal body temperature by ~0.3°C. Metabolic demand rises slightly, prompting higher carbohydrate needs and craving for restorative sleep.
+        </p>
+        <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30 text-xs">
+          <strong>Clinical Takeaway:</strong> Honor your follicular surge for bold creative endeavors, and gently transition into restorative pacing as progesterone leads the luteal window.
+        </div>
+      </div>
+      <div class="flex justify-end pt-2">
+        <button onclick="closeArticleModal()" class="px-6 py-2 rounded-full bg-primary text-on-primary text-xs font-bold">Close Article</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification Element -->
+  <div id="global-toast" class="fixed bottom-6 right-6 z-50 hidden bg-surface-container-lowest text-on-surface shadow-2xl border border-primary/30 rounded-2xl p-4 flex items-center gap-3 animate-fadeIn max-w-sm">
+    <div class="w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+      <span class="material-symbols-outlined text-lg">check_circle</span>
+    </div>
+    <span id="toast-text" class="text-sm font-semibold">Entry Saved Successfully!</span>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- APPLICATION CORE JAVASCRIPT -->
+  <!-- ============================================== -->
+  <script>
+    // Global State
+    const AppState = {
+      lang: 'en',
+      currentRoute: 'overview',
+      selectedDate: { year: 2024, month: 9, day: 24 }, // 0-indexed month: 9 = October
+      cycleDay: 12,
+      savedLogs: {
+        '2024-10-24': {
+          mood: 'Good',
+          symptoms: ['Cramps', 'Energetic', 'Clear Skin'],
+          flow: 'none',
+          discomfort: 2,
+          notes: 'Felt slight twinge on lower left side around midday.'
+        }
+      }
+    };
+
+    // Load persisted state if exists
+    try {
+      const persistedLogs = localStorage.getItem('sakhisahay_logs');
+      if (persistedLogs) {
+        AppState.savedLogs = Object.assign(AppState.savedLogs, JSON.parse(persistedLogs));
+      }
+    } catch (e) {
+      console.warn('LocalStorage error:', e);
+    }
+
+    // 1. ROUTING LOGIC
+    function switchRoute(routeName) {
+      AppState.currentRoute = routeName;
+      window.location.hash = routeName;
+
+      // Update View Visibility
+      document.querySelectorAll('.view-container').forEach(view => {
+        view.classList.remove('active');
+      });
+      const targetView = document.getElementById(`view-${routeName}`);
+      if (targetView) {
+        targetView.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Update Desktop Nav Styling
+      document.querySelectorAll('#desktop-nav .nav-item').forEach(item => {
+        if (item.getAttribute('data-path') === routeName) {
+          item.classList.add('active-nav-link');
+          item.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+        } else {
+          item.classList.remove('active-nav-link');
+          item.classList.add('text-on-surface-variant', 'hover:bg-surface-container-high');
+        }
+      });
+
+      // Update Mobile Nav Styling
+      document.querySelectorAll('#mobile-nav .mobile-nav-item').forEach(item => {
+        if (item.getAttribute('data-path') === routeName) {
+          item.classList.add('text-primary', 'font-semibold');
+          item.classList.remove('text-on-surface-variant');
+        } else {
+          item.classList.remove('text-primary', 'font-semibold');
+          item.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    // Listen for hash change in URL
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '') || 'overview';
+      switchRoute(hash);
+    });
+
+    // 2. TOAST SYSTEM
+    function showToast(message) {
+      const toast = document.getElementById('global-toast');
+      const text = document.getElementById('toast-text');
+      if (toast && text) {
+        text.textContent = message;
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 3200);
+      }
+    }
+
+    // 3. MULTILINGUAL SUPPORT
+    const translations = {
+      en: {
+        greeting: "Good morning, Priya 🌷",
+        subgreeting: "Take a moment for yourself. Let’s check in with your inner rhythm and health today.",
+        sakhiIntro: "Hi Priya, I'm Sakhi 🌷 You can ask me about periods, PMS, reproductive health, hormonal changes, nutrition, or everyday wellness. I'm here to explain your body's signals with clarity, gentle empathy, and certified medical context."
+      },
+      hi: {
+        greeting: "नमस्ते, प्रिया 🌷",
+        subgreeting: "अपने लिए कुछ पल निकालें। आइए आज आपके स्वास्थ्य और प्राकृतिक चक्र को समझें।",
+        sakhiIntro: "नमस्ते प्रिया, मैं सखी हूँ 🌷 आप मुझसे पीरियड्स, पीएमएस, हार्मोनल स्वास्थ्य, पोषण या रोजमर्रा की सेहत के बारे में पूछ सकती हैं। मैं आपकी हर बात को संवेदनशीलता और प्रामाणिक चिकित्सा ज्ञान के साथ समझाने के लिए यहाँ हूँ।"
+      },
+      hinglish: {
+        greeting: "Good morning, Priya 🌷",
+        subgreeting: "Apne liye thoda time nikalein. Aaiye aaj aapke cycle rhythm aur health ko samajhte hain.",
+        sakhiIntro: "Hi Priya, main aapki Sakhi hoon 🌷 Aap mujhse period cramps, PMS, hormonal changes, nutrition ya wellness ke baare mein kuch bhi pooch sakti hain. Main yahan hoon trusted medical context aur care ke saath."
+      }
+    };
+
+    function updateLanguage(lang) {
+      AppState.lang = lang;
+      const t = translations[lang] || translations.en;
+      
+      const greetingEl = document.getElementById('header-greeting');
+      const dashGreetingEl = document.getElementById('dash-greeting-h1');
+      const introEl = document.getElementById('sakhi-intro-text');
+      const globalSelect = document.getElementById('global-lang-select');
+      const fastLangLabel = document.getElementById('chatFastLangLabel');
+
+      if (greetingEl) greetingEl.textContent = t.greeting;
+      if (dashGreetingEl) dashGreetingEl.textContent = t.greeting;
+      if (introEl) introEl.textContent = t.sakhiIntro;
+      if (globalSelect) globalSelect.value = lang;
+      if (fastLangLabel) fastLangLabel.textContent = lang.toUpperCase();
+
+      // Update Chat pills
+      document.querySelectorAll('.chat-lang-pill').forEach(pill => {
+        if (pill.getAttribute('data-lang') === lang) {
+          pill.className = 'chat-lang-pill px-4 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm font-semibold';
+        } else {
+          pill.className = 'chat-lang-pill px-4 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface font-semibold';
+        }
+      });
+
+      showToast(`Language switched to ${lang === 'hi' ? 'हिंदी (Hindi)' : lang === 'hinglish' ? 'Hinglish' : 'English'}`);
+    }
+
+    // 4. ASK SAKHI CONVERSATIONAL ENGINE
+    const sakhiKnowledgeBase = {
+      cramps: {
+        title: "Understanding Menstrual Cramps (Dysmenorrhea)",
+        en: "Period cramps occur primarily due to prostaglandins—hormone-like lipids released by the uterine lining that cause the muscular walls of your uterus to contract and shed tissue. On Day 12 (Follicular Window), light twinges can also indicate ovulation sensation (*mittelschmerz*). \n\n**Self-Care Protocol:**\n• Gentle warmth: A heating pad increases local pelvic blood flow.\n• Magnesium glycinate & chamomile tea help calm smooth muscle spasms.\n• Mild walking or restorative yoga releases natural pain-relieving endorphins.",
+        hi: "पीरियड में होने वाला दर्द (Dysmenorrhea) मुख्य रूप से प्रोस्टाग्लैंडीन (prostaglandins) नामक हार्मोन के कारण होता है, जो गर्भाशय की मांसपेशियों में संकुचन पैदा करते हैं। साइकिल डे 12 पर हल्का दर्द ओव्यूलेशन (mittelschmerz) का भी संकेत हो सकता है।\n\n**राहत के उपाय:**\n• गर्म पानी की थैली या हीटिंग पैड का उपयोग करें।\n• मैग्नीशियम युक्त आहार और कैमोमाइल चाय लें।\n• हल्का टहलना या योग एंडोर्फिन रिलीज करता है जो दर्द कम करता है।",
+        hinglish: "Period cramps prostaglandins ki wajah se hote hain jo uterus muscles ko contract karate hain. Cycle Day 12 par light cramping ovulation (*mittelschmerz*) ka bhi sign ho sakti hai.\n\n**Quick Tips:**\n• Warm heating pad use karein blood flow badhane ke liye.\n• Chamomile tea aur magnesium-rich food cramps ko soothe karte hain.\n• Light walking se endorphins release hote hain jo natural pain-relief dete hain.",
+        sources: [
+          { name: "American College of Obstetricians and Gynecologists (ACOG)", doc: "FAQ046: Dysmenorrhea, Painful Periods & Management Guidelines." },
+          { name: "NHS UK", doc: "Period Pain, Pelvic Sensitivity and Reproductive Cycle Phases." },
+          { name: "FOGSI India", doc: "Clinical Menstrual Health Protocols (Vol 18)." }
+        ]
+      },
+      phases: {
+        title: "The 4 Phases of Your Menstrual Cycle",
+        en: "Your 28-day cycle consists of 4 distinct biological phases:\n1. **Menstrual Phase (Days 1–5):** Estrogen & progesterone baseline; uterine lining sheds.\n2. **Follicular Phase (Days 6–13):** Estrogen rises, stimulating follicle development. You are currently on **Day 12**—vitality and focus are peak!\n3. **Ovulation Window (Days 14–16):** Luteinizing Hormone (LH) surge releases an egg.\n4. **Luteal Phase (Days 17–28):** Progesterone leads; restful and restorative pacing is beneficial.",
+        hi: "आपका 28-दिन का मासिक चक्र 4 मुख्य चरणों में विभाजित है:\n1. **माहवारी चरण (दिन 1–5):** गर्भाशय की परत का निष्कासन।\n2. **फॉलिक्युलर चरण (दिन 6–13):** एस्ट्रोजन बढ़ता है। आज आप **दिन 12** पर हैं—ऊर्जा और एकाग्रता सबसे अधिक होती है!\n3. **ओव्यूलेशन चरण (दिन 14–16):** अंडे का उत्सर्जन।\n4. **ल्यूटियल चरण (दिन 17–28):** प्रोजेस्टेरोन प्रमुख होता है; शरीर को आराम की जरूरत होती है।",
+        hinglish: "Aapka 28-day cycle 4 biological phases mein hota hai:\n1. **Menstrual Phase (Days 1–5):** Flow days, resting state.\n2. **Follicular Phase (Days 6–13):** Estrogen rise hota hai. Aaj aap **Day 12** par hain—high energy window!\n3. **Ovulation (Days 14–16):** Egg release window, peak fertility.\n4. **Luteal Phase (Days 17–28):** Progesterone high hota hai, self-care zaroori hai.",
+        sources: [
+          { name: "World Health Organization (WHO)", doc: "Guidelines on Reproductive Endocrinology & Menstrual Health." },
+          { name: "ACOG", doc: "Understanding the Menstrual Cycle & Ovulatory Patterns." }
+        ]
+      },
+      bloating: {
+        title: "Relieving PMS & Water Retention",
+        en: "Water retention and bloating stem from fluctuations in progesterone and aldosterone, which influence fluid retention in bodily tissues.\n\n**Natural Remedies:**\n• Hydrate consistently (2.5L daily) to signal kidneys to release excess sodium.\n• Potassium-rich foods: Bananas, spinach, and coconut water balance electrolytes.\n• Herbal peppermint, fennel, and ginger tea help calm gastrointestinal distension.",
+        hi: "ब्लोटिंग और शरीर में पानी का रुकना प्रोजेस्टेरोन और एल्डोस्टेरोन हार्मोनल बदलाव के कारण होता है।\n\n**प्राकृतिक उपाय:**\n• भरपूर पानी पिएं (रोजाना 2.5 लीटर) जिससे अतिरिक्त सोडियम बाहर निकले।\n• पोटेशियम युक्त खाद्य पदार्थ: केला, पालक और नारियल पानी लें।\n• सौंफ, पुदीना या अदरक की हर्बल चाय पेट को राहत देती है।",
+        hinglish: "Bloating hormonal balance change hone ki wajah se hoti hai jisse body sodium retain karti hai.\n\n**Remedies:**\n• Daily 2.5L paani pijiye taaki excess water flush out ho sake.\n• Bananas, spinach aur coconut water lein potassium balance ke liye.\n• Fennel (saunf) ya ginger tea digestive bloating ko instantly ease karti hai.",
+        sources: [
+          { name: "Indian Council of Medical Research (ICMR)", doc: "Nutritional Interventions in Women's Health & Premenstrual Symptoms." },
+          { name: "Mayo Clinic", doc: "PMS Bloating: Lifestyle & Dietary Solutions." }
+        ]
+      },
+      default: {
+        title: "Clinically Grounded Health Guidance",
+        en: "Thank you for asking, Priya. In women's reproductive health, every body has a unique rhythm. Based on your Day 12 Follicular state, your body is well-primed for active nutrition, hydration, and regular restorative sleep.\n\nIf you have persistent severe pain or sudden changes, consider scheduling a consult with one of our verified gynecologists in the Doctor Connect portal.",
+        hi: "पूछने के लिए धन्यवाद, प्रिया। हर महिला का शरीर अपने विशिष्ट चक्र के अनुसार काम करता है। आपके डे 12 फॉलिक्युलर स्थिति के अनुसार, संतुलित पोषण और पर्याप्त पानी पीना सबसे लाभकारी है।\n\nयदि आपको कोई अत्यधिक असुविधा हो, तो डॉक्टर कनेक्ट सेक्शन में जाकर विशेषज्ञ से परामर्श ले सकती हैं।",
+        hinglish: "Thank you for asking, Priya. Aapke Day 12 Follicular window ke hisaab se body high energy state mein hai. Balanced nutrition, hydration aur achhi neend maintain karein.\n\nAgar persistent discomfort ho, toh aap Doctor Connect portal se verified gynecologists se consult kar sakti hain.",
+        sources: [
+          { name: "Federation of Obstetric & Gynaecological Societies of India (FOGSI)", doc: "General Gynecological Consultation Best Practices." }
+        ]
+      }
+    };
+
+    function generateSakhiResponse(userQuery) {
+      const q = userQuery.toLowerCase();
+      let match = sakhiKnowledgeBase.default;
+
+      if (q.includes('cramp') || q.includes('pain') || q.includes('dard') || q.includes('pet')) {
+        match = sakhiKnowledgeBase.cramps;
+      } else if (q.includes('phase') || q.includes('cycle') || q.includes('follicular') || q.includes('luteal') || q.includes('ovulat')) {
+        match = sakhiKnowledgeBase.phases;
+      } else if (q.includes('bloat') || q.includes('pms') || q.includes('pet phool') || q.includes('water')) {
+        match = sakhiKnowledgeBase.bloating;
+      }
+
+      const lang = AppState.lang;
+      const text = match[lang] || match.en;
+
+      return {
+        title: match.title,
+        text: text,
+        sources: match.sources
+      };
+    }
+
+    function appendUserMessage(text) {
+      const container = document.getElementById('chat-messages-container');
+      const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+      const msgDiv = document.createElement('div');
+      msgDiv.className = 'flex items-start justify-end gap-space-md max-w-3xl ml-auto animate-fadeIn';
+      msgDiv.innerHTML = `
+        <div class="flex flex-col gap-space-xs bg-primary text-on-primary p-space-md rounded-2xl rounded-tr-sm shadow-sm max-w-lg">
+          <div class="flex items-center justify-between gap-4">
+            <span class="font-label-lg text-xs font-bold text-on-primary/90">You</span>
+            <span class="font-label-sm text-[11px] text-on-primary/70">${timeStr}</span>
+          </div>
+          <p class="font-body-md text-sm leading-relaxed">${escapeHtml(text)}</p>
+        </div>
+        <div class="w-9 h-9 rounded-full bg-primary-fixed text-primary flex items-center justify-center flex-shrink-0 font-bold text-xs shadow-sm mt-1">
+          PS
+        </div>
+      `;
+      container.appendChild(msgDiv);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function appendSakhiMessage(respObj) {
+      const container = document.getElementById('chat-messages-container');
+      const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const uniqueId = 'src-' + Math.random().toString(36).substring(2, 9);
+
+      let sourcesHtml = '';
+      if (respObj.sources && respObj.sources.length) {
+        sourcesHtml = `
+          <div class="mt-2 pt-2 border-t border-outline-variant/30">
+            <button onclick="toggleSources('${uniqueId}')" class="flex items-center justify-between w-full text-xs text-primary font-bold hover:underline py-1">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">menu_book</span>
+                Clinical Sources & Citations (${respObj.sources.length})
+              </span>
+              <span class="material-symbols-outlined text-sm transition-transform" id="arrow-${uniqueId}">expand_more</span>
+            </button>
+            <div id="${uniqueId}" class="hidden space-y-1.5 mt-2 text-xs text-on-surface-variant bg-surface-container/60 p-3 rounded-xl border border-outline-variant/20">
+              ${respObj.sources.map((s, i) => `
+                <div class="flex items-start gap-1.5">
+                  <span class="font-mono text-[10px] bg-primary-fixed px-1 rounded text-primary">${i+1}</span>
+                  <div><strong>${s.name}</strong> — <em>${s.doc}</em></div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      const msgDiv = document.createElement('div');
+      msgDiv.className = 'flex items-start gap-space-md max-w-3xl animate-fadeIn';
+      msgDiv.innerHTML = `
+        <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0 shadow-sm mt-1">
+          <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+        </div>
+        <div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md sm:p-space-lg rounded-2xl rounded-tl-sm shadow-sm w-full border border-outline-variant/20">
+          <div class="flex items-center justify-between">
+            <span class="font-label-lg text-label-lg text-primary font-bold">Sakhi Companion</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">${timeStr}</span>
+          </div>
+          <div class="font-body-md text-body-md text-on-surface leading-relaxed whitespace-pre-line text-sm sm:text-base">${respObj.text}</div>
+          
+          ${sourcesHtml}
+
+          <div class="flex flex-wrap items-center justify-between gap-space-sm pt-2 mt-1 border-t border-outline-variant/20">
+            <div class="flex items-center gap-2">
+              <span class="font-label-sm text-[11px] text-on-surface-variant font-medium">Helpful?</span>
+              <button onclick="this.classList.toggle('bg-primary-fixed'); showToast('Thank you for your feedback!')" class="flex items-center gap-1 font-label-sm text-xs px-2.5 py-0.5 rounded-full bg-surface-container-high hover:bg-primary-fixed text-on-surface transition-colors" type="button">
+                <span class="material-symbols-outlined text-xs text-tertiary">thumb_up</span>
+                <span>Yes</span>
+              </button>
+              <button onclick="showToast('Noted! We will clarify with clinical sources.')" class="flex items-center gap-1 font-label-sm text-xs px-2.5 py-0.5 rounded-full bg-surface-container-high hover:bg-primary-fixed text-on-surface transition-colors" type="button">
+                <span class="material-symbols-outlined text-xs text-secondary">thumb_down</span>
+                <span>Clarify</span>
+              </button>
+            </div>
+            <div class="flex items-center gap-1 text-tertiary font-label-sm text-xs font-semibold">
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span>Recorded to Day 12 History</span>
+            </div>
+          </div>
+        </div>
+      `;
+      container.appendChild(msgDiv);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function toggleSources(id) {
+      const el = document.getElementById(id);
+      const arrow = document.getElementById('arrow-' + id);
+      if (el) {
+        const isHidden = el.classList.contains('hidden');
+        if (isHidden) {
+          el.classList.remove('hidden');
+          if (arrow) arrow.style.transform = 'rotate(180deg)';
+        } else {
+          el.classList.add('hidden');
+          if (arrow) arrow.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>'"]/g, 
+        tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag));
+    }
+
+    // 5. CALENDAR RENDERING & INTERACTION
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    function renderCalendar(year, month) {
+      const monthTitle = document.getElementById('calendar-current-month');
+      if (monthTitle) {
+        monthTitle.textContent = `${months[month]} ${year}`;
+      }
+
+      const grid = document.getElementById('calendar-days-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      // First day of month (0 = Sunday, 1 = Monday...)
+      const firstDayDate = new Date(year, month, 1);
+      // Let's get day index starting Monday (0 = Mon, 6 = Sun)
+      let startDay = firstDayDate.getDay() - 1;
+      if (startDay === -1) startDay = 6;
+
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const prevMonthDays = new Date(year, month, 0).getDate();
+
+      // Leading prev month cells
+      for (let i = startDay - 1; i >= 0; i--) {
+        const d = prevMonthDays - i;
+        const cell = document.createElement('div');
+        cell.className = 'h-14 sm:h-16 p-1 rounded-xl bg-surface-container-lowest opacity-30 flex flex-col justify-between items-center';
+        cell.innerHTML = `<span class="font-label-sm text-label-sm text-on-surface-variant">${d}</span>`;
+        grid.appendChild(cell);
+      }
+
+      // Active month cells
+      for (let day = 1; day <= daysInMonth; day++) {
+        const cell = document.createElement('div');
+        const isPeriodDay = (month === 9 && day >= 12 && day <= 16); // Oct 12-16
+        const isFertileDay = (month === 9 && ((day >= 22 && day <= 23) || (day >= 25 && day <= 26))); // Oct 22-26
+        const isToday = (month === 9 && day === 24); // Oct 24
+        const isSelected = (AppState.selectedDate.year === year && AppState.selectedDate.month === month && AppState.selectedDate.day === day);
+
+        let cellClasses = 'h-14 sm:h-16 p-1 rounded-xl cursor-pointer flex flex-col justify-between items-center transition-all select-none ';
+
+        if (isToday) {
+          cellClasses += 'bg-primary-container text-on-primary-container shadow-md ring-2 ring-primary scale-105 z-10';
+        } else if (isPeriodDay) {
+          cellClasses += 'bg-primary-fixed hover:bg-primary-fixed-dim text-on-primary-fixed';
+        } else if (isFertileDay) {
+          cellClasses += 'bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-surface';
+        } else {
+          cellClasses += 'hover:bg-surface-container-low text-on-surface';
+        }
+
+        let bottomBadge = '<div class="h-2"></div>';
+        if (isToday) {
+          bottomBadge = `<div class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span><span class="font-label-sm text-[10px] font-bold text-on-primary-container">Today</span></div>`;
+        } else if (isPeriodDay) {
+          bottomBadge = `<span class="font-label-sm text-[10px] text-primary font-bold">Flow</span>`;
+        } else if (isFertileDay) {
+          bottomBadge = `<span class="font-label-sm text-[10px] text-tertiary-container font-semibold">Fertile</span>`;
+        } else if (day === 3 || day === 9 || day === 11 || day === 18 || day === 30) {
+          bottomBadge = `<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>`;
+        }
+
+        cell.className = cellClasses;
+        cell.innerHTML = `
+          <div class="flex items-center justify-between w-full px-1">
+            <span class="font-label-md text-label-md font-semibold">${day}</span>
+            ${isToday ? '<span class="material-symbols-outlined text-xs">star</span>' : ''}
+          </div>
+          ${bottomBadge}
+        `;
+
+        cell.addEventListener('click', () => {
+          selectCalendarDate(year, month, day);
+        });
+
+        grid.appendChild(cell);
+      }
+
+      // Trailing next month cells
+      const totalCells = startDay + daysInMonth;
+      const trailingCells = (7 - (totalCells % 7)) % 7;
+      for (let j = 1; j <= trailingCells; j++) {
+        const cell = document.createElement('div');
+        cell.className = 'h-14 sm:h-16 p-1 rounded-xl bg-surface-container-lowest opacity-40 flex flex-col justify-between items-center';
+        cell.innerHTML = `<span class="font-label-sm text-label-sm text-on-surface-variant">${j}</span>`;
+        grid.appendChild(cell);
+      }
+    }
+
+    function selectCalendarDate(year, month, day) {
+      AppState.selectedDate = { year, month, day };
+      const dateObj = new Date(year, month, day);
+      const weekday = dateObj.toLocaleDateString('en-US', { weekday: 'long' });
+      const monthShort = dateObj.toLocaleDateString('en-US', { month: 'short' });
+
+      // Update Selected Date Card
+      document.getElementById('cal-selected-month-short').textContent = monthShort;
+      document.getElementById('cal-selected-day-number').textContent = day;
+      document.getElementById('cal-selected-full-date').textContent = `${weekday}, ${monthShort} ${day}`;
+
+      // Calculate approximate cycle day relative to Oct 12 start
+      let approxCycleDay = day >= 12 ? (day - 12 + 1) : (28 - (12 - day));
+      document.getElementById('cal-selected-cycle-day').textContent = `Cycle Day ${approxCycleDay}`;
+
+      showToast(`Selected ${monthShort} ${day}, ${year}`);
+      renderCalendar(year, month);
+    }
+
+    // 6. SYMPTOM LOGGER & MICRO-INTERACTIONS
+    function initTrackerControls() {
+      // Physical & Mood chip toggles
+      document.querySelectorAll('.chip-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const isActive = btn.getAttribute('data-active') === 'true';
+          if (isActive) {
+            btn.setAttribute('data-active', 'false');
+            btn.className = 'chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-medium';
+            const icon = btn.querySelector('.material-symbols-outlined');
+            if (icon) icon.remove();
+          } else {
+            btn.setAttribute('data-active', 'true');
+            btn.className = 'chip-toggle px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary text-on-primary shadow-xs font-semibold';
+            const span = document.createElement('span');
+            span.className = 'material-symbols-outlined text-sm';
+            span.textContent = 'check';
+            btn.insertBefore(span, btn.firstChild);
+          }
+        });
+      });
+
+      // Flow Pills
+      document.querySelectorAll('.flow-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          document.querySelectorAll('.flow-pill').forEach(p => {
+            p.className = 'flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all';
+          });
+          pill.className = 'flow-pill py-2 px-1 rounded-lg font-label-sm text-label-sm text-center transition-all bg-surface-container-lowest text-primary shadow-xs font-bold';
+        });
+      });
+
+      // Discomfort slider
+      const slider = document.getElementById('discomfort-slider');
+      const label = document.getElementById('discomfort-value-text');
+      if (slider && label) {
+        const descriptions = {
+          0: '0/10 • No discomfort',
+          1: '1/10 • Barely noticeable',
+          2: '2/10 • Mild discomfort',
+          3: '3/10 • Noticeable ache',
+          4: '4/10 • Mild-moderate cramps',
+          5: '5/10 • Moderate discomfort',
+          6: '6/10 • Distracting cramps',
+          7: '7/10 • Pronounced pain',
+          8: '8/10 • Severe discomfort',
+          9: '9/10 • Very intense',
+          10: '10/10 • Unbearable pain'
+        };
+        slider.addEventListener('input', (e) => {
+          label.textContent = descriptions[e.target.value] || `${e.target.value}/10`;
+        });
+      }
+
+      // Save Log
+      const btnSave = document.getElementById('btn-save-log');
+      if (btnSave) {
+        btnSave.addEventListener('click', () => {
+          btnSave.innerHTML = '<span class="material-symbols-outlined text-lg">check_circle</span> Saved Successfully!';
+          btnSave.classList.add('bg-tertiary');
+          showToast("Day 12 Symptoms Logged & Encrypted!");
+
+          setTimeout(() => {
+            btnSave.innerHTML = '<span class="material-symbols-outlined text-lg">check</span><span>Save Entry</span>';
+            btnSave.classList.remove('bg-tertiary');
+          }, 2000);
+        });
+      }
+
+      // Clear Log
+      const btnClear = document.getElementById('btn-clear-log');
+      if (btnClear) {
+        btnClear.addEventListener('click', () => {
+          const notes = document.getElementById('symptom-notes');
+          if (notes) notes.value = '';
+          if (slider) {
+            slider.value = '0';
+            slider.dispatchEvent(new Event('input'));
+          }
+          showToast('Cleared input fields');
+        });
+      }
+
+      // Calendar month buttons
+      const btnPrev = document.getElementById('btn-prev-month');
+      const btnNext = document.getElementById('btn-next-month');
+      const btnToday = document.getElementById('btn-today-month');
+
+      if (btnPrev) {
+        btnPrev.addEventListener('click', () => {
+          AppState.selectedDate.month--;
+          if (AppState.selectedDate.month < 0) {
+            AppState.selectedDate.month = 11;
+            AppState.selectedDate.year--;
+          }
+          renderCalendar(AppState.selectedDate.year, AppState.selectedDate.month);
+        });
+      }
+
+      if (btnNext) {
+        btnNext.addEventListener('click', () => {
+          AppState.selectedDate.month++;
+          if (AppState.selectedDate.month > 11) {
+            AppState.selectedDate.month = 0;
+            AppState.selectedDate.year++;
+          }
+          renderCalendar(AppState.selectedDate.year, AppState.selectedDate.month);
+        });
+      }
+
+      if (btnToday) {
+        btnToday.addEventListener('click', () => {
+          AppState.selectedDate = { year: 2024, month: 9, day: 24 };
+          renderCalendar(2024, 9);
+          showToast('Returned to current month (October 2024)');
+        });
+      }
+    }
+
+    // 7. DASHBOARD CHECK-IN MICRO-INTERACTIONS
+    function initDashboardCheckin() {
+      const moodBtns = document.querySelectorAll('#dash-mood-selector .mood-btn');
+      moodBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          moodBtns.forEach(b => {
+            b.classList.remove('is-active', 'bg-primary', 'text-on-primary', 'scale-[1.02]', 'shadow-sm');
+            b.classList.add('bg-surface-container-low');
+            const lbl = b.querySelector('span:last-child');
+            if (lbl) {
+              lbl.classList.remove('text-on-primary');
+              lbl.classList.add('text-on-surface');
+            }
+          });
+
+          btn.classList.add('is-active', 'bg-primary', 'text-on-primary', 'scale-[1.02]', 'shadow-sm');
+          btn.classList.remove('bg-surface-container-low');
+          const activeLbl = btn.querySelector('span:last-child');
+          if (activeLbl) {
+            activeLbl.classList.add('text-on-primary');
+            activeLbl.classList.remove('text-on-surface');
+          }
+          showToast(`Mood set to: ${btn.getAttribute('data-mood')}`);
+        });
+      });
+
+      const symptomTags = document.querySelectorAll('#dash-physical-tags .symptom-tag');
+      symptomTags.forEach(tag => {
+        tag.addEventListener('click', () => {
+          const isToggled = tag.classList.contains('bg-secondary-fixed') || tag.classList.contains('bg-tertiary-fixed');
+          if (isToggled) {
+            tag.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed', 'bg-tertiary-fixed', 'text-on-tertiary-fixed', 'font-semibold');
+            tag.classList.add('bg-surface-container-low', 'text-on-surface');
+            tag.textContent = tag.textContent.replace(' ✓', '');
+          } else {
+            tag.classList.remove('bg-surface-container-low', 'text-on-surface');
+            tag.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed', 'font-semibold');
+            if (!tag.textContent.includes('✓')) {
+              tag.textContent = tag.textContent.trim() + ' ✓';
+            }
+          }
+        });
+      });
+
+      const saveBtn = document.getElementById('dash-save-checkin-btn');
+      const statusMsg = document.getElementById('dash-save-status-msg');
+      if (saveBtn && statusMsg) {
+        saveBtn.addEventListener('click', () => {
+          saveBtn.classList.add('opacity-80', 'scale-95');
+          setTimeout(() => {
+            saveBtn.classList.remove('opacity-80', 'scale-95');
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            statusMsg.innerHTML = `<span class="material-symbols-outlined text-base text-primary">check_circle</span><span class="text-primary font-semibold">Updated at ${timeStr}</span>`;
+            showToast('Daily Pulse Check-in Saved!');
+          }, 300);
+        });
+      }
+    }
+
+    // 8. MODAL MANAGERS
+    function openQuickLogModal() {
+      document.getElementById('quick-log-modal').classList.remove('hidden');
+    }
+
+    function closeQuickLogModal() {
+      document.getElementById('quick-log-modal').classList.add('hidden');
+    }
+
+    function saveQuickLog() {
+      closeQuickLogModal();
+      showToast('Quick Log Recorded Successfully! Syncing cycle projections...');
+      const checkinMsg = document.getElementById('dash-save-status-msg');
+      if (checkinMsg) {
+        const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        checkinMsg.innerHTML = `<span class="material-symbols-outlined text-base text-primary">check_circle</span><span class="text-primary font-semibold">Updated at ${timeStr}</span>`;
+      }
+    }
+
+    function openBookingModal(name, role, fee) {
+      document.getElementById('booking-doc-name').textContent = name;
+      document.getElementById('booking-doc-sub').textContent = `${role} • ${fee}`;
+      document.getElementById('doctor-booking-modal').classList.remove('hidden');
+    }
+
+    function closeBookingModal() {
+      document.getElementById('doctor-booking-modal').classList.add('hidden');
+    }
+
+    function confirmBooking() {
+      closeBookingModal();
+      showToast("Video Consultation Confirmed! SMS & Email calendar invite sent.");
+    }
+
+    function openArticleModal() {
+      document.getElementById('article-modal').classList.remove('hidden');
+    }
+
+    function closeArticleModal() {
+      document.getElementById('article-modal').classList.add('hidden');
+    }
+
+    function downloadReport() {
+      showToast('Generating Encrypted Clinical Health Dossier (PDF)...');
+      setTimeout(() => {
+        showToast('Download complete: SakhiSahay_PriyaSharma_Oct2024.pdf');
+      }, 1400);
+    }
+
+    function clearLocalHistory() {
+      if (confirm('Clear local cached health logs on this device?')) {
+        localStorage.removeItem('sakhisahay_logs');
+        showToast('Local cache cleared.');
+      }
+    }
+
+    function saveSettings() {
+      const name = document.getElementById('setting-name').value;
+      showToast(`Settings saved for ${name}!`);
+    }
+
+    // Voice simulation
+    let isListening = false;
+    function startVoiceSimulation() {
+      const indicator = document.getElementById('voice-indicator');
+      const voiceBtn = document.getElementById('voiceBtn');
+      isListening = true;
+      if (indicator) indicator.classList.remove('hidden');
+      if (voiceBtn) voiceBtn.classList.add('text-primary');
+
+      // Simulate voice capture after 2.5 seconds
+      setTimeout(() => {
+        if (isListening) {
+          const input = document.getElementById('messageInput');
+          if (input) {
+            input.value = "Why do I get period cramps on Day 12?";
+            input.focus();
+          }
+          stopVoiceSimulation();
+          showToast('Speech recognized: "Why do I get period cramps on Day 12?"');
+        }
+      }, 2400);
+    }
+
+    function stopVoiceSimulation() {
+      isListening = false;
+      const indicator = document.getElementById('voice-indicator');
+      const voiceBtn = document.getElementById('voiceBtn');
+      if (indicator) indicator.classList.add('hidden');
+      if (voiceBtn) voiceBtn.classList.remove('text-primary');
+    }
+
+    // Notifications popover
+    function toggleNotifications() {
+      const popover = document.getElementById('notifications-popover');
+      if (popover) {
+        popover.classList.toggle('hidden');
+      }
+    }
+
+    function clearNotifications() {
+      const list = document.getElementById('notifications-list');
+      if (list) {
+        list.innerHTML = '<span class="text-xs text-on-surface-variant text-center py-4 block">No unread notifications</span>';
+        showToast('All notifications marked as read.');
+      }
+    }
+
+    // DOM LOAD INITIALIZATION
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Initial route
+      const initialHash = window.location.hash.replace('#', '') || 'overview';
+      switchRoute(initialHash);
+
+      // 2. Render initial calendar
+      renderCalendar(2024, 9); // October 2024
+
+      // 3. Init micro-interactions
+      initDashboardCheckin();
+      initTrackerControls();
+
+      // 4. Chat form submit
+      const chatForm = document.getElementById('chatForm');
+      const messageInput = document.getElementById('messageInput');
+
+      if (chatForm && messageInput) {
+        chatForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const query = messageInput.value.trim();
+          if (!query) return;
+
+          appendUserMessage(query);
+          messageInput.value = '';
+
+          // Show Sakhi typing delay simulation
+          setTimeout(() => {
+            const resp = generateSakhiResponse(query);
+            appendSakhiMessage(resp);
+          }, 600);
+        });
+      }
+
+      // Prompt chips in chat
+      document.querySelectorAll('.prompt-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const text = chip.textContent.trim().replace(/^help|^calendar_month|^eco|^health_and_safety/, '').trim();
+          if (messageInput) {
+            messageInput.value = text;
+            messageInput.focus();
+          }
+        });
+      });
+
+      // Language switcher pills in chat
+      document.querySelectorAll('.chat-lang-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          const l = pill.getAttribute('data-lang');
+          updateLanguage(l);
+        });
+      });
+
+      // Global language dropdown
+      const globalLang = document.getElementById('global-lang-select');
+      if (globalLang) {
+        globalLang.addEventListener('change', (e) => {
+          updateLanguage(e.target.value);
+        });
+      }
+
+      // Fast lang toggle button
+      const chatFastBtn = document.getElementById('chatFastLangBtn');
+      if (chatFastBtn) {
+        chatFastBtn.addEventListener('click', () => {
+          const langs = ['en', 'hi', 'hinglish'];
+          const nextIdx = (langs.indexOf(AppState.lang) + 1) % langs.length;
+          updateLanguage(langs[nextIdx]);
+        });
+      }
+
+      // Voice simulation button
+      const voiceBtn = document.getElementById('voiceBtn');
+      if (voiceBtn) {
+        voiceBtn.addEventListener('click', () => {
+          if (!isListening) {
+            startVoiceSimulation();
+          } else {
+            stopVoiceSimulation();
+          }
+        });
+      }
+
+      // Quick log header button
+      const quickLogBtn = document.getElementById('btn-global-quick-log');
+      if (quickLogBtn) {
+        quickLogBtn.addEventListener('click', openQuickLogModal);
+      }
+
+      // Notifications bell
+      const notifBtn = document.getElementById('btn-notifications');
+      if (notifBtn) {
+        notifBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggleNotifications();
+        });
+      }
+
+      // Close notifications on outer click
+      document.addEventListener('click', (e) => {
+        const popover = document.getElementById('notifications-popover');
+        if (popover && !popover.classList.contains('hidden') && !popover.contains(e.target) && e.target !== notifBtn) {
+          popover.classList.add('hidden');
+        }
+      });
+
+      // Slot buttons in booking modal
+      document.querySelectorAll('.slot-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.slot-btn').forEach(b => {
+            b.className = 'slot-btn py-2 px-3 rounded-xl border border-outline-variant/30 text-xs text-center hover:bg-surface-container';
+          });
+          btn.className = 'slot-btn py-2 px-3 rounded-xl border border-primary bg-primary text-on-primary text-xs font-bold text-center';
+        });
+      });
+
+      // Quick chip toggles in Quick Log Modal
+      document.querySelectorAll('#quick-symptoms-chips .quick-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const isSelected = chip.classList.contains('bg-primary') || chip.classList.contains('bg-secondary-fixed');
+          if (isSelected) {
+            chip.className = 'quick-chip px-3 py-1 rounded-full text-xs bg-surface-container text-on-surface';
+            chip.textContent = chip.textContent.replace(' ✓', '');
+          } else {
+            chip.className = 'quick-chip px-3 py-1 rounded-full text-xs bg-primary text-on-primary font-semibold';
+            if (!chip.textContent.includes('✓')) {
+              chip.textContent += ' ✓';
+            }
+          }
+        });
+      });
+
+      // Quick flow pills
+      document.querySelectorAll('.quick-flow-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.quick-flow-btn').forEach(b => {
+            b.className = 'quick-flow-btn py-1.5 rounded-lg text-xs text-center text-on-surface-variant hover:text-on-surface';
+          });
+          btn.className = 'quick-flow-btn py-1.5 rounded-lg text-xs font-bold text-center bg-surface-container-lowest text-primary shadow-xs';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
