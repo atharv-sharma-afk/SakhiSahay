@@ -1,0 +1,1393 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SakhiSahay - Personalized Healthcare Onboarding</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;1,500&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            rose: {
+              DEFAULT: '#C96F87',
+              50: '#FDF7F8',
+              100: '#F9E9ED',
+              200: '#F3D2DB',
+              500: '#C96F87',
+              600: '#B65A73',
+              700: '#94445A',
+            },
+            plum: {
+              DEFAULT: '#332B38',
+              900: '#231B27',
+              800: '#332B38',
+              700: '#463D4C',
+            },
+            blush: '#F9E9ED',
+            lavender: '#EDE8F7',
+            sage: '#DDEBE0',
+            warm: '#FAF8F7',
+            cream: '#FFFBF7',
+            mutedgray: '#77717B',
+          },
+          boxShadow: {
+            'soft': '0 8px 30px rgba(51, 43, 56, 0.05)',
+            'card': '0 4px 20px rgba(201, 111, 135, 0.08)',
+            'button': '0 4px 14px rgba(201, 111, 135, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FAF8F7;
+      color: #332B38;
+      font-family: 'Manrope', sans-serif;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #E5DFE7;
+      border-radius: 999px;
+    }
+    .card-selectable {
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-selectable:hover {
+      transform: translateY(-2px);
+    }
+    .card-selected {
+      border-color: #C96F87 !important;
+      background-color: #FDF6F8 !important;
+      box-shadow: 0 0 0 2px #C96F87 inset, 0 4px 20px rgba(201, 111, 135, 0.12) !important;
+    }
+    .step-badge {
+      font-feature-settings: "tnum";
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-step {
+      animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-rose-200 selection:text-plum-900 bg-[#FAF8F7]">
+
+  <!-- Top Persistent Navigation / Progress Bar -->
+  <header class="w-full bg-[#FAF8F7]/80 backdrop-blur-md sticky top-0 z-40 border-b border-[#EDE6E3] transition-all">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Logo & Brand Mark -->
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="goToStep(1)">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-rose to-[#E8A5B6] flex items-center justify-center text-white shadow-sm">
+          <!-- Flower / Lotus Icon -->
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2C12 2 10.5 6.5 10.5 9.5C10.5 10.88 11.62 12 13 12C14.38 12 15.5 10.88 15.5 9.5C15.5 6.5 14 2 14 2C14 2 12 2 12 2ZM6.34 5.34C6.34 5.34 7.5 9.5 9.5 11.5C10.5 12.5 12 12.5 12 12.5C12 12.5 11.5 10.5 10.5 9.5C8.5 7.5 6.34 5.34 6.34 5.34ZM17.66 5.34C17.66 5.34 15.5 7.5 13.5 9.5C12.5 10.5 12 12.5 12 12.5C12 12.5 13.5 12.5 14.5 11.5C16.5 9.5 17.66 5.34 17.66 5.34ZM12 13C9 13 4 14.5 4 18.5V20H20V18.5C20 14.5 15 13 12 13Z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="font-bold text-lg text-plum tracking-tight flex items-center gap-1.5">
+            SakhiSahay <span class="text-xs px-2 py-0.5 rounded-full bg-blush text-rose font-medium">Onboarding</span>
+          </span>
+          <p class="text-[11px] text-mutedgray leading-none">Your women's health companion</p>
+        </div>
+      </div>
+
+      <!-- Stepper / Indicator -->
+      <div id="nav-stepper-container" class="hidden sm:flex items-center space-x-3">
+        <div class="flex items-center text-xs font-semibold text-mutedgray">
+          <span id="step-number-text" class="text-rose font-bold">Step 2</span>
+          <span class="mx-1 text-gray-300">/</span>
+          <span class="">8</span>
+        </div>
+        <!-- Progress Bar Track -->
+        <div class="w-32 h-1.5 bg-gray-200/70 rounded-full overflow-hidden">
+          <div id="progress-bar-fill" class="h-full bg-rose rounded-full transition-all duration-300 ease-out" style="width: 25%;"></div>
+        </div>
+      </div>
+
+      <!-- Language & Skip Options -->
+      <div class="flex items-center space-x-3">
+        <select id="lang-selector" onchange="changeLanguage(this.value)" class="text-xs font-medium text-plum bg-white/70 border border-[#E5DFE7] rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-rose">
+          <option value="en">English</option>
+          <option value="hi">हिंदी (Hindi)</option>
+          <option value="hinglish">Hinglish</option>
+        </select>
+        <button id="top-skip-btn" onclick="skipToDashboard()" class="text-xs font-medium text-mutedgray hover:text-plum px-2 py-1 transition-colors">
+          Skip for now
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Mini Progress line -->
+    <div class="sm:hidden w-full h-1 bg-gray-200">
+      <div id="mobile-progress-bar-fill" class="h-full bg-rose transition-all duration-300" style="width: 25%;"></div>
+    </div>
+  </header>
+
+  <!-- Main Content Container with dynamic card views -->
+  <main class="flex-1 flex items-center justify-center p-4 sm:p-6 md:p-8">
+    <div class="w-full max-w-2xl bg-white rounded-3xl shadow-soft border border-[#EFEAE8] p-6 sm:p-10 relative overflow-hidden transition-all">
+
+      <!-- ================= STEP 1: WELCOME SCREEN ================= -->
+      <div id="step-1" class="step-view animate-step">
+        <div class="text-center max-w-lg mx-auto">
+          <!-- Illustration / Badge -->
+          <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-[#FFF2F4] to-[#FCE8ED] mx-auto flex items-center justify-center mb-6 shadow-inner border border-rose-100">
+            <span class="text-4xl filter drop-shadow">🌷</span>
+          </div>
+
+          <span class="inline-block text-xs font-semibold tracking-wider uppercase text-rose bg-blush px-3 py-1 rounded-full mb-3">
+            Welcome to SakhiSahay
+          </span>
+
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-plum tracking-tight mb-3">
+            Let's make this personal
+          </h1>
+          <p class="text-base text-mutedgray mb-8 leading-relaxed">
+            A few quick questions will help us tailor your health companion experience to your body, your questions, and your rhythm.
+          </p>
+
+          <!-- 3 Value Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 text-left mb-8">
+            <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-[#F0EBE9] flex flex-col justify-between">
+              <div class="w-8 h-8 rounded-xl bg-blush flex items-center justify-center text-rose mb-2 font-bold text-sm">
+                AI
+              </div>
+              <div>
+                <p class="text-xs font-bold text-plum">Ask Sakhi</p>
+                <p class="text-[11px] text-mutedgray mt-0.5">Empathetic, medically sound answers in your preferred tongue.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-[#F0EBE9] flex flex-col justify-between">
+              <div class="w-8 h-8 rounded-xl bg-sage/60 flex items-center justify-center text-[#52775C] mb-2 font-bold text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-plum">Cycle Tracker</p>
+                <p class="text-[11px] text-mutedgray mt-0.5">Log flow &amp; symptoms with zero guesswork and clean privacy.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-[#F0EBE9] flex flex-col justify-between">
+              <div class="w-8 h-8 rounded-xl bg-lavender flex items-center justify-center text-[#6A5A87] mb-2 font-bold text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-plum">Insights</p>
+                <p class="text-[11px] text-mutedgray mt-0.5">Personal pattern summaries built only on records you supply.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Privacy Reassurance Callout -->
+          <div class="flex items-center justify-center gap-2 p-3 bg-warm rounded-xl border border-gray-200/60 mb-8 text-xs text-mutedgray">
+            <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="">You choose what to share. All responses can be modified or erased at any time.</span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+            <button onclick="goToStep(2)" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-rose hover:bg-rose-600 text-white font-semibold text-sm shadow-button transition-all flex items-center justify-center gap-2">
+              <span class="">Let's begin</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+            <button onclick="skipToDashboard()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl text-mutedgray hover:text-plum font-medium text-sm transition-colors">
+              I'll do this later
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ================= STEP 2: ABOUT YOU ================= -->
+      <div id="step-2" class="step-view animate-step hidden">
+        <div class="mb-6">
+          <span class="text-xs font-semibold text-rose bg-blush px-2.5 py-0.5 rounded-full">Step 2 of 8</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-plum mt-2">Let's get to know you</h2>
+          <p class="text-sm text-mutedgray mt-1">This helps Sakhi address you respectfully and adapt age-appropriate guidance.</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); validateAndNext(2);" class="space-y-6">
+          <!-- Preferred Name -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-1.5" for="input-name">
+              What should Sakhi call you? <span class="text-rose">*</span>
+            </label>
+            <div class="relative">
+              <input type="text" id="input-name" placeholder="e.g. Priya" value="Priya" required="" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-rose focus:ring-2 focus:ring-rose/20 outline-none text-plum text-sm font-medium transition-all">
+              <div class="absolute right-3.5 top-3.5 text-gray-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+              </div>
+            </div>
+            <p class="text-[11px] text-mutedgray mt-1">First name or nickname is perfect. We do not ask for full government ID.</p>
+          </div>
+
+          <!-- Age Range -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">
+              Age range <span class="text-rose">*</span>
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="age-range-options">
+              <button type="button" onclick="selectSingleOption('age_range', 'Under 18', this)" class="card-selectable px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-plum hover:border-rose/50 text-center">Under 18</button>
+              <button type="button" onclick="selectSingleOption('age_range', '18–24', this)" class="card-selectable px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-plum hover:border-rose/50 text-center card-selected">18–24</button>
+              <button type="button" onclick="selectSingleOption('age_range', '25–34', this)" class="card-selectable px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-plum hover:border-rose/50 text-center">25–34</button>
+              <button type="button" onclick="selectSingleOption('age_range', '35–44', this)" class="card-selectable px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-plum hover:border-rose/50 text-center">35–44</button>
+              <button type="button" onclick="selectSingleOption('age_range', '45–54', this)" class="card-selectable px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-plum hover:border-rose/50 text-center">45–54</button>
+              <button type="button" onclick="selectSingleOption('age_range', '55+', this)" class="card-selectable px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-plum hover:border-rose/50 text-center">55+</button>
+            </div>
+            <div id="under-18-notice" class="mt-2 p-2.5 rounded-xl bg-lavender/50 border border-purple-200 text-[11px] text-plum flex items-start gap-2 hidden">
+              <span class="text-purple-600 font-bold">ℹ️</span>
+              <span class="">For users under 18, Sakhi provides confidential teen wellness tips, puberty biology education, and safe professional contact guidelines with extra privacy protections.</span>
+            </div>
+          </div>
+
+          <!-- Preferred Language -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">
+              Preferred assistant &amp; interface language
+            </label>
+            <div class="grid grid-cols-3 gap-2.5" id="language-options">
+              <button type="button" onclick="selectSingleOption('preferred_language', 'English', this)" class="card-selectable p-3 rounded-xl border border-gray-200 text-left hover:border-rose/50 card-selected">
+                <span class="block text-xs font-bold text-plum">English</span>
+                <span class="block text-[10px] text-mutedgray mt-0.5">Primary UI</span>
+              </button>
+              <button type="button" onclick="selectSingleOption('preferred_language', 'हिंदी', this)" class="card-selectable p-3 rounded-xl border border-gray-200 text-left hover:border-rose/50">
+                <span class="block text-xs font-bold text-plum">हिंदी (Hindi)</span>
+                <span class="block text-[10px] text-mutedgray mt-0.5">देवनागरी लिपि</span>
+              </button>
+              <button type="button" onclick="selectSingleOption('preferred_language', 'Hinglish', this)" class="card-selectable p-3 rounded-xl border border-gray-200 text-left hover:border-rose/50">
+                <span class="block text-xs font-bold text-plum">Hinglish</span>
+                <span class="block text-[10px] text-mutedgray mt-0.5">Conversational</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Timezone -->
+          <div class="flex items-center justify-between p-3 rounded-xl bg-[#FCFAF9] border border-gray-200/70 text-xs">
+            <div class="flex items-center gap-2">
+              <span class="text-base">🕒</span>
+              <div>
+                <span class="font-semibold text-plum block">App time zone</span>
+                <span class="text-[11px] text-mutedgray">Detected: Asia/Kolkata (IST, UTC+05:30)</span>
+              </div>
+            </div>
+            <span class="text-xs text-rose font-medium">Auto-configured</span>
+          </div>
+
+          <!-- Nav Actions -->
+          <div class="pt-4 flex items-center justify-between border-t border-gray-100">
+            <button type="button" onclick="goToStep(1)" class="px-5 py-2.5 text-xs font-semibold text-mutedgray hover:text-plum rounded-xl transition-colors">
+              ← Back
+            </button>
+            <button type="submit" class="px-6 py-2.5 bg-rose hover:bg-rose-600 text-white text-xs font-semibold rounded-xl shadow-button transition-all">
+              Continue →
+            </button>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- ================= STEP 3: WHAT BRINGS YOU HERE? ================= -->
+      <div id="step-3" class="step-view hidden animate-step">
+        <div class="mb-5">
+          <span class="text-xs font-semibold text-rose bg-blush px-2.5 py-0.5 rounded-full">Step 3 of 8</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-plum mt-2">What would you like help with?</h2>
+          <p class="text-sm text-mutedgray mt-1">Select all that apply. This customizes your home shortcuts and AI suggested prompts.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 max-h-[380px] overflow-y-auto custom-scroll pr-1" id="goals-list">
+          <!-- Multi-select Goal cards -->
+          <div onclick="toggleMultiSelect('health_goals', 'Understanding my menstrual cycle', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3 card-selected">
+            <div class="w-8 h-8 rounded-xl bg-blush flex-shrink-0 flex items-center justify-center text-rose font-semibold text-xs">🌸</div>
+            <div>
+              <p class="text-xs font-bold text-plum">Understanding menstrual cycle</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Learn follicular, ovulatory, and luteal biological phases.</p>
+            </div>
+          </div>
+
+          <div onclick="toggleMultiSelect('health_goals', 'Tracking periods and symptoms', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3 card-selected">
+            <div class="w-8 h-8 rounded-xl bg-rose/10 flex-shrink-0 flex items-center justify-center text-rose font-semibold text-xs">📅</div>
+            <div>
+              <p class="text-xs font-bold text-plum">Tracking periods &amp; symptoms</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Log daily flow, pain scale, and physical indicators.</p>
+            </div>
+          </div>
+
+          <div onclick="toggleMultiSelect('health_goals', 'Understanding PMS and discomfort', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3 card-selected">
+            <div class="w-8 h-8 rounded-xl bg-purple-50 flex-shrink-0 flex items-center justify-center text-purple-600 font-semibold text-xs">⚡</div>
+            <div>
+              <p class="text-xs font-bold text-plum">PMS &amp; cramp relief</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Discover gentle stretches, teas, and evidence-based relief.</p>
+            </div>
+          </div>
+
+          <div onclick="toggleMultiSelect('health_goals', 'Exploring my health patterns', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3 card-selected">
+            <div class="w-8 h-8 rounded-xl bg-emerald-50 flex-shrink-0 flex items-center justify-center text-emerald-600 font-semibold text-xs">📊</div>
+            <div>
+              <p class="text-xs font-bold text-plum">Exploring health patterns</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Spot multi-month correlations between mood, sleep, and rhythm.</p>
+            </div>
+          </div>
+
+          <div onclick="toggleMultiSelect('health_goals', 'Learning about reproductive health', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3">
+            <div class="w-8 h-8 rounded-xl bg-blue-50 flex-shrink-0 flex items-center justify-center text-blue-600 font-semibold text-xs">🩺</div>
+            <div>
+              <p class="text-xs font-bold text-plum">Reproductive health biology</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Hormone balance, fertility windows, and wellness checkups.</p>
+            </div>
+          </div>
+
+          <div onclick="toggleMultiSelect('health_goals', 'Finding or consulting a doctor', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3">
+            <div class="w-8 h-8 rounded-xl bg-rose-50 flex-shrink-0 flex items-center justify-center text-rose font-semibold text-xs">👩‍⚕️</div>
+            <div>
+              <p class="text-xs font-bold text-plum">Consulting verified doctors</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Book video or clinic appointments with gynecologists.</p>
+            </div>
+          </div>
+
+          <div onclick="toggleMultiSelect('health_goals', 'Pregnancy information', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3">
+            <div class="w-8 h-8 rounded-xl bg-amber-50 flex-shrink-0 flex items-center justify-center text-amber-600 font-semibold text-xs">🌱</div>
+            <div>
+              <p class="text-xs font-bold text-plum">Pregnancy education</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Conception planning or trimester guidance.</p>
+            </div>
+          </div>
+
+          <div onclick="toggleMultiSelect('health_goals', 'Menopause and life-stage changes', this)" class="card-selectable p-3.5 rounded-2xl border border-gray-200 cursor-pointer flex items-start gap-3">
+            <div class="w-8 h-8 rounded-xl bg-teal-50 flex-shrink-0 flex items-center justify-center text-teal-600 font-semibold text-xs">🌿</div>
+            <div>
+              <p class="text-xs font-bold text-plum">Perimenopause &amp; life stages</p>
+              <p class="text-[11px] text-mutedgray mt-0.5">Navigating transitions, hot flashes, and hormonal shifts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 flex items-center justify-between border-t border-gray-100">
+          <button type="button" onclick="goToStep(2)" class="px-5 py-2.5 text-xs font-semibold text-mutedgray hover:text-plum rounded-xl transition-colors">
+            ← Back
+          </button>
+          <button type="button" onclick="goToStep(4)" class="px-6 py-2.5 bg-rose hover:bg-rose-600 text-white text-xs font-semibold rounded-xl shadow-button transition-all">
+            Continue →
+          </button>
+        </div>
+      </div>
+
+
+      <!-- ================= STEP 4: MENSTRUAL HEALTH PREFERENCES ================= -->
+      <div id="step-4" class="step-view hidden animate-step">
+        <div class="mb-5">
+          <span class="text-xs font-semibold text-rose bg-blush px-2.5 py-0.5 rounded-full">Step 4 of 8</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-plum mt-2">Let's set up your cycle tracker</h2>
+          <p class="text-sm text-mutedgray mt-1">You decide if and how you want your cycle tracked. All data is securely encrypted.</p>
+        </div>
+
+        <!-- Primary Question: Enable Tracker? -->
+        <div class="mb-5">
+          <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">
+            Would you like to track your menstrual cycle?
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" id="tracker-enable-options">
+            <button type="button" onclick="setTrackerEnabled('yes', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 text-left card-selected">
+              <span class="block text-xs font-bold text-plum">Yes, set up tracker</span>
+              <span class="block text-[10px] text-mutedgray mt-0.5">Full calendar &amp; rhythm</span>
+            </button>
+            <button type="button" onclick="setTrackerEnabled('later', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 text-left">
+              <span class="block text-xs font-bold text-plum">Not right now</span>
+              <span class="block text-[10px] text-mutedgray mt-0.5">I can turn it on later</span>
+            </button>
+            <button type="button" onclick="setTrackerEnabled('no', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 text-left">
+              <span class="block text-xs font-bold text-plum">I don't track periods</span>
+              <span class="block text-[10px] text-mutedgray mt-0.5">Use AI &amp; wellness only</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Conditional Follow-up Fields (Visible only if 'yes') -->
+        <div id="cycle-details-container" class="space-y-4 pt-3 border-t border-gray-100">
+          
+          <!-- Last period start date -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="text-xs font-bold uppercase tracking-wider text-plum">
+                First day of your most recent period (optional)
+              </label>
+              <button type="button" onclick="clearInput('input-last-period')" class="text-[11px] text-rose hover:underline">Clear</button>
+            </div>
+            <input type="date" id="input-last-period" value="2024-10-12" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-rose focus:ring-2 focus:ring-rose/20 outline-none text-plum text-xs font-medium">
+            <p class="text-[10px] text-mutedgray mt-1">Leave empty if you don't recall or don't wish to enter now.</p>
+          </div>
+
+          <!-- Dual Sliders / Dropdowns: Cycle Length & Period Duration -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-gray-200/80">
+              <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-bold text-plum">Typical cycle length</span>
+                <span id="cycle-len-val" class="text-xs font-bold text-rose px-2 py-0.5 rounded-md bg-white border border-rose-200">28 Days</span>
+              </div>
+              <p class="text-[10px] text-mutedgray mb-2">Days from the start of one period to the start of the next.</p>
+              <input type="range" id="input-cycle-len" min="21" max="45" value="28" oninput="updateCycleLength(this.value)" class="w-full accent-rose cursor-pointer">
+              <div class="flex justify-between text-[10px] text-mutedgray mt-1">
+                <span class="">21 days</span>
+                <span class="">Average (28)</span>
+                <span class="">45 days</span>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-gray-200/80">
+              <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-bold text-plum">Typical period duration</span>
+                <span id="period-dur-val" class="text-xs font-bold text-rose px-2 py-0.5 rounded-md bg-white border border-rose-200">5 Days</span>
+              </div>
+              <p class="text-[10px] text-mutedgray mb-2">Number of days bleeding usually lasts.</p>
+              <input type="range" id="input-period-dur" min="2" max="10" value="5" oninput="updatePeriodDuration(this.value)" class="w-full accent-rose cursor-pointer">
+              <div class="flex justify-between text-[10px] text-mutedgray mt-1">
+                <span class="">2 days</span>
+                <span class="">Average (5)</span>
+                <span class="">10 days</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regularity Indicator -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">
+              Are your cycles usually regular?
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="regularity-options">
+              <button type="button" onclick="selectSingleOption('cycle_regularity', 'Usually regular', this)" class="card-selectable py-2 px-2.5 rounded-xl border border-gray-200 text-xs font-medium text-plum text-center card-selected">Usually regular</button>
+              <button type="button" onclick="selectSingleOption('cycle_regularity', 'Sometimes irregular', this)" class="card-selectable py-2 px-2.5 rounded-xl border border-gray-200 text-xs font-medium text-plum text-center">Sometimes irregular</button>
+              <button type="button" onclick="selectSingleOption('cycle_regularity', 'Often irregular', this)" class="card-selectable py-2 px-2.5 rounded-xl border border-gray-200 text-xs font-medium text-plum text-center">Often irregular</button>
+              <button type="button" onclick="selectSingleOption('cycle_regularity', 'Not sure', this)" class="card-selectable py-2 px-2.5 rounded-xl border border-gray-200 text-xs font-medium text-plum text-center">Not sure</button>
+            </div>
+          </div>
+
+          <div class="p-2.5 bg-lavender/40 rounded-xl border border-purple-100 flex items-start gap-2 text-[11px] text-mutedgray">
+            <span class="text-purple-600">🛡️</span>
+            <span class="">Educational Note: Predictions shown later in the dashboard are algorithmic estimates, not birth control guarantees or clinical diagnoses.</span>
+          </div>
+
+        </div>
+
+        <div class="pt-4 flex items-center justify-between border-t border-gray-100 mt-4">
+          <button type="button" onclick="goToStep(3)" class="px-5 py-2.5 text-xs font-semibold text-mutedgray hover:text-plum rounded-xl transition-colors">
+            ← Back
+          </button>
+          <button type="button" onclick="goToStep(5)" class="px-6 py-2.5 bg-rose hover:bg-rose-600 text-white text-xs font-semibold rounded-xl shadow-button transition-all">
+            Continue →
+          </button>
+        </div>
+      </div>
+
+
+      <!-- ================= STEP 5: HEALTH AREAS & SYMPTOMS ================= -->
+      <div id="step-5" class="step-view hidden animate-step"><div class="mb-4 text-center sm:text-left"><div class="flex items-center justify-between"><span class="text-xs font-semibold text-rose bg-blush px-2.5 py-0.5 rounded-full">Step 5 of 8</span><span class="text-[11px] text-mutedgray">Flo-inspired Symptom Deck</span></div><p class="text-xs font-medium text-rose mt-2 tracking-wide uppercase">Your cycle can impact how you feel</p><h2 class="text-2xl sm:text-3xl font-extrabold text-plum mt-0.5">Select symptoms you notice most</h2><p class="text-xs sm:text-sm text-mutedgray mt-1 leading-relaxed">Tap to choose what you experience. We will tune your daily logging and cycle correlation insights accordingly.</p></div><div class="space-y-5 max-h-[420px] overflow-y-auto custom-scroll pr-1 pb-2"><div><div class="flex items-center justify-between mb-2.5"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-rose"></span><h3 class="text-xs font-bold uppercase tracking-wider text-plum">Physical Symptoms</h3></div><span class="text-[11px] text-mutedgray">Multi-select</span></div><div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="flo-symptoms-physical"><button type="button" onclick="toggleFloSymptom('Cramps', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group card-selected"><div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center text-rose shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">favorite</span></div><span class="text-xs font-semibold text-plum">Cramps</span><span class="text-[10px] text-mutedgray">Pelvic ache</span></button><button type="button" onclick="toggleFloSymptom('Fatigue', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group card-selected"><div class="w-12 h-12 rounded-full bg-lavender flex items-center justify-center text-[#6A5A87] shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">battery_alert</span></div><span class="text-xs font-semibold text-plum">Fatigue</span><span class="text-[10px] text-mutedgray">Low stamina</span></button><button type="button" onclick="toggleFloSymptom('Bloating', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group card-selected"><div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center text-rose shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">air</span></div><span class="text-xs font-semibold text-plum">Bloating</span><span class="text-[10px] text-mutedgray">Fullness</span></button><button type="button" onclick="toggleFloSymptom('Tender breasts', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group"><div class="w-12 h-12 rounded-full bg-rose/10 flex items-center justify-center text-rose shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">spa</span></div><span class="text-xs font-semibold text-plum">Tender breasts</span><span class="text-[10px] text-mutedgray">Sensitivity</span></button><button type="button" onclick="toggleFloSymptom('Backache', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group card-selected"><div class="w-12 h-12 rounded-full bg-lavender flex items-center justify-center text-[#6A5A87] shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">accessibility_new</span></div><span class="text-xs font-semibold text-plum">Backache</span><span class="text-[10px] text-mutedgray">Lower spine</span></button><button type="button" onclick="toggleFloSymptom('Headaches', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group"><div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">neurology</span></div><span class="text-xs font-semibold text-plum">Headaches</span><span class="text-[10px] text-mutedgray">Tension/migraine</span></button><button type="button" onclick="toggleFloSymptom('Nausea', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group"><div class="w-12 h-12 rounded-full bg-sage/60 flex items-center justify-center text-[#52775C] shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">waves</span></div><span class="text-xs font-semibold text-plum">Nausea</span><span class="text-[10px] text-mutedgray">Queasiness</span></button><button type="button" onclick="toggleFloSymptom('Acne &amp; Skin', this)" class="card-selectable p-3 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1.5 group card-selected"><div class="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-600 shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-2xl">auto_awesome</span></div><span class="text-xs font-semibold text-plum">Acne / Skin</span><span class="text-[10px] text-mutedgray">Breakouts</span></button></div></div><div><div class="flex items-center gap-1.5 mb-2.5"><span class="w-2 h-2 rounded-full bg-purple-400"></span><h3 class="text-xs font-bold uppercase tracking-wider text-plum">Mood &amp; Cognitive Energy</h3></div><div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="flo-symptoms-emotional"><button type="button" onclick="toggleFloSymptom('Mood swings', this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1 group card-selected"><div class="w-10 h-10 rounded-full bg-blush flex items-center justify-center text-rose shadow-sm"><span class="material-symbols-outlined text-xl">theater_comedy</span></div><span class="text-xs font-semibold text-plum">Mood swings</span></button><button type="button" onclick="toggleFloSymptom('Irritability', this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1 group"><div class="w-10 h-10 rounded-full bg-rose-50 flex items-center justify-center text-rose shadow-sm"><span class="material-symbols-outlined text-xl">electric_bolt</span></div><span class="text-xs font-semibold text-plum">Irritability</span></button><button type="button" onclick="toggleFloSymptom('Brain fog', this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1 group"><div class="w-10 h-10 rounded-full bg-lavender flex items-center justify-center text-[#6A5A87] shadow-sm"><span class="material-symbols-outlined text-xl">blur_on</span></div><span class="text-xs font-semibold text-plum">Brain fog</span></button><button type="button" onclick="toggleFloSymptom('Low energy', this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1 group card-selected"><div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600 shadow-sm"><span class="material-symbols-outlined text-xl">battery_low</span></div><span class="text-xs font-semibold text-plum">Low energy</span></button><button type="button" onclick="toggleFloSymptom('Anxious feelings', this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1 group"><div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shadow-sm"><span class="material-symbols-outlined text-xl">cyclone</span></div><span class="text-xs font-semibold text-plum">Anxious</span></button><button type="button" onclick="toggleFloSymptom('Calm', this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1 group"><div class="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 shadow-sm"><span class="material-symbols-outlined text-xl">self_improvement</span></div><span class="text-xs font-semibold text-plum">Calm &amp; balanced</span></button><button type="button" onclick="toggleFloSymptom('High energy', this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-white text-center flex flex-col items-center justify-center gap-1 group"><div class="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 shadow-sm"><span class="material-symbols-outlined text-xl">bolt</span></div><span class="text-xs font-semibold text-plum">High energy</span></button><button type="button" id="btn-flo-none" onclick="toggleFloNone(this)" class="card-selectable p-2.5 rounded-2xl border border-gray-200 bg-[#FCFAF9] text-center flex flex-col items-center justify-center gap-1 group"><div class="w-10 h-10 rounded-full bg-gray-200/70 flex items-center justify-center text-mutedgray shadow-sm"><span class="material-symbols-outlined text-xl">block</span></div><span class="text-xs font-semibold text-plum">None of these</span></button></div></div><div class="p-4 rounded-2xl bg-[#FCFAF9] border border-[#F0EBE9] space-y-3.5"><div class="flex items-center justify-between"><h3 class="text-xs font-bold uppercase tracking-wider text-plum">How does your cycle typically affect daily well-being?</h3><span class="text-[10px] text-rose font-semibold bg-blush px-2 py-0.5 rounded-full">Flo Correlation Suite</span></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5"><div class="p-3 bg-white rounded-xl border border-gray-200/80"><p class="text-xs font-bold text-plum mb-1.5 flex items-center gap-1"><span class="material-symbols-outlined text-sm text-purple-600">bedtime</span> Sleep &amp; Rest</p><div class="flex gap-1.5" id="opt-impact-sleep"><button type="button" onclick="setImpactOption('sleep_impact', 'Yes', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50 card-selected">Yes</button><button type="button" onclick="setImpactOption('sleep_impact', 'Sometimes', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50">Sometimes</button><button type="button" onclick="setImpactOption('sleep_impact', 'No', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50">No</button></div></div><div class="p-3 bg-white rounded-xl border border-gray-200/80"><p class="text-xs font-bold text-plum mb-1.5 flex items-center gap-1"><span class="material-symbols-outlined text-sm text-amber-600">trending_up</span> Energy Fluctuations</p><div class="flex gap-1.5" id="opt-impact-energy"><button type="button" onclick="setImpactOption('energy_impact', 'Noticeable', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50 card-selected">Noticeable</button><button type="button" onclick="setImpactOption('energy_impact', 'Mild', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50">Mild</button><button type="button" onclick="setImpactOption('energy_impact', 'Stable', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50">Stable</button></div></div><div class="p-3 bg-white rounded-xl border border-gray-200/80"><p class="text-xs font-bold text-plum mb-1.5 flex items-center gap-1"><span class="material-symbols-outlined text-sm text-rose">restaurant</span> Digestion &amp; Appetite</p><div class="flex gap-1.5" id="opt-impact-digestion"><button type="button" onclick="setImpactOption('digestion_impact', 'Cravings', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50 card-selected">Cravings</button><button type="button" onclick="setImpactOption('digestion_impact', 'Digestive shifts', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50">Shifts</button><button type="button" onclick="setImpactOption('digestion_impact', 'None', this)" class="card-selectable flex-1 py-1 text-[11px] font-semibold rounded-lg border border-gray-200 hover:border-rose/50">None</button></div></div></div></div><div class="flex items-center justify-between text-xs pt-1"><div class="flex items-center gap-3"><button type="button" onclick="selectCommonFloSymptoms()" class="text-rose font-medium hover:underline">Select top 5 common</button><span class="text-gray-300">|</span><button type="button" onclick="clearFloSymptoms()" class="text-mutedgray hover:text-plum font-medium">Clear all</button></div><span class="text-[11px] text-emerald-600 font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Calibrating logger</span></div></div><div class="pt-4 flex items-center justify-between border-t border-gray-100 mt-3"><button type="button" onclick="goToStep(4)" class="px-5 py-2.5 text-xs font-semibold text-mutedgray hover:text-plum rounded-xl transition-colors">← Back</button><button type="button" onclick="goToStep(6)" class="px-6 py-2.5 bg-rose hover:bg-rose-600 text-white text-xs font-semibold rounded-xl shadow-button transition-all">Continue →</button></div></div>
+
+
+      <!-- ================= STEP 6: PERSONALIZATION PREFERENCES ================= -->
+      <div id="step-6" class="step-view hidden animate-step">
+        <div class="mb-5">
+          <span class="text-xs font-semibold text-rose bg-blush px-2.5 py-0.5 rounded-full">Step 6 of 8</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-plum mt-2">How would you like Sakhi to help?</h2>
+          <p class="text-sm text-mutedgray mt-1">Configure the personality, depth, and data sharing of your AI Health Assistant.</p>
+        </div>
+
+        <div class="space-y-5">
+          <!-- Answer Style -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">
+              What kind of answers do you prefer?
+            </label>
+            <div class="grid grid-cols-3 gap-2.5" id="style-options">
+              <button type="button" onclick="selectSingleOption('answer_style', 'Short &amp; simple', this)" class="card-selectable p-3 rounded-xl border border-gray-200 text-left">
+                <span class="block text-xs font-bold text-plum">Short &amp; simple</span>
+                <span class="block text-[10px] text-mutedgray mt-0.5">Quick takeaways</span>
+              </button>
+              <button type="button" onclick="selectSingleOption('answer_style', 'A balance of both', this)" class="card-selectable p-3 rounded-xl border border-gray-200 text-left card-selected">
+                <span class="block text-xs font-bold text-plum">A balance</span>
+                <span class="block text-[10px] text-mutedgray mt-0.5">Friendly + clinical summary</span>
+              </button>
+              <button type="button" onclick="selectSingleOption('answer_style', 'Detailed explanations', this)" class="card-selectable p-3 rounded-xl border border-gray-200 text-left">
+                <span class="block text-xs font-bold text-plum">Deep dive</span>
+                <span class="block text-[10px] text-mutedgray mt-0.5">Hormone mechanisms</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Included Content -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">
+              What should Sakhi include in responses?
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="content-inclusion-options">
+              <div onclick="toggleMultiSelect('included_content', 'Practical wellness suggestions', this)" class="card-selectable p-2.5 rounded-xl border border-gray-200 cursor-pointer flex items-center justify-between card-selected">
+                <span class="text-xs font-semibold text-plum">🌱 Practical wellness suggestions</span>
+                <span class="text-rose text-xs font-bold check-mark">✓</span>
+              </div>
+              <div onclick="toggleMultiSelect('included_content', 'Health term glossary', this)" class="card-selectable p-2.5 rounded-xl border border-gray-200 cursor-pointer flex items-center justify-between card-selected">
+                <span class="text-xs font-semibold text-plum">📖 Clear health term definitions</span>
+                <span class="text-rose text-xs font-bold check-mark">✓</span>
+              </div>
+              <div onclick="toggleMultiSelect('included_content', 'Verified medical citations', this)" class="card-selectable p-2.5 rounded-xl border border-gray-200 cursor-pointer flex items-center justify-between card-selected">
+                <span class="text-xs font-semibold text-plum">🔬 Sources &amp; journal references</span>
+                <span class="text-rose text-xs font-bold check-mark">✓</span>
+              </div>
+              <div onclick="toggleMultiSelect('included_content', 'Guidance when to consult a doctor', this)" class="card-selectable p-2.5 rounded-xl border border-gray-200 cursor-pointer flex items-center justify-between card-selected">
+                <span class="text-xs font-semibold text-plum">👩‍⚕️ Doctor consultation triggers</span>
+                <span class="text-rose text-xs font-bold check-mark">✓</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Context Privacy Switch -->
+          <div class="p-4 rounded-2xl bg-[#FCFAF9] border border-gray-200/80">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <span class="text-xs font-bold text-plum block">Use saved tracker information for AI answers?</span>
+                <p class="text-[11px] text-mutedgray mt-1 leading-normal">
+                  When enabled, Sakhi can contextualize questions with your current cycle phase (e.g. "On Day 12, here is why you might have mild cramps..."). You can turn this off anytime.
+                </p>
+              </div>
+              <!-- Toggle Switch -->
+              <label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1">
+                <input type="checkbox" id="ai-context-toggle" checked="" onchange="toggleAiContext(this.checked)" class="sr-only peer">
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:width-5 after:transition-all peer-checked:bg-rose"></div>
+              </label>
+            </div>
+            <div id="ai-context-status-text" class="mt-2 text-[10px] text-rose font-semibold flex items-center gap-1.5">
+              <span class="">●</span> Connected: Cycle day &amp; logged sensations will contextualize AI queries.
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 flex items-center justify-between border-t border-gray-100 mt-4">
+          <button type="button" onclick="goToStep(5)" class="px-5 py-2.5 text-xs font-semibold text-mutedgray hover:text-plum rounded-xl transition-colors">
+            ← Back
+          </button>
+          <button type="button" onclick="goToStep(7)" class="px-6 py-2.5 bg-rose hover:bg-rose-600 text-white text-xs font-semibold rounded-xl shadow-button transition-all">
+            Continue →
+          </button>
+        </div>
+      </div>
+
+
+      <!-- ================= STEP 7: PRIVACY & CONSENT ================= -->
+      <div id="step-7" class="step-view hidden animate-step">
+        <div class="mb-5">
+          <span class="text-xs font-semibold text-rose bg-blush px-2.5 py-0.5 rounded-full">Step 7 of 8</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-plum mt-2">Your health information belongs to you</h2>
+          <p class="text-sm text-mutedgray mt-1">We believe in transparent, granular consent without buried terms or deceptive checkboxes.</p>
+        </div>
+
+        <!-- Privacy Guarantees Box -->
+        <div class="p-4 rounded-2xl bg-warm border border-gray-200/80 mb-5 space-y-2.5 text-xs text-plum">
+          <div class="flex items-start gap-2.5">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <p class=""><strong class="font-semibold text-plum">No Data Selling:</strong> We never sell cycle logs, symptoms, or chat conversations to insurance providers, advertisers, or third parties.</p>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <p class=""><strong class="font-semibold text-plum">Full Deletion Rights:</strong> You can download or purge your entire health history at any time from Settings &amp; Privacy.</p>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <p class=""><strong class="font-semibold text-plum">Clinical Boundary:</strong> Sakhi provides peer-reviewed educational insights and symptom tracking. It does not provide medical diagnoses or replace emergency care.</p>
+          </div>
+        </div>
+
+        <!-- Granular Checkboxes -->
+        <form onsubmit="event.preventDefault(); validateConsentAndNext();" class="space-y-3.5">
+          <!-- Required Checkbox 1 -->
+          <label class="flex items-start gap-3 p-3 rounded-xl border border-gray-200 hover:border-gray-300 cursor-pointer bg-white transition-all">
+            <input type="checkbox" id="consent-terms" required="" checked="" class="w-4 h-4 mt-0.5 text-rose rounded border-gray-300 focus:ring-rose accent-rose">
+            <div>
+              <span class="text-xs font-bold text-plum block">
+                Terms of Service &amp; Health Privacy Policy <span class="text-rose">* (Required)</span>
+              </span>
+              <p class="text-[11px] text-mutedgray mt-0.5">I agree to the privacy policy and understand that SakhiSahay provides educational health guidance, not certified clinical triage.</p>
+            </div>
+          </label>
+
+          <!-- Optional Checkbox 2 -->
+          <label class="flex items-start gap-3 p-3 rounded-xl border border-gray-200 hover:border-gray-300 cursor-pointer bg-white transition-all">
+            <input type="checkbox" id="consent-ai-personalization" checked="" class="w-4 h-4 mt-0.5 text-rose rounded border-gray-300 focus:ring-rose accent-rose">
+            <div>
+              <span class="text-xs font-bold text-plum block">
+                AI Health Context Personalization (Optional)
+              </span>
+              <p class="text-[11px] text-mutedgray mt-0.5">Permit Sakhi AI to reference your logged cycle phase and reported symptoms to deliver tailored responses.</p>
+            </div>
+          </label>
+
+          <!-- Optional Checkbox 3 -->
+          <label class="flex items-start gap-3 p-3 rounded-xl border border-gray-200 hover:border-gray-300 cursor-pointer bg-white transition-all">
+            <input type="checkbox" id="consent-notifications" class="w-4 h-4 mt-0.5 text-rose rounded border-gray-300 focus:ring-rose accent-rose">
+            <div>
+              <span class="text-xs font-bold text-plum block">
+                Period &amp; Ovulation Reminder Alerts (Optional)
+              </span>
+              <p class="text-[11px] text-mutedgray mt-0.5">Receive gentle web notifications 2 days prior to your estimated period start and fertile window.</p>
+            </div>
+          </label>
+
+          <div id="consent-error" class="hidden text-xs text-rose font-medium mt-1">
+            Please accept the required Terms of Service &amp; Privacy Policy to proceed.
+          </div>
+
+          <div class="pt-4 flex items-center justify-between border-t border-gray-100 mt-4">
+            <button type="button" onclick="goToStep(6)" class="px-5 py-2.5 text-xs font-semibold text-mutedgray hover:text-plum rounded-xl transition-colors">
+              ← Back
+            </button>
+            <button type="submit" class="px-6 py-2.5 bg-rose hover:bg-rose-600 text-white text-xs font-semibold rounded-xl shadow-button transition-all">
+              Review Setup →
+            </button>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- ================= STEP 8: REVIEW YOUR SETUP ================= -->
+      <div id="step-8" class="step-view hidden animate-step">
+        <div class="mb-5">
+          <span class="text-xs font-semibold text-rose bg-blush px-2.5 py-0.5 rounded-full">Step 8 of 8</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-plum mt-2">Your SakhiSahay experience is ready 🌸</h2>
+          <p class="text-sm text-mutedgray mt-1">Review your selections below. Tap 'Edit' on any section to make adjustments before saving.</p>
+        </div>
+
+        <!-- Summary Review Cards -->
+        <div class="space-y-3 max-h-[380px] overflow-y-auto custom-scroll pr-1 mb-6 text-xs" id="review-cards-container">
+          
+          <!-- Identity Summary -->
+          <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-gray-200 flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-plum text-xs">Profile &amp; Language</span>
+                <span class="text-[10px] text-mutedgray">● Step 2</span>
+              </div>
+              <p class="text-xs text-plum font-semibold mt-1" id="review-name-age">Priya (18–24)</p>
+              <p class="text-[11px] text-mutedgray" id="review-language">Language: English (IST Timezone)</p>
+            </div>
+            <button onclick="goToStep(2)" class="text-xs font-bold text-rose hover:underline px-2 py-1">Edit</button>
+          </div>
+
+          <!-- Goals Summary -->
+          <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-gray-200 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-plum text-xs">Focus Areas</span>
+                <span class="text-[10px] text-mutedgray">● Step 3</span>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mt-1.5" id="review-goals-chips">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+            <button onclick="goToStep(3)" class="text-xs font-bold text-rose hover:underline px-2 py-1">Edit</button>
+          </div>
+
+          <!-- Cycle Tracker Summary -->
+          <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-gray-200 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-plum text-xs">Cycle Tracking Setup</span>
+                <span class="text-[10px] text-mutedgray">● Step 4</span>
+              </div>
+              <div class="mt-1 text-[11px] space-y-0.5" id="review-cycle-details">
+                <p class=""><span class="text-mutedgray">Status:</span> <span class="font-semibold text-plum" id="review-cycle-status">Enabled</span></p>
+                <p class=""><span class="text-mutedgray">Last Period:</span> <span class="font-semibold text-plum" id="review-last-period">Oct 12, 2024</span></p>
+                <p class=""><span class="text-mutedgray">Rhythm:</span> <span class="font-semibold text-plum" id="review-cycle-rhythm">28 day cycle • 5 day period • Usually regular</span></p>
+              </div>
+            </div>
+            <button onclick="goToStep(4)" class="text-xs font-bold text-rose hover:underline px-2 py-1">Edit</button>
+          </div>
+
+          <!-- Symptoms Preferences -->
+          <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-gray-200 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-plum text-xs">Monitored Sensations &amp; Moods</span>
+                <span class="text-[10px] text-mutedgray">● Step 5</span>
+              </div>
+              <div class="flex flex-wrap gap-1 mt-1.5" id="review-symptoms-chips">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+            <button onclick="goToStep(5)" class="text-xs font-bold text-rose hover:underline px-2 py-1">Edit</button>
+          </div>
+
+          <!-- AI & Privacy Consent -->
+          <div class="p-3.5 rounded-2xl bg-[#FCFAF9] border border-gray-200 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-plum text-xs">AI Assistant &amp; Privacy</span>
+                <span class="text-[10px] text-mutedgray">● Steps 6 &amp; 7</span>
+              </div>
+              <p class="text-[11px] text-plum mt-1" id="review-ai-style">Style: Balanced explanations • Health terms + Citations</p>
+              <p class="text-[11px] text-emerald-700 font-medium mt-0.5" id="review-ai-consent">✓ Tracker context enabled for personalized guidance</p>
+            </div>
+            <button onclick="goToStep(6)" class="text-xs font-bold text-rose hover:underline px-2 py-1">Edit</button>
+          </div>
+
+        </div>
+
+        <!-- API Payload preview info box -->
+        <div class="p-3 rounded-xl bg-gray-50 border border-gray-200 text-[10px] text-mutedgray flex items-center justify-between">
+          <span class="">Payload ready for <code class="text-plum bg-gray-200 px-1 py-0.5 rounded">POST /api/v1/user/onboarding</code></span>
+          <span class="text-emerald-600 font-bold">Validated</span>
+        </div>
+
+        <!-- Submit & Save Actions -->
+        <div class="pt-4 flex items-center justify-between border-t border-gray-100 mt-4">
+          <button type="button" onclick="goToStep(7)" class="px-5 py-2.5 text-xs font-semibold text-mutedgray hover:text-plum rounded-xl transition-colors">
+            ← Back
+          </button>
+          <button type="button" id="finish-btn" onclick="submitOnboardingAndTransition()" class="px-7 py-3 bg-rose hover:bg-rose-600 text-white text-xs font-bold rounded-xl shadow-button transition-all flex items-center gap-2">
+            <span class="">Save &amp; Go to Dashboard 🌷</span>
+          </button>
+        </div>
+      </div>
+
+
+      <!-- ================= STEP 9: SUCCESS CONFIRMATION MODAL / TRANSITION ================= -->
+      <div id="step-9" class="step-view animate-step text-center py-6 hidden">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-4 text-2xl font-bold">
+          ✓
+        </div>
+        <h2 class="text-2xl font-extrabold text-plum">Welcome home, <span id="success-user-name" class="">Priya</span> 🌷</h2>
+        <p class="text-sm text-mutedgray max-w-md mx-auto mt-2 leading-relaxed">
+          Your profile and cycle baseline have been personalized. Your dashboard, AI companion, and quick logger are now calibrated for you.
+        </p>
+
+        <div class="mt-8 max-w-sm mx-auto p-4 rounded-2xl bg-warm border border-gray-200 text-left text-xs space-y-2">
+          <div class="flex items-center justify-between text-plum">
+            <span class="text-mutedgray">Estimated Cycle Phase:</span>
+            <span class="font-bold text-rose">Follicular (Day 12)</span>
+          </div>
+          <div class="flex items-center justify-between text-plum">
+            <span class="text-mutedgray">AI Model Calibrated:</span>
+            <span class="font-bold">Sakhi Clinical v2.4</span>
+          </div>
+          <div class="flex items-center justify-between text-plum">
+            <span class="text-mutedgray">Sync Status:</span>
+            <span class="text-emerald-600 font-semibold">Saved to profile</span>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <button onclick="redirectToDashboard()" class="px-8 py-3.5 bg-rose hover:bg-rose-600 text-white text-sm font-bold rounded-xl shadow-button transition-all">
+            Enter Personalized Dashboard →
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bottom Global Trust Footer -->
+  <footer class="w-full py-4 text-center text-xs text-mutedgray border-t border-[#EDE6E3] bg-[#FAF8F7]">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="">Strict privacy guard: End-to-end encrypted health data</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px]">
+        <a href="#" class="hover:text-plum transition-colors">Privacy Charter</a>
+        <span class="">•</span>
+        <a href="#" class="hover:text-plum transition-colors">Clinical Advisory Board</a>
+        <span class="">•</span>
+        <a href="#" class="hover:text-plum transition-colors">Terms of Care</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- State & Interactive Controller Script -->
+    <script>
+    // Structured profile matching schema
+    const defaultState = {
+      preferred_name: "Priya",
+      age_range: "18–24",
+      preferred_language: "English",
+      health_goals: [
+        "Understanding my menstrual cycle",
+        "Tracking periods and symptoms",
+        "Understanding PMS and discomfort",
+        "Exploring my health patterns"
+      ],
+      period_tracking_enabled: "yes",
+      last_period_start_date: "2024-10-12",
+      typical_cycle_length_days: 28,
+      typical_period_duration_days: 5,
+      cycle_regularity: "Usually regular",
+      tracked_symptoms: [
+        "Cramps",
+        "Fatigue",
+        "Bloating",
+        "Backache",
+        "Acne & Skin",
+        "Mood swings",
+        "Low energy"
+      ],
+      wellbeing_impacts: {
+        sleep_impact: "Yes",
+        energy_impact: "Noticeable",
+        digestion_impact: "Cravings"
+      },
+      answer_style: "A balance of both",
+      included_content: [
+        "Practical wellness suggestions",
+        "Health term glossary",
+        "Verified medical citations",
+        "Guidance when to consult a doctor"
+      ],
+      ai_health_context_consent: true,
+      terms_accepted: true,
+      notifications_enabled: true,
+      onboarding_completed: false
+    };
+
+    // Load persisted state if exists
+    let onboardingState = Object.assign({}, defaultState);
+    try {
+      const savedProfile = localStorage.getItem('sakhisahay_user_profile');
+      if (savedProfile) {
+        const parsed = JSON.parse(savedProfile);
+        onboardingState = Object.assign(onboardingState, parsed);
+        if (parsed.wellbeing_impacts) {
+          onboardingState.wellbeing_impacts = Object.assign(defaultState.wellbeing_impacts, parsed.wellbeing_impacts);
+        }
+      }
+    } catch (e) {
+      console.warn('LocalStorage load error in onboarding:', e);
+    }
+
+    let currentStep = 1;
+    const totalSteps = 8;
+
+    function goToStep(step) {
+      if (step < 1 || step > 9) return;
+      currentStep = step;
+
+      // Toggle views
+      for (let i = 1; i <= 9; i++) {
+        const el = document.getElementById(`step-${i}`);
+        if (el) {
+          if (i === step) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        }
+      }
+
+      // Update progress bar
+      updateProgressIndicators(step);
+
+      // Scroll smoothly to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // If opening Step 8 (Review), populate review fields
+      if (step === 8) {
+        renderReviewSummary();
+      }
+    }
+
+    function updateProgressIndicators(step) {
+      const stepText = document.getElementById('step-number-text');
+      const barFill = document.getElementById('progress-bar-fill');
+      const mobileBarFill = document.getElementById('mobile-progress-bar-fill');
+      const stepperContainer = document.getElementById('nav-stepper-container');
+      const skipBtn = document.getElementById('top-skip-btn');
+
+      if (step === 1 || step === 9) {
+        if (stepperContainer) stepperContainer.classList.add('opacity-0');
+        if (skipBtn) skipBtn.classList.add('hidden');
+      } else {
+        if (stepperContainer) stepperContainer.classList.remove('opacity-0');
+        if (skipBtn) skipBtn.classList.remove('hidden');
+      }
+
+      const percent = Math.min(100, Math.round((step / totalSteps) * 100));
+      if (stepText) stepText.innerText = `Step ${Math.min(step, totalSteps)}`;
+      if (barFill) barFill.style.width = `${percent}%`;
+      if (mobileBarFill) mobileBarFill.style.width = `${percent}%`;
+    }
+
+    // Step 2 Validation & Handlers
+    function validateAndNext(currentStepNumber) {
+      if (currentStepNumber === 2) {
+        const nameInput = document.getElementById('input-name');
+        if (nameInput && nameInput.value.trim() !== '') {
+          onboardingState.preferred_name = nameInput.value.trim();
+        }
+      }
+      goToStep(currentStepNumber + 1);
+    }
+
+    function selectSingleOption(field, value, btnElement) {
+      onboardingState[field] = value;
+      const parent = btnElement.parentElement;
+      if (parent) {
+        Array.from(parent.children).forEach(child => {
+          child.classList.remove('card-selected');
+        });
+      }
+      btnElement.classList.add('card-selected');
+
+      // Specific rule for Under 18
+      if (field === 'age_range') {
+        const notice = document.getElementById('under-18-notice');
+        if (notice) {
+          if (value === 'Under 18') {
+            notice.classList.remove('hidden');
+          } else {
+            notice.classList.add('hidden');
+          }
+        }
+      }
+    }
+
+    // Step 3 & Step 6 Multi-select handler
+    function toggleMultiSelect(arrayField, itemValue, element) {
+      if (!Array.isArray(onboardingState[arrayField])) {
+        onboardingState[arrayField] = [];
+      }
+      const list = onboardingState[arrayField];
+      const index = list.indexOf(itemValue);
+      if (index > -1) {
+        list.splice(index, 1);
+        element.classList.remove('card-selected');
+        const check = element.querySelector('.check-mark');
+        if (check) check.classList.add('opacity-0');
+      } else {
+        list.push(itemValue);
+        element.classList.add('card-selected');
+        const check = element.querySelector('.check-mark');
+        if (check) check.classList.remove('opacity-0');
+      }
+    }
+
+    // Step 4 Tracker logic
+    function setTrackerEnabled(val, btnElement) {
+      onboardingState.period_tracking_enabled = val;
+      const parent = btnElement.parentElement;
+      if (parent) {
+        Array.from(parent.children).forEach(c => c.classList.remove('card-selected'));
+      }
+      btnElement.classList.add('card-selected');
+
+      const container = document.getElementById('cycle-details-container');
+      if (container) {
+        if (val === 'yes') {
+          container.classList.remove('opacity-30', 'pointer-events-none');
+        } else {
+          container.classList.add('opacity-30', 'pointer-events-none');
+        }
+      }
+    }
+
+    function clearInput(id) {
+      const input = document.getElementById(id);
+      if (input) input.value = '';
+      onboardingState.last_period_start_date = null;
+    }
+
+    function updateCycleLength(val) {
+      onboardingState.typical_cycle_length_days = parseInt(val);
+      const display = document.getElementById('cycle-len-val');
+      if (display) display.innerText = `${val} Days`;
+    }
+
+    function updatePeriodDuration(val) {
+      onboardingState.typical_period_duration_days = parseInt(val);
+      const display = document.getElementById('period-dur-val');
+      if (display) display.innerText = `${val} Days`;
+    }
+
+    // Step 5 Symptom Handlers
+    function toggleFloSymptom(name, el) {
+      const noneBtn = document.getElementById('btn-flo-none');
+      if (noneBtn) noneBtn.classList.remove('card-selected');
+      if (!Array.isArray(onboardingState.tracked_symptoms)) {
+        onboardingState.tracked_symptoms = [];
+      }
+      const idx = onboardingState.tracked_symptoms.indexOf(name);
+      if (idx > -1) {
+        onboardingState.tracked_symptoms.splice(idx, 1);
+        el.classList.remove('card-selected');
+      } else {
+        onboardingState.tracked_symptoms.push(name);
+        el.classList.add('card-selected');
+      }
+    }
+
+    function toggleFloNone(btn) {
+      const pCont = document.getElementById('flo-symptoms-physical');
+      const eCont = document.getElementById('flo-symptoms-emotional');
+      if (pCont) Array.from(pCont.children).forEach(c => c.classList.remove('card-selected'));
+      if (eCont) Array.from(eCont.children).forEach(c => {
+        if (c !== btn) c.classList.remove('card-selected');
+      });
+      onboardingState.tracked_symptoms = [];
+      btn.classList.add('card-selected');
+    }
+
+    function setImpactOption(category, val, el) {
+      if (!onboardingState.wellbeing_impacts) onboardingState.wellbeing_impacts = {};
+      onboardingState.wellbeing_impacts[category] = val;
+      const parent = el.parentElement;
+      if (parent) {
+        Array.from(parent.children).forEach(b => b.classList.remove('card-selected'));
+      }
+      el.classList.add('card-selected');
+    }
+
+    function selectCommonFloSymptoms() {
+      const topCommon = ['Cramps', 'Fatigue', 'Bloating', 'Backache', 'Acne & Skin'];
+      onboardingState.tracked_symptoms = [...topCommon];
+      const noneBtn = document.getElementById('btn-flo-none');
+      if (noneBtn) noneBtn.classList.remove('card-selected');
+
+      const pCont = document.getElementById('flo-symptoms-physical');
+      if (pCont) {
+        Array.from(pCont.children).forEach(btn => {
+          const label = btn.querySelector('.text-xs')?.innerText?.trim();
+          if (label && topCommon.some(tc => label.includes(tc) || tc.includes(label))) {
+            btn.classList.add('card-selected');
+          } else {
+            btn.classList.remove('card-selected');
+          }
+        });
+      }
+    }
+
+    function clearFloSymptoms() {
+      onboardingState.tracked_symptoms = [];
+      const pCont = document.getElementById('flo-symptoms-physical');
+      const eCont = document.getElementById('flo-symptoms-emotional');
+      if (pCont) Array.from(pCont.children).forEach(c => c.classList.remove('card-selected'));
+      if (eCont) Array.from(eCont.children).forEach(c => c.classList.remove('card-selected'));
+      const noneBtn = document.getElementById('btn-flo-none');
+      if (noneBtn) noneBtn.classList.add('card-selected');
+    }
+
+    // Step 6 AI toggle
+    function toggleAiContext(isChecked) {
+      onboardingState.ai_health_context_consent = isChecked;
+      const statusText = document.getElementById('ai-context-status-text');
+      if (statusText) {
+        if (isChecked) {
+          statusText.innerHTML = '<span>●</span> Connected: Cycle day & logged sensations will contextualize AI queries.';
+          statusText.className = 'mt-2 text-[10px] text-rose font-semibold flex items-center gap-1.5';
+        } else {
+          statusText.innerHTML = '<span>○</span> Separated: Sakhi AI answers will remain strictly neutral and unlinked from your cycle logs.';
+          statusText.className = 'mt-2 text-[10px] text-gray-500 font-semibold flex items-center gap-1.5';
+        }
+      }
+    }
+
+    // Step 7 Consent validation
+    function validateConsentAndNext() {
+      const terms = document.getElementById('consent-terms');
+      const aiConsent = document.getElementById('consent-ai-personalization');
+      const notifs = document.getElementById('consent-notifications');
+      const errorEl = document.getElementById('consent-error');
+
+      if (!terms || !terms.checked) {
+        if (errorEl) errorEl.classList.remove('hidden');
+        return;
+      }
+      if (errorEl) errorEl.classList.add('hidden');
+      onboardingState.terms_accepted = terms.checked;
+      if (aiConsent) onboardingState.ai_health_context_consent = aiConsent.checked;
+      if (notifs) onboardingState.notifications_enabled = notifs.checked;
+
+      goToStep(8);
+    }
+
+    // Step 8 Review Rendering
+    function renderReviewSummary() {
+      const nameInput = document.getElementById('input-name');
+      if (nameInput && nameInput.value.trim()) {
+        onboardingState.preferred_name = nameInput.value.trim();
+      }
+
+      const reviewNameAge = document.getElementById('review-name-age');
+      if (reviewNameAge) reviewNameAge.innerText = `${onboardingState.preferred_name} (${onboardingState.age_range})`;
+
+      const reviewLang = document.getElementById('review-language');
+      if (reviewLang) reviewLang.innerText = `Language: ${onboardingState.preferred_language} • Detected IST Timezone`;
+
+      // Render Goals Chips
+      const goalsCont = document.getElementById('review-goals-chips');
+      if (goalsCont) {
+        goalsCont.innerHTML = '';
+        if (!onboardingState.health_goals || onboardingState.health_goals.length === 0) {
+          goalsCont.innerHTML = '<span class="text-xs text-mutedgray italic">None selected</span>';
+        } else {
+          onboardingState.health_goals.forEach(goal => {
+            const chip = document.createElement('span');
+            chip.className = 'px-2 py-0.5 rounded-full bg-blush text-rose font-medium text-[11px]';
+            chip.innerText = goal;
+            goalsCont.appendChild(chip);
+          });
+        }
+      }
+
+      // Render Cycle Tracking
+      const cycleStatus = document.getElementById('review-cycle-status');
+      const lastPeriodEl = document.getElementById('review-last-period');
+      const rhythmEl = document.getElementById('review-cycle-rhythm');
+
+      if (onboardingState.period_tracking_enabled === 'yes') {
+        if (cycleStatus) {
+          cycleStatus.innerText = "Enabled & Configured";
+          cycleStatus.className = "font-semibold text-emerald-600";
+        }
+        const lastInput = document.getElementById('input-last-period');
+        const lastDate = lastInput ? lastInput.value : onboardingState.last_period_start_date;
+        onboardingState.last_period_start_date = lastDate || null;
+        if (lastPeriodEl) lastPeriodEl.innerText = lastDate ? lastDate : "Not provided (Estimates on first log)";
+        if (rhythmEl) rhythmEl.innerText = `${onboardingState.typical_cycle_length_days} days cycle • ${onboardingState.typical_period_duration_days} days period • ${onboardingState.cycle_regularity}`;
+      } else {
+        if (cycleStatus) {
+          cycleStatus.innerText = onboardingState.period_tracking_enabled === 'later' ? "Paused (Set up later)" : "Disabled (Wellness only)";
+          cycleStatus.className = "font-semibold text-mutedgray";
+        }
+        if (lastPeriodEl) lastPeriodEl.innerText = "N/A";
+        if (rhythmEl) rhythmEl.innerText = "Cycle tracking not active";
+      }
+
+      // Render Symptoms Chips
+      const sympCont = document.getElementById('review-symptoms-chips');
+      if (sympCont) {
+        sympCont.innerHTML = '';
+        if (!onboardingState.tracked_symptoms || onboardingState.tracked_symptoms.length === 0) {
+          sympCont.innerHTML = '<span class="text-xs text-mutedgray italic">Will configure later in logger</span>';
+        } else {
+          onboardingState.tracked_symptoms.forEach(symp => {
+            const chip = document.createElement('span');
+            chip.className = 'px-2 py-0.5 rounded-full bg-lavender text-plum font-medium text-[10px] inline-flex items-center gap-1';
+            chip.innerHTML = `<span>●</span> ${symp}`;
+            sympCont.appendChild(chip);
+          });
+        }
+        if (onboardingState.wellbeing_impacts) {
+          const impactTag = document.createElement('div');
+          impactTag.className = 'w-full mt-2 pt-2 border-t border-gray-100 flex flex-wrap gap-1 text-[10px] text-mutedgray';
+          impactTag.innerHTML = `<span class="text-plum font-semibold">Impacts:</span> Sleep (${onboardingState.wellbeing_impacts.sleep_impact || 'Yes'}), Energy (${onboardingState.wellbeing_impacts.energy_impact || 'Noticeable'}), Digestion (${onboardingState.wellbeing_impacts.digestion_impact || 'Cravings'})`;
+          sympCont.appendChild(impactTag);
+        }
+      }
+
+      // AI & Privacy
+      const reviewStyle = document.getElementById('review-ai-style');
+      if (reviewStyle) {
+        reviewStyle.innerText = `Style: ${onboardingState.answer_style} • ${(onboardingState.included_content || []).length} content preferences selected`;
+      }
+      const aiConsentEl = document.getElementById('review-ai-consent');
+      if (aiConsentEl) {
+        if (onboardingState.ai_health_context_consent) {
+          aiConsentEl.innerText = "✓ Cycle and symptom context active for AI answers";
+          aiConsentEl.className = "text-[11px] text-emerald-700 font-medium mt-0.5";
+        } else {
+          aiConsentEl.innerText = "○ AI assistant kept private and separated from cycle records";
+          aiConsentEl.className = "text-[11px] text-mutedgray font-medium mt-0.5";
+        }
+      }
+    }
+
+    // Submit and Transition
+    function submitOnboardingAndTransition() {
+      // Gather latest input values
+      const nameInput = document.getElementById('input-name');
+      if (nameInput && nameInput.value.trim()) {
+        onboardingState.preferred_name = nameInput.value.trim();
+      }
+      const lastInput = document.getElementById('input-last-period');
+      if (lastInput && lastInput.value) {
+        onboardingState.last_period_start_date = lastInput.value;
+      }
+
+      onboardingState.onboarding_completed = true;
+      onboardingState.updated_at = new Date().toISOString();
+
+      // Convert preferred language to standard code
+      const langMap = { 'English': 'en', 'हिंदी': 'hi', 'Hinglish': 'hinglish' };
+      onboardingState.language_code = langMap[onboardingState.preferred_language] || 'en';
+
+      const finishBtn = document.getElementById('finish-btn');
+      if (finishBtn) {
+        finishBtn.innerHTML = `
+          <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Saving Profile...
+        `;
+        finishBtn.disabled = true;
+      }
+
+      // 1. SAVE TO LOCALSTORAGE FOR MAIN APP
+      try {
+        localStorage.setItem('sakhisahay_user_profile', JSON.stringify(onboardingState));
+        localStorage.setItem('sakhisahay_onboarding_completed', 'true');
+        console.log("🌸 SakhiSahay profile successfully saved to localStorage:", onboardingState);
+      } catch (err) {
+        console.warn("LocalStorage save error:", err);
+      }
+
+      // 2. ASYNC SYNC TO BACKEND IF REACHABLE
+      try {
+        fetch('/api/profile', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(onboardingState)
+        }).catch(() => {});
+      } catch (_) {}
+
+      setTimeout(() => {
+        const userNameEl = document.getElementById('success-user-name');
+        if (userNameEl) userNameEl.innerText = onboardingState.preferred_name || "Priya";
+
+        // Calculate and display phase in success card
+        const phaseEl = document.querySelector('#step-9 .text-rose');
+        if (phaseEl && onboardingState.last_period_start_date) {
+          try {
+            const start = new Date(onboardingState.last_period_start_date);
+            const now = new Date();
+            const diffDays = Math.max(0, Math.floor((now - start) / (1000 * 60 * 60 * 24)));
+            const cycleLen = onboardingState.typical_cycle_length_days || 28;
+            const currentCycleDay = (diffDays % cycleLen) + 1;
+            phaseEl.innerText = `Active Cycle Day ${currentCycleDay}`;
+          } catch (_) {}
+        }
+
+        goToStep(9);
+      }, 700);
+    }
+
+    function changeLanguage(lang) {
+      onboardingState.preferred_language = lang === 'hi' ? 'हिंदी' : lang === 'hinglish' ? 'Hinglish' : 'English';
+      onboardingState.language_code = lang;
+    }
+
+    function skipToDashboard() {
+      // Allow user to proceed with clean defaults
+      try {
+        if (!localStorage.getItem('sakhisahay_user_profile')) {
+          localStorage.setItem('sakhisahay_user_profile', JSON.stringify(defaultState));
+        }
+        localStorage.setItem('sakhisahay_onboarding_completed', 'true');
+      } catch (e) {}
+      redirectToDashboard();
+    }
+
+    function redirectToDashboard() {
+      // Determine destination based on environment
+      if (window.location.protocol === 'file:') {
+        window.location.href = '../Frontend/stitch_sakhisahay_women_s_health_platform/index.html#overview';
+      } else if (window.location.pathname.includes('/onboarding')) {
+        window.location.href = '../#overview';
+      } else {
+        window.location.href = '/#overview';
+      }
+    }
+
+    // Pre-populate UI with loaded state if returning user
+    function initOnboardingForm() {
+      const nameInput = document.getElementById('input-name');
+      if (nameInput && onboardingState.preferred_name) {
+        nameInput.value = onboardingState.preferred_name;
+      }
+
+      // Age range button
+      if (onboardingState.age_range) {
+        const ageOpts = document.getElementById('age-range-options');
+        if (ageOpts) {
+          Array.from(ageOpts.children).forEach(btn => {
+            if (btn.innerText.trim() === onboardingState.age_range) {
+              btn.classList.add('card-selected');
+            } else {
+              btn.classList.remove('card-selected');
+            }
+          });
+        }
+      }
+
+      // Language option button
+      if (onboardingState.preferred_language) {
+        const langOpts = document.getElementById('language-options');
+        if (langOpts) {
+          Array.from(langOpts.children).forEach(btn => {
+            if (btn.querySelector('.text-xs')?.innerText?.includes(onboardingState.preferred_language)) {
+              btn.classList.add('card-selected');
+            } else {
+              btn.classList.remove('card-selected');
+            }
+          });
+        }
+        const langSelector = document.getElementById('lang-selector');
+        if (langSelector) {
+          langSelector.value = onboardingState.preferred_language === 'हिंदी' ? 'hi' : (onboardingState.preferred_language === 'Hinglish' ? 'hinglish' : 'en');
+        }
+      }
+
+      // Last period date
+      const lastInput = document.getElementById('input-last-period');
+      if (lastInput && onboardingState.last_period_start_date) {
+        lastInput.value = onboardingState.last_period_start_date;
+      }
+
+      // Cycle sliders
+      const cycleLenInput = document.getElementById('input-cycle-len');
+      if (cycleLenInput && onboardingState.typical_cycle_length_days) {
+        cycleLenInput.value = onboardingState.typical_cycle_length_days;
+        updateCycleLength(onboardingState.typical_cycle_length_days);
+      }
+
+      const periodDurInput = document.getElementById('input-period-dur');
+      if (periodDurInput && onboardingState.typical_period_duration_days) {
+        periodDurInput.value = onboardingState.typical_period_duration_days;
+        updatePeriodDuration(onboardingState.typical_period_duration_days);
+      }
+
+      // Cycle regularity
+      if (onboardingState.cycle_regularity) {
+        const regOpts = document.getElementById('regularity-options');
+        if (regOpts) {
+          Array.from(regOpts.children).forEach(btn => {
+            if (btn.innerText.trim() === onboardingState.cycle_regularity) {
+              btn.classList.add('card-selected');
+            } else {
+              btn.classList.remove('card-selected');
+            }
+          });
+        }
+      }
+    }
+
+    // Initialize state & UI
+    document.addEventListener('DOMContentLoaded', () => {
+      initOnboardingForm();
+      goToStep(1);
+    });
+    // Fallback if DOM already loaded
+    initOnboardingForm();
+    goToStep(1);
+  </script>
+</body>
+</html>

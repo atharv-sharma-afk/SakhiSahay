@@ -212,6 +212,11 @@
           <span data-i18n="nav.overview" class="font-label-lg text-label-lg">Overview</span>
         </a>
         <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="onboarding" href="./onboarding/" title="Open Guided Health Onboarding">
+          <span class="material-symbols-outlined text-xl">self_improvement</span>
+          <span data-i18n="nav.onboarding" class="font-label-lg text-label-lg">Setup & Onboarding</span>
+        </a>
+        <a class="nav-item flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
           data-path="ai-health-assistant" href="#ai-health-assistant">
           <span class="material-symbols-outlined text-xl">smart_toy</span>
           <span data-i18n="nav.ai_assistant" class="font-label-lg text-label-lg">AI Health Assistant</span>
@@ -247,16 +252,15 @@
     <!-- User Profile Badge -->
     <div
       class="p-space-sm bg-surface-container-lowest rounded-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)] cursor-pointer hover:bg-surface-container transition-colors"
-      onclick="switchRoute('settings')">
+      onclick="switchRoute('settings')" title="View & Edit Health Profile">
       <div class="flex items-center gap-space-sm">
-        <div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold">
+        <div id="sidebar-user-avatar" class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold">
           PS
         </div>
         <div class="flex flex-col">
-          <span class="font-label-lg text-label-lg text-on-surface font-semibold">Priya Sharma</span>
-          <span data-i18n="user.category"
-            class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-space-xs rounded-full w-fit">Personal
-            Care</span>
+          <span id="sidebar-user-name" class="font-label-lg text-label-lg text-on-surface font-semibold">Priya Sharma</span>
+          <span id="sidebar-user-tag" data-i18n="user.category"
+            class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-space-xs rounded-full w-fit">18–24 • Personal Care</span>
         </div>
       </div>
       <span class="material-symbols-outlined text-on-surface-variant text-lg">expand_more</span>
@@ -318,8 +322,8 @@
           </button>
 
           <!-- User Avatar -->
-          <div class="flex items-center pl-space-xs cursor-pointer" onclick="switchRoute('settings')">
-            <div
+          <div class="flex items-center pl-space-xs cursor-pointer" onclick="switchRoute('settings')" title="My Profile & Settings">
+            <div id="header-user-avatar"
               class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-xs ring-2 ring-primary/20">
               PS
             </div>
@@ -348,6 +352,27 @@
               class="absolute top-[600px] left-1/3 w-72 h-72 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none -z-10">
             </div>
 
+            <!-- Onboarding Setup Prompt Banner (Dismissible) -->
+            <div id="onboarding-prompt-banner" class="hidden mb-space-md p-4 rounded-2xl bg-gradient-to-r from-primary-fixed/40 via-surface-container-high to-secondary-fixed/40 border border-primary/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold shrink-0">
+                  <span class="material-symbols-outlined text-xl">spa</span>
+                </div>
+                <div>
+                  <h4 class="font-label-lg text-label-lg text-on-surface font-bold">Personalize SakhiSahay with your health onboarding</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate cycle predictions, tracked symptoms, and AI assistant tone in 2 minutes.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 self-end sm:self-center shrink-0">
+                <a href="./onboarding/" class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm">
+                  Start Onboarding →
+                </a>
+                <button type="button" onclick="dismissOnboardingBanner()" class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-full hover:bg-surface-container" title="Dismiss">
+                  <span class="material-symbols-outlined text-base">close</span>
+                </button>
+              </div>
+            </div>
+
             <!-- Welcome Banner & Mood Greeting -->
             <header class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
               <div class="flex flex-col gap-space-xs">
@@ -355,7 +380,7 @@
                   <span
                     class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm shadow-xs">
                     <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                    <span data-i18n="dash.badge_cycle">Tuesday, October 24, 2024 • Cycle Day 12</span>
+                    <span id="dash-badge-cycle">Loading date...</span>
                   </span>
                   <span
                     class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm shadow-xs">
@@ -363,9 +388,8 @@
                       data-i18n="dash.badge_phase">Follicular Window</span>
                   </span>
                 </div>
-                <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight" id="dash-greeting-h1"
-                  data-i18n="dash.greeting_h1">
-                  Good morning, Amanjot Singh Saini❤️
+                <h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight" id="dash-greeting-h1">
+                  Loading...
                 </h1>
                 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl" data-i18n="dash.greeting_sub">
                   Take a moment for yourself. Let’s check in with your inner rhythm and health today.
@@ -405,9 +429,9 @@
                       <h2 data-i18n="dash.dynamics_title" class="font-headline-sm text-headline-sm text-on-surface">
                         Cycle Dynamics</h2>
                     </div>
-                    <span data-i18n="dash.pattern_badge"
+                    <span id="dash-pattern-badge"
                       class="text-label-md font-label-md px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
-                      28-Day Pattern
+                      Loading...
                     </span>
                   </div>
 
@@ -441,11 +465,10 @@
                         <span data-i18n="dash.phase_badge"
                           class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold">Phase
                           02</span>
-                        <span data-i18n="dash.day_count"
-                          class="font-headline-xl text-headline-xl text-on-surface leading-none my-1 tracking-tight font-bold">Day
-                          12</span>
-                        <span data-i18n="dash.phase_name"
-                          class="font-label-md text-label-md text-primary font-semibold">Follicular Phase</span>
+                        <span id="dash-day-count"
+                          class="font-headline-xl text-headline-xl text-on-surface leading-none my-1 tracking-tight font-bold">—</span>
+                        <span id="dash-phase-name"
+                          class="font-label-md text-label-md text-primary font-semibold">—</span>
                         <span data-i18n="dash.phase_energy"
                           class="font-label-sm text-label-sm text-tertiary mt-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed font-semibold">High
                           Energy Expected</span>
@@ -495,10 +518,10 @@
                       <div class="flex flex-col">
                         <span data-i18n="dash.stat_upcoming"
                           class="font-label-sm text-label-sm text-on-surface-variant">Upcoming Period</span>
-                        <span data-i18n="dash.stat_upcoming_val"
-                          class="font-headline-sm text-headline-sm text-on-surface font-bold">~16 days</span>
-                        <span data-i18n="dash.stat_upcoming_date"
-                          class="font-body-sm text-body-sm text-on-surface-variant">Expected Nov 9, 2024</span>
+                        <span id="dash-upcoming-val"
+                          class="font-headline-sm text-headline-sm text-on-surface font-bold">—</span>
+                        <span id="dash-upcoming-date"
+                          class="font-body-sm text-body-sm text-on-surface-variant">Log your last period date</span>
                       </div>
                     </div>
                     <div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
@@ -508,10 +531,10 @@
                       <div class="flex flex-col">
                         <span data-i18n="dash.stat_regularity"
                           class="font-label-sm text-label-sm text-on-surface-variant">Cycle Regularity</span>
-                        <span data-i18n="dash.stat_regularity_val"
-                          class="font-headline-sm text-headline-sm text-on-surface font-bold">94% consistent</span>
-                        <span data-i18n="dash.stat_regularity_sub"
-                          class="font-body-sm text-body-sm text-on-surface-variant">Based on 6 logged cycles</span>
+                        <span id="dash-regularity-val"
+                          class="font-headline-sm text-headline-sm text-on-surface font-bold">—</span>
+                        <span id="dash-regularity-sub"
+                          class="font-body-sm text-body-sm text-on-surface-variant">Log cycles to see patterns</span>
                       </div>
                     </div>
                   </div>
@@ -545,13 +568,12 @@
                       <span data-i18n="pulse.title"
                         class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Daily
                         Pulse</span>
-                      <h3 data-i18n="pulse.question"
+                      <h3 id="pulse-question"
                         class="font-headline-sm text-headline-sm text-on-surface font-semibold">How are you feeling
-                        today, Priya?</h3>
+                        today?</h3>
                     </div>
-                    <span data-i18n="pulse.day_log"
-                      class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2.5 py-1 rounded-full font-semibold">Day
-                      12 Log</span>
+                    <span id="pulse-day-log"
+                      class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2.5 py-1 rounded-full font-semibold">Today</span>
                   </div>
 
                   <!-- Mood Chips Selection -->
@@ -640,6 +662,30 @@
                       id="dash-save-status-msg">
                       <span class="material-symbols-outlined text-base">cloud_done</span>
                       <span data-i18n="pulse.saved_status">Saved today at 8:45 AM</span>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Active Health Goals Card (Synced with Onboarding Profile) -->
+                <div class="bg-surface-container-lowest rounded-[20px] p-6 lg:p-7 shadow-sm border border-outline-variant/20 flex flex-col gap-4">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-primary text-xl">flag</span>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">My Focus Health Goals</h3>
+                    </div>
+                    <a href="#settings" onclick="switchRoute('settings'); return false;" class="text-xs font-semibold text-primary hover:underline flex items-center gap-1">
+                      <span>Edit in Profile</span>
+                      <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                  </div>
+                  <p class="text-xs text-on-surface-variant">Goals chosen during onboarding that calibrate your Sakhi recommendations.</p>
+                  <div id="overview-goals-container" class="flex flex-wrap gap-2">
+                    <!-- Populated dynamically by applyUserProfile -->
+                    <span class="px-3 py-1.5 rounded-full bg-primary-fixed/40 text-primary font-medium text-xs flex items-center gap-1.5 shadow-2xs">
+                      <span class="material-symbols-outlined text-sm">spa</span> Understanding menstrual cycle
+                    </span>
+                    <span class="px-3 py-1.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-medium text-xs flex items-center gap-1.5 shadow-2xs">
+                      <span class="material-symbols-outlined text-sm">calendar_today</span> Tracking periods and symptoms
                     </span>
                   </div>
                 </div>
@@ -1097,18 +1143,18 @@
                 <span
                   class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1 font-semibold">
                   <span class="material-symbols-outlined text-xs">spa</span>
-                  <span data-i18n="trk.phase_name">Follicular</span>
+                  <span id="tracker-phase-name">Follicular</span>
                 </span>
               </div>
               <div>
-                <div class="font-headline-lg text-headline-lg text-on-surface font-bold">Day 12</div>
-                <p data-i18n="trk.phase_status"
+                <div id="tracker-cycle-day-val" class="font-headline-lg text-headline-lg text-on-surface font-bold">Day 12</div>
+                <p id="tracker-phase-status"
                   class="font-body-sm text-body-sm text-tertiary mt-1 flex items-center gap-1 font-medium">
                   <span class="material-symbols-outlined text-sm">trending_up</span> Estrogen rising • Peak vitality
                 </p>
               </div>
               <div class="w-full bg-surface-container rounded-full h-1.5 mt-space-md overflow-hidden">
-                <div class="bg-tertiary h-1.5 rounded-full" style="width: 42%;"></div>
+                <div id="tracker-cycle-bar" class="bg-tertiary h-1.5 rounded-full transition-all duration-500" style="width: 42%;"></div>
               </div>
             </div>
 
@@ -1123,16 +1169,14 @@
                 </span>
               </div>
               <div>
-                <div data-i18n="trk.length_val" class="font-headline-lg text-headline-lg text-on-surface font-bold">28
-                  Days</div>
-                <p data-i18n="trk.length_sub"
+                <div id="tracker-cycle-length-val" class="font-headline-lg text-headline-lg text-on-surface font-bold">28 Days</div>
+                <p id="tracker-regularity-val"
                   class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
-                  <span class="material-symbols-outlined text-sm text-tertiary font-bold">check_circle</span> Regular
-                  across 6 months
+                  <span class="material-symbols-outlined text-sm text-tertiary font-bold">check_circle</span> Usually regular
                 </p>
               </div>
               <div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant mt-space-md">
-                <span>Variance: ±1.2 days</span>
+                <span id="tracker-regularity-sub">Baseline calibrated</span>
                 <span class="text-xs text-tertiary font-semibold">• Optimal baseline</span>
               </div>
             </div>
@@ -1148,10 +1192,10 @@
                 </span>
               </div>
               <div>
-                <div data-i18n="trk.last_val" class="font-headline-lg text-headline-lg text-on-surface font-bold">5 Days
-                </div>
-                <p data-i18n="trk.last_sub" class="font-body-sm text-body-sm text-on-surface-variant mt-1 font-medium">
-                  Oct 12 – Oct 16, 2024</p>
+                <div id="tracker-period-duration-val" class="font-headline-lg text-headline-lg text-on-surface font-bold">5 Days</div>
+                <p id="tracker-last-period-dates" class="font-body-sm text-body-sm text-on-surface-variant mt-1 font-medium">
+                  Recorded from profile
+                </p>
               </div>
               <div class="flex items-center gap-1.5 mt-space-md">
                 <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
@@ -1159,8 +1203,7 @@
                 <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
                 <span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span>
                 <span class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></span>
-                <span class="font-label-sm text-label-sm text-on-surface-variant ml-1 font-medium">Normal flow
-                  trend</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant ml-1 font-medium">Normal flow trend</span>
               </div>
             </div>
 
@@ -1170,16 +1213,14 @@
               <div class="flex items-start justify-between mb-space-md">
                 <span data-i18n="trk.next_title"
                   class="font-label-md text-label-md text-on-surface-variant font-medium">Next Estimated Period</span>
-                <span
+                <span id="tracker-next-period-countdown"
                   class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
-                  ~16 days away
+                  Calculating...
                 </span>
               </div>
               <div>
-                <div data-i18n="trk.next_val" class="font-headline-lg text-headline-lg text-primary font-bold">Nov 9,
-                  2024</div>
-                <p data-i18n="trk.next_sub" class="font-body-sm text-body-sm text-on-surface-variant mt-1">High
-                  confidence • Next cycle start</p>
+                <div id="tracker-next-period-val" class="font-headline-lg text-headline-lg text-primary font-bold">—</div>
+                <p id="tracker-next-period-sub" class="font-body-sm text-body-sm text-on-surface-variant mt-1">High confidence • Next cycle start</p>
               </div>
               <div
                 class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-space-md bg-surface-container-low px-space-sm py-1 rounded-lg">
@@ -1187,7 +1228,7 @@
                   <span class="material-symbols-outlined text-sm text-primary">notifications_active</span>
                   Reminder alert
                 </span>
-                <span class="font-label-md text-label-md text-primary font-semibold">Nov 7 (48h prior)</span>
+                <span id="tracker-reminder-date" class="font-label-md text-label-md text-primary font-semibold">48h prior to period</span>
               </div>
             </div>
           </section>
@@ -2067,21 +2108,77 @@
         <!-- ============================================== -->
         <!-- VIEW 7: SETTINGS -->
         <!-- ============================================== -->
-        <div id="view-settings" class="view-container">
+                <div id="view-settings" class="view-container">
           <header class="flex flex-col gap-space-xs mb-space-lg">
             <span data-i18n="set.tag"
-              class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Preferences</span>
+              class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Preferences & Health Profile</span>
             <h1 data-i18n="set.title"
-              class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Platform Settings</h1>
+              class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Profile & Platform Settings</h1>
             <p data-i18n="set.subtitle" class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-              Configure your personal cycle baseline, notification alerts, and regional preferences.
+              Manage your personal health profile, cycle model baseline, tracked symptoms, and AI assistant preferences calibrated from onboarding.
             </p>
           </header>
 
-          <div
-            class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm border border-outline-variant/20 max-w-3xl flex flex-col gap-6">
-            <!-- Language & Regional Preferences -->
-            <div>
+          <div class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm border border-outline-variant/20 max-w-3xl flex flex-col gap-6">
+
+            <!-- Profile Summary & Onboarding Hero Card -->
+            <div class="p-5 rounded-2xl bg-gradient-to-r from-primary-fixed/30 via-surface-container-low to-secondary-fixed/30 border border-outline-variant/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div id="settings-profile-avatar" class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary text-xl font-bold ring-4 ring-white shadow-sm shrink-0">
+                  PS
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <h2 id="settings-profile-display-name" class="font-headline-sm text-headline-sm text-on-surface font-bold">Priya Sharma</h2>
+                    <span id="settings-onboarding-badge" class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-semibold inline-flex items-center gap-1 shadow-2xs">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Onboarding Active
+                    </span>
+                  </div>
+                  <span id="settings-profile-subtitle" class="text-xs text-on-surface-variant mt-0.5">Age 18–24 • Cycle tracking enabled • Asia/Kolkata</span>
+                </div>
+              </div>
+
+              <!-- Retake Onboarding Walkthrough Trigger -->
+              <a href="./onboarding/" class="px-4 py-2.5 rounded-xl border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all shadow-xs flex items-center gap-1.5 shrink-0" title="Launch complete multi-step onboarding wizard">
+                <span class="material-symbols-outlined text-base">restart_alt</span>
+                <span>Retake Onboarding</span>
+              </a>
+            </div>
+
+            <!-- 1. Personal Information (from Onboarding Step 2) -->
+            <div class="pt-2">
+              <h3 data-i18n="set.profile_title"
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">person</span>
+                <span>Personal Information</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label data-i18n="set.name_label"
+                    class="block text-xs font-semibold text-on-surface-variant mb-1">Preferred Display Name</label>
+                  <input type="text" id="setting-name" value="Priya Sharma" placeholder="Your name"
+                    class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-2 focus:ring-primary font-medium" />
+                  <p class="text-[11px] text-on-surface-variant mt-1">Used across dashboard greetings and assistant chats.</p>
+                </div>
+                <div>
+                  <label data-i18n="set.age_label"
+                    class="block text-xs font-semibold text-on-surface-variant mb-1">Age Range</label>
+                  <select id="setting-age-range"
+                    class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-2 focus:ring-primary font-medium cursor-pointer">
+                    <option value="Under 18">Under 18</option>
+                    <option value="18–24" selected>18–24</option>
+                    <option value="25–34">25–34</option>
+                    <option value="35–44">35–44</option>
+                    <option value="45–54">45–54</option>
+                    <option value="55+">55+</option>
+                  </select>
+                  <p class="text-[11px] text-on-surface-variant mt-1">Helps tailor clinical age considerations.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Language & Regional Preferences (from Onboarding Step 2) -->
+            <div class="pt-4 border-t border-outline-variant/20">
               <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4 flex items-center gap-2">
                 <span class="material-symbols-outlined text-primary">translate</span>
                 <span data-i18n="set.language_label">Language & Regional Preferences</span>
@@ -2090,8 +2187,7 @@
                 class="p-4 rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div class="flex flex-col">
                   <span class="text-sm font-semibold text-on-surface">Select Interface Language</span>
-                  <span class="text-xs text-on-surface-variant">Changes entire UI and Ask Sakhi companion
-                    responses</span>
+                  <span class="text-xs text-on-surface-variant">Changes entire UI and Ask Sakhi companion responses</span>
                 </div>
                 <select id="setting-language-select"
                   class="bg-surface-container-lowest text-on-surface font-semibold text-sm py-2 px-4 rounded-xl border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary shadow-xs cursor-pointer">
@@ -2102,83 +2198,161 @@
               </div>
             </div>
 
-            <!-- Profile Info -->
+            <!-- 3. Menstrual Cycle Model Baseline (from Onboarding Step 4) -->
             <div class="pt-4 border-t border-outline-variant/20">
-              <h3 data-i18n="set.profile_title"
-                class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Profile Information</h3>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <h3 data-i18n="set.cycle_model" class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">calendar_month</span>
+                <span>Menstrual Cycle Model Baseline</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <label data-i18n="set.name_label"
-                    class="block text-xs font-semibold text-on-surface-variant mb-1">Display Name</label>
-                  <input type="text" id="setting-name" value="Priya Sharma"
-                    class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary" />
+                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Period Tracking Status</label>
+                  <select id="setting-period-tracking"
+                    class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-2 focus:ring-primary font-medium cursor-pointer">
+                    <option value="yes" selected>Yes, active tracking</option>
+                    <option value="later">Paused (Configure later)</option>
+                    <option value="no">Disabled (Wellness only)</option>
+                  </select>
                 </div>
                 <div>
-                  <label data-i18n="set.age_label"
-                    class="block text-xs font-semibold text-on-surface-variant mb-1">Age</label>
-                  <input type="number" id="setting-age" value="27"
-                    class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-1 focus:ring-primary" />
+                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Last Period Start Date</label>
+                  <input type="date" id="setting-last-period-date" value="2024-10-12"
+                    class="w-full p-2.5 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-2 focus:ring-primary font-medium" />
                 </div>
               </div>
-            </div>
-
-            <!-- Cycle Parameters -->
-            <div class="pt-4 border-t border-outline-variant/20">
-              <h3 data-i18n="set.cycle_model" class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">
-                Cycle Model Baseline</h3>
-              <div class="flex flex-col gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Cycle Regularity</label>
+                  <select id="setting-cycle-regularity"
+                    class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-2 focus:ring-primary font-medium cursor-pointer">
+                    <option value="Usually regular" selected>Usually regular</option>
+                    <option value="Sometimes irregular">Sometimes irregular</option>
+                    <option value="Often irregular">Often irregular</option>
+                    <option value="Not sure">Not sure</option>
+                  </select>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 p-4 rounded-xl bg-surface-container-low">
                 <div>
                   <div class="flex justify-between text-xs font-semibold mb-1">
                     <span data-i18n="set.avg_cycle">Average Cycle Length</span>
                     <span id="setting-cycle-val" class="text-primary font-bold">28 Days</span>
                   </div>
-                  <input type="range" min="21" max="40" value="28" class="w-full accent-primary"
+                  <input type="range" id="setting-cycle-slider" min="21" max="45" value="28" class="w-full accent-primary cursor-pointer"
                     oninput="document.getElementById('setting-cycle-val').textContent = this.value + ' Days'" />
+                  <div class="flex justify-between text-[10px] text-on-surface-variant mt-0.5">
+                    <span>21 Days</span><span>Average 28</span><span>45 Days</span>
+                  </div>
                 </div>
                 <div>
                   <div class="flex justify-between text-xs font-semibold mb-1">
                     <span data-i18n="set.avg_period">Average Period Duration</span>
                     <span id="setting-period-val" class="text-primary font-bold">5 Days</span>
                   </div>
-                  <input type="range" min="3" max="8" value="5" class="w-full accent-primary"
+                  <input type="range" id="setting-period-slider" min="2" max="10" value="5" class="w-full accent-primary cursor-pointer"
                     oninput="document.getElementById('setting-period-val').textContent = this.value + ' Days'" />
+                  <div class="flex justify-between text-[10px] text-on-surface-variant mt-0.5">
+                    <span>2 Days</span><span>Average 5</span><span>10 Days</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Notifications -->
+            <!-- 4. Focus Health Goals (from Onboarding Step 3) -->
+            <div class="pt-4 border-t border-outline-variant/20">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary">flag</span>
+                  <span>Focus Health Goals</span>
+                </h3>
+                <span class="text-xs text-on-surface-variant">Tap to toggle goals</span>
+              </div>
+              <p class="text-xs text-on-surface-variant mb-3">These goals guide your dashboard content and prompt recommendations.</p>
+              <div id="setting-goals-chips" class="flex flex-wrap gap-2">
+                <!-- Dynamically rendered and interactive -->
+              </div>
+            </div>
+
+            <!-- 5. Monitored Baseline Symptoms & Wellbeing Impacts (from Onboarding Step 5) -->
+            <div class="pt-4 border-t border-outline-variant/20">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">monitoring</span>
+                <span>Monitored Baseline Symptoms</span>
+              </h3>
+              <p class="text-xs text-on-surface-variant mb-3">Selected physical and emotional indicators you notice during monthly cycles.</p>
+              <div id="setting-symptoms-chips" class="flex flex-wrap gap-1.5 mb-4">
+                <!-- Dynamically rendered -->
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/20">
+                <span class="text-xs font-bold text-on-surface block mb-2">Wellbeing Impact Baseline:</span>
+                <div id="setting-wellbeing-impacts" class="flex flex-wrap gap-2 text-xs">
+                  <!-- Dynamically rendered -->
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Ask Sakhi AI Preferences (from Onboarding Step 6) -->
+            <div class="pt-4 border-t border-outline-variant/20">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">smart_toy</span>
+                <span>Ask Sakhi AI Preferences</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-xs font-semibold text-on-surface-variant mb-1">Answer Tone & Depth</label>
+                  <select id="setting-ai-style"
+                    class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface text-sm border border-outline-variant/20 focus:outline-none focus:ring-2 focus:ring-primary font-medium cursor-pointer">
+                    <option value="Short & simple">Short & simple (Quick takeaways)</option>
+                    <option value="A balance of both" selected>A balance of both (Friendly + clinical summary)</option>
+                    <option value="Detailed explanations">Detailed explanations (Hormone mechanisms)</option>
+                  </select>
+                </div>
+              </div>
+              <label class="flex items-start justify-between p-3.5 rounded-xl bg-surface-container-low cursor-pointer border border-outline-variant/20 hover:bg-surface-container transition-colors">
+                <div class="flex flex-col pr-4">
+                  <span class="text-sm font-semibold text-on-surface">Contextual AI Assistant</span>
+                  <span class="text-xs text-on-surface-variant mt-0.5">Allow Sakhi AI to reference your cycle day & logged sensations to provide tailored insights.</span>
+                </div>
+                <input type="checkbox" id="setting-ai-consent" checked class="accent-primary w-5 h-5 mt-1 cursor-pointer" />
+              </label>
+            </div>
+
+            <!-- 7. Notification Preferences -->
             <div class="pt-4 border-t border-outline-variant/20">
               <h3 data-i18n="set.notifications"
-                class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Notification Preferences</h3>
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">notifications</span>
+                <span>Notification Preferences</span>
+              </h3>
               <div class="space-y-3">
                 <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
-                  <span data-i18n="set.notif_period" class="text-sm font-medium">Period reminder alert (48 hours
-                    prior)</span>
-                  <input type="checkbox" checked class="accent-primary w-5 h-5" />
+                  <span data-i18n="set.notif_period" class="text-sm font-medium">Period reminder alert (48 hours prior)</span>
+                  <input type="checkbox" id="setting-notif-period" checked class="accent-primary w-5 h-5 cursor-pointer" />
                 </label>
                 <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
-                  <span data-i18n="set.notif_fertile" class="text-sm font-medium">Fertile window & ovulation
-                    notice</span>
-                  <input type="checkbox" checked class="accent-primary w-5 h-5" />
+                  <span data-i18n="set.notif_fertile" class="text-sm font-medium">Fertile window & ovulation notice</span>
+                  <input type="checkbox" id="setting-notif-fertile" checked class="accent-primary w-5 h-5 cursor-pointer" />
                 </label>
                 <label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
-                  <span data-i18n="set.notif_checkin" class="text-sm font-medium">Evening wellness check-in
-                    reminder</span>
-                  <input type="checkbox" checked class="accent-primary w-5 h-5" />
+                  <span data-i18n="set.notif_checkin" class="text-sm font-medium">Evening wellness check-in reminder</span>
+                  <input type="checkbox" id="setting-notif-checkin" checked class="accent-primary w-5 h-5 cursor-pointer" />
                 </label>
               </div>
             </div>
 
             <!-- Save Settings Button -->
-            <div class="pt-4 border-t border-outline-variant/20 flex justify-end">
+            <div class="pt-4 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <span class="text-xs text-on-surface-variant flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm text-emerald-600">lock</span> Encrypted & stored privately on your device.
+              </span>
               <button onclick="saveSettings()"
-                class="px-6 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm">
-                <span data-i18n="set.btn_save">Save Preferences</span>
+                class="w-full sm:w-auto px-7 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm active:scale-95 flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-lg">save</span>
+                <span data-i18n="set.btn_save">Save Profile & Preferences</span>
               </button>
             </div>
           </div>
         </div>
-
       </div>
     </main>
   </div>
@@ -2444,6 +2618,7 @@
       currentRoute: 'overview',
       selectedDate: { year: 2024, month: 9, day: 24 }, // 0-indexed month: 9 = October
       cycleDay: 12,
+      userProfile: null, // Initialized via loadUserProfile()
       savedLogs: {
         '2024-10-24': {
           mood: 'Good',
@@ -2464,6 +2639,419 @@
     } catch (e) {
       console.warn('LocalStorage error:', e);
     }
+
+    // ==========================================
+    // USER PROFILE & ONBOARDING STATE MANAGEMENT
+    // ==========================================
+    const DEFAULT_USER_PROFILE = {
+      preferred_name: "Priya Sharma",
+      age_range: "18–24",
+      preferred_language: "English",
+      language_code: "en",
+      health_goals: [
+        "Understanding my menstrual cycle",
+        "Tracking periods and symptoms",
+        "Understanding PMS and discomfort",
+        "Exploring my health patterns"
+      ],
+      period_tracking_enabled: "yes",
+      last_period_start_date: "2024-10-12",
+      typical_cycle_length_days: 28,
+      typical_period_duration_days: 5,
+      cycle_regularity: "Usually regular",
+      tracked_symptoms: [
+        "Cramps", "Fatigue", "Bloating", "Backache", "Acne & Skin", "Mood swings", "Low energy"
+      ],
+      wellbeing_impacts: {
+        sleep_impact: "Yes",
+        energy_impact: "Noticeable",
+        digestion_impact: "Cravings"
+      },
+      answer_style: "A balance of both",
+      included_content: [
+        "Practical wellness suggestions",
+        "Health term glossary",
+        "Verified medical citations",
+        "Guidance when to consult a doctor"
+      ],
+      ai_health_context_consent: true,
+      terms_accepted: true,
+      notifications_enabled: true,
+      onboarding_completed: false
+    };
+
+    function loadUserProfile() {
+      try {
+        const stored = localStorage.getItem('sakhisahay_user_profile');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          return Object.assign({}, DEFAULT_USER_PROFILE, parsed);
+        }
+      } catch (err) {
+        console.warn('Error reading sakhisahay_user_profile from localStorage:', err);
+      }
+      return Object.assign({}, DEFAULT_USER_PROFILE);
+    }
+
+    // Initialize AppState.userProfile
+    AppState.userProfile = loadUserProfile();
+    if (AppState.userProfile && AppState.userProfile.language_code) {
+      AppState.lang = AppState.userProfile.language_code;
+    }
+
+    function computeInitials(name) {
+      if (!name) return 'PS';
+      const parts = name.trim().split(/\s+/);
+      if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+      return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    }
+
+    function renderOverviewGoals(goals) {
+      const container = document.getElementById('overview-goals-container');
+      if (!container) return;
+      container.innerHTML = '';
+      if (!goals || goals.length === 0) {
+        container.innerHTML = '<span class="text-xs text-on-surface-variant italic">No goals configured yet. Tap edit to select focus areas.</span>';
+        return;
+      }
+
+      const goalIcons = {
+        'Understanding my menstrual cycle': 'spa',
+        'Tracking periods and symptoms': 'calendar_today',
+        'Understanding PMS and discomfort': 'electric_bolt',
+        'Exploring my health patterns': 'insights',
+        'Learning about reproductive health': 'health_and_safety',
+        'Finding or consulting a doctor': 'medical_services',
+        'Pregnancy information': 'nest_cam_wired_stand',
+        'Menopause and life-stage changes': 'eco'
+      };
+
+      goals.forEach((goal, idx) => {
+        const icon = goalIcons[goal] || 'check_circle';
+        const pill = document.createElement('span');
+        const bgClass = idx % 2 === 0 ? 'bg-primary-fixed/40 text-primary' : 'bg-secondary-fixed/50 text-on-surface';
+        pill.className = `px-3 py-1.5 rounded-full ${bgClass} font-medium text-xs flex items-center gap-1.5 shadow-2xs`;
+        pill.innerHTML = `<span class="material-symbols-outlined text-sm">${icon}</span> <span>${goal}</span>`;
+        container.appendChild(pill);
+      });
+    }
+
+    const ALL_AVAILABLE_GOALS = [
+      "Understanding my menstrual cycle",
+      "Tracking periods and symptoms",
+      "Understanding PMS and discomfort",
+      "Exploring my health patterns",
+      "Learning about reproductive health",
+      "Finding or consulting a doctor",
+      "Pregnancy information",
+      "Menopause and life-stage changes"
+    ];
+
+    function toggleSettingGoal(goalName, chipEl) {
+      if (!AppState.userProfile.health_goals) AppState.userProfile.health_goals = [];
+      const idx = AppState.userProfile.health_goals.indexOf(goalName);
+      if (idx > -1) {
+        AppState.userProfile.health_goals.splice(idx, 1);
+        chipEl.className = 'px-3 py-1.5 rounded-full border border-outline-variant/40 bg-surface-container-low text-on-surface-variant font-medium text-xs cursor-pointer hover:border-primary transition-all flex items-center gap-1';
+        chipEl.innerHTML = `<span>+</span> <span>${goalName}</span>`;
+      } else {
+        AppState.userProfile.health_goals.push(goalName);
+        chipEl.className = 'px-3 py-1.5 rounded-full bg-primary text-on-primary font-semibold text-xs cursor-pointer shadow-xs transition-all flex items-center gap-1';
+        chipEl.innerHTML = `<span>✓</span> <span>${goalName}</span>`;
+      }
+    }
+
+    function populateSettingsForm(profile) {
+      const p = profile || AppState.userProfile;
+      const initials = computeInitials(p.preferred_name);
+
+      // Hero Card elements
+      const heroAvatar = document.getElementById('settings-profile-avatar');
+      if (heroAvatar) heroAvatar.textContent = initials;
+      const heroName = document.getElementById('settings-profile-display-name');
+      if (heroName) heroName.textContent = p.preferred_name || 'Priya Sharma';
+      const heroSub = document.getElementById('settings-profile-subtitle');
+      if (heroSub) heroSub.textContent = `Age ${p.age_range || '18–24'} • Cycle tracking ${p.period_tracking_enabled === 'yes' ? 'enabled' : 'disabled'} • Detected IST`;
+
+      const badge = document.getElementById('settings-onboarding-badge');
+      if (badge) {
+        const isDone = localStorage.getItem('sakhisahay_onboarding_completed') === 'true' || p.onboarding_completed;
+        if (isDone) {
+          badge.className = 'px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-semibold inline-flex items-center gap-1 shadow-2xs';
+          badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Onboarding Active';
+        } else {
+          badge.className = 'px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[11px] font-semibold inline-flex items-center gap-1 shadow-2xs';
+          badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> Setup Incomplete';
+        }
+      }
+
+      // Input fields
+      const inputName = document.getElementById('setting-name');
+      if (inputName) inputName.value = p.preferred_name || '';
+
+      const selectAge = document.getElementById('setting-age-range');
+      if (selectAge && p.age_range) selectAge.value = p.age_range;
+
+      const selectLang = document.getElementById('setting-language-select');
+      if (selectLang && p.language_code) selectLang.value = p.language_code;
+
+      const selectTrack = document.getElementById('setting-period-tracking');
+      if (selectTrack && p.period_tracking_enabled) selectTrack.value = p.period_tracking_enabled;
+
+      const inputLastPeriod = document.getElementById('setting-last-period-date');
+      if (inputLastPeriod && p.last_period_start_date) inputLastPeriod.value = p.last_period_start_date;
+
+      const selectReg = document.getElementById('setting-cycle-regularity');
+      if (selectReg && p.cycle_regularity) selectReg.value = p.cycle_regularity;
+
+      const sliderCycle = document.getElementById('setting-cycle-slider');
+      const valCycle = document.getElementById('setting-cycle-val');
+      if (sliderCycle && p.typical_cycle_length_days) {
+        sliderCycle.value = p.typical_cycle_length_days;
+        if (valCycle) valCycle.textContent = `${p.typical_cycle_length_days} Days`;
+      }
+
+      const sliderPeriod = document.getElementById('setting-period-slider');
+      const valPeriod = document.getElementById('setting-period-val');
+      if (sliderPeriod && p.typical_period_duration_days) {
+        sliderPeriod.value = p.typical_period_duration_days;
+        if (valPeriod) valPeriod.textContent = `${p.typical_period_duration_days} Days`;
+      }
+
+      const selectAiStyle = document.getElementById('setting-ai-style');
+      if (selectAiStyle && p.answer_style) selectAiStyle.value = p.answer_style;
+
+      const checkAiConsent = document.getElementById('setting-ai-consent');
+      if (checkAiConsent) checkAiConsent.checked = p.ai_health_context_consent !== false;
+
+      // Render interactive Goals Chips
+      const goalsChipsContainer = document.getElementById('setting-goals-chips');
+      if (goalsChipsContainer) {
+        goalsChipsContainer.innerHTML = '';
+        const userGoals = p.health_goals || [];
+        ALL_AVAILABLE_GOALS.forEach(goalName => {
+          const isSelected = userGoals.includes(goalName);
+          const chip = document.createElement('div');
+          chip.className = isSelected
+            ? 'px-3 py-1.5 rounded-full bg-primary text-on-primary font-semibold text-xs cursor-pointer shadow-xs transition-all flex items-center gap-1'
+            : 'px-3 py-1.5 rounded-full border border-outline-variant/40 bg-surface-container-low text-on-surface-variant font-medium text-xs cursor-pointer hover:border-primary transition-all flex items-center gap-1';
+          chip.innerHTML = `<span>${isSelected ? '✓' : '+'}</span> <span>${goalName}</span>`;
+          chip.onclick = () => toggleSettingGoal(goalName, chip);
+          goalsChipsContainer.appendChild(chip);
+        });
+      }
+
+      // Render Tracked Symptoms Chips
+      const symptomsContainer = document.getElementById('setting-symptoms-chips');
+      if (symptomsContainer) {
+        symptomsContainer.innerHTML = '';
+        const symps = p.tracked_symptoms || [];
+        if (symps.length === 0) {
+          symptomsContainer.innerHTML = '<span class="text-xs text-on-surface-variant italic">No baseline symptoms selected. Configure anytime via Quick Log.</span>';
+        } else {
+          symps.forEach(s => {
+            const chip = document.createElement('span');
+            chip.className = 'px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-medium text-xs inline-flex items-center gap-1 border border-outline-variant/20';
+            chip.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> <span>${s}</span>`;
+            symptomsContainer.appendChild(chip);
+          });
+        }
+      }
+
+      // Render Wellbeing impacts
+      const wellbeingContainer = document.getElementById('setting-wellbeing-impacts');
+      if (wellbeingContainer && p.wellbeing_impacts) {
+        wellbeingContainer.innerHTML = `
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-on-surface">
+            <strong>Sleep:</strong> ${p.wellbeing_impacts.sleep_impact || 'Yes'}
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-on-surface">
+            <strong>Energy:</strong> ${p.wellbeing_impacts.energy_impact || 'Noticeable'}
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-on-surface">
+            <strong>Digestion:</strong> ${p.wellbeing_impacts.digestion_impact || 'Cravings'}
+          </span>
+        `;
+      }
+    }
+
+    function applyUserProfile(profile) {
+      if (!profile) profile = AppState.userProfile || loadUserProfile();
+      AppState.userProfile = profile;
+
+      const name = profile.preferred_name || "Priya Sharma";
+      const initials = computeInitials(name);
+      const ageRange = profile.age_range || "18–24";
+
+      // 1. Sidebar Badge
+      const sidebarAvatar = document.getElementById('sidebar-user-avatar');
+      if (sidebarAvatar) sidebarAvatar.textContent = initials;
+      const sidebarName = document.getElementById('sidebar-user-name');
+      if (sidebarName) sidebarName.textContent = name;
+      const sidebarTag = document.getElementById('sidebar-user-tag');
+      if (sidebarTag) sidebarTag.textContent = `${ageRange} • Personal Care`;
+
+      // 2. Top Header
+      const headerAvatar = document.getElementById('header-user-avatar');
+      if (headerAvatar) headerAvatar.textContent = initials;
+
+      const now = new Date();
+      const hour = now.getHours();
+      const timeOfDay = hour < 12 ? 'morning' : (hour < 17 ? 'afternoon' : 'evening');
+
+      const headerGreeting = document.getElementById('header-greeting');
+      if (headerGreeting) {
+        if (AppState.lang === 'hi') {
+          headerGreeting.textContent = `नमस्ते, ${name} 🌷`;
+        } else if (AppState.lang === 'hinglish') {
+          headerGreeting.textContent = `Good ${timeOfDay}, ${name} 🌷`;
+        } else {
+          headerGreeting.textContent = `Good ${timeOfDay}, ${name} 🌷`;
+        }
+      }
+
+      // 3. Overview Dashboard Greeting
+      const dashH1 = document.getElementById('dash-greeting-h1');
+      if (dashH1) {
+        if (AppState.lang === 'hi') {
+          dashH1.textContent = `शुभ प्रभात, ${name} 🌷`;
+        } else {
+          dashH1.textContent = `Good ${timeOfDay}, ${name} 🌷`;
+        }
+      }
+
+      // 4. Cycle dynamics calculations
+      const cycleLen = parseInt(profile.typical_cycle_length_days) || 0;
+      const periodDur = parseInt(profile.typical_period_duration_days) || 5;
+      const lastDateStr = profile.last_period_start_date || '';
+      const hasLastDate = !!lastDateStr;
+      const hasCycleLen = cycleLen > 0;
+
+      let currentCycleDay = null;
+      let daysUntilNext = null;
+      let nextDateStr = null;
+
+      if (hasLastDate && hasCycleLen) {
+        try {
+          const lastDate = new Date(lastDateStr);
+          const diffTime = Math.max(0, now - lastDate);
+          const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+          currentCycleDay = (diffDays % cycleLen) + 1;
+          daysUntilNext = cycleLen - (diffDays % cycleLen);
+          const nextDate = new Date(now.getTime() + daysUntilNext * 24 * 60 * 60 * 1000);
+          nextDateStr = nextDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        } catch (_) {}
+      }
+
+      AppState.cycleDay = currentCycleDay;
+
+      // Determine Phase
+      let phaseName = "—";
+      const effectiveCycleLen = hasCycleLen ? cycleLen : 28;
+      const midCycle = Math.floor(effectiveCycleLen / 2);
+      if (currentCycleDay !== null) {
+        if (currentCycleDay <= periodDur) {
+          phaseName = "Menstrual Phase";
+        } else if (currentCycleDay <= midCycle - 2) {
+          phaseName = "Follicular Phase";
+        } else if (currentCycleDay <= midCycle + 2) {
+          phaseName = "Ovulatory Window";
+        } else {
+          phaseName = "Luteal Phase";
+        }
+      }
+
+      const dashPatternBadge = document.getElementById('dash-pattern-badge');
+      if (dashPatternBadge) dashPatternBadge.textContent = hasCycleLen ? `${cycleLen}-Day Cycle` : 'No Cycle Data';
+
+      const dashDayCount = document.getElementById('dash-day-count');
+      if (dashDayCount) dashDayCount.textContent = currentCycleDay !== null ? `Day ${currentCycleDay}` : '—';
+
+      const dashPhaseName = document.getElementById('dash-phase-name');
+      if (dashPhaseName) dashPhaseName.textContent = phaseName;
+
+      const dashUpcomingVal = document.getElementById('dash-upcoming-val');
+      if (dashUpcomingVal) dashUpcomingVal.textContent = daysUntilNext !== null ? `~${daysUntilNext} days` : 'Not enough data';
+
+      const dashUpcomingDate = document.getElementById('dash-upcoming-date');
+      if (dashUpcomingDate) dashUpcomingDate.textContent = nextDateStr ? `Expected ${nextDateStr}` : 'Log your last period date';
+
+      const badgeCycle = document.getElementById('dash-badge-cycle');
+      if (badgeCycle) {
+        const todayFormatted = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+        badgeCycle.textContent = currentCycleDay !== null
+          ? `${todayFormatted} • Cycle Day ${currentCycleDay}`
+          : todayFormatted;
+      }
+
+      // Update pulse question with user name
+      const pulseQ = document.getElementById('pulse-question');
+      if (pulseQ) {
+        const firstName = name.split(' ')[0];
+        if (AppState.lang === 'hi') {
+          pulseQ.textContent = `\u0906\u091C \u0906\u092A \u0915\u0948\u0938\u093E \u092E\u0939\u0938\u0942\u0938 \u0915\u0930 \u0930\u0939\u0940 \u0939\u0948\u0902, ${firstName}?`;
+        } else {
+          pulseQ.textContent = `How are you feeling today, ${firstName}?`;
+        }
+      }
+
+      // Update Day Log badge
+      const pulseDayLog = document.getElementById('pulse-day-log');
+      if (pulseDayLog) {
+        pulseDayLog.textContent = currentCycleDay !== null ? `Day ${currentCycleDay} Log` : 'Today';
+      }
+
+      // Update cycle regularity stats
+      const dashRegVal = document.getElementById('dash-regularity-val');
+      const dashRegSub = document.getElementById('dash-regularity-sub');
+      if (dashRegVal && dashRegSub) {
+        if (hasCycleLen && hasLastDate) {
+          dashRegVal.textContent = profile.cycle_regularity || 'Usually regular';
+          dashRegSub.textContent = `Avg ${cycleLen}-day cycle`;
+        } else {
+          dashRegVal.textContent = '\u2014';
+          dashRegSub.textContent = 'Log cycles to see patterns';
+        }
+      }
+
+      // 5. Update Tracker View
+      const trkLenVal = document.getElementById('tracker-cycle-length-val');
+      if (trkLenVal) trkLenVal.textContent = `${cycleLen} Days`;
+
+      const trkDurVal = document.getElementById('tracker-period-duration-val');
+      if (trkDurVal) trkDurVal.textContent = `${periodDur} Days`;
+
+      const trkNextVal = document.getElementById('tracker-next-period-val');
+      if (trkNextVal) trkNextVal.textContent = nextDateStr;
+
+      const trkRegularity = document.getElementById('tracker-regularity-val');
+      if (trkRegularity) trkRegularity.textContent = profile.cycle_regularity || 'Usually regular';
+
+      // 6. Active Health Goals widget on Overview
+      renderOverviewGoals(profile.health_goals || []);
+
+      // 7. Populate Settings form
+      populateSettingsForm(profile);
+
+      // 8. Onboarding prompt banner visibility
+      const banner = document.getElementById('onboarding-prompt-banner');
+      if (banner) {
+        const isDone = localStorage.getItem('sakhisahay_onboarding_completed') === 'true' || profile.onboarding_completed;
+        const isDismissed = sessionStorage.getItem('sakhisahay_banner_dismissed') === 'true';
+        if (isDone || isDismissed) {
+          banner.classList.add('hidden');
+        } else {
+          banner.classList.remove('hidden');
+        }
+      }
+    }
+
+    function dismissOnboardingBanner() {
+      const banner = document.getElementById('onboarding-prompt-banner');
+      if (banner) banner.classList.add('hidden');
+      sessionStorage.setItem('sakhisahay_banner_dismissed', 'true');
+    }
+
 
     // 1. ROUTING LOGIC
     function switchRoute(routeName) {
@@ -2591,6 +3179,14 @@
 
     async function generateSakhiResponse(userQuery) {
       const lang = AppState.lang || 'en';
+      const p = AppState.userProfile || loadUserProfile();
+
+      // Include contextual health background if user has consented
+      let contextualizedQuery = userQuery;
+      if (p && p.ai_health_context_consent) {
+        const cycleContext = ` [User Context: ${p.preferred_name}, Age ${p.age_range}, Cycle Day ${AppState.cycleDay}, Tracked Sensations: ${(p.tracked_symptoms || []).slice(0, 4).join(', ')}, Preference: ${p.answer_style}]`;
+        contextualizedQuery = `${userQuery}${cycleContext}`;
+      }
 
       // ── Try the real RAG backend first ─────────────────────────────────────
       try {
@@ -3315,8 +3911,74 @@
     }
 
     function saveSettings() {
-      const name = document.getElementById('setting-name').value;
-      showToast(`Settings saved for ${name}!`);
+      const p = AppState.userProfile || loadUserProfile();
+
+      // Collect values from form
+      const nameInput = document.getElementById('setting-name');
+      if (nameInput && nameInput.value.trim()) {
+        p.preferred_name = nameInput.value.trim();
+      }
+
+      const ageSelect = document.getElementById('setting-age-range');
+      if (ageSelect) p.age_range = ageSelect.value;
+
+      const langSelect = document.getElementById('setting-language-select');
+      if (langSelect) {
+        p.language_code = langSelect.value;
+        p.preferred_language = langSelect.value === 'hi' ? 'हिंदी' : (langSelect.value === 'hinglish' ? 'Hinglish' : 'English');
+      }
+
+      const trackSelect = document.getElementById('setting-period-tracking');
+      if (trackSelect) p.period_tracking_enabled = trackSelect.value;
+
+      const lastDateInput = document.getElementById('setting-last-period-date');
+      if (lastDateInput && lastDateInput.value) p.last_period_start_date = lastDateInput.value;
+
+      const regularitySelect = document.getElementById('setting-cycle-regularity');
+      if (regularitySelect) p.cycle_regularity = regularitySelect.value;
+
+      const cycleSlider = document.getElementById('setting-cycle-slider');
+      if (cycleSlider) p.typical_cycle_length_days = parseInt(cycleSlider.value);
+
+      const periodSlider = document.getElementById('setting-period-slider');
+      if (periodSlider) p.typical_period_duration_days = parseInt(periodSlider.value);
+
+      const aiStyleSelect = document.getElementById('setting-ai-style');
+      if (aiStyleSelect) p.answer_style = aiStyleSelect.value;
+
+      const aiConsentCheck = document.getElementById('setting-ai-consent');
+      if (aiConsentCheck) p.ai_health_context_consent = aiConsentCheck.checked;
+
+      const notifPeriod = document.getElementById('setting-notif-period');
+      if (notifPeriod) p.notifications_enabled = notifPeriod.checked;
+
+      p.updated_at = new Date().toISOString();
+
+      // Save to localStorage
+      try {
+        localStorage.setItem('sakhisahay_user_profile', JSON.stringify(p));
+        localStorage.setItem('sakhisahay_onboarding_completed', 'true');
+      } catch (err) {
+        console.warn('LocalStorage save error in settings:', err);
+      }
+
+      // Sync to backend API asynchronously if available
+      try {
+        fetch('/api/profile', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(p)
+        }).catch(() => {});
+      } catch (_) {}
+
+      // Re-apply immediately across whole UI
+      applyUserProfile(p);
+
+      if (langSelect && langSelect.value !== AppState.lang) {
+        updateLanguage(langSelect.value);
+      }
+
+      showToast(`Health Profile and Preferences saved for ${p.preferred_name}!`);
     }
 
     // Voice simulation & Web Speech API
@@ -3416,6 +4078,9 @@
 
     // DOM LOAD INITIALIZATION
     document.addEventListener('DOMContentLoaded', () => {
+      // 0. Initialize User Profile from Onboarding Data
+      applyUserProfile(AppState.userProfile);
+
       // 1. Initial route
       const initialHash = window.location.hash.replace('#', '') || 'overview';
       switchRoute(initialHash);
@@ -3590,6 +4255,15 @@
 
       // Auto-sync tracker data if backend is running
       syncTrackerSummary();
+
+      // Listen for cross-tab or onboarding redirection profile updates
+      window.addEventListener('storage', (event) => {
+        if (event.key === 'sakhisahay_user_profile' || event.key === 'sakhisahay_onboarding_completed') {
+          AppState.userProfile = loadUserProfile();
+          applyUserProfile(AppState.userProfile);
+        }
+      });
+
     });
   </script>
 </body>

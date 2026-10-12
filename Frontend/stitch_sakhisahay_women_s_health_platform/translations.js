@@ -10,6 +10,7 @@ const I18N_DICTIONARY = {
     "nav.doctors": "Doctor Connect",
     "nav.privacy": "Health History & Privacy",
     "nav.settings": "Settings",
+    "nav.onboarding": "Setup & Onboarding",
     "brand.subtitle": "Your women's health companion",
     "user.category": "Personal Care",
 
@@ -265,6 +266,7 @@ const I18N_DICTIONARY = {
     "nav.doctors": "डॉक्टर परामर्श",
     "nav.privacy": "स्वास्थ्य इतिहास एवं गोपनीयता",
     "nav.settings": "सेटिंग्स",
+    "nav.onboarding": "सेटअप और ऑनबोर्डिंग",
     "brand.subtitle": "आपकी संपूर्ण स्वास्थ्य सखी",
     "user.category": "व्यक्तिगत स्वास्थ्य",
 
@@ -520,6 +522,7 @@ const I18N_DICTIONARY = {
     "nav.doctors": "Doctor Connect",
     "nav.privacy": "Health History & Privacy",
     "nav.settings": "Settings",
+    "nav.onboarding": "Setup & Onboarding",
     "brand.subtitle": "Aapki women's health companion",
     "user.category": "Personal Care",
 
@@ -843,11 +846,28 @@ function applyLanguageToUI(lang) {
   if (!I18N_DICTIONARY[lang]) lang = 'en';
   const dict = I18N_DICTIONARY[lang];
 
+  let currentUserName = "Priya";
+  try {
+    if (window.AppState && window.AppState.userProfile && window.AppState.userProfile.preferred_name) {
+      currentUserName = window.AppState.userProfile.preferred_name;
+    } else {
+      const saved = localStorage.getItem('sakhisahay_user_profile');
+      if (saved) {
+        const p = JSON.parse(saved);
+        if (p.preferred_name) currentUserName = p.preferred_name;
+      }
+    }
+  } catch (_) {}
+
   // Update all [data-i18n] elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
-      el.textContent = dict[key];
+      let text = dict[key];
+      if (key.includes('greeting') || key.includes('pulse') || key.includes('header')) {
+        text = text.replace(/Priya/g, currentUserName);
+      }
+      el.textContent = text;
     }
   });
 
@@ -861,4 +881,9 @@ function applyLanguageToUI(lang) {
 
   // Update html lang attribute
   document.documentElement.lang = lang;
+
+  // Re-apply dynamic user profile & dates if function is present
+  if (typeof window.applyUserProfile === 'function') {
+    window.applyUserProfile(window.AppState ? window.AppState.userProfile : null);
+  }
 }
