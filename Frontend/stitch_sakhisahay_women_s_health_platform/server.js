@@ -46,7 +46,10 @@ function serveFile(res, filePath) {
         res.end(`500 Internal Server Error: ${err.message}`);
       }
     } else {
-      res.writeHead(200, { 'Content-Type': contentType });
+      const headers = { 'Content-Type': contentType };
+      // Always revalidate app code so updates are picked up without a hard refresh.
+      if (['.html', '.js', '.css'].includes(ext)) headers['Cache-Control'] = 'no-cache';
+      res.writeHead(200, headers);
       res.end(content);
     }
   });

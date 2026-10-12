@@ -3,7 +3,7 @@ from __future__ import annotations
 import uuid
 from datetime import date, datetime, timezone
 
-from sqlalchemy import Boolean, Date, DateTime, ForeignKey, Index, Integer, String, Text
+from sqlalchemy import Boolean, Date, DateTime, ForeignKey, Index, Integer, LargeBinary, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.session import Base
@@ -27,6 +27,26 @@ class User(Base):
     preferred_language: Mapped[str] = mapped_column(String(12), default="en")
     # Consent flag for the (future) personalised-assistant feature. Defaults to off.
     consent_personalisation: Mapped[bool] = mapped_column(Boolean, default=False)
+
+    # ---- profile / onboarding (collected once, editable in Settings) ----------
+    age: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    # Baseline used for cycle-day and estimate calculations until enough real
+    # cycles are logged. 28 / 5 are population medians, not assessments.
+    cycle_length_days: Mapped[int] = mapped_column(Integer, default=28, server_default="28")
+    period_length_days: Mapped[int] = mapped_column(Integer, default=5, server_default="5")
+    periods_regular: Mapped[str | None] = mapped_column(String(12), nullable=True)  # yes | no | unsure
+    period_feeling: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    cycle_affects_sleep: Mapped[str | None] = mapped_column(String(12), nullable=True)  # yes | no | unsure
+    goals: Mapped[str | None] = mapped_column(Text, nullable=True)  # JSON list of goal keys
+    onboarding_completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+
+    # ---- app lock -----------------------------------------------------------------
+    # True only after a platform (Touch ID / Face ID / Windows Hello) WebAuthn
+    # credential has been registered and verified server-side.
+    biometric_lock_enabled: Mapped[bool] = mapped_column(Boolean, default=False, server_default="0")
+    # Seconds the app may stay in the background before it re-locks. 0 = immediately.
+    lock_timeout_seconds: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
+
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
 
@@ -36,6 +56,35 @@ class User(Base):
     symptoms: Mapped[list["SymptomRecord"]] = relationship(
         back_populates="user", cascade="all, delete-orphan", passive_deletes=True
     )
+    credentials: Mapped[list["WebAuthnCredential"]] = relationship(
+        back_populates="user", cascade="all, delete-orphan", passive_deletes=True
+    )
+
+
+class WebAuthnCredential(Base):
+    """A public-key credential registered through the browser's WebAuthn API.
+
+    Only the public key, credential id and signature counter are stored. No
+    biometric data ever leaves the device; the OS performs Touch ID / Face ID
+    and returns a signature that we verify here.
+    """
+
+    __tablename__ = "webauthn_credentials"
+    __table_args__ = (Index("ix_webauthn_user", "user_id"),)
+
+    id: Mapped[str] = mapped_column(String(32), primary_key=True, default=_uuid)
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    credential_id: Mapped[bytes] = mapped_column(LargeBinary, nullable=False, unique=True)
+    public_key: Mapped[bytes] = mapped_column(LargeBinary, nullable=False)
+    sign_count: Mapped[int] = mapped_column(Integer, default=0)
+    transports: Mapped[str | None] = mapped_column(String(120), nullable=True)
+    device_type: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    backed_up: Mapped[bool] = mapped_column(Boolean, default=False)
+    label: Mapped[str | None] = mapped_column(String(80), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    last_used_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+
+    user: Mapped[User] = relationship(back_populates="credentials")
 
 
 class PeriodRecord(Base):

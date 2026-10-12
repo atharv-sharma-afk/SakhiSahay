@@ -21,7 +21,7 @@ class Settings(BaseSettings):
 
     app_env: str = "development"
     auth_mode: Literal["local", "jwt"] = "local"
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+    cors_origins: str = "http://localhost:3000,http://127.0.0.1:3000,http://localhost:5173,http://127.0.0.1:5173"
     log_level: str = "INFO"
 
     database_url: str = "sqlite:///./data/runtime/sakhisahay.db"
@@ -52,6 +52,20 @@ class Settings(BaseSettings):
 
     gemini_max_output_tokens: int = Field(default=800, ge=100, le=2000)
     gemini_temperature: float = Field(default=0.1, ge=0.0, le=1.0)
+
+    # ---- app lock (WebAuthn platform authenticators) -------------------------
+    # Relying-party id = the host the UI is served from. Empty -> derived from the
+    # request Origin (localhost in development). Set explicitly in production.
+    webauthn_rp_id: str = ""
+    webauthn_rp_name: str = "SakhiSahay"
+    # Origins allowed to use the lock besides loopback (comma-separated, e.g. https://app.example.com)
+    webauthn_origins: str = ""
+    # How long an unlock lasts on the API side before the device must re-verify.
+    unlock_token_ttl_minutes: int = Field(default=720, ge=1, le=24 * 60)
+
+    @property
+    def webauthn_origin_list(self) -> list[str]:
+        return [o.strip() for o in self.webauthn_origins.split(",") if o.strip()]
 
     def gate_for_language(self, language: str) -> float:
         if language == "hi":

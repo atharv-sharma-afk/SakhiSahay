@@ -8,7 +8,16 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api import routes_chat, routes_doctors, routes_health, routes_insights, routes_knowledge, routes_tracker
+from app.api import (
+    routes_biometric,
+    routes_chat,
+    routes_doctors,
+    routes_health,
+    routes_insights,
+    routes_knowledge,
+    routes_profile,
+    routes_tracker,
+)
 from app.config import get_settings
 from app.db.init_db import init_db
 from app.logging_config import configure_logging
@@ -44,6 +53,7 @@ def create_app() -> FastAPI:
         allow_credentials=False,
         allow_methods=["*"],
         allow_headers=["*"],
+        expose_headers=["X-App-Locked", "X-Unlock-Token"],
     )
 
     @app.exception_handler(RequestValidationError)
@@ -56,6 +66,8 @@ def create_app() -> FastAPI:
         return JSONResponse(status_code=422, content={"detail": "Validation failed", "errors": errors})
 
     app.include_router(routes_health.router)
+    app.include_router(routes_profile.router)
+    app.include_router(routes_biometric.router)
     app.include_router(routes_tracker.router)
     app.include_router(routes_insights.router)
     app.include_router(routes_chat.router)

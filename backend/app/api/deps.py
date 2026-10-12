@@ -10,17 +10,18 @@ from app.config import Settings, get_settings
 from app.db import models
 from app.db.init_db import LOCAL_USER_ID
 from app.db.session import get_db
+from app.services import biometric_service
 
 DbSession = Annotated[Session, Depends(get_db)]
 AppSettings = Annotated[Settings, Depends(get_settings)]
 
 
-def get_current_user(
+def get_identity(
     db: DbSession,
     settings: AppSettings,
     x_user_id: Annotated[str | None, Header(alias="X-User-Id")] = None,
 ) -> models.User:
-    """Resolve the acting user.
+    """Resolve *who* is acting, without checking the app lock.
 
     MVP (AUTH_MODE=local): a single seeded local user. The optional X-User-Id
     header exists only so tests can prove per-user isolation of health records;
@@ -40,6 +41,28 @@ def get_current_user(
             db.commit()
         else:
             raise HTTPException(status.HTTP_404_NOT_FOUND, "Unknown user")
+    return user
+
+
+Identity = Annotated[models.User, Depends(get_identity)]
+
+
+def get_current_user(
+    user: Identity,
+    x_unlock_token: Annotated[str | None, Header(alias="X-Unlock-Token")] = None,
+) -> models.User:
+    """Identity *plus* the app-lock gate.
+
+    When the user has enabled the biometric lock, every route that exposes or
+    mutates health data requires a live unlock token obtained through a
+    server-verified WebAuthn assertion. 423 tells the UI to show the lock screen.
+    """
+    if not biometric_service.is_unlocked(user, x_unlock_token):
+        raise HTTPException(
+            status.HTTP_423_LOCKED,
+            "SakhiSahay is locked. Unlock with your device to continue.",
+            headers={"X-App-Locked": "1"},
+        )
     return user
 
 

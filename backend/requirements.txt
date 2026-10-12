@@ -16,4 +16,6 @@ qdrant-client>=1.10,<2
 sentence-transformers>=3.0,<6
 torch>=2.2
 google-genai>=1.0,<2
+# App lock: server-side verification of Touch ID / Face ID (WebAuthn) assertions
+webauthn>=2.0,<3
 pytest>=8.0,<9

@@ -1,14 +1,15 @@
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
+from pydantic import BaseModel, ConfigDict, Field, field_serializer, field_validator, model_validator
 
 FlowLevel = Literal["spotting", "light", "medium", "heavy"]
 
 # Configurable catalogue used by the API and the UI. These are tracking labels,
-# not diagnostic indicators.
+# not diagnostic indicators. "mood" entries include neutral/positive states so a
+# daily check-in can be recorded without forcing everything to be a "symptom".
 SYMPTOM_CATALOGUE: list[dict[str, str]] = [
     {"key": "cramps", "label": "Cramps", "group": "pain"},
     {"key": "back_pain", "label": "Back pain", "group": "pain"},
@@ -18,17 +19,41 @@ SYMPTOM_CATALOGUE: list[dict[str, str]] = [
     {"key": "fatigue", "label": "Fatigue", "group": "body"},
     {"key": "nausea", "label": "Nausea", "group": "body"},
     {"key": "acne", "label": "Acne", "group": "body"},
+    {"key": "cravings", "label": "Cravings", "group": "body"},
     {"key": "spotting", "label": "Spotting", "group": "bleeding"},
     {"key": "heavy_bleeding", "label": "Heavy bleeding", "group": "bleeding"},
-    {"key": "mood_changes", "label": "Mood changes", "group": "mood"},
-    {"key": "anxiety", "label": "Anxiety", "group": "mood"},
+    {"key": "calm", "label": "Calm", "group": "mood"},
+    {"key": "energetic", "label": "Energetic", "group": "mood"},
+    {"key": "mood_changes", "label": "Mood swings", "group": "mood"},
+    {"key": "irritable", "label": "Irritable", "group": "mood"},
+    {"key": "anxiety", "label": "Anxious", "group": "mood"},
     {"key": "low_mood", "label": "Low mood", "group": "mood"},
     {"key": "sleep_changes", "label": "Sleep changes", "group": "mood"},
-    {"key": "cravings", "label": "Cravings", "group": "body"},
 ]
 SYMPTOM_KEYS = {s["key"] for s in SYMPTOM_CATALOGUE}
 
 MAX_NOTE_LENGTH = 500
+
+
+def as_utc(value: datetime) -> datetime:
+    """Timestamps are written as UTC; SQLite drops the offset on the way back.
+
+    Re-attach UTC before serialising so clients receive an unambiguous instant
+    (``...Z``) instead of a naive string they would misread as local time.
+    """
+    return value if value.tzinfo is not None else value.replace(tzinfo=timezone.utc)
+
+
+class TimestampedOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: str
+    created_at: datetime
+    updated_at: datetime
+
+    @field_serializer("created_at", "updated_at")
+    def _serialize_ts(self, value: datetime) -> str:
+        return as_utc(value).isoformat().replace("+00:00", "Z")
 
 
 def _reject_future(value: date, field_name: str) -> date:
@@ -77,13 +102,7 @@ class PeriodUpdate(PeriodBase):
     pass
 
 
-class PeriodOut(PeriodBase):
-    model_config = ConfigDict(from_attributes=True)
-
-    id: str
-    created_at: datetime
-    updated_at: datetime
-
+class PeriodOut(PeriodBase, TimestampedOut):
     @property
     def duration_days(self) -> int | None:
         if self.end_date is None:
@@ -125,12 +144,8 @@ class SymptomUpdate(SymptomBase):
     pass
 
 
-class SymptomOut(SymptomBase):
-    model_config = ConfigDict(from_attributes=True)
-
-    id: str
-    created_at: datetime
-    updated_at: datetime
+class SymptomOut(SymptomBase, TimestampedOut):
+    pass
 
 
 class SymptomCatalogueItem(BaseModel):
